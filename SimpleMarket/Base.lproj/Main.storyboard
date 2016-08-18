@@ -68,7 +68,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B4r-pT-FCF">
-                                <rect key="frame" x="0.0" y="20" width="400" height="1200"/>
+                                <rect key="frame" x="0.0" y="0.0" width="400" height="1200"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qaZ-ta-33U">
                                         <rect key="frame" x="8" y="20" width="120" height="120"/>
@@ -130,7 +130,6 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailingMargin" secondItem="Pzi-GA-x9M" secondAttribute="trailing" id="4E7-X6-wUn"/>
-                                    <constraint firstItem="qaZ-ta-33U" firstAttribute="leading" secondItem="B4r-pT-FCF" secondAttribute="leading" id="5L8-gV-xhF"/>
                                     <constraint firstItem="qaZ-ta-33U" firstAttribute="top" secondItem="B4r-pT-FCF" secondAttribute="top" constant="20" id="BDb-z6-YoU"/>
                                     <constraint firstItem="dmh-D3-87W" firstAttribute="leading" secondItem="B4r-pT-FCF" secondAttribute="leadingMargin" id="Cd2-BM-JXo"/>
                                     <constraint firstAttribute="height" constant="1200" id="E8y-4S-l2h"/>
@@ -150,29 +149,15 @@
                                     <constraint firstItem="KMQ-zp-zrD" firstAttribute="leading" secondItem="B4r-pT-FCF" secondAttribute="leadingMargin" id="u3f-1C-A3j"/>
                                     <constraint firstItem="MZQ-aB-VIl" firstAttribute="top" secondItem="5eN-5p-T9J" secondAttribute="bottom" constant="20" id="y11-vB-Jgf"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="5L8-gV-xhF"/>
-                                    </mask>
-                                </variation>
                             </view>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="B4r-pT-FCF" firstAttribute="centerY" secondItem="H30-Q6-Rgc" secondAttribute="centerY" id="Drk-Hm-C8A"/>
-                            <constraint firstItem="B4r-pT-FCF" firstAttribute="centerX" secondItem="H30-Q6-Rgc" secondAttribute="centerX" id="LFG-I0-Swo"/>
-                            <constraint firstItem="B4r-pT-FCF" firstAttribute="top" secondItem="x6j-h2-F5w" secondAttribute="bottom" id="e6X-hZ-8g2"/>
-                            <constraint firstItem="8Ka-Pa-H5v" firstAttribute="top" secondItem="B4r-pT-FCF" secondAttribute="bottom" id="fS6-zf-LT6"/>
-                            <constraint firstItem="B4r-pT-FCF" firstAttribute="leading" secondItem="H30-Q6-Rgc" secondAttribute="leading" id="fkV-Ea-OJ9"/>
-                            <constraint firstAttribute="trailing" secondItem="B4r-pT-FCF" secondAttribute="trailing" id="oGy-bV-KaR"/>
-                            <constraint firstItem="B4r-pT-FCF" firstAttribute="width" secondItem="H30-Q6-Rgc" secondAttribute="width" id="rkx-zY-Jll"/>
-                            <constraint firstItem="B4r-pT-FCF" firstAttribute="top" secondItem="H30-Q6-Rgc" secondAttribute="top" id="ysx-ZW-Rx3"/>
+                            <constraint firstItem="B4r-pT-FCF" firstAttribute="width" secondItem="H30-Q6-Rgc" secondAttribute="width" id="3Hf-Be-Xyn"/>
+                            <constraint firstItem="B4r-pT-FCF" firstAttribute="leading" secondItem="H30-Q6-Rgc" secondAttribute="leading" id="Vyj-61-HIr"/>
+                            <constraint firstAttribute="bottom" secondItem="B4r-pT-FCF" secondAttribute="bottom" id="XHb-ko-3GT"/>
+                            <constraint firstAttribute="trailing" secondItem="B4r-pT-FCF" secondAttribute="trailing" id="Xy4-iA-VeE"/>
+                            <constraint firstItem="B4r-pT-FCF" firstAttribute="top" secondItem="H30-Q6-Rgc" secondAttribute="top" id="phQ-96-T3I"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="Drk-Hm-C8A"/>
-                                <exclude reference="ysx-ZW-Rx3"/>
-                            </mask>
-                        </variation>
                     </scrollView>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="400" height="1200"/>

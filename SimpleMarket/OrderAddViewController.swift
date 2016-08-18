@@ -18,10 +18,6 @@ class OrderAddViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    override func viewDidLayoutSubviews() {
-        self.scrollView.contentSize = CGSize(width: 400, height: 1200) // スクロールに必要
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
