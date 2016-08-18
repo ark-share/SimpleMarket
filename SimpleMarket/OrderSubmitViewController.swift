@@ -1,14 +1,14 @@
 //
-//  OrderIndexViewController.swift
+//  OrderSubmitViewController.swift
 //  SimpleMarket
 //
-//  Created by macpc on 2016/08/16.
+//  Created by macpc on 2016/08/18.
 //  Copyright © 2016年 ark-share. All rights reserved.
 //
 
 import UIKit
 
-class OrderIndexViewController: UIViewController {
+class OrderSubmitViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

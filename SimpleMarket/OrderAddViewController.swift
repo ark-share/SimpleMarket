@@ -7,15 +7,45 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
+import SVProgressHUD
 
+// 新規出品
 class OrderAddViewController: UIViewController {
 
-    @IBOutlet var scrollView: UIScrollView!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var bodyTextView: UITextView!
+    @IBOutlet weak var priceTextField: UITextField!
+    
+    // 出品する
+    @IBAction func handleSubmitButton(sender: AnyObject) {
+
+        let orderRef = FIRDatabase.database().reference().child(CommonConst.OrderPATH)
+        
+        let name = nameTextField.text // String?型なのでアンラップする？
+        let body = bodyTextView.text
+        let price = priceTextField.text // String?
+        let modified = NSDate.timeIntervalSinceReferenceDate()
+        let created = NSDate.timeIntervalSinceReferenceDate()
+        
+        let data = ["name": name!, "body": body, "price": price!, "modified": modified, "created": created]
+        orderRef.childByAutoId().setValue(data)
+        
+        //SVProgressHUD.showSuccessWithStatus("出品しました")
+        let submitViewController = self.storyboard?.instantiateViewControllerWithIdentifier("OrderSubmit")
+        presentViewController(submitViewController!, animated: true, completion: nil) // モーダル
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // test値
+        nameTextField.text = "no name"
+        bodyTextView.text = "no body"
+        priceTextField.text = "100"
     }
     
     override func didReceiveMemoryWarning() {
@@ -26,8 +56,8 @@ class OrderAddViewController: UIViewController {
     
 //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 //        
-//        if segue.identifier == "OrderAddSegue" {
-//            print("segue OrderAdd")
+//        if segue.identifier == "ImageAddSegue" {
+//            print("segue ImageAdd")
 //        }
 //        
 //    }

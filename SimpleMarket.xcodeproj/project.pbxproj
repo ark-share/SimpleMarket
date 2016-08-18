@@ -11,6 +11,8 @@
 		A32B5F7C1D62E84600608BBF /* ButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B5F7B1D62E84600608BBF /* ButtonCustom.swift */; };
 		A32B5F7F1D62EFD300608BBF /* OrderAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B5F7E1D62EFD300608BBF /* OrderAddViewController.swift */; };
 		A3436E5E1D65829F00EE1F77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3436E5D1D65829F00EE1F77 /* GoogleService-Info.plist */; };
+		A3436E601D658B9400EE1F77 /* OrderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3436E5F1D658B9400EE1F77 /* OrderData.swift */; };
+		A3436E631D65AE9700EE1F77 /* OrderSubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3436E621D65AE9700EE1F77 /* OrderSubmitViewController.swift */; };
 		A3FB36271D62D26700EFB7C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB36261D62D26700EFB7C4 /* AppDelegate.swift */; };
 		A3FB36291D62D26700EFB7C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB36281D62D26700EFB7C4 /* ViewController.swift */; };
 		A3FB362C1D62D26700EFB7C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FB362A1D62D26700EFB7C4 /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 		A32B5F7B1D62E84600608BBF /* ButtonCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCustom.swift; sourceTree = "<group>"; };
 		A32B5F7E1D62EFD300608BBF /* OrderAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderAddViewController.swift; sourceTree = "<group>"; };
 		A3436E5D1D65829F00EE1F77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A3436E5F1D658B9400EE1F77 /* OrderData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderData.swift; sourceTree = "<group>"; };
+		A3436E621D65AE9700EE1F77 /* OrderSubmitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderSubmitViewController.swift; sourceTree = "<group>"; };
 		A3FB36231D62D26700EFB7C4 /* SimpleMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FB36261D62D26700EFB7C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3FB36281D62D26700EFB7C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +74,14 @@
 			name = Config;
 			sourceTree = "<group>";
 		};
+		A3436E611D658BA500EE1F77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3436E5F1D658B9400EE1F77 /* OrderData.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		A3FB361A1D62D26700EFB7C4 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +105,7 @@
 			children = (
 				A32B5F7D1D62E8E400608BBF /* Config */,
 				A3FB36411D62DF2D00EFB7C4 /* Controller */,
+				A3436E611D658BA500EE1F77 /* Model */,
 				A3FB36401D62DF2100EFB7C4 /* View */,
 				A3FB362D1D62D26700EFB7C4 /* Assets.xcassets */,
 				A3FB36321D62D26700EFB7C4 /* Info.plist */,
@@ -118,6 +131,7 @@
 				A3FB36281D62D26700EFB7C4 /* ViewController.swift */,
 				A3FB363E1D62DEDD00EFB7C4 /* OrderIndexViewController.swift */,
 				A32B5F7E1D62EFD300608BBF /* OrderAddViewController.swift */,
+				A3436E621D65AE9700EE1F77 /* OrderSubmitViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -253,6 +267,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3436E601D658B9400EE1F77 /* OrderData.swift in Sources */,
+				A3436E631D65AE9700EE1F77 /* OrderSubmitViewController.swift in Sources */,
 				A32B5F7F1D62EFD300608BBF /* OrderAddViewController.swift in Sources */,
 				A32B5F7C1D62E84600608BBF /* ButtonCustom.swift in Sources */,
 				A32B5F7A1D62E7D300608BBF /* CommonConst.swift in Sources */,
