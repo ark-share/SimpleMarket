@@ -10,12 +10,12 @@
 		A32B5F7A1D62E7D300608BBF /* CommonConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B5F791D62E7D300608BBF /* CommonConst.swift */; };
 		A32B5F7C1D62E84600608BBF /* ButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B5F7B1D62E84600608BBF /* ButtonCustom.swift */; };
 		A32B5F7F1D62EFD300608BBF /* OrderAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B5F7E1D62EFD300608BBF /* OrderAddViewController.swift */; };
+		A3436E5E1D65829F00EE1F77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3436E5D1D65829F00EE1F77 /* GoogleService-Info.plist */; };
 		A3FB36271D62D26700EFB7C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB36261D62D26700EFB7C4 /* AppDelegate.swift */; };
 		A3FB36291D62D26700EFB7C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB36281D62D26700EFB7C4 /* ViewController.swift */; };
 		A3FB362C1D62D26700EFB7C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FB362A1D62D26700EFB7C4 /* Main.storyboard */; };
 		A3FB362E1D62D26700EFB7C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FB362D1D62D26700EFB7C4 /* Assets.xcassets */; };
 		A3FB36311D62D26700EFB7C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FB362F1D62D26700EFB7C4 /* LaunchScreen.storyboard */; };
-		A3FB363B1D62DDDD00EFB7C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3FB363A1D62DDDD00EFB7C4 /* GoogleService-Info.plist */; };
 		A3FB363F1D62DEDD00EFB7C4 /* OrderIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB363E1D62DEDD00EFB7C4 /* OrderIndexViewController.swift */; };
 		A3FB36431D62DF9B00EFB7C4 /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB36421D62DF9B00EFB7C4 /* AppController.swift */; };
 		FC463A060400DEBBB1844B2E /* Pods_SimpleMarket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98BD852A395E2BD9D57DF6A2 /* Pods_SimpleMarket.framework */; };
@@ -27,6 +27,7 @@
 		A32B5F791D62E7D300608BBF /* CommonConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonConst.swift; sourceTree = "<group>"; };
 		A32B5F7B1D62E84600608BBF /* ButtonCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCustom.swift; sourceTree = "<group>"; };
 		A32B5F7E1D62EFD300608BBF /* OrderAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderAddViewController.swift; sourceTree = "<group>"; };
+		A3436E5D1D65829F00EE1F77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A3FB36231D62D26700EFB7C4 /* SimpleMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FB36261D62D26700EFB7C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3FB36281D62D26700EFB7C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,7 +35,6 @@
 		A3FB362D1D62D26700EFB7C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3FB36301D62D26700EFB7C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3FB36321D62D26700EFB7C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A3FB363A1D62DDDD00EFB7C4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A3FB363E1D62DEDD00EFB7C4 /* OrderIndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderIndexViewController.swift; sourceTree = "<group>"; };
 		A3FB36421D62DF9B00EFB7C4 /* AppController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
 		E42861653C1233EB0DBBA2FF /* Pods-SimpleMarket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMarket.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleMarket/Pods-SimpleMarket.debug.xcconfig"; sourceTree = "<group>"; };
@@ -94,9 +94,9 @@
 				A32B5F7D1D62E8E400608BBF /* Config */,
 				A3FB36411D62DF2D00EFB7C4 /* Controller */,
 				A3FB36401D62DF2100EFB7C4 /* View */,
-				A3FB363A1D62DDDD00EFB7C4 /* GoogleService-Info.plist */,
 				A3FB362D1D62D26700EFB7C4 /* Assets.xcassets */,
 				A3FB36321D62D26700EFB7C4 /* Info.plist */,
+				A3436E5D1D65829F00EE1F77 /* GoogleService-Info.plist */,
 			);
 			path = SimpleMarket;
 			sourceTree = "<group>";
@@ -192,7 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3FB36311D62D26700EFB7C4 /* LaunchScreen.storyboard in Resources */,
-				A3FB363B1D62DDDD00EFB7C4 /* GoogleService-Info.plist in Resources */,
+				A3436E5E1D65829F00EE1F77 /* GoogleService-Info.plist in Resources */,
 				A3FB362E1D62D26700EFB7C4 /* Assets.xcassets in Resources */,
 				A3FB362C1D62D26700EFB7C4 /* Main.storyboard in Resources */,
 			);
