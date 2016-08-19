@@ -10,6 +10,18 @@ import UIKit
 
 class OrderSubmitViewController: UIViewController {
 
+    @IBAction func handleOrderAddButton(sender: AnyObject) {
+        // 移動
+        let view = self.storyboard!.instantiateViewControllerWithIdentifier("OrderAdd") as UIViewController
+        presentViewController(view, animated: true, completion: nil)
+    }
+    
+    @IBAction func handleOrderIndexButton(sender: AnyObject) {
+        // 移動
+        let view = self.storyboard!.instantiateViewControllerWithIdentifier("OrderIndex") as UIViewController
+        presentViewController(view, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

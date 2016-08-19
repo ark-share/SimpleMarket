@@ -16,6 +16,11 @@ class ViewController: UIViewController {
         let view = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("OrderAdd") as UIViewController
         presentViewController(view, animated: true, completion: nil)
     }
+    @IBAction func handleOrderIndexButton(sender: AnyObject) {
+        // 移動
+        let view = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("OrderIndex") as UIViewController
+        presentViewController(view, animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

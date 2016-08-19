@@ -9,7 +9,7 @@
 import Foundation
 
 struct CommonConst {
-    static let OrderPATH = "ordners"
+    static let OrderPATH = "t_orders"
 
     
     static let DisplayNameKey = "DISPLAYNAME"
