@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // 新規出品ボタン
+    @IBAction func handleOrderAddButton(sender: AnyObject) {
+        // 移動
+        let view = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("OrderAdd") as UIViewController
+        presentViewController(view, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -22,10 +29,6 @@ class ViewController: UIViewController {
 
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        if segue.identifier == "OrderAddSegue" {
-            print("segue OrderAdd")
-        }
         
     }
 }

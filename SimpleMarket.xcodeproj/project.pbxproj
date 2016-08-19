@@ -13,9 +13,10 @@
 		A3436E5E1D65829F00EE1F77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3436E5D1D65829F00EE1F77 /* GoogleService-Info.plist */; };
 		A3436E601D658B9400EE1F77 /* OrderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3436E5F1D658B9400EE1F77 /* OrderData.swift */; };
 		A3436E631D65AE9700EE1F77 /* OrderSubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3436E621D65AE9700EE1F77 /* OrderSubmitViewController.swift */; };
+		A3436E661D66D66E00EE1F77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3436E641D66CBE400EE1F77 /* Main.storyboard */; };
 		A3FB36271D62D26700EFB7C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB36261D62D26700EFB7C4 /* AppDelegate.swift */; };
 		A3FB36291D62D26700EFB7C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB36281D62D26700EFB7C4 /* ViewController.swift */; };
-		A3FB362C1D62D26700EFB7C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FB362A1D62D26700EFB7C4 /* Main.storyboard */; };
+		A3FB362C1D62D26700EFB7C4 /* Order.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FB362A1D62D26700EFB7C4 /* Order.storyboard */; };
 		A3FB362E1D62D26700EFB7C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FB362D1D62D26700EFB7C4 /* Assets.xcassets */; };
 		A3FB36311D62D26700EFB7C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FB362F1D62D26700EFB7C4 /* LaunchScreen.storyboard */; };
 		A3FB363F1D62DEDD00EFB7C4 /* OrderIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB363E1D62DEDD00EFB7C4 /* OrderIndexViewController.swift */; };
@@ -32,10 +33,11 @@
 		A3436E5D1D65829F00EE1F77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A3436E5F1D658B9400EE1F77 /* OrderData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderData.swift; sourceTree = "<group>"; };
 		A3436E621D65AE9700EE1F77 /* OrderSubmitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderSubmitViewController.swift; sourceTree = "<group>"; };
+		A3436E641D66CBE400EE1F77 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A3FB36231D62D26700EFB7C4 /* SimpleMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FB36261D62D26700EFB7C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3FB36281D62D26700EFB7C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A3FB362B1D62D26700EFB7C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3FB362B1D62D26700EFB7C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Order.storyboard; sourceTree = "<group>"; };
 		A3FB362D1D62D26700EFB7C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3FB36301D62D26700EFB7C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3FB36321D62D26700EFB7C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -117,7 +119,8 @@
 		A3FB36401D62DF2100EFB7C4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A3FB362A1D62D26700EFB7C4 /* Main.storyboard */,
+				A3436E641D66CBE400EE1F77 /* Main.storyboard */,
+				A3FB362A1D62D26700EFB7C4 /* Order.storyboard */,
 				A3FB362F1D62D26700EFB7C4 /* LaunchScreen.storyboard */,
 			);
 			name = View;
@@ -206,9 +209,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3FB36311D62D26700EFB7C4 /* LaunchScreen.storyboard in Resources */,
+				A3436E661D66D66E00EE1F77 /* Main.storyboard in Resources */,
 				A3436E5E1D65829F00EE1F77 /* GoogleService-Info.plist in Resources */,
 				A3FB362E1D62D26700EFB7C4 /* Assets.xcassets in Resources */,
-				A3FB362C1D62D26700EFB7C4 /* Main.storyboard in Resources */,
+				A3FB362C1D62D26700EFB7C4 /* Order.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,12 +286,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A3FB362A1D62D26700EFB7C4 /* Main.storyboard */ = {
+		A3FB362A1D62D26700EFB7C4 /* Order.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A3FB362B1D62D26700EFB7C4 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Order.storyboard;
 			sourceTree = "<group>";
 		};
 		A3FB362F1D62D26700EFB7C4 /* LaunchScreen.storyboard */ = {

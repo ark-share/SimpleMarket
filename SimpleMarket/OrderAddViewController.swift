@@ -18,6 +18,8 @@ class OrderAddViewController: UIViewController {
     @IBOutlet weak var bodyTextView: UITextView!
     @IBOutlet weak var priceTextField: UITextField!
     
+    //var orderData: OrderData!
+    
     // 出品する
     @IBAction func handleSubmitButton(sender: AnyObject) {
 
