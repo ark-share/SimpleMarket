@@ -51,14 +51,18 @@ class OrderIndexViewController: UIViewController, UICollectionViewDelegate, UICo
         let data = orderArray[indexPath.row]
         
         let imageView = cell.viewWithTag(1) as! UIImageView
-//        imageView.image = data.image!
-        
+        if data.image != nil {
+            imageView.image = data.image!
+        }
         let priceLabel = cell.viewWithTag(2) as! UILabel
-//        priceLabel.text = "\(data.price!) 円"
-        
+        if data.price != nil {
+            priceLabel.text = "\(data.price!) 円"
+        }
         let nameLabel = cell.viewWithTag(3) as! UILabel
-        nameLabel.text = data.name!
-        
+        if data.name != nil {
+            nameLabel.text = data.name!
+        }
+            
         cell.layoutIfNeeded()
         return cell
     }
@@ -74,7 +78,7 @@ class OrderIndexViewController: UIViewController, UICollectionViewDelegate, UICo
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         let cellSize:CGFloat = self.view.frame.size.width / 2 - 10
         
-        // たてよこ同じ
+        // 縦横同じ
         return CGSizeMake(cellSize, cellSize)
     }
     
