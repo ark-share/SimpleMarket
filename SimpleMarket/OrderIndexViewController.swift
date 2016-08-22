@@ -13,6 +13,8 @@ import SVProgressHUD
 
 
 class OrderIndexViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    private var orderAddButton: UIButton! // 固定ボタン
 
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -23,6 +25,8 @@ class OrderIndexViewController: UIViewController, UICollectionViewDelegate, UICo
         
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        makeAddButton()
         
         // ordersに要素が追加されたらクロージャ呼び出す
         FIRDatabase.database().reference().child(CommonConst.OrderPATH).observeEventType(.ChildAdded, withBlock: { snapshot in
@@ -82,5 +86,34 @@ class OrderIndexViewController: UIViewController, UICollectionViewDelegate, UICo
         return CGSizeMake(cellSize, cellSize)
     }
     
+    // スクロール位置の検出
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+
+        //let y = scrollView.contentOffset.y
+        makeAddButton()
+    }
+    
+    // 固定の新規ボタン
+    private func makeAddButton() {
+        orderAddButton = UIButton()
+        orderAddButton.frame = CGRectMake(0, 0, 80, 80)
+        orderAddButton.backgroundColor = UIColor.redColor()
+        orderAddButton.layer.masksToBounds = true
+        orderAddButton.layer.cornerRadius = 40.0
+        orderAddButton.layer.position = CGPoint(x: self.view.frame.width - 100, y: self.view.frame.height - 100) // y座標は不要。固定でいいみたい
+        orderAddButton.tag = 1
+        orderAddButton.addTarget(self, action:#selector(handleOrderAddButton(_:event:)), forControlEvents: .TouchUpInside)
+
+        let image = UIImage(named: "camera")
+        orderAddButton.setImage(image, forState: .Normal)
+        
+        self.view.addSubview(orderAddButton)
+        
+    }
+    func handleOrderAddButton(sender: UIButton, event:UIEvent) {
+        // 移動
+        let view = self.storyboard!.instantiateViewControllerWithIdentifier("OrderAdd") as UIViewController
+        presentViewController(view, animated: true, completion: nil)
+    }
     
 }

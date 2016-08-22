@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     }
     @IBAction func handleOrderIndexButton(sender: AnyObject) {
         // 移動
-        let view = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("OrderIndex") as UIViewController
+        let view = UIStoryboard(name: "Order", bundle: nil).instantiateInitialViewController()! as UIViewController // navが消えないように先にnavを呼ぶ
         presentViewController(view, animated: true, completion: nil)
     }
     

@@ -30,7 +30,7 @@ class OrderData: NSObject {
         
         imageString = data["image"] as? String // as? は nilがありうる
         if imageString != nil {
-        image = UIImage(data: NSData(base64EncodedString: imageString!, options: NSDataBase64DecodingOptions.IgnoreUnknownCharacters)!)
+            image = UIImage(data: NSData(base64EncodedString: imageString!, options: NSDataBase64DecodingOptions.IgnoreUnknownCharacters)!)
         }
         name = data["name"] as? String
         body = data["body"] as? String
