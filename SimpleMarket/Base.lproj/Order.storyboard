@@ -83,9 +83,7 @@
                             <constraint firstItem="WOe-qv-al1" firstAttribute="top" secondItem="Awm-hl-cYm" secondAttribute="bottom" id="aJL-98-LJD"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="商品一覧" id="B7I-7Z-wvm">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="yPX-wn-TUp"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="商品一覧" id="B7I-7Z-wvm"/>
                     <connections>
                         <outlet property="collectionView" destination="WOe-qv-al1" id="DWf-qX-uV7"/>
                     </connections>

@@ -15,7 +15,7 @@ import SVProgressHUD
 class OrderIndexViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     private var orderAddButton: UIButton! // 固定ボタン
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     var orderArray: [OrderData] = [] // Cellでは1件のデータ。ここでは一覧用に複数保持
@@ -86,21 +86,28 @@ class OrderIndexViewController: UIViewController, UICollectionViewDelegate, UICo
         return CGSizeMake(cellSize, cellSize)
     }
     
-    // スクロール位置の検出
+    // スクロールの検出
     func scrollViewDidScroll(scrollView: UIScrollView) {
 
         //let y = scrollView.contentOffset.y
-        makeAddButton()
+        if orderAddButton.hidden != true {
+            orderAddButton.hidden = true // 一旦隠す
+            
+            // 2秒後に表示する
+            //makeAddButton()
+            NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: #selector(self.makeAddButton), userInfo: nil, repeats: false)
+        }
     }
     
     // 固定の新規ボタン
-    private func makeAddButton() {
+    func makeAddButton() {
         orderAddButton = UIButton()
         orderAddButton.frame = CGRectMake(0, 0, 80, 80)
+        orderAddButton.tintColor = UIColor.whiteColor() // 画像の色がもともと灰色だから白くはならない
         orderAddButton.backgroundColor = UIColor.redColor()
         orderAddButton.layer.masksToBounds = true
         orderAddButton.layer.cornerRadius = 40.0
-        orderAddButton.layer.position = CGPoint(x: self.view.frame.width - 100, y: self.view.frame.height - 100) // y座標は不要。固定でいいみたい
+        orderAddButton.layer.position = CGPoint(x: self.view.frame.width - 100, y: self.view.frame.height - 100)
         orderAddButton.tag = 1
         orderAddButton.addTarget(self, action:#selector(handleOrderAddButton(_:event:)), forControlEvents: .TouchUpInside)
 
@@ -108,7 +115,6 @@ class OrderIndexViewController: UIViewController, UICollectionViewDelegate, UICo
         orderAddButton.setImage(image, forState: .Normal)
         
         self.view.addSubview(orderAddButton)
-        
     }
     func handleOrderAddButton(sender: UIButton, event:UIEvent) {
         // 移動
