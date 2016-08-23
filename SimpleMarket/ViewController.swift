@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SlideMenuControllerSwift
 
 class ViewController: UIViewController {
 
@@ -18,13 +19,28 @@ class ViewController: UIViewController {
     }
     @IBAction func handleOrderIndexButton(sender: AnyObject) {
         // 移動
-        let view = UIStoryboard(name: "Order", bundle: nil).instantiateInitialViewController()! as UIViewController // navが消えないように先にnavを呼ぶ
+        //let view = UIStoryboard(name: "Order", bundle: nil).instantiateInitialViewController()! as UIViewController // navが消えないように先にnavを呼ぶ
+        let view = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("OrderIndex") as UIViewController // 飛び先でnavを用意しなおせた
         presentViewController(view, animated: true, completion: nil)
+        
+        // nav, slideを維持して移動
+//        let slide = SlideMenuController(mainViewController: view, leftMenuViewController: self.slideMenuController()!.leftViewController!)
+//        UIApplication.sharedApplication().keyWindow?.rootViewController = slide
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        // slide用のbar準備
+        let image = UIImage(named: "bars")
+        self.addLeftBarButtonWithImage(image!)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

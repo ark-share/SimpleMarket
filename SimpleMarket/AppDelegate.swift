@@ -21,16 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FIRApp.configure()
         
-        let storyboard = UIStoryboard(name: "Order", bundle: nil)
-        let mainViewController = storyboard.instantiateViewControllerWithIdentifier("OrderIndex") as! OrderIndexViewController
-        let leftMenuViewController = storyboard.instantiateViewControllerWithIdentifier("LeftMenu") as! LeftMenuViewController
         
-        let nav = UINavigationController(rootViewController: mainViewController)
-        
-        // Slide
-        let slide = SlideMenuController(mainViewController: nav, leftMenuViewController: leftMenuViewController)
-        self.window?.rootViewController = slide
-        self.window?.makeKeyAndVisible()
+        SlideMenuOptions.leftViewWidth = 320
+        SlideMenuOptions.contentViewScale = 1.0
         
         
         return true

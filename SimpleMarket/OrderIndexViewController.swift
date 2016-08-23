@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 import SVProgressHUD
-
+import SlideMenuControllerSwift
 
 class OrderIndexViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
@@ -28,6 +28,9 @@ class OrderIndexViewController: UIViewController, UICollectionViewDelegate, UICo
         
         makeAddButton()
         
+        
+        
+        
         // ordersに要素が追加されたらクロージャ呼び出す
         FIRDatabase.database().reference().child(CommonConst.OrderPATH).observeEventType(.ChildAdded, withBlock: { snapshot in
             
@@ -41,6 +44,22 @@ class OrderIndexViewController: UIViewController, UICollectionViewDelegate, UICo
             
         })
 
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        
+        // slide用のbar準備
+        let image = UIImage(named: "bars")
+        self.addLeftBarButtonWithImage(image!)
+        
+        // navを用意
+        let nav = UINavigationController(rootViewController: self)
+        
+        // スライドを用意
+        let leftMenu = self.storyboard?.instantiateViewControllerWithIdentifier("LeftMenu") as! LeftMenuViewController
+        let slide = SlideMenuController(mainViewController: nav, leftMenuViewController: leftMenu)
+        
+        UIApplication.sharedApplication().keyWindow?.rootViewController = slide
     }
     
     override func didReceiveMemoryWarning() {
