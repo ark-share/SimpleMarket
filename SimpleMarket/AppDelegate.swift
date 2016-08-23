@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SlideMenuControllerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +20,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         FIRApp.configure()
+        
+        let storyboard = UIStoryboard(name: "Order", bundle: nil)
+        let mainViewController = storyboard.instantiateViewControllerWithIdentifier("OrderIndex") as! OrderIndexViewController
+        let leftMenuViewController = storyboard.instantiateViewControllerWithIdentifier("LeftMenu") as! LeftMenuViewController
+        
+        let nav = UINavigationController(rootViewController: mainViewController)
+        
+        // Slide
+        let slide = SlideMenuController(mainViewController: nav, leftMenuViewController: leftMenuViewController)
+        self.window?.rootViewController = slide
+        self.window?.makeKeyAndVisible()
         
         
         return true
