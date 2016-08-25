@@ -25,6 +25,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SlideMenuOptions.leftViewWidth = 320
         SlideMenuOptions.contentViewScale = 1.0
         
+        // 移動
+        let view = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("OrderIndexBuy") as UIViewController
+        self.window?.rootViewController = view
+        self.window?.makeKeyWindow()
         
         return true
     }

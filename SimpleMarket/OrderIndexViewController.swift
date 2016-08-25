@@ -18,7 +18,7 @@ class OrderIndexViewController: UIViewController, UICollectionViewDelegate, UICo
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var orderArray: [OrderData] = [] // Cellでは1件のデータ。ここでは一覧用に複数保持
+    var orderArray: [OrderData] = [] // 一覧用データ
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -137,8 +137,11 @@ class OrderIndexViewController: UIViewController, UICollectionViewDelegate, UICo
     }
     func handleOrderAddButton(sender: UIButton, event:UIEvent) {
         // 移動
-        let view = self.storyboard!.instantiateViewControllerWithIdentifier("OrderAdd") as UIViewController
-        presentViewController(view, animated: true, completion: nil)
+        let add = self.storyboard!.instantiateViewControllerWithIdentifier("OrderAdd") as UIViewController
+        //presentViewController(view, animated: true, completion: nil)
+        
+        self.addChildViewController(add)
+        self.view.addSubview(add.view)
     }
     
 }

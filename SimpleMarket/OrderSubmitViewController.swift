@@ -19,7 +19,7 @@ class OrderSubmitViewController: UIViewController {
     @IBAction func handleOrderIndexButton(sender: AnyObject) {
         // 移動
         //let view = self.storyboard!.instantiateInitialViewController()! as UIViewController // navが消えないように先にnavを呼ぶ
-        let view = self.storyboard!.instantiateViewControllerWithIdentifier("OrderIndex") as UIViewController // 移動先でnavを用意するようにしたので直接OrderIndexを呼び出して良い
+        let view = self.storyboard!.instantiateViewControllerWithIdentifier("OrderIndex") as UIViewController // 移動先でnavを用意するようにしたので直接OrderIndexを呼び出せる
         presentViewController(view, animated: true, completion: nil)
     }
     
