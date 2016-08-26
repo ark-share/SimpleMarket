@@ -7,47 +7,45 @@
 //
 
 import UIKit
-import PageMenu
 
-class OrderIndexBuyViewController: UIViewController {
+// 購入リスト
+class OrderIndexBuyViewController: UIViewController, UIScrollViewDelegate {
     
-    var pageMenu: CAPSPageMenu?
-
+    @IBOutlet weak var headerView: UIView!
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        makePageMenu()
-    }
+        scrollView.delegate = self
+        
+        scrollView.contentSize = CGSizeMake(self.view.frame.width * 3, self.scrollView.frame.height) // 3画面
+        scrollView.pagingEnabled = true
+        
+        makeTableViewByPage(0)
+        makeTableViewByPage(1)
+        makeTableViewByPage(2)
+   }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    func makeTableViewByPage(page: Int) {
+        
+        //let table = BuyTableViewController(nibName: "BuyTableViewController", bundle: nil) nibじゃなくてもいい
+        let table = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("BuyTable") as! BuyTableViewController
 
-    func makePageMenu() {
-        var controllers: [UIViewController] = []
+        let frame = CGRectMake(self.view.frame.width * CGFloat(page), 0, self.view.frame.width, self.scrollView.frame.height)
+        table.view.frame = frame // table配置
         
-        for i in 1...3 {
-            let cv = BuyTableViewController(nibName: "BuyTableViewController", bundle: nil)
-            cv.title = "menu" + String(i)
-            controllers.append(cv)
-        }
-        
-        let params: [CAPSPageMenuOption] = [
-            .ScrollMenuBackgroundColor(UIColor.blackColor()),
-            .MenuHeight(80.0),
-            .MenuItemWidth(90.0),
-            .CenterMenuItems(true)
-        ]
-        
-        pageMenu = CAPSPageMenu(viewControllers: controllers, frame: CGRectMake(0.0, 0.0, self.view.frame.width, self.view.frame.height), pageMenuOptions: params)
-        
-        self.addChildViewController(pageMenu!)
-        self.view.addSubview(pageMenu!.view)
-        pageMenu!.didMoveToParentViewController(self)
-        
+        self.addChildViewController(table)
+
+        //self.scrollView.addSubview(table) ×これだとControllerを渡してしまう。UIViewを渡す
+        self.scrollView.addSubview(table.tableView)
+        table.didMoveToParentViewController(self) // 追加の完了を伝える
     }
 
+    
 }

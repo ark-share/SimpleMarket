@@ -12,6 +12,7 @@ import FirebaseDatabase
 import SVProgressHUD
 import SlideMenuControllerSwift
 
+// 商品一覧
 class OrderIndexViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     private var orderAddButton: UIButton! // 固定ボタン
@@ -27,9 +28,6 @@ class OrderIndexViewController: UIViewController, UICollectionViewDelegate, UICo
         collectionView.dataSource = self
         
         makeAddButton()
-        
-        
-        
         
         // ordersに要素が追加されたらクロージャ呼び出す
         FIRDatabase.database().reference().child(CommonConst.OrderPATH).observeEventType(.ChildAdded, withBlock: { snapshot in

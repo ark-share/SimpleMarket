@@ -34,7 +34,6 @@ PODS:
   - GoogleSymbolUtilities (1.1.1)
   - GoogleUtilities (1.3.1):
     - GoogleSymbolUtilities (~> 1.0)
-  - PageMenu (1.2.9)
   - SlideMenuControllerSwift (2.2.2)
   - SVProgressHUD (2.0.3)
 
@@ -42,7 +41,6 @@ DEPENDENCIES:
   - Firebase
   - Firebase/Auth
   - Firebase/Database
-  - PageMenu
   - SlideMenuControllerSwift
   - SVProgressHUD
 
@@ -57,10 +55,9 @@ SPEC CHECKSUMS:
   GoogleParsingUtilities: 30b3896f9ee167dc78747f013d3de157ced1cadf
   GoogleSymbolUtilities: 33117db1b5f290c6fbf259585e4885b4c84b98d7
   GoogleUtilities: 56c5ac05b7aa5dc417a1bb85221a9516e04d7032
-  PageMenu: ba19ff267f7a19e444e93c20a7847b78954a7011
   SlideMenuControllerSwift: e257221100c39d49edccaaeb0238b55a0c67953a
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
 
-PODFILE CHECKSUM: 3f1877ed3f748dbb7bb30a047b168c376978d107
+PODFILE CHECKSUM: 369bc0e18a36e34321323bf633058974f94a280e
 
 COCOAPODS: 1.0.1

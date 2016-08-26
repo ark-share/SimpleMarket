@@ -8,6 +8,7 @@
 
 import UIKit
 
+// 出品完了
 class OrderSubmitViewController: UIViewController {
 
     @IBAction func handleOrderAddButton(sender: AnyObject) {

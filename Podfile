@@ -11,6 +11,6 @@ target 'SimpleMarket' do
   pod 'Firebase/Database'
   pod 'SVProgressHUD'
   pod 'SlideMenuControllerSwift'
-  pod 'PageMenu'
+  #pod 'PageMenu'
 
 end
