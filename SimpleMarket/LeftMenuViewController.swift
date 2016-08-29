@@ -8,6 +8,7 @@
 
 import UIKit
 
+// スライドメニュー
 class LeftMenuViewController: UIViewController {
 
     override func viewDidLoad() {

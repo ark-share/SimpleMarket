@@ -24,11 +24,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         SlideMenuOptions.leftViewWidth = 320
         SlideMenuOptions.contentViewScale = 1.0
+        SlideMenuOptions.panFromBezel = false // 左からのスライドを停止。スクロールメニューのスライドだけ有効にするため
         
         // 移動
-        let view = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("OrderIndexBuy") as UIViewController
-        self.window?.rootViewController = view
-        self.window?.makeKeyWindow()
+//        let view = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("OrderIndex") as UIViewController
+//        self.window?.rootViewController = view
+//        self.window?.makeKeyWindow()
         
         return true
     }

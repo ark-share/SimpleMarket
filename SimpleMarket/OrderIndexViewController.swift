@@ -7,41 +7,30 @@
 //
 
 import UIKit
-import Firebase
-import FirebaseDatabase
 import SVProgressHUD
 import SlideMenuControllerSwift
 
 // 商品一覧
-class OrderIndexViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
+    
+    @IBOutlet weak var headerView: UIView!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     private var orderAddButton: UIButton! // 固定ボタン
-    
-    @IBOutlet weak var collectionView: UICollectionView!
-    
-    var orderArray: [OrderData] = [] // 一覧用データ
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionView.delegate = self
-        collectionView.dataSource = self
+        scrollView.delegate = self
+        
+        scrollView.contentSize = CGSizeMake(self.view.frame.width * 3, self.scrollView.frame.height) // 3画面
+        scrollView.pagingEnabled = true
+        
+        makeCollectionViewByPage(0)
+        makeCollectionViewByPage(1)
+        makeCollectionViewByPage(2)
         
         makeAddButton()
-        
-        // ordersに要素が追加されたらクロージャ呼び出す
-        FIRDatabase.database().reference().child(CommonConst.OrderPATH).observeEventType(.ChildAdded, withBlock: { snapshot in
-            
-            // データを設定する
-            //if let uid = FIRAuth.auth()?.currentUser?.uid {
-                let data = OrderData(snapshot: snapshot) //, myId: uid
-                self.orderArray.insert(data, atIndex: 0)
-                
-                self.collectionView.reloadData() // 再表示
-            //}
-            
-        })
-
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -65,42 +54,19 @@ class OrderIndexViewController: UIViewController, UICollectionViewDelegate, UICo
         // Dispose of any resources that can be recreated.
     }
     
-    // Collection
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        // 再利用できるセルを作る
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("OrderCell", forIndexPath: indexPath)
-        let data = orderArray[indexPath.row]
+    func makeCollectionViewByPage(page: Int) {
         
-        let imageView = cell.viewWithTag(1) as! UIImageView
-        if data.image != nil {
-            imageView.image = data.image!
-        }
-        let priceLabel = cell.viewWithTag(2) as! UILabel
-        if data.price != nil {
-            priceLabel.text = "\(data.price!) 円"
-        }
-        let nameLabel = cell.viewWithTag(3) as! UILabel
-        if data.name != nil {
-            nameLabel.text = data.name!
-        }
-            
-        cell.layoutIfNeeded()
-        return cell
-    }
-    // section数？
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return 1
-    }
-    // sectionに応じたセルの数を返す
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return orderArray.count
-    }
-    // screenサイズに合わせて整える
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        let cellSize:CGFloat = self.view.frame.size.width / 2 - 10
+        //let collection = OrderIndexCollectionViewController(nibName: "xxx", bundle: nil) nibじゃなくてもいい
+        let collection = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("OrderCollection") as! OrderIndexCollectionViewController
         
-        // 縦横同じ
-        return CGSizeMake(cellSize, cellSize)
+        let frame = CGRectMake(self.view.frame.width * CGFloat(page), 0, self.view.frame.width, self.scrollView.frame.height)
+        collection.view.frame = frame // table配置
+        
+        self.addChildViewController(collection)
+        
+        //self.scrollView.addSubview(collection) ×これだとControllerを渡してしまう。UIViewを渡す
+        self.scrollView.addSubview(collection.collectionView!)
+        collection.didMoveToParentViewController(self) // 追加の完了を伝える
     }
     
     // スクロールの検出

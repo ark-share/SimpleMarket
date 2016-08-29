@@ -9,6 +9,7 @@
 import UIKit
 import SlideMenuControllerSwift
 
+// 初期画面
 class ViewController: UIViewController {
 
     // 新規出品ボタン
@@ -27,6 +28,12 @@ class ViewController: UIViewController {
 //        let slide = SlideMenuController(mainViewController: view, leftMenuViewController: self.slideMenuController()!.leftViewController!)
 //        UIApplication.sharedApplication().keyWindow?.rootViewController = slide
         
+    }
+    
+    @IBAction func handleOrderIndexBuy(sender: AnyObject) {
+        // 移動
+        let view = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("OrderIndexBuy") as UIViewController
+        presentViewController(view, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {

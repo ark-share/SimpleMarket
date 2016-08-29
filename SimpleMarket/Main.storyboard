@@ -32,11 +32,20 @@
                                     <action selector="handleOrderIndexButton:" destination="9Vf-8u-fp4" eventType="touchUpInside" id="vee-7R-RnQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQt-j1-YbD">
+                                <rect key="frame" x="20" y="140" width="90" height="30"/>
+                                <state key="normal" title="購入リストへ"/>
+                                <connections>
+                                    <action selector="handleOrderIndexBuy:" destination="9Vf-8u-fp4" eventType="touchUpInside" id="640-Ew-2dL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="viq-9Z-40W" firstAttribute="leading" secondItem="WoA-IZ-CUW" secondAttribute="leadingMargin" id="L3w-yZ-pkL"/>
                             <constraint firstItem="chN-7m-UfT" firstAttribute="top" secondItem="viq-9Z-40W" secondAttribute="bottom" constant="20" id="NsB-6u-yMM"/>
+                            <constraint firstItem="pQt-j1-YbD" firstAttribute="leading" secondItem="WoA-IZ-CUW" secondAttribute="leadingMargin" id="SPd-if-Asd"/>
+                            <constraint firstItem="pQt-j1-YbD" firstAttribute="top" secondItem="chN-7m-UfT" secondAttribute="bottom" constant="20" id="bZC-se-tSo"/>
                             <constraint firstItem="viq-9Z-40W" firstAttribute="top" secondItem="SJl-RK-zBO" secondAttribute="bottom" constant="20" id="z0I-RJ-ocf"/>
                             <constraint firstItem="chN-7m-UfT" firstAttribute="leading" secondItem="WoA-IZ-CUW" secondAttribute="leadingMargin" id="zE2-LJ-RRn"/>
                         </constraints>

@@ -18,6 +18,7 @@
 		A3A404EC1D6E93DE0061DDB2 /* BuyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A404EA1D6E93DE0061DDB2 /* BuyTableViewCell.swift */; };
 		A3A404ED1D6E93DE0061DDB2 /* BuyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3A404EB1D6E93DE0061DDB2 /* BuyTableViewCell.xib */; };
 		A3A404F61D7008110061DDB2 /* BuyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A404F41D7008110061DDB2 /* BuyTableViewController.swift */; };
+		A3A404F91D703FA10061DDB2 /* OrderIndexCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A404F81D703FA10061DDB2 /* OrderIndexCollectionViewController.swift */; };
 		A3CA8BC21D6BE19200397DBC /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CA8BC11D6BE19200397DBC /* LeftMenuViewController.swift */; };
 		A3FB36271D62D26700EFB7C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB36261D62D26700EFB7C4 /* AppDelegate.swift */; };
 		A3FB36291D62D26700EFB7C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB36281D62D26700EFB7C4 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 		A3A404EA1D6E93DE0061DDB2 /* BuyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyTableViewCell.swift; sourceTree = "<group>"; };
 		A3A404EB1D6E93DE0061DDB2 /* BuyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyTableViewCell.xib; sourceTree = "<group>"; };
 		A3A404F41D7008110061DDB2 /* BuyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyTableViewController.swift; sourceTree = "<group>"; };
+		A3A404F81D703FA10061DDB2 /* OrderIndexCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderIndexCollectionViewController.swift; sourceTree = "<group>"; };
 		A3CA8BC11D6BE19200397DBC /* LeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
 		A3FB36231D62D26700EFB7C4 /* SimpleMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FB36261D62D26700EFB7C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -141,8 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				A3FB36261D62D26700EFB7C4 /* AppDelegate.swift */,
-				A3CA8BC11D6BE19200397DBC /* LeftMenuViewController.swift */,
 				A3FB36421D62DF9B00EFB7C4 /* AppController.swift */,
+				A3CA8BC11D6BE19200397DBC /* LeftMenuViewController.swift */,
 				A3FB36281D62D26700EFB7C4 /* ViewController.swift */,
 				A3FB363E1D62DEDD00EFB7C4 /* OrderIndexViewController.swift */,
 				A32B5F7E1D62EFD300608BBF /* OrderAddViewController.swift */,
@@ -150,6 +152,7 @@
 				A3A404E41D6D8F6F0061DDB2 /* OrderIndexBuyViewController.swift */,
 				A3A404F41D7008110061DDB2 /* BuyTableViewController.swift */,
 				A3A404EA1D6E93DE0061DDB2 /* BuyTableViewCell.swift */,
+				A3A404F81D703FA10061DDB2 /* OrderIndexCollectionViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3A404F91D703FA10061DDB2 /* OrderIndexCollectionViewController.swift in Sources */,
 				A3436E601D658B9400EE1F77 /* OrderData.swift in Sources */,
 				A3A404EC1D6E93DE0061DDB2 /* BuyTableViewCell.swift in Sources */,
 				A3436E631D65AE9700EE1F77 /* OrderSubmitViewController.swift in Sources */,

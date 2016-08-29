@@ -10,6 +10,8 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 
+private let reuseIdentifier = "BuyCell"
+
 // 購入リスト（取引中、過去の取引）
 class BuyTableViewController: UITableViewController {
     
@@ -20,7 +22,7 @@ class BuyTableViewController: UITableViewController {
         
         // cell
         let nib = UINib(nibName: "BuyTableViewCell", bundle: nil) // Xibファイルの名前
-        tableView.registerNib(nib, forCellReuseIdentifier: "BuyCell")
+        tableView.registerNib(nib, forCellReuseIdentifier: reuseIdentifier)
         tableView.rowHeight = UITableViewAutomaticDimension // 高さ自動
         
         // ordersに要素が追加されたらクロージャ呼び出す
@@ -56,7 +58,7 @@ class BuyTableViewController: UITableViewController {
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("BuyCell", forIndexPath: indexPath) as! BuyTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath) as! BuyTableViewCell
         cell.orderData = orderArray[indexPath.row]
       
         return cell
