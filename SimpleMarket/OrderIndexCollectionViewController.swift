@@ -19,13 +19,10 @@ class OrderIndexCollectionViewController: UICollectionViewController, UICollecti
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        
+        // Register cell classes これがあるとデータ表示されなかった
+        //self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
-        // Register cell classes
-        self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
         
         collectionView!.delegate = self
         collectionView!.dataSource = self
@@ -81,19 +78,19 @@ class OrderIndexCollectionViewController: UICollectionViewController, UICollecti
         let data = orderArray[indexPath.row]
         
         print("\(indexPath.row) \(data.name!)")
-        
-//        let imageView = cell.viewWithTag(1) as! UIImageView
-//        if data.image != nil {
-//            imageView.image = data.image!
-//        }
-//        let priceLabel = cell.viewWithTag(2) as! UILabel
-//        if data.price != nil {
-//            priceLabel.text = "\(data.price!) 円"
-//        }
-//        let nameLabel = cell.viewWithTag(3) as! UILabel
-//        if data.name != nil {
-//            nameLabel.text = data.name!
-//        }
+
+        let imageView = cell.viewWithTag(1) as! UIImageView
+        if data.image != nil {
+            imageView.image = data.image!
+        }
+        let priceLabel = cell.viewWithTag(2) as! UILabel
+        if data.price != nil {
+            priceLabel.text = "\(data.price!) 円"
+        }
+        let nameLabel = cell.viewWithTag(3) as! UILabel
+        if data.name != nil {
+            nameLabel.text = data.name!
+        }
         
         cell.layoutIfNeeded()
     

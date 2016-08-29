@@ -147,12 +147,12 @@
 				A3CA8BC11D6BE19200397DBC /* LeftMenuViewController.swift */,
 				A3FB36281D62D26700EFB7C4 /* ViewController.swift */,
 				A3FB363E1D62DEDD00EFB7C4 /* OrderIndexViewController.swift */,
+				A3A404F81D703FA10061DDB2 /* OrderIndexCollectionViewController.swift */,
 				A32B5F7E1D62EFD300608BBF /* OrderAddViewController.swift */,
 				A3436E621D65AE9700EE1F77 /* OrderSubmitViewController.swift */,
 				A3A404E41D6D8F6F0061DDB2 /* OrderIndexBuyViewController.swift */,
 				A3A404F41D7008110061DDB2 /* BuyTableViewController.swift */,
 				A3A404EA1D6E93DE0061DDB2 /* BuyTableViewCell.swift */,
-				A3A404F81D703FA10061DDB2 /* OrderIndexCollectionViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
