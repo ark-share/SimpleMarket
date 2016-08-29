@@ -66,6 +66,8 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
         let frame = CGRectMake(self.view.frame.width * CGFloat(page), 0, self.scrollView.frame.width, self.scrollView.frame.height)
         collection.view.frame = frame // table配置
         
+        print(self.scrollView.frame.width)
+        
         self.addChildViewController(collection)
         
         //self.scrollView.addSubview(collection) ×これだとControllerを渡してしまう。UIViewを渡す
