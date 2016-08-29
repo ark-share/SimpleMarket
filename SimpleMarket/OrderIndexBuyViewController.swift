@@ -37,13 +37,13 @@ class OrderIndexBuyViewController: UIViewController, UIScrollViewDelegate {
         //let table = BuyTableViewController(nibName: "BuyTableViewController", bundle: nil) nibじゃなくてもいい
         let table = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("BuyTable") as! BuyTableViewController
 
-        let frame = CGRectMake(self.view.frame.width * CGFloat(page), 0, self.view.frame.width, self.scrollView.frame.height)
+        let frame = CGRectMake(self.view.frame.width * CGFloat(page), 0, self.scrollView.frame.width, self.scrollView.frame.height)
         table.view.frame = frame // table配置
         
         self.addChildViewController(table)
 
         //self.scrollView.addSubview(table) ×これだとControllerを渡してしまう。UIViewを渡す
-        self.scrollView.addSubview(table.tableView)
+        self.scrollView.addSubview(table.view)
         table.didMoveToParentViewController(self) // 追加の完了を伝える
     }
 
