@@ -15,12 +15,7 @@ class ViewController: UIViewController {
     // ログインしてたらユーザー名を表示
     @IBOutlet weak var displayNameLabel: UITextField!
 
-    // 新規出品ボタン
-    @IBAction func handleOrderAddButton(sender: AnyObject) {
-        // modal
-        let view = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("OrderAdd") as UIViewController
-        presentViewController(view, animated: true, completion: nil)
-    }
+    
     @IBAction func handleOrderIndexButton(sender: AnyObject) {
         // modal
         //let view = UIStoryboard(name: "Order", bundle: nil).instantiateInitialViewController()! as UIViewController // navが消えないように先にnavを呼ぶ
@@ -63,8 +58,8 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         // slide用のbar準備
-        let image = UIImage(named: "bars")
-        self.addLeftBarButtonWithImage(image!)
+        let image = UIImage.fontAwesomeIconWithName(.Bars, textColor: UIColor.blackColor(), size: CGSizeMake(30, 30))
+        self.addLeftBarButtonWithImage(image)
         
         let displayName = AppController().getDisplayName()
         displayNameLabel.text = displayName

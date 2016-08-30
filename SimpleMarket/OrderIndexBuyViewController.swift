@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SlideMenuControllerSwift
 
 // 購入リスト
 class OrderIndexBuyViewController: UIViewController, UIScrollViewDelegate {
@@ -25,12 +26,29 @@ class OrderIndexBuyViewController: UIViewController, UIScrollViewDelegate {
         makeTableViewByPage(0)
         makeTableViewByPage(1)
         makeTableViewByPage(2)
-   }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        
+        // slide用のbar準備
+        let image = UIImage.fontAwesomeIconWithName(.Bars, textColor: UIColor.blackColor(), size: CGSizeMake(30, 30))
+        self.addLeftBarButtonWithImage(image)
+        
+        // navを用意
+        let nav = UINavigationController(rootViewController: self)
+        
+        // スライドを用意
+        let leftMenu = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("LeftMenu") as! LeftMenuViewController
+        let slide = SlideMenuController(mainViewController: nav, leftMenuViewController: leftMenu)
+        
+        UIApplication.sharedApplication().keyWindow?.rootViewController = slide
+    }
+    
     
     func makeTableViewByPage(page: Int) {
         

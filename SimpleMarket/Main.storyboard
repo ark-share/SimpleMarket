@@ -18,40 +18,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="viq-9Z-40W">
-                                <rect key="frame" x="20" y="40" width="60" height="30"/>
-                                <state key="normal" title="新規出品"/>
-                                <connections>
-                                    <action selector="handleOrderAddButton:" destination="9Vf-8u-fp4" eventType="touchUpInside" id="iDp-fx-SUj"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chN-7m-UfT">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chN-7m-UfT">
                                 <rect key="frame" x="20" y="90" width="75" height="30"/>
                                 <state key="normal" title="出品一覧へ"/>
                                 <connections>
                                     <action selector="handleOrderIndexButton:" destination="9Vf-8u-fp4" eventType="touchUpInside" id="vee-7R-RnQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQt-j1-YbD">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQt-j1-YbD">
                                 <rect key="frame" x="20" y="140" width="90" height="30"/>
                                 <state key="normal" title="購入リストへ"/>
                                 <connections>
                                     <action selector="handleOrderIndexBuy:" destination="9Vf-8u-fp4" eventType="touchUpInside" id="640-Ew-2dL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTK-3x-ZFP">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTK-3x-ZFP">
                                 <rect key="frame" x="20" y="190" width="60" height="30"/>
                                 <state key="normal" title="ログイン"/>
                                 <connections>
                                     <action selector="handleLoginButton:" destination="9Vf-8u-fp4" eventType="touchUpInside" id="VYC-hf-NQE"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ログインしていません" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AXy-H6-gXw">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ログインしていません" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AXy-H6-gXw">
                                 <rect key="frame" x="100" y="190" width="161" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKA-mz-NzY">
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKA-mz-NzY">
                                 <rect key="frame" x="261" y="190" width="119" height="30"/>
                                 <state key="normal" title="ログアウト"/>
                                 <connections>
@@ -64,15 +57,12 @@
                             <constraint firstItem="AXy-H6-gXw" firstAttribute="bottom" secondItem="mTK-3x-ZFP" secondAttribute="bottom" id="3bQ-fM-KfW"/>
                             <constraint firstItem="AXy-H6-gXw" firstAttribute="leading" secondItem="mTK-3x-ZFP" secondAttribute="trailing" constant="20" id="DLo-aR-Nh3"/>
                             <constraint firstItem="mTK-3x-ZFP" firstAttribute="leading" secondItem="WoA-IZ-CUW" secondAttribute="leadingMargin" id="EwH-jE-mnu"/>
-                            <constraint firstItem="viq-9Z-40W" firstAttribute="leading" secondItem="WoA-IZ-CUW" secondAttribute="leadingMargin" id="L3w-yZ-pkL"/>
-                            <constraint firstItem="chN-7m-UfT" firstAttribute="top" secondItem="viq-9Z-40W" secondAttribute="bottom" constant="20" id="NsB-6u-yMM"/>
                             <constraint firstItem="pQt-j1-YbD" firstAttribute="leading" secondItem="WoA-IZ-CUW" secondAttribute="leadingMargin" id="SPd-if-Asd"/>
                             <constraint firstItem="pQt-j1-YbD" firstAttribute="top" secondItem="chN-7m-UfT" secondAttribute="bottom" constant="20" id="bZC-se-tSo"/>
                             <constraint firstItem="DKA-mz-NzY" firstAttribute="bottom" secondItem="AXy-H6-gXw" secondAttribute="bottom" id="cO4-iw-wD6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="DKA-mz-NzY" secondAttribute="trailing" id="eMK-zI-3LS"/>
                             <constraint firstItem="mTK-3x-ZFP" firstAttribute="top" secondItem="pQt-j1-YbD" secondAttribute="bottom" constant="20" id="gf5-7e-88M"/>
                             <constraint firstItem="DKA-mz-NzY" firstAttribute="leading" secondItem="AXy-H6-gXw" secondAttribute="trailing" id="tTd-6a-efZ"/>
-                            <constraint firstItem="viq-9Z-40W" firstAttribute="top" secondItem="SJl-RK-zBO" secondAttribute="bottom" constant="20" id="z0I-RJ-ocf"/>
                             <constraint firstItem="chN-7m-UfT" firstAttribute="leading" secondItem="WoA-IZ-CUW" secondAttribute="leadingMargin" id="zE2-LJ-RRn"/>
                         </constraints>
                     </view>
@@ -85,6 +75,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LDB-P2-vw8" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="284" y="22"/>
+        </scene>
+        <!--Left Menu View Controller-->
+        <scene sceneID="5M3-t3-Do1">
+            <objects>
+                <viewController storyboardIdentifier="LeftMenu" id="WPY-b6-c55" customClass="LeftMenuViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7st-ex-swW"/>
+                        <viewControllerLayoutGuide type="bottom" id="b3X-8q-HDV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D8u-VO-LzU">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRU-8p-tAe">
+                                <rect key="frame" x="20" y="80" width="71" height="30"/>
+                                <state key="normal" title="Topへ戻る"/>
+                                <connections>
+                                    <action selector="handleToTOp:" destination="WPY-b6-c55" eventType="touchUpInside" id="1qJ-JA-3gX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gRU-8p-tAe" firstAttribute="leading" secondItem="D8u-VO-LzU" secondAttribute="leadingMargin" id="RE3-ZC-XW5"/>
+                            <constraint firstItem="gRU-8p-tAe" firstAttribute="top" secondItem="7st-ex-swW" secondAttribute="bottom" constant="60" id="TgJ-E4-lAW"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="600"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vha-Ap-14d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="234" y="686"/>
         </scene>
     </scenes>
 </document>

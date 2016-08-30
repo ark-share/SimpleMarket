@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="s4O-YV-MuD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -50,38 +50,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qzt-QJ-1r7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1355" y="-130"/>
-        </scene>
-        <!--Left Menu View Controller-->
-        <scene sceneID="AFi-G8-j7A">
-            <objects>
-                <viewController storyboardIdentifier="LeftMenu" id="sK3-rQ-NCu" customClass="LeftMenuViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="hoC-O0-qh5"/>
-                        <viewControllerLayoutGuide type="bottom" id="eX7-Sw-e0I"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="efr-p5-7gx">
-                        <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEt-8E-hZX">
-                                <rect key="frame" x="30" y="50" width="25" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="vEt-8E-hZX" firstAttribute="leading" secondItem="efr-p5-7gx" secondAttribute="leadingMargin" constant="10" id="QXy-Iq-GkX"/>
-                            <constraint firstItem="vEt-8E-hZX" firstAttribute="top" secondItem="hoC-O0-qh5" secondAttribute="bottom" constant="30" id="ql3-p9-0tF"/>
-                        </constraints>
-                    </view>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="400" height="600"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L9y-9B-S4Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="423" y="553"/>
         </scene>
         <!--Order Index Collection View Controller-->
         <scene sceneID="Jsq-XN-rZQ">
@@ -269,7 +237,7 @@
         <!--Order Index Buy View Controller-->
         <scene sceneID="7jP-w4-BVX">
             <objects>
-                <viewController storyboardIdentifier="OrderIndexBuy" id="NIB-LZ-LRH" customClass="OrderIndexBuyViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OrderIndexBuy" automaticallyAdjustsScrollViewInsets="NO" id="NIB-LZ-LRH" customClass="OrderIndexBuyViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vi3-mj-DRT"/>
                         <viewControllerLayoutGuide type="bottom" id="eE0-WX-6hY"/>
@@ -278,38 +246,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FG0-4M-YqH">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
-                                <color key="backgroundColor" red="0.93333333330000001" green="0.50588235290000005" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W6q-HR-lC3">
+                                <rect key="frame" x="0.0" y="144" width="600" height="456"/>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3sU-Nk-rdp">
+                                <rect key="frame" x="0.0" y="64" width="600" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="q7u-bf-kVS"/>
+                                    <constraint firstAttribute="height" constant="80" id="tdq-25-b8e"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W6q-HR-lC3">
-                                <rect key="frame" x="0.0" y="80" width="600" height="520"/>
-                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="FG0-4M-YqH" firstAttribute="leading" secondItem="8L5-bV-PWe" secondAttribute="leading" id="GHu-f5-1Oz"/>
-                            <constraint firstItem="FG0-4M-YqH" firstAttribute="top" secondItem="8L5-bV-PWe" secondAttribute="top" id="Qe1-s4-Ihi"/>
-                            <constraint firstAttribute="trailing" secondItem="FG0-4M-YqH" secondAttribute="trailing" id="aD7-vj-Km4"/>
-                            <constraint firstItem="W6q-HR-lC3" firstAttribute="top" secondItem="FG0-4M-YqH" secondAttribute="bottom" id="hGk-za-KJJ"/>
-                            <constraint firstItem="eE0-WX-6hY" firstAttribute="top" secondItem="W6q-HR-lC3" secondAttribute="bottom" id="olh-uq-Nxo"/>
-                            <constraint firstAttribute="trailing" secondItem="W6q-HR-lC3" secondAttribute="trailing" id="pfP-zZ-yPk"/>
-                            <constraint firstItem="W6q-HR-lC3" firstAttribute="leading" secondItem="8L5-bV-PWe" secondAttribute="leading" id="rG6-BU-Ihs"/>
+                            <constraint firstItem="3sU-Nk-rdp" firstAttribute="top" secondItem="vi3-mj-DRT" secondAttribute="bottom" id="38w-SY-KxK"/>
+                            <constraint firstItem="eE0-WX-6hY" firstAttribute="top" secondItem="W6q-HR-lC3" secondAttribute="bottom" id="8Sv-QW-80I"/>
+                            <constraint firstItem="3sU-Nk-rdp" firstAttribute="leading" secondItem="8L5-bV-PWe" secondAttribute="leading" id="EP7-Zs-hTr"/>
+                            <constraint firstItem="W6q-HR-lC3" firstAttribute="top" secondItem="3sU-Nk-rdp" secondAttribute="bottom" id="R92-mM-hbV"/>
+                            <constraint firstItem="W6q-HR-lC3" firstAttribute="leading" secondItem="8L5-bV-PWe" secondAttribute="leading" id="cQB-fV-DeZ"/>
+                            <constraint firstAttribute="trailing" secondItem="W6q-HR-lC3" secondAttribute="trailing" id="pzD-md-qYA"/>
+                            <constraint firstAttribute="trailing" secondItem="3sU-Nk-rdp" secondAttribute="trailing" id="vU2-ZL-tk0"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="cOi-dx-vfm"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="600"/>
                     <connections>
-                        <outlet property="headerView" destination="W6q-HR-lC3" id="3xx-Fw-bD7"/>
+                        <outlet property="headerView" destination="3sU-Nk-rdp" id="E8w-An-0Mm"/>
                         <outlet property="scrollView" destination="W6q-HR-lC3" id="Mag-sT-Udv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zTj-X9-yjQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1356" y="1195"/>
+            <point key="canvasLocation" x="2169" y="1223"/>
         </scene>
         <!--Buy Table View Controller-->
         <scene sceneID="sUy-tf-3la">
@@ -337,7 +306,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4iF-Fg-AcF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1398" y="1413"/>
+            <point key="canvasLocation" x="2210" y="1413"/>
         </scene>
         <!--Order Submit View Controller-->
         <scene sceneID="5zs-aI-p5d">
@@ -396,7 +365,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HiF-fP-4g5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1955" y="956"/>
+            <point key="canvasLocation" x="2767" y="956"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UFJ-jS-XyL">
@@ -415,6 +384,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fus-bJ-7uk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="523" y="-130"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="98G-nT-hNr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AhO-j3-jt2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4aK-nY-Iu3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NIB-LZ-LRH" kind="relationship" relationship="rootViewController" id="jC7-gb-urf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oZI-IM-9Tb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1356" y="1195"/>
         </scene>
     </scenes>
     <resources>

@@ -11,6 +11,13 @@ import UIKit
 // スライドメニュー
 class LeftMenuViewController: UIViewController {
 
+    @IBAction func handleToTOp(sender: AnyObject) { // TOpになってもた、Topの間違い
+        // 移動
+        let view = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()! as UIViewController
+        UIApplication.sharedApplication().keyWindow?.rootViewController = view
+        UIApplication.sharedApplication().keyWindow?.makeKeyWindow()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,14 +30,5 @@ class LeftMenuViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }

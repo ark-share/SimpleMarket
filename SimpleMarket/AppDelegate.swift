@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import SlideMenuControllerSwift
+import FontAwesome_swift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

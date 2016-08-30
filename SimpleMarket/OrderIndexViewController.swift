@@ -37,26 +37,27 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
         makeAddButton()
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
     override func viewWillAppear(animated: Bool) {
         
         // slide用のbar準備
-        let image = UIImage(named: "bars")
-        self.addLeftBarButtonWithImage(image!)
+        let image = UIImage.fontAwesomeIconWithName(.Bars, textColor: UIColor.blackColor(), size: CGSizeMake(30, 30))
+        self.addLeftBarButtonWithImage(image)
         
         // navを用意
         let nav = UINavigationController(rootViewController: self)
         
         // スライドを用意
-        let leftMenu = self.storyboard?.instantiateViewControllerWithIdentifier("LeftMenu") as! LeftMenuViewController
+        let leftMenu = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("LeftMenu") as! LeftMenuViewController
         let slide = SlideMenuController(mainViewController: nav, leftMenuViewController: leftMenu)
         
         UIApplication.sharedApplication().keyWindow?.rootViewController = slide
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     func makeCollectionViewByPage(page: Int) {
         
@@ -93,14 +94,15 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
         orderAddButton = UIButton()
         orderAddButton.frame = CGRectMake(0, 0, 80, 80)
         orderAddButton.tintColor = UIColor.whiteColor() // 画像の色がもともと灰色だから白くはならない
-        orderAddButton.backgroundColor = UIColor.redColor()
+        orderAddButton.backgroundColor = UIColor.orangeColor()
         orderAddButton.layer.masksToBounds = true
         orderAddButton.layer.cornerRadius = 40.0
-        orderAddButton.layer.position = CGPoint(x: self.view.frame.width - 100, y: self.view.frame.height - 100)
+        orderAddButton.layer.position = CGPoint(x: self.view.frame.width - 60, y: self.view.frame.height - 60)
         orderAddButton.tag = 1
         orderAddButton.addTarget(self, action:#selector(handleOrderAddButton(_:event:)), forControlEvents: .TouchUpInside)
 
-        let image = UIImage(named: "camera")
+        //let image = UIImage(named: "camera")
+        let image = UIImage.fontAwesomeIconWithName(.Camera, textColor: UIColor.whiteColor(), size: CGSizeMake(40, 40))
         orderAddButton.setImage(image, forState: .Normal)
         
         self.view.addSubview(orderAddButton)
