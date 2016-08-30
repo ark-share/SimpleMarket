@@ -106,7 +106,7 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
         self.view.addSubview(orderAddButton)
     }
     func handleOrderAddButton(sender: UIButton, event:UIEvent) {
-        // 移動
+        // 移動?
         let add = self.storyboard!.instantiateViewControllerWithIdentifier("OrderAdd") as UIViewController
         //presentViewController(view, animated: true, completion: nil)
         

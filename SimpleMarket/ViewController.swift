@@ -11,15 +11,18 @@ import SlideMenuControllerSwift
 
 // 初期画面
 class ViewController: UIViewController {
+    
+    // ログインしてたらユーザー名を表示
+    @IBOutlet weak var displayNameLabel: UITextField!
 
     // 新規出品ボタン
     @IBAction func handleOrderAddButton(sender: AnyObject) {
-        // 移動
+        // modal
         let view = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("OrderAdd") as UIViewController
         presentViewController(view, animated: true, completion: nil)
     }
     @IBAction func handleOrderIndexButton(sender: AnyObject) {
-        // 移動
+        // modal
         //let view = UIStoryboard(name: "Order", bundle: nil).instantiateInitialViewController()! as UIViewController // navが消えないように先にnavを呼ぶ
         let view = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("OrderIndex") as UIViewController // 飛び先でnavを用意しなおせた
         presentViewController(view, animated: true, completion: nil)
@@ -31,14 +34,30 @@ class ViewController: UIViewController {
     }
     
     @IBAction func handleOrderIndexBuy(sender: AnyObject) {
-        // 移動
+        // modal
         let view = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("OrderIndexBuy") as UIViewController
         presentViewController(view, animated: true, completion: nil)
     }
+    // ログイン
+    @IBAction func handleLoginButton(sender: AnyObject) {
+        // modal
+        let view = UIStoryboard(name: "User", bundle: nil).instantiateViewControllerWithIdentifier("UserLogin") as UIViewController
+        presentViewController(view, animated: true, completion: nil)
+    }
+    // ログアウト
+    @IBAction func handleLogoutButton(sender: AnyObject) {
+        UserLoginViewController().logout()
+        
+        AppController().setDisplayName("") // clear
+        
+        // reload
+        self.viewWillAppear(true)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
         
     }
     
@@ -47,7 +66,8 @@ class ViewController: UIViewController {
         let image = UIImage(named: "bars")
         self.addLeftBarButtonWithImage(image!)
         
-        
+        let displayName = AppController().getDisplayName()
+        displayNameLabel.text = displayName
     }
 
     override func didReceiveMemoryWarning() {

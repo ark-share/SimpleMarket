@@ -14,12 +14,12 @@ class ButtonCustom: UIButton {
     
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {
-            layer.cornerRadius = cornerRadius
+            layer.cornerRadius = 4 // cornerRadius
         }
     }
     @IBInspectable var borderWidth: CGFloat = 0 {
         didSet {
-            layer.borderWidth = borderWidth
+            layer.borderWidth = 2 // borderWidth
         }
     }
     @IBInspectable var borderColor: UIColor = UIColor.clearColor() {
