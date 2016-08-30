@@ -20,7 +20,8 @@ class OrderIndexBuyViewController: UIViewController, UIScrollViewDelegate {
 
         scrollView.delegate = self
         
-        scrollView.contentSize = CGSizeMake(self.view.frame.width * 3, self.scrollView.frame.height) // 3画面
+        scrollView.frame = CGRectMake(0, 0, self.view.frame.width, scrollView.frame.height) // スクロールの横幅を画面に合わせる 縦は変更しない 親ビューはwidth414なのに scrollのwidthが誤って600になってしまうため
+        scrollView.contentSize = CGSizeMake(self.view.frame.width * 3, scrollView.frame.height) // 3画面
         scrollView.pagingEnabled = true
         
         makeTableViewByPage(0)
@@ -55,8 +56,8 @@ class OrderIndexBuyViewController: UIViewController, UIScrollViewDelegate {
         //let table = BuyTableViewController(nibName: "BuyTableViewController", bundle: nil) nibじゃなくてもいい
         let table = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("BuyTable") as! BuyTableViewController
 
-        let frame = CGRectMake(self.view.frame.width * CGFloat(page), 0, self.view.frame.width, self.scrollView.frame.height)
-        table.view.frame = frame // table配置
+        // view配置
+        table.view.frame = CGRectMake(self.view.frame.width * CGFloat(page), 0, self.view.frame.width, scrollView.frame.height)
         
         self.addChildViewController(table)
 

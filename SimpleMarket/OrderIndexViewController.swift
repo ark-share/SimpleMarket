@@ -24,11 +24,9 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
         
         scrollView.delegate = self
         
-        scrollView.contentSize = CGSizeMake(self.view.frame.width * 3, self.scrollView.frame.height) // 3画面
+        scrollView.frame = CGRectMake(0, 0, self.view.frame.width, scrollView.frame.height) // スクロールの横幅を画面に合わせる 縦は変更しない 親ビューはwidth414なのに scrollのwidthが誤って600になってしまうため
+        scrollView.contentSize = CGSizeMake(self.view.frame.width * 3, scrollView.frame.height) // 3画面
         scrollView.pagingEnabled = true
-
-        print(self.view.frame.width)
-        
         
         makeCollectionViewByPage(0)
         makeCollectionViewByPage(1)
@@ -63,17 +61,17 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
         
         //let collection = OrderIndexCollectionViewController(nibName: "xxx", bundle: nil) nibじゃなくてもいい
         let collection = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("OrderCollection") as! OrderIndexCollectionViewController
-        
-        let frame = CGRectMake(self.view.frame.width * CGFloat(page), 0, self.scrollView.frame.width, self.scrollView.frame.height)
-        collection.view.frame = frame // table配置
-        
-        print(self.scrollView.frame.width)
+
+        // view配置
+        collection.view.frame = CGRectMake(self.view.frame.width * CGFloat(page), 0, self.view.frame.width, scrollView.frame.height)
         
         self.addChildViewController(collection)
         
         //self.scrollView.addSubview(collection) ×これだとControllerを渡してしまう。UIViewを渡す
         self.scrollView.addSubview(collection.view)
         collection.didMoveToParentViewController(self) // 追加の完了を伝える
+        
+
     }
     
     // スクロールの検出

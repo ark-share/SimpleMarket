@@ -18,34 +18,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chN-7m-UfT">
-                                <rect key="frame" x="20" y="90" width="75" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chN-7m-UfT">
+                                <rect key="frame" x="20" y="80" width="75" height="30"/>
                                 <state key="normal" title="出品一覧へ"/>
                                 <connections>
                                     <action selector="handleOrderIndexButton:" destination="9Vf-8u-fp4" eventType="touchUpInside" id="vee-7R-RnQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQt-j1-YbD">
-                                <rect key="frame" x="20" y="140" width="90" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQt-j1-YbD">
+                                <rect key="frame" x="20" y="130" width="90" height="30"/>
                                 <state key="normal" title="購入リストへ"/>
                                 <connections>
                                     <action selector="handleOrderIndexBuy:" destination="9Vf-8u-fp4" eventType="touchUpInside" id="640-Ew-2dL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTK-3x-ZFP">
-                                <rect key="frame" x="20" y="190" width="60" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTK-3x-ZFP">
+                                <rect key="frame" x="20" y="180" width="60" height="30"/>
                                 <state key="normal" title="ログイン"/>
                                 <connections>
                                     <action selector="handleLoginButton:" destination="9Vf-8u-fp4" eventType="touchUpInside" id="VYC-hf-NQE"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ログインしていません" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AXy-H6-gXw">
-                                <rect key="frame" x="100" y="190" width="161" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ログインしていません" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AXy-H6-gXw">
+                                <rect key="frame" x="100" y="180" width="161" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKA-mz-NzY">
-                                <rect key="frame" x="261" y="190" width="119" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKA-mz-NzY">
+                                <rect key="frame" x="261" y="180" width="119" height="30"/>
                                 <state key="normal" title="ログアウト"/>
                                 <connections>
                                     <action selector="handleLogoutButton:" destination="9Vf-8u-fp4" eventType="touchUpInside" id="Uku-Of-r17"/>
@@ -57,6 +57,7 @@
                             <constraint firstItem="AXy-H6-gXw" firstAttribute="bottom" secondItem="mTK-3x-ZFP" secondAttribute="bottom" id="3bQ-fM-KfW"/>
                             <constraint firstItem="AXy-H6-gXw" firstAttribute="leading" secondItem="mTK-3x-ZFP" secondAttribute="trailing" constant="20" id="DLo-aR-Nh3"/>
                             <constraint firstItem="mTK-3x-ZFP" firstAttribute="leading" secondItem="WoA-IZ-CUW" secondAttribute="leadingMargin" id="EwH-jE-mnu"/>
+                            <constraint firstItem="chN-7m-UfT" firstAttribute="top" secondItem="SJl-RK-zBO" secondAttribute="bottom" constant="60" id="J8Z-sD-xm8"/>
                             <constraint firstItem="pQt-j1-YbD" firstAttribute="leading" secondItem="WoA-IZ-CUW" secondAttribute="leadingMargin" id="SPd-if-Asd"/>
                             <constraint firstItem="pQt-j1-YbD" firstAttribute="top" secondItem="chN-7m-UfT" secondAttribute="bottom" constant="20" id="bZC-se-tSo"/>
                             <constraint firstItem="DKA-mz-NzY" firstAttribute="bottom" secondItem="AXy-H6-gXw" secondAttribute="bottom" id="cO4-iw-wD6"/>
