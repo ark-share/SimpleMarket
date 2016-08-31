@@ -40,12 +40,9 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
         makeTabButtonByPage(1)
         makeTabButtonByPage(2)
         
-        
         // 選択状態にする
-        setSelectedButton(self.tabButtons[0], bool: true)
+        setSelectedButton(self.tabButtons[0], selected: true)
         
-        
-            
         makeAddButton()
     }
     
@@ -113,16 +110,28 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
         scrollView.setContentOffset(CGPointMake(x, 0), animated: true) // スクロールのページを変更
     }
     // buttonを選択状態にする
-    func setSelectedButton(selectButton: UIButton, bool: Bool) {
-        selectButton.selected = true
+    func setSelectedButton(selectButton: UIButton, selected: Bool) {
+        selectButton.selected = selected
         
         // 下線
         let border = UIView(frame: CGRectMake(0, selectButton.frame.size.height - 0.3, selectButton.frame.size.width, 2))
-        border.backgroundColor = UIColor.orangeColor()
-        selectButton.addSubview(border)
+        
+        if selected == true {
+            border.backgroundColor = UIColor.orangeColor()
+            border.accessibilityIdentifier = "border" // borderだけを削除できるように
+            selectButton.addSubview(border)
+        }
+        else {
+            // borderだけを消したいけど、当然全部消えちゃう subviewに名前とかつけれるかも？>accessibilityIdentifierが使えそう
+            for subview in selectButton.subviews {
+                if subview.accessibilityIdentifier == "border" {
+                    subview.removeFromSuperview()
+                }
+            }
+        }
     }
     
-    // スクロールの検出
+    // 縦横両方のスクロールの検出
     func scrollViewDidScroll(scrollView: UIScrollView) {
 
         //let y = scrollView.contentOffset.y
@@ -133,6 +142,23 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
             //makeAddButton()
             NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: #selector(self.makeAddButton), userInfo: nil, repeats: false)
         }
+    }
+    
+    // tabボタンでページ移動後
+    func scrollViewDidEndScrollingAnimation(scrollView: UIScrollView) {
+        let page = scrollView.contentOffset.x / scrollView.frame.width
+        for num in 0..<tabButtons.count {
+            if page == CGFloat(num) {
+                setSelectedButton(tabButtons[num], selected: true) // 選択状態にする
+            }
+            else {
+                setSelectedButton(tabButtons[num], selected: false) // 他ページのボタンは選択解除
+            }
+        }
+    }
+    // ドラッグでスクロール後 ＞縦スクロールに反応しちゃう？
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        self.scrollViewDidEndScrollingAnimation(scrollView) // 同じ
     }
     
     // 固定の新規ボタン
