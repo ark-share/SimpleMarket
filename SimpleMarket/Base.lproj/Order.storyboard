@@ -113,7 +113,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FpG-K3-V6d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1409" y="341"/>
+            <point key="canvasLocation" x="1393" y="75"/>
         </scene>
         <!--Order Add View Controller-->
         <scene sceneID="rUh-oG-VKA">
@@ -232,9 +232,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lYg-93-qQv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1955" y="164"/>
+            <point key="canvasLocation" x="2093" y="170"/>
         </scene>
-        <!--Order Index Buy View Controller-->
+        <!--購入リスト-->
         <scene sceneID="7jP-w4-BVX">
             <objects>
                 <viewController storyboardIdentifier="OrderIndexBuy" automaticallyAdjustsScrollViewInsets="NO" id="NIB-LZ-LRH" customClass="OrderIndexBuyViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
@@ -251,7 +251,7 @@
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3sU-Nk-rdp">
                                 <rect key="frame" x="0.0" y="64" width="600" height="80"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.50588235290000005" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="tdq-25-b8e"/>
                                 </constraints>
@@ -268,7 +268,7 @@
                             <constraint firstAttribute="trailing" secondItem="3sU-Nk-rdp" secondAttribute="trailing" id="vU2-ZL-tk0"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="cOi-dx-vfm"/>
+                    <navigationItem key="navigationItem" title="購入リスト" id="cOi-dx-vfm"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="600"/>
                     <connections>
@@ -278,7 +278,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zTj-X9-yjQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2169" y="1223"/>
+            <point key="canvasLocation" x="1385" y="837"/>
         </scene>
         <!--Buy Table View Controller-->
         <scene sceneID="sUy-tf-3la">
@@ -296,7 +296,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4iF-Fg-AcF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2210" y="1413"/>
+            <point key="canvasLocation" x="1418" y="1033"/>
         </scene>
         <!--Order Submit View Controller-->
         <scene sceneID="5zs-aI-p5d">
@@ -391,7 +391,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oZI-IM-9Tb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1356" y="1195"/>
+            <point key="canvasLocation" x="553" y="837"/>
         </scene>
     </scenes>
     <resources>

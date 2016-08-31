@@ -18,6 +18,7 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
     
     
     private var orderAddButton: UIButton! // 固定ボタン
+    private var tabButtons: [UIButton] = [] // メニュー複数
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +35,10 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
         makeCollectionViewByPage(0)
         makeCollectionViewByPage(1)
         makeCollectionViewByPage(2)
+        
+        makeTabButtonByPage(0)
+        makeTabButtonByPage(1)
+        makeTabButtonByPage(2)
         
         makeAddButton()
     }
@@ -59,7 +64,7 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
         UIApplication.sharedApplication().keyWindow?.rootViewController = slide
     }
     
-    
+    // コンテンツの生成
     func makeCollectionViewByPage(page: Int) {
         
         //let collection = OrderIndexCollectionViewController(nibName: "xxx", bundle: nil) nibじゃなくてもいい
@@ -73,8 +78,29 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
         //self.scrollView.addSubview(collection) ×これだとControllerを渡してしまう。UIViewを渡す
         self.scrollView.addSubview(collection.view)
         collection.didMoveToParentViewController(self) // 追加の完了を伝える
+    }
+    // tab buttonの生成
+    func makeTabButtonByPage(page: Int) {
+        let tabButton = UIButton()
+        tabButton.frame = CGRectMake(0, 0, self.view.frame.width / 3, 40) // 位置も指定できるが、ボタンのサイズだけ
         
-
+        // centerの位置を指定してボタン配置（ボタンが３つなら４で割った位置へ＝ 1/4, 2/4, 3/4 それぞれボタンが配置される）
+        tabButton.center = CGPointMake(self.view.frame.width / 4 * CGFloat(page + 1), 40)
+        
+        // タイトル通常時
+        tabButton.setTitle("ボタン", forState: .Normal)
+        tabButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        
+        tabButton.tag = page // 1, 2, 3
+        
+        // イベント追加
+        tabButton.addTarget(self, action: #selector(self.handleTabButton(_:event:)), forControlEvents: .TouchUpInside)
+        
+        self.headerView.addSubview(tabButton)
+    }
+    // tab buttonのアクション
+    func handleTabButton(sender: UIButton, event:UIEvent) {
+        print("tab button click!")
     }
     
     // スクロールの検出
