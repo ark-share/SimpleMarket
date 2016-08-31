@@ -40,6 +40,12 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
         makeTabButtonByPage(1)
         makeTabButtonByPage(2)
         
+        
+        // 選択状態にする
+        setSelectedButton(self.tabButtons[0], bool: true)
+        
+        
+            
         makeAddButton()
     }
     
@@ -88,19 +94,32 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
         tabButton.center = CGPointMake(self.view.frame.width / 4 * CGFloat(page + 1), 40)
         
         // タイトル通常時
-        tabButton.setTitle("ボタン", forState: .Normal)
-        tabButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        tabButton.setTitle("ボタン \(page)", forState: .Normal)
+        tabButton.setTitleColor(UIColor.lightGrayColor(), forState: .Normal) // 未選択はグレー
+        tabButton.setTitleColor(UIColor.blueColor(), forState: .Highlighted)
+        tabButton.setTitleColor(UIColor.orangeColor(), forState: .Selected)
         
-        tabButton.tag = page // 1, 2, 3
+        tabButton.tag = page + 1 // 1, 2, 3
         
         // イベント追加
-        tabButton.addTarget(self, action: #selector(self.handleTabButton(_:event:)), forControlEvents: .TouchUpInside)
+        tabButton.addTarget(self, action: #selector(self.handleTabButton(_:)), forControlEvents: .TouchUpInside)
         
         self.headerView.addSubview(tabButton)
+        self.tabButtons.append(tabButton)
     }
     // tab buttonのアクション
-    func handleTabButton(sender: UIButton, event:UIEvent) {
-        print("tab button click!")
+    func handleTabButton(sender: UIButton) {
+        let x = self.view.frame.width * CGFloat(sender.tag - 1)
+        scrollView.setContentOffset(CGPointMake(x, 0), animated: true) // スクロールのページを変更
+    }
+    // buttonを選択状態にする
+    func setSelectedButton(selectButton: UIButton, bool: Bool) {
+        selectButton.selected = true
+        
+        // 下線
+        let border = UIView(frame: CGRectMake(0, selectButton.frame.size.height - 0.3, selectButton.frame.size.width, 2))
+        border.backgroundColor = UIColor.orangeColor()
+        selectButton.addSubview(border)
     }
     
     // スクロールの検出

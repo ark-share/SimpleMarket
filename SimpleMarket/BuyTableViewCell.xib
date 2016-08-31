@@ -41,6 +41,7 @@
                     <constraint firstItem="tB1-Wk-kq2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="30" id="gnD-qB-fTw"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="nameLabel" destination="sU1-VZ-dNo" id="ZB4-tA-nfF"/>
                 <outlet property="priceLabel" destination="tB1-Wk-kq2" id="aaB-ec-k4a"/>

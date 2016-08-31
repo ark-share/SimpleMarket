@@ -21,7 +21,6 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ac2-s0-wpB">
                                 <rect key="frame" x="0.0" y="64" width="600" height="80"/>
-                                <color key="backgroundColor" red="0.93333333330000001" green="0.50588235290000005" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="yov-tg-LEH"/>
                                 </constraints>
@@ -58,7 +57,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="6ta-2B-Nwg">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0kf-jN-hPt">
                             <size key="itemSize" width="295" height="295"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -74,19 +73,19 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bio-uL-ILS">
-                                            <rect key="frame" x="0.0" y="0.0" width="295" height="221"/>
+                                            <rect key="frame" x="0.0" y="10" width="295" height="221"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="Bio-uL-ILS" secondAttribute="height" multiplier="4:3" id="Zq1-oQ-XhY"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7V-Ke-YY1">
-                                            <rect key="frame" x="18" y="241" width="39" height="21"/>
+                                            <rect key="frame" x="18" y="251" width="39" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PL7-gU-Ecz">
-                                            <rect key="frame" x="77" y="241" width="45" height="21"/>
+                                            <rect key="frame" x="77" y="251" width="45" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -94,8 +93,9 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="Bio-uL-ILS" firstAttribute="top" secondItem="T8g-xF-SyG" secondAttribute="top" id="0nP-Jc-zc7"/>
+                                    <constraint firstItem="Bio-uL-ILS" firstAttribute="top" secondItem="T8g-xF-SyG" secondAttribute="top" constant="10" id="0nP-Jc-zc7"/>
                                     <constraint firstItem="S7V-Ke-YY1" firstAttribute="leading" secondItem="T8g-xF-SyG" secondAttribute="leadingMargin" constant="10" id="4fF-Gf-ZDz"/>
                                     <constraint firstItem="S7V-Ke-YY1" firstAttribute="top" secondItem="Bio-uL-ILS" secondAttribute="bottom" constant="20" id="HJ9-cl-LRi"/>
                                     <constraint firstAttribute="trailing" secondItem="Bio-uL-ILS" secondAttribute="trailing" id="QIL-sd-rTs"/>
@@ -251,7 +251,6 @@
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3sU-Nk-rdp">
                                 <rect key="frame" x="0.0" y="64" width="600" height="80"/>
-                                <color key="backgroundColor" red="0.93333333330000001" green="0.50588235290000005" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="tdq-25-b8e"/>
                                 </constraints>
@@ -287,7 +286,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="WB9-ds-Ehw">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>
                             <outlet property="dataSource" destination="u07-Oe-qK0" id="PkC-Cs-bay"/>
                             <outlet property="delegate" destination="u07-Oe-qK0" id="Row-Vs-RDK"/>
