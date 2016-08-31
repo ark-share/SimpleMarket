@@ -24,6 +24,9 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
         
         scrollView.delegate = self
         
+        print(self.view.frame.height)
+        print(self.scrollView.frame.height)
+
         scrollView.frame = CGRectMake(0, 0, self.view.frame.width, scrollView.frame.height) // スクロールの横幅を画面に合わせる 縦は変更しない 親ビューはwidth414なのに scrollのwidthが誤って600になってしまうため
         scrollView.contentSize = CGSizeMake(self.view.frame.width * 3, scrollView.frame.height) // 3画面
         scrollView.pagingEnabled = true

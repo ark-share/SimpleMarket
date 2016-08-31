@@ -24,6 +24,8 @@ class OrderIndexBuyViewController: UIViewController, UIScrollViewDelegate {
         scrollView.contentSize = CGSizeMake(self.view.frame.width * 3, scrollView.frame.height) // 3画面
         scrollView.pagingEnabled = true
         
+        
+        
         makeTableViewByPage(0)
         makeTableViewByPage(1)
         makeTableViewByPage(2)

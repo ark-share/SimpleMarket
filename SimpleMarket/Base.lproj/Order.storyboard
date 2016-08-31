@@ -288,16 +288,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BuyTable" id="LBM-nr-YMy">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LBM-nr-YMy" id="83o-S4-13k">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="u07-Oe-qK0" id="PkC-Cs-bay"/>
                             <outlet property="delegate" destination="u07-Oe-qK0" id="Row-Vs-RDK"/>
@@ -370,7 +360,7 @@
         <!--Navigation Controller-->
         <scene sceneID="UFJ-jS-XyL">
             <objects>
-                <navigationController storyboardIdentifier="Navigation" automaticallyAdjustsScrollViewInsets="NO" id="s4O-YV-MuD" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Navigation OrderIndex" automaticallyAdjustsScrollViewInsets="NO" id="s4O-YV-MuD" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mfb-Wd-ezB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -388,7 +378,7 @@
         <!--Navigation Controller-->
         <scene sceneID="98G-nT-hNr">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AhO-j3-jt2" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Navigation OrderIndexBuy" automaticallyAdjustsScrollViewInsets="NO" id="AhO-j3-jt2" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4aK-nY-Iu3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
