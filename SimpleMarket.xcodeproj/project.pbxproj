@@ -22,6 +22,7 @@
 		A3A404FB1D74300D0061DDB2 /* UserLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A404FA1D74300D0061DDB2 /* UserLoginViewController.swift */; };
 		A3A404FD1D7430210061DDB2 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A404FC1D7430210061DDB2 /* User.storyboard */; };
 		A3CA8BC21D6BE19200397DBC /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CA8BC11D6BE19200397DBC /* LeftMenuViewController.swift */; };
+		A3CD058F1D77C6A500E969FC /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CD058E1D77C6A500E969FC /* OrderDetailViewController.swift */; };
 		A3FB36271D62D26700EFB7C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB36261D62D26700EFB7C4 /* AppDelegate.swift */; };
 		A3FB36291D62D26700EFB7C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB36281D62D26700EFB7C4 /* ViewController.swift */; };
 		A3FB362C1D62D26700EFB7C4 /* Order.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FB362A1D62D26700EFB7C4 /* Order.storyboard */; };
@@ -50,6 +51,7 @@
 		A3A404FA1D74300D0061DDB2 /* UserLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLoginViewController.swift; sourceTree = "<group>"; };
 		A3A404FC1D7430210061DDB2 /* User.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
 		A3CA8BC11D6BE19200397DBC /* LeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
+		A3CD058E1D77C6A500E969FC /* OrderDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailViewController.swift; sourceTree = "<group>"; };
 		A3FB36231D62D26700EFB7C4 /* SimpleMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FB36261D62D26700EFB7C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3FB36281D62D26700EFB7C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			children = (
 				A3FB363E1D62DEDD00EFB7C4 /* OrderIndexViewController.swift */,
 				A3A404F81D703FA10061DDB2 /* OrderIndexCollectionViewController.swift */,
+				A3CD058E1D77C6A500E969FC /* OrderDetailViewController.swift */,
 				A32B5F7E1D62EFD300608BBF /* OrderAddViewController.swift */,
 				A3436E621D65AE9700EE1F77 /* OrderSubmitViewController.swift */,
 				A3A404E41D6D8F6F0061DDB2 /* OrderIndexBuyViewController.swift */,
@@ -321,6 +324,7 @@
 				A3A404E51D6D8F6F0061DDB2 /* OrderIndexBuyViewController.swift in Sources */,
 				A3A404FB1D74300D0061DDB2 /* UserLoginViewController.swift in Sources */,
 				A32B5F7C1D62E84600608BBF /* ButtonCustom.swift in Sources */,
+				A3CD058F1D77C6A500E969FC /* OrderDetailViewController.swift in Sources */,
 				A32B5F7A1D62E7D300608BBF /* CommonConst.swift in Sources */,
 				A3FB36291D62D26700EFB7C4 /* ViewController.swift in Sources */,
 				A3FB363F1D62DEDD00EFB7C4 /* OrderIndexViewController.swift in Sources */,

@@ -25,10 +25,7 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
         
         scrollView.delegate = self
         
-        print(self.view.frame.height)
-        print(self.scrollView.frame.height)
-
-        scrollView.frame = CGRectMake(0, 0, self.view.frame.width, scrollView.frame.height) // スクロールの横幅を画面に合わせる 縦は変更しない 親ビューはwidth414なのに scrollのwidthが誤って600になってしまうため
+        scrollView.frame = CGRectMake(0, 0, self.view.frame.width, scrollView.frame.height) // スクロールの横幅を画面に合わせる
         scrollView.contentSize = CGSizeMake(self.view.frame.width * 3, scrollView.frame.height) // 3画面
         scrollView.pagingEnabled = true
         
@@ -70,15 +67,12 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
     // コンテンツの生成
     func makeCollectionViewByPage(page: Int) {
         
-        //let collection = OrderIndexCollectionViewController(nibName: "xxx", bundle: nil) nibじゃなくてもいい
         let collection = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("OrderCollection") as! OrderIndexCollectionViewController
 
         // view配置
         collection.view.frame = CGRectMake(self.view.frame.width * CGFloat(page), 0, self.view.frame.width, scrollView.frame.height)
         
         self.addChildViewController(collection)
-        
-        //self.scrollView.addSubview(collection) ×これだとControllerを渡してしまう。UIViewを渡す
         self.scrollView.addSubview(collection.view)
         collection.didMoveToParentViewController(self) // 追加の完了を伝える
     }
@@ -93,7 +87,7 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
         // タイトル通常時
         tabButton.setTitle("ボタン \(page)", forState: .Normal)
         tabButton.setTitleColor(UIColor.lightGrayColor(), forState: .Normal) // 未選択はグレー
-        tabButton.setTitleColor(UIColor.blueColor(), forState: .Highlighted)
+        tabButton.setTitleColor(UIColor.orangeColor(), forState: .Highlighted)
         tabButton.setTitleColor(UIColor.orangeColor(), forState: .Selected)
         
         tabButton.tag = page + 1 // 1, 2, 3
@@ -113,7 +107,7 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
     func setSelectedButton(selectButton: UIButton, selected: Bool) {
         selectButton.selected = selected
         
-        // 下線
+        // 下線を準備
         let border = UIView(frame: CGRectMake(0, selectButton.frame.size.height - 0.3, selectButton.frame.size.width, 2))
         
         if selected == true {
@@ -122,8 +116,8 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
             selectButton.addSubview(border)
         }
         else {
-            // borderだけを消したいけど、当然全部消えちゃう subviewに名前とかつけれるかも？>accessibilityIdentifierが使えそう
             for subview in selectButton.subviews {
+                // 特定の下位ビューを削除
                 if subview.accessibilityIdentifier == "border" {
                     subview.removeFromSuperview()
                 }

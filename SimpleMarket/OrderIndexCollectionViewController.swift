@@ -19,13 +19,8 @@ class OrderIndexCollectionViewController: UICollectionViewController, UICollecti
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         // Register cell classes これがあるとデータ表示されなかった
         //self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        
-        collectionView!.delegate = self
-        collectionView!.dataSource = self
         
         // ordersに要素が追加されたらクロージャ呼び出す
         FIRDatabase.database().reference().child(CommonConst.OrderPATH).observeEventType(.ChildAdded, withBlock: { snapshot in
@@ -47,15 +42,19 @@ class OrderIndexCollectionViewController: UICollectionViewController, UICollecti
         // Dispose of any resources that can be recreated.
     }
 
-    /*
-    // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+        let orderDetail = segue.destinationViewController as! OrderDetailViewController
+        
+        if segue.identifier == "OrderDetailSegue" {
+            for indexPath in (self.collectionView?.indexPathsForSelectedItems())! {
+                print("row : \(indexPath.row)")
+                orderDetail.orderData = orderArray[indexPath.row] // 商品詳細へ
+            }
+        }
     }
-    */
 
     // MARK: UICollectionViewDataSource
 
@@ -77,7 +76,7 @@ class OrderIndexCollectionViewController: UICollectionViewController, UICollecti
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath)
         let data = orderArray[indexPath.row]
         
-        print("\(indexPath.row) \(data.name!)")
+        //print("\(indexPath.row) \(data.name!)")
 
         let imageView = cell.viewWithTag(1) as! UIImageView
         if data.image != nil {
@@ -114,12 +113,14 @@ class OrderIndexCollectionViewController: UICollectionViewController, UICollecti
     }
     */
 
-    /*
     // Uncomment this method to specify if the specified item should be selected
     override func collectionView(collectionView: UICollectionView, shouldSelectItemAtIndexPath indexPath: NSIndexPath) -> Bool {
         return true
     }
-    */
+    // ここは要らないよ？２回詳細ページが呼ばれてしまう
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        performSegueWithIdentifier("OrderDetailSegue", sender: nil)
+    }
 
     /*
     // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
