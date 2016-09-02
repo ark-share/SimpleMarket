@@ -103,9 +103,6 @@
                                     <constraint firstItem="Bio-uL-ILS" firstAttribute="leading" secondItem="T8g-xF-SyG" secondAttribute="leading" id="qeM-8H-fKS"/>
                                     <constraint firstItem="PL7-gU-Ecz" firstAttribute="leading" secondItem="S7V-Ke-YY1" secondAttribute="trailing" constant="20" id="r1y-DP-umA"/>
                                 </constraints>
-                                <connections>
-                                    <segue destination="Yq6-5a-IgV" kind="show" identifier="OrderDetailSegue" id="UVq-lc-y3L"/>
-                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -113,10 +110,13 @@
                             <outlet property="delegate" destination="35W-WV-RSd" id="4Rf-4Y-oLz"/>
                         </connections>
                     </collectionView>
+                    <connections>
+                        <segue destination="Yq6-5a-IgV" kind="show" identifier="OrderDetailSegue" id="1Tc-Mp-hLz"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FpG-K3-V6d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="169" y="-1413"/>
+            <point key="canvasLocation" x="199" y="-1407"/>
         </scene>
         <!--Order Detail View Controller-->
         <scene sceneID="GfA-Ma-bgf">

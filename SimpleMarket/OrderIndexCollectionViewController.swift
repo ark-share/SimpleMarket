@@ -114,10 +114,10 @@ class OrderIndexCollectionViewController: UICollectionViewController, UICollecti
     */
 
     // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(collectionView: UICollectionView, shouldSelectItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return true
-    }
-    // ここは要らないよ？２回詳細ページが呼ばれてしまう
+//    override func collectionView(collectionView: UICollectionView, shouldSelectItemAtIndexPath indexPath: NSIndexPath) -> Bool {
+//        return true
+//    }
+    // セルから直にSegueを引いた場合はここは要らない。２回詳細ページが呼ばれてしまう
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         performSegueWithIdentifier("OrderDetailSegue", sender: nil)
     }

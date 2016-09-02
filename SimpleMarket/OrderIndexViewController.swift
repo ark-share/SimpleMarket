@@ -150,7 +150,7 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
             }
         }
     }
-    // ドラッグでスクロール後 ＞縦スクロールに反応しちゃう？
+    // ドラッグでスクロール後 ＞縦スクロールには反応しない
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
         self.scrollViewDidEndScrollingAnimation(scrollView) // 同じ
     }
@@ -176,10 +176,7 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
     func handleOrderAddButton(sender: UIButton, event:UIEvent) {
         // 移動?
         let add = self.storyboard!.instantiateViewControllerWithIdentifier("OrderAdd") as UIViewController
-        //presentViewController(view, animated: true, completion: nil)
-        
-        self.addChildViewController(add)
-        self.view.addSubview(add.view)
+        presentViewController(add, animated: true, completion: nil)
     }
     
 }
