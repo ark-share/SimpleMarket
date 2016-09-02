@@ -60,12 +60,18 @@ class BuyTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath) as! BuyTableViewCell
         cell.orderData = orderArray[indexPath.row]
-      
+        
         return cell
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 80
+    }
+    
+    // セルから直にSegueを引いた場合はここは要らない。２回詳細ページが呼ばれてしまう
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        //performSegueWithIdentifier("BuyDetailSegue", sender: nil)
+        print("click buy cell")
     }
     
     /*

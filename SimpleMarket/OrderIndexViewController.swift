@@ -108,8 +108,8 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
     func setSelectedButton(selectButton: UIButton, selected: Bool) {
         selectButton.selected = selected
         
-        // 下線を準備
-        let border = UIView(frame: CGRectMake(0, selectButton.frame.size.height - 0.3, selectButton.frame.size.width, 2))
+        // 下線を準備（x = selectButton.frame.size.width / 4 にして左からちょっとスペースを作ってる）
+        let border = UIView(frame: CGRectMake(selectButton.frame.size.width / 4, selectButton.frame.size.height - 0.3, selectButton.frame.size.width / 2, 2))
         
         if selected == true {
             border.backgroundColor = UIColor.orangeColor()
