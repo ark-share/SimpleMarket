@@ -50,18 +50,20 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewWillAppear(animated: Bool) {
         
-        // slide用のbar準備
-        let image = UIImage.fontAwesomeIconWithName(.Bars, textColor: UIColor.blackColor(), size: CGSizeMake(30, 30))
-        self.addLeftBarButtonWithImage(image)
+        if self.navigationController == nil { // これがないと「ナビ戻る」の時にviewWillAppearがループしてしまう
+            // slide用のbar準備
+            let image = UIImage.fontAwesomeIconWithName(.Bars, textColor: UIColor.blackColor(), size: CGSizeMake(30, 30))
+            self.addLeftBarButtonWithImage(image)
+            
+            // navを用意
+            let nav = UINavigationController(rootViewController: self)
+            
+            // スライドを用意
+            let leftMenu = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("LeftMenu") as! LeftMenuViewController
+            let slide = SlideMenuController(mainViewController: nav, leftMenuViewController: leftMenu)
         
-        // navを用意
-        let nav = UINavigationController(rootViewController: self)
-        
-        // スライドを用意
-        let leftMenu = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("LeftMenu") as! LeftMenuViewController
-        let slide = SlideMenuController(mainViewController: nav, leftMenuViewController: leftMenu)
-        
-        UIApplication.sharedApplication().keyWindow?.rootViewController = slide
+            UIApplication.sharedApplication().keyWindow?.rootViewController = slide
+        }
     }
     
     // コンテンツの生成

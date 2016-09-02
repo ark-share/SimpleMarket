@@ -19,6 +19,8 @@ class OrderDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //print(self.navigationController?.viewControllers)
 
         // Do any additional setup after loading the view.
         if orderData != nil {
@@ -38,7 +40,6 @@ class OrderDetailViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     /*
     // MARK: - Navigation

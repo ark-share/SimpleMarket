@@ -88,13 +88,74 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SimpleMarket/OrderIndexCollectionViewController.swift"
-            timestampString = "494473871.029888"
+            timestampString = "494476950.3125"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
             endingLineNumber = "49"
             landmarkName = "prepareForSegue(_:sender:)"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleMarket/OrderIndexViewController.swift"
+            timestampString = "494486284.718586"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SimpleMarket.OrderIndexViewController.__deallocating_deinit"
+                  moduleName = "SimpleMarket"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macpc/Documents/SimpleMarket/SimpleMarket/OrderIndexViewController.swift"
+                  timestampString = "494486285.112862"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SimpleMarket.OrderIndexViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; SimpleMarket.OrderIndexViewController"
+                  moduleName = "SimpleMarket"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macpc/Documents/SimpleMarket/SimpleMarket/OrderIndexViewController.swift"
+                  timestampString = "494486285.113069"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SimpleMarket.OrderIndexViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;SimpleMarket.OrderIndexViewController&gt;"
+                  moduleName = "SimpleMarket"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macpc/Documents/SimpleMarket/SimpleMarket/OrderIndexViewController.swift"
+                  timestampString = "494486285.113191"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
