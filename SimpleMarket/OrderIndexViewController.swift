@@ -16,7 +16,6 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     
-    
     private var orderAddButton: UIButton! // 固定ボタン
     private var tabButtons: [UIButton] = [] // メニュー複数
     
@@ -40,6 +39,7 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
         // 選択状態にする
         setSelectedButton(self.tabButtons[0], selected: true)
         
+        makeNavigation()
         makeAddButton()
     }
     
@@ -48,22 +48,21 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillAppear(animated: Bool) {
+    // ナビの生成
+    func makeNavigation() {
+    
+        // slide用のbar準備
+        let image = UIImage.fontAwesomeIconWithName(.Bars, textColor: UIColor.blackColor(), size: CGSizeMake(30, 30))
+        self.addLeftBarButtonWithImage(image)
         
-        if self.navigationController == nil { // これがないと「ナビ戻る」の時にviewWillAppearがループしてしまう
-            // slide用のbar準備
-            let image = UIImage.fontAwesomeIconWithName(.Bars, textColor: UIColor.blackColor(), size: CGSizeMake(30, 30))
-            self.addLeftBarButtonWithImage(image)
-            
-            // navを用意
-            let nav = UINavigationController(rootViewController: self)
-            
-            // スライドを用意
-            let leftMenu = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("LeftMenu") as! LeftMenuViewController
-            let slide = SlideMenuController(mainViewController: nav, leftMenuViewController: leftMenu)
+        // navを用意
+        let nav = UINavigationController(rootViewController: self)
         
-            UIApplication.sharedApplication().keyWindow?.rootViewController = slide
-        }
+        // スライドを用意
+        let leftMenu = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("LeftMenu") as! LeftMenuViewController
+        let slide = SlideMenuController(mainViewController: nav, leftMenuViewController: leftMenu)
+    
+        UIApplication.sharedApplication().keyWindow?.rootViewController = slide
     }
     
     // コンテンツの生成
@@ -176,9 +175,11 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
         self.view.addSubview(orderAddButton)
     }
     func handleOrderAddButton(sender: UIButton, event:UIEvent) {
-        // 移動?
-        let add = self.storyboard!.instantiateViewControllerWithIdentifier("OrderAdd") as UIViewController
-        presentViewController(add, animated: true, completion: nil)
+        // 移動　これだとナビを引き継がない
+//        let add = self.storyboard!.instantiateViewControllerWithIdentifier("OrderAdd") as UIViewController
+//        presentViewController(add, animated: true, completion: nil)
+        
+        performSegueWithIdentifier("OrderAddSegue", sender: nil)
     }
     
 }

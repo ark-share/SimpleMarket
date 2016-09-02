@@ -11,6 +11,7 @@ import UIKit
 // 購入リストのセル
 class BuyTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var imageVIew: UIImageView!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     
@@ -29,6 +30,9 @@ class BuyTableViewCell: UITableViewCell {
     
     override func layoutSubviews() {
         
+        if orderData.image != nil {
+            imageView!.image = orderData.image
+        }
         if orderData.price != nil {
             priceLabel.text = orderData.price
         }

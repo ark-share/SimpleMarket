@@ -44,6 +44,7 @@
                     <connections>
                         <outlet property="headerView" destination="Ac2-s0-wpB" id="Zvr-6a-iUv"/>
                         <outlet property="scrollView" destination="i8L-wJ-aYQ" id="MQu-v1-9dj"/>
+                        <segue destination="P7I-Qh-RiL" kind="show" identifier="OrderAddSegue" id="Xog-43-lKe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qzt-QJ-1r7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -181,7 +182,7 @@
         <!--Order Add View Controller-->
         <scene sceneID="rUh-oG-VKA">
             <objects>
-                <viewController storyboardIdentifier="OrderAdd" id="P7I-Qh-RiL" customClass="OrderAddViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OrderAdd" automaticallyAdjustsScrollViewInsets="NO" id="P7I-Qh-RiL" customClass="OrderAddViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="x6j-h2-F5w"/>
                         <viewControllerLayoutGuide type="bottom" id="8Ka-Pa-H5v"/>
@@ -336,6 +337,7 @@
                     <connections>
                         <outlet property="headerView" destination="3sU-Nk-rdp" id="E8w-An-0Mm"/>
                         <outlet property="scrollView" destination="W6q-HR-lC3" id="Mag-sT-Udv"/>
+                        <segue destination="P7I-Qh-RiL" kind="show" identifier="OrderAddSegue" id="a8H-oM-uUB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zTj-X9-yjQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -459,4 +461,7 @@
     <resources>
         <image name="btn" width="300" height="40"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="a8H-oM-uUB"/>
+    </inferredMetricsTieBreakers>
 </document>

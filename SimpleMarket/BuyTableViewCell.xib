@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -15,19 +16,25 @@
                 <rect key="frame" x="0.0" y="0.0" width="408" height="118"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tB1-Wk-kq2">
-                        <rect key="frame" x="18" y="38" width="80" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sU1-VZ-dNo">
+                        <rect key="frame" x="164" y="18" width="200" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="80" id="yMT-Dy-Sic"/>
+                            <constraint firstAttribute="width" constant="200" id="YJP-L5-MKK"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sU1-VZ-dNo">
-                        <rect key="frame" x="118" y="38" width="200" height="21"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cD0-sd-Tsv">
+                        <rect key="frame" x="0.0" y="0.0" width="144" height="108"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="200" id="Iwm-ah-Yw7"/>
+                            <constraint firstAttribute="width" secondItem="cD0-sd-Tsv" secondAttribute="height" multiplier="4:3" id="wpk-Pc-BrC"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tB1-Wk-kq2">
+                        <rect key="frame" x="164" y="49" width="120" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="NXb-jn-oi7"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -35,14 +42,19 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="sU1-VZ-dNo" firstAttribute="leading" secondItem="tB1-Wk-kq2" secondAttribute="trailing" constant="20" id="FVq-Py-Anb"/>
-                    <constraint firstItem="tB1-Wk-kq2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="OAl-23-m3V"/>
-                    <constraint firstItem="sU1-VZ-dNo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="30" id="X38-Y0-ky1"/>
-                    <constraint firstItem="tB1-Wk-kq2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="30" id="gnD-qB-fTw"/>
+                    <constraint firstItem="sU1-VZ-dNo" firstAttribute="leading" secondItem="cD0-sd-Tsv" secondAttribute="trailing" constant="20" id="5aU-lx-KWw"/>
+                    <constraint firstItem="sU1-VZ-dNo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="8yq-aw-bdT"/>
+                    <constraint firstItem="cD0-sd-Tsv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="H9e-uZ-gXa"/>
+                    <constraint firstItem="tB1-Wk-kq2" firstAttribute="top" secondItem="sU1-VZ-dNo" secondAttribute="bottom" constant="10" id="Jap-2l-GZY"/>
+                    <constraint firstItem="sU1-VZ-dNo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="K9M-0c-J8w"/>
+                    <constraint firstItem="tB1-Wk-kq2" firstAttribute="leading" secondItem="cD0-sd-Tsv" secondAttribute="trailing" constant="20" id="a1q-h8-nVi"/>
+                    <constraint firstAttribute="bottom" secondItem="cD0-sd-Tsv" secondAttribute="bottom" constant="10" id="l2H-ys-iWC"/>
+                    <constraint firstItem="cD0-sd-Tsv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="uag-zr-27w"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <connections>
+                <outlet property="imageVIew" destination="cD0-sd-Tsv" id="LQK-Cy-g6Z"/>
                 <outlet property="nameLabel" destination="sU1-VZ-dNo" id="ZB4-tA-nfF"/>
                 <outlet property="priceLabel" destination="tB1-Wk-kq2" id="aaB-ec-k4a"/>
             </connections>

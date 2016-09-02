@@ -15,6 +15,8 @@ class OrderIndexBuyViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     
+    private var orderAddButton: UIButton! // 固定ボタン
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,11 +26,12 @@ class OrderIndexBuyViewController: UIViewController, UIScrollViewDelegate {
         scrollView.contentSize = CGSizeMake(self.view.frame.width * 3, scrollView.frame.height) // 3画面
         scrollView.pagingEnabled = true
         
-        
-        
         makeTableViewByPage(0)
         makeTableViewByPage(1)
         makeTableViewByPage(2)
+        
+        makeNavigation()
+        makeAddButton()
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,7 +39,8 @@ class OrderIndexBuyViewController: UIViewController, UIScrollViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillAppear(animated: Bool) {
+    // ナビの生成
+    func makeNavigation() {
         
         // slide用のbar準備
         let image = UIImage.fontAwesomeIconWithName(.Bars, textColor: UIColor.blackColor(), size: CGSizeMake(30, 30))
@@ -68,5 +72,31 @@ class OrderIndexBuyViewController: UIViewController, UIScrollViewDelegate {
         table.didMoveToParentViewController(self) // 追加の完了を伝える
     }
 
+ 
+    // 固定の新規ボタン
+    func makeAddButton() {
+        orderAddButton = UIButton()
+        orderAddButton.frame = CGRectMake(0, 0, 80, 80)
+        orderAddButton.tintColor = UIColor.whiteColor() // 画像の色がもともと灰色だから白くはならない
+        orderAddButton.backgroundColor = UIColor.orangeColor()
+        orderAddButton.layer.masksToBounds = true
+        orderAddButton.layer.cornerRadius = 40.0
+        orderAddButton.layer.position = CGPoint(x: self.view.frame.width - 60, y: self.view.frame.height - 60)
+        orderAddButton.tag = 1
+        orderAddButton.addTarget(self, action:#selector(handleOrderAddButton(_:event:)), forControlEvents: .TouchUpInside)
+        
+        //let image = UIImage(named: "camera")
+        let image = UIImage.fontAwesomeIconWithName(.Camera, textColor: UIColor.whiteColor(), size: CGSizeMake(40, 40))
+        orderAddButton.setImage(image, forState: .Normal)
+        
+        self.view.addSubview(orderAddButton)
+    }
+    func handleOrderAddButton(sender: UIButton, event:UIEvent) {
+        // 移動　これだとナビを引き継がない
+//        let add = self.storyboard!.instantiateViewControllerWithIdentifier("OrderAdd") as UIViewController
+//        presentViewController(add, animated: true, completion: nil)
+        
+        performSegueWithIdentifier("OrderAddSegue", sender: nil)
+    }
     
 }
