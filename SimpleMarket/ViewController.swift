@@ -39,9 +39,6 @@ class ViewController: UIViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
-        // slide用のbar準備
-        let image = UIImage.fontAwesomeIconWithName(.Bars, textColor: UIColor.blackColor(), size: CGSizeMake(30, 30))
-        self.addLeftBarButtonWithImage(image)
         
         let displayName = AppController().getDisplayName()
         displayNameLabel.text = displayName
