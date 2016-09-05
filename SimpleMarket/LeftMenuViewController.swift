@@ -10,13 +10,14 @@ import UIKit
 
 // スライドメニュー
 class LeftMenuViewController: UIViewController {
-
-    @IBAction func handleToTOp(sender: AnyObject) { // TOpになってもた、Topの間違い
-        // 移動
+    
+    // 注意。このスライド上でSegueとかで移動すると、ページ構成が崩れる。root画面を作り直す。
+    @IBAction func handleToTop(sender: AnyObject) {
         let view = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()! as UIViewController
         UIApplication.sharedApplication().keyWindow?.rootViewController = view
         UIApplication.sharedApplication().keyWindow?.makeKeyWindow()
     }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

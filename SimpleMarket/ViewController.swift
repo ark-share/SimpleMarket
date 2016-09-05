@@ -15,19 +15,6 @@ class ViewController: UIViewController {
     // ログインしてたらユーザー名を表示
     @IBOutlet weak var displayNameLabel: UITextField!
 
-    // 商品一覧へ
-    @IBAction func handleOrderIndexButton(sender: AnyObject) {
-        // modal
-        let view = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("OrderIndex") as UIViewController
-        presentViewController(view, animated: true, completion: nil)
-        
-    }
-    // 購入リストへ
-    @IBAction func handleOrderIndexBuy(sender: AnyObject) {
-        // modal
-        let view = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("OrderIndexBuy") as UIViewController
-        presentViewController(view, animated: true, completion: nil)
-    }
     // ログイン
     @IBAction func handleLoginButton(sender: AnyObject) {
         // modal
@@ -48,7 +35,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        print(self.navigationController?.viewControllers)
     }
     
     override func viewWillAppear(animated: Bool) {

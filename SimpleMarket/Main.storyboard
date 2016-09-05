@@ -9,7 +9,7 @@
         <!--View Controller-->
         <scene sceneID="Mlz-Lj-t9a">
             <objects>
-                <viewController id="9Vf-8u-fp4" customClass="ViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home" id="9Vf-8u-fp4" customClass="ViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SJl-RK-zBO"/>
                         <viewControllerLayoutGuide type="bottom" id="PnU-hI-IYS"/>
@@ -22,14 +22,14 @@
                                 <rect key="frame" x="20" y="80" width="75" height="30"/>
                                 <state key="normal" title="出品一覧へ"/>
                                 <connections>
-                                    <action selector="handleOrderIndexButton:" destination="9Vf-8u-fp4" eventType="touchUpInside" id="vee-7R-RnQ"/>
+                                    <segue destination="DJY-c0-Mq3" kind="show" id="sam-7e-beA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQt-j1-YbD">
                                 <rect key="frame" x="20" y="130" width="90" height="30"/>
                                 <state key="normal" title="購入リストへ"/>
                                 <connections>
-                                    <action selector="handleOrderIndexBuy:" destination="9Vf-8u-fp4" eventType="touchUpInside" id="640-Ew-2dL"/>
+                                    <segue destination="3HU-Mj-X5h" kind="show" id="8bd-eH-W5L"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTK-3x-ZFP">
@@ -77,6 +77,22 @@
             </objects>
             <point key="canvasLocation" x="284" y="22"/>
         </scene>
+        <!--OrderIndex-->
+        <scene sceneID="zgm-L1-pSV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Order" referencedIdentifier="OrderIndex" id="DJY-c0-Mq3" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NQO-1c-ErL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="625.5" y="-202"/>
+        </scene>
+        <!--OrderIndexBuy-->
+        <scene sceneID="dbd-Yw-A2N">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Order" referencedIdentifier="OrderIndexBuy" id="3HU-Mj-X5h" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5q0-ul-5Sf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="625.5" y="-134"/>
+        </scene>
         <!--Left Menu View Controller-->
         <scene sceneID="5M3-t3-Do1">
             <objects>
@@ -93,7 +109,7 @@
                                 <rect key="frame" x="20" y="80" width="71" height="30"/>
                                 <state key="normal" title="Topへ戻る"/>
                                 <connections>
-                                    <action selector="handleToTOp:" destination="WPY-b6-c55" eventType="touchUpInside" id="1qJ-JA-3gX"/>
+                                    <action selector="handleToTop:" destination="WPY-b6-c55" eventType="touchUpInside" id="1jJ-zS-o9P"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -108,7 +124,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vha-Ap-14d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="234" y="686"/>
+            <point key="canvasLocation" x="284" y="689"/>
         </scene>
     </scenes>
 </document>
