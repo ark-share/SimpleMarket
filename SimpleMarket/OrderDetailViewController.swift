@@ -35,9 +35,9 @@ class OrderDetailViewController: UIViewController {
             }
         }
         
-        // コメントボタンに吹き出し追加
-        let image = UIImage.fontAwesomeIconWithName(.CommentO, textColor: UIColor.blackColor(), size: CGSizeMake(25, 25))
-        commentButton.setImage(image, forState: .Normal)
+        // コメントボタンに吹き出し追加 storyboardeでも追加できるかも
+//        let image = UIImage.fontAwesomeIconWithName(.CommentO, textColor: UIColor.blackColor(), size: CGSizeMake(25, 25))
+//        commentButton.setImage(image, forState: .Normal)
     }
 
     override func didReceiveMemoryWarning() {

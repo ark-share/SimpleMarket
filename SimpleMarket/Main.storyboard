@@ -106,7 +106,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRU-8p-tAe">
-                                <rect key="frame" x="20" y="80" width="71" height="30"/>
+                                <rect key="frame" x="30" y="80" width="71" height="30"/>
                                 <state key="normal" title="Topへ戻る"/>
                                 <connections>
                                     <action selector="handleToTop:" destination="WPY-b6-c55" eventType="touchUpInside" id="1jJ-zS-o9P"/>
@@ -115,7 +115,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="gRU-8p-tAe" firstAttribute="leading" secondItem="D8u-VO-LzU" secondAttribute="leadingMargin" id="RE3-ZC-XW5"/>
+                            <constraint firstItem="gRU-8p-tAe" firstAttribute="leading" secondItem="D8u-VO-LzU" secondAttribute="leadingMargin" constant="10" id="RE3-ZC-XW5"/>
                             <constraint firstItem="gRU-8p-tAe" firstAttribute="top" secondItem="7st-ex-swW" secondAttribute="bottom" constant="60" id="TgJ-E4-lAW"/>
                         </constraints>
                     </view>

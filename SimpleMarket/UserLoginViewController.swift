@@ -122,6 +122,11 @@ class UserLoginViewController: UIViewController {
         try! FIRAuth.auth()?.signOut()
     }
     
+    // 戻る
+    @IBAction func handleBackButton(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

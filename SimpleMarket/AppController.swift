@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 class AppController: NSObject {
 
@@ -25,6 +26,21 @@ class AppController: NSObject {
             return name!
         }
         return ""
+    }
+    
+    // ログインチェック
+    func isLogin() -> Bool {
+        if FIRAuth.auth()?.currentUser != nil {
+            return true
+        }
+        return false
+    }
+    // ログインウィンドウを開く
+    func openLoginView(vc: UIViewController) {
+        dispatch_async(dispatch_get_main_queue()) {
+            let view = UIStoryboard(name: "User", bundle: nil).instantiateViewControllerWithIdentifier("UserLogin") as UIViewController
+            vc.presentViewController(view, animated: true, completion: nil)
+        }
     }
     
 }
