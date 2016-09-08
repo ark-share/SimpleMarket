@@ -12,7 +12,8 @@ import FirebaseDatabase
 
 // 出品テーブル
 class OrderData: NSObject {
-    var id: String?
+    // Order
+    var id: String? // id自体はfirebaseに保存しておらず、snapshot.keyを代入しているだけ
     var image: UIImage? // 画像複数なら images: [image] = [] か？
     var imageString: String?
     var name: String? // タイトル名
@@ -20,6 +21,9 @@ class OrderData: NSObject {
     var price: String? // 価格 Intの方がいい？
     var modified: NSDate?
     var created: NSDate?
+    
+    // Comment
+    //var comments: [CommentData] = []
     
     init(snapshot: FIRDataSnapshot) { //, myId: String
         // key

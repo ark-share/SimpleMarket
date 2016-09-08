@@ -26,6 +26,7 @@
 		A3B2AE971D7FB29C004D1CD8 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3B2AE961D7FB29C004D1CD8 /* FontAwesome.otf */; };
 		A3B2AE9A1D7FBCCC004D1CD8 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B2AE981D7FBCCC004D1CD8 /* CommentTableViewCell.swift */; };
 		A3B2AE9B1D7FBCCC004D1CD8 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3B2AE991D7FBCCC004D1CD8 /* CommentTableViewCell.xib */; };
+		A3B2AE9D1D7FE684004D1CD8 /* CommentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B2AE9C1D7FE684004D1CD8 /* CommentData.swift */; };
 		A3CA8BC21D6BE19200397DBC /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CA8BC11D6BE19200397DBC /* LeftMenuViewController.swift */; };
 		A3CD058F1D77C6A500E969FC /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CD058E1D77C6A500E969FC /* OrderDetailViewController.swift */; };
 		A3FB36271D62D26700EFB7C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB36261D62D26700EFB7C4 /* AppDelegate.swift */; };
@@ -60,6 +61,7 @@
 		A3B2AE961D7FB29C004D1CD8 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
 		A3B2AE981D7FBCCC004D1CD8 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		A3B2AE991D7FBCCC004D1CD8 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		A3B2AE9C1D7FE684004D1CD8 /* CommentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentData.swift; sourceTree = "<group>"; };
 		A3CA8BC11D6BE19200397DBC /* LeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
 		A3CD058E1D77C6A500E969FC /* OrderDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailViewController.swift; sourceTree = "<group>"; };
 		A3FB36231D62D26700EFB7C4 /* SimpleMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				A3436E5F1D658B9400EE1F77 /* OrderData.swift */,
+				A3B2AE9C1D7FE684004D1CD8 /* CommentData.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				A32B5F7A1D62E7D300608BBF /* CommonConst.swift in Sources */,
 				A3FB36291D62D26700EFB7C4 /* ViewController.swift in Sources */,
 				A3FB363F1D62DEDD00EFB7C4 /* OrderIndexViewController.swift in Sources */,
+				A3B2AE9D1D7FE684004D1CD8 /* CommentData.swift in Sources */,
 				A3B2AE9A1D7FBCCC004D1CD8 /* CommentTableViewCell.swift in Sources */,
 				A3FB36271D62D26700EFB7C4 /* AppDelegate.swift in Sources */,
 				A3A404F61D7008110061DDB2 /* BuyTableViewController.swift in Sources */,

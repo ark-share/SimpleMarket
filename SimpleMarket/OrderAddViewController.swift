@@ -25,7 +25,7 @@ class OrderAddViewController: UIViewController {
 
         let orderRef = FIRDatabase.database().reference().child(CommonConst.OrderPATH)
         
-        let name = nameTextField.text // String?型なのでアンラップする？
+        let name = nameTextField.text // String?型なのでアンラップする
         let body = bodyTextView.text
         let price = priceTextField.text // String?
         let modified = NSDate.timeIntervalSinceReferenceDate()

@@ -12,16 +12,21 @@ import UIKit
 class OrderSubmitViewController: UIViewController {
 
     @IBAction func handleOrderAddButton(sender: AnyObject) {
-        // modal
-        let view = self.storyboard!.instantiateViewControllerWithIdentifier("OrderAdd") as UIViewController
-        presentViewController(view, animated: true, completion: nil)
+//        let view = self.storyboard!.instantiateViewControllerWithIdentifier("OrderAdd") as UIViewController
+//        presentViewController(view, animated: true, completion: nil)
+        
+        // 出品完了時にモーダル生成してるので、モーダル閉じれば戻れるはず＞ただしこれだと前の入力データが残っているかも
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     @IBAction func handleOrderIndexButton(sender: AnyObject) {
-        // modal
-        //let view = self.storyboard!.instantiateInitialViewController()! as UIViewController // navが消えないように先にnavを呼ぶ
-        let view = self.storyboard!.instantiateViewControllerWithIdentifier("OrderIndex") as UIViewController // 移動先でnavを用意するようにしたので直接OrderIndexを呼び出せる
-        presentViewController(view, animated: true, completion: nil)
+//        let view = self.storyboard!.instantiateViewControllerWithIdentifier("OrderIndex") as UIViewController
+//        presentViewController(view, animated: true, completion: nil)
+        
+        // navが裏に隠れないように全面作り直す
+        let view = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("OrderIndex") as UIViewController
+        UIApplication.sharedApplication().keyWindow?.rootViewController = view
+        UIApplication.sharedApplication().keyWindow?.makeKeyWindow()
     }
     
     override func viewDidLoad() {

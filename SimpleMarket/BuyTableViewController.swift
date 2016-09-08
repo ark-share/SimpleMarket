@@ -35,7 +35,6 @@ class BuyTableViewController: UITableViewController {
             
             self.tableView.reloadData() // 再表示
             //}
-            
         })
     }
     
@@ -55,7 +54,6 @@ class BuyTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return orderArray.count
     }
-    
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath) as! BuyTableViewCell
