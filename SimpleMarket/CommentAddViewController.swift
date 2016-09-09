@@ -10,7 +10,9 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 
-private let reuseIdentifier = "commentCell"
+private let commentReuseIdentifier = "CommentCell"
+private let orderDetailReuseIdentifier = "OrderDetailCell"
+
 
 // コメントページ
 class CommentAddViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -55,26 +57,13 @@ class CommentAddViewController: UIViewController, UITableViewDelegate, UITableVi
             AppController().openLoginView(self)
         }
         
-        // 上の方に商品詳細のサムネイル　を予定してたけどスクロール内に表示するため一旦保留
-//        if orderData != nil {
-//            if orderData.image != nil {
-//                imageView.image = orderData.image!
-//            }
-//            if orderData.price != nil {
-//                priceLabel.text = orderData.price
-//            }
-//            if orderData.name != nil {
-//                nameLabel.text = orderData.name
-//            }
-//        }
-        
-        // ボタンに右アイコン追加
-//        let image = UIImage.fontAwesomeIconWithName(.ChevronRight, textColor: UIColor.blackColor(), size: CGSizeMake(25, 25))
-//        toOrderDetailButton.setImage(image, forState: .Normal)
-        
-        // cell
-        let nib = UINib(nibName: "CommentTableViewCell", bundle: nil) // Xibファイルの名前
-        tableView.registerNib(nib, forCellReuseIdentifier: reuseIdentifier)
+        // order cell
+        let orderDetailNib = UINib(nibName: "OrderDetailTableViewCell", bundle: nil) // Xibファイルの名前
+        tableView.registerNib(orderDetailNib, forCellReuseIdentifier: orderDetailReuseIdentifier)
+
+        // comment cell
+        let commentNib = UINib(nibName: "CommentTableViewCell", bundle: nil) // Xibファイルの名前
+        tableView.registerNib(commentNib, forCellReuseIdentifier: commentReuseIdentifier)
         tableView.rowHeight = UITableViewAutomaticDimension // 高さ自動
         
         // ordersに要素が追加されたらクロージャ呼び出す
@@ -123,18 +112,35 @@ class CommentAddViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return commentArray.count
+        return commentArray.count + 1 // 商品詳細の１件多くする
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath) as! CommentTableViewCell
-        cell.commentData = commentArray[indexPath.row]
         
-        return cell
+        switch indexPath.row {
+        // 初めだけ異なるセル
+        case 0:
+            let cell = tableView.dequeueReusableCellWithIdentifier(orderDetailReuseIdentifier, forIndexPath: indexPath) as! OrderDetailTableViewCell
+            cell.orderData = self.orderData
+            
+            return cell
+        // 他はコメントを表示
+        default:
+            let cell = tableView.dequeueReusableCellWithIdentifier(commentReuseIdentifier, forIndexPath: indexPath) as! CommentTableViewCell
+            cell.commentData = commentArray[indexPath.row-1] // 本来、0の次の[1番目]に表示したいデータはArrayの0に相当するので-1する
+            
+            return cell
+        }
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 80
+        switch indexPath.row {
+        // 初めだけ異なるセル
+        case 0:
+            return 210
+        default:
+            return 80
+        }
     }
 
 

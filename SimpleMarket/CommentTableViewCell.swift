@@ -8,6 +8,7 @@
 
 import UIKit
 
+// 各コメントのセル
 class CommentTableViewCell: UITableViewCell {
 
     @IBOutlet weak var nameLabel: UILabel!

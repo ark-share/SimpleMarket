@@ -54,8 +54,8 @@
             </tableViewCellContentView>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <connections>
-                <outlet property="imageVIew" destination="cD0-sd-Tsv" id="LQK-Cy-g6Z"/>
                 <outlet property="nameLabel" destination="sU1-VZ-dNo" id="ZB4-tA-nfF"/>
+                <outlet property="orderImageView" destination="cD0-sd-Tsv" id="yyv-cW-tVb"/>
                 <outlet property="priceLabel" destination="tB1-Wk-kq2" id="aaB-ec-k4a"/>
             </connections>
             <point key="canvasLocation" x="477" y="346.5"/>

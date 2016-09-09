@@ -1,25 +1,31 @@
 //
-//  BuyTableViewCell.swift
+//  OrderDetailTableViewCell.swift
 //  SimpleMarket
 //
-//  Created by macpc on 2016/08/25.
+//  Created by macpc on 2016/09/09.
 //  Copyright © 2016年 ark-share. All rights reserved.
 //
 
 import UIKit
 
-// 購入リストのセル
-class BuyTableViewCell: UITableViewCell {
+// コメントに隣接する商品詳細セル
+class OrderDetailTableViewCell: UITableViewCell {
 
+    //@IBOutlet weak var imageView: UIImageView! もともとimageViewは定義されてる？
     @IBOutlet weak var orderImageView: UIImageView!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var orderDetailButton: UIButton!
     
-    var orderData: OrderData!
+    var orderData: OrderData! // 前の画面からdataを受け取る
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        // コメントボタンに吹き出し追加
+        let image = UIImage.fontAwesomeIconWithName(.ChevronRight, textColor: UIColor.blackColor(), size: CGSizeMake(22, 22))
+        orderDetailButton.setImage(image, forState: .Normal)
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
