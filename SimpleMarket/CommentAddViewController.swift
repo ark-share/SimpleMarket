@@ -107,38 +107,42 @@ class CommentAddViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 2
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return commentArray.count + 1 // 商品詳細の１件多くする
+        if section == 0 {
+            return 1
+        } else {
+            return commentArray.count
+        }
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        switch indexPath.row {
         // 初めだけ異なるセル
-        case 0:
+        if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCellWithIdentifier(orderDetailReuseIdentifier, forIndexPath: indexPath) as! OrderDetailTableViewCell
             cell.orderData = self.orderData
             
             return cell
+        }
         // 他はコメントを表示
-        default:
+        else {
             let cell = tableView.dequeueReusableCellWithIdentifier(commentReuseIdentifier, forIndexPath: indexPath) as! CommentTableViewCell
-            cell.commentData = commentArray[indexPath.row-1] // 本来、0の次の[1番目]に表示したいデータはArrayの0に相当するので-1する
+            cell.commentData = commentArray[indexPath.row]
             
             return cell
         }
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        switch indexPath.row {
+
         // 初めだけ異なるセル
-        case 0:
+        if indexPath.section == 0 {
             return 210
-        default:
+        }
+        else {
             return 80
         }
     }
