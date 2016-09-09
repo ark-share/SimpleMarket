@@ -89,26 +89,6 @@
             </objects>
             <point key="canvasLocation" x="490" y="273"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="7oZ-cQ-dQC">
-            <objects>
-                <viewController id="H6E-C3-16i" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="arR-1h-m99"/>
-                        <viewControllerLayoutGuide type="bottom" id="t0I-7T-1qe"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ZiS-gP-U2r">
-                        <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="400" height="600"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nSh-MY-AG9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="173" y="871"/>
-        </scene>
     </scenes>
     <resources>
         <image name="btn" width="300" height="40"/>
