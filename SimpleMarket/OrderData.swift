@@ -23,7 +23,7 @@ class OrderData: NSObject {
     var created: NSDate?
     
     // Comment
-    //var comments: [CommentData] = []
+    var comments: [CommentData] = [] // コメント数とか取る場合に必要か
     
     init(snapshot: FIRDataSnapshot) { //, myId: String
         // key
@@ -39,6 +39,12 @@ class OrderData: NSObject {
         name = data["name"] as? String
         body = data["body"] as? String
         price = data["price"] as? String
+        
+        // Comment
+        if let comments = data["comments"] as? [CommentData] {
+            print(comments)
+            self.comments = comments
+        }
         
         modified = NSDate(timeIntervalSinceReferenceDate: data["modified"] as! NSTimeInterval)
         created = NSDate(timeIntervalSinceReferenceDate: data["created"] as! NSTimeInterval)

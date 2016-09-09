@@ -17,7 +17,7 @@ class OrderDetailViewController: UIViewController {
     @IBOutlet weak var commentButton: UIButton!
     
     
-    var orderData: OrderData!
+    var orderData: OrderData! // データを受け取って表示
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,11 +33,16 @@ class OrderDetailViewController: UIViewController {
             if orderData.name != nil {
                 nameLabel.text = orderData.name
             }
+            
+            // コメント数は？
+            print("comments = \(orderData.comments.count)")
+
         }
         
         // コメントボタンに吹き出し追加 storyboardeでも追加できるかも
 //        let image = UIImage.fontAwesomeIconWithName(.CommentO, textColor: UIColor.blackColor(), size: CGSizeMake(25, 25))
 //        commentButton.setImage(image, forState: .Normal)
+        
     }
 
     override func didReceiveMemoryWarning() {

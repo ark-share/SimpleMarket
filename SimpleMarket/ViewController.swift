@@ -35,7 +35,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print(self.navigationController?.viewControllers)
     }
     
     override func viewWillAppear(animated: Bool) {
