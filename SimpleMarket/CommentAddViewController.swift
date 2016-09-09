@@ -57,14 +57,9 @@ class CommentAddViewController: UIViewController, UITableViewDelegate, UITableVi
             AppController().openLoginView(self)
         }
         
-        // order cell
-        let orderDetailNib = UINib(nibName: "OrderDetailTableViewCell", bundle: nil) // Xibファイルの名前
-        tableView.registerNib(orderDetailNib, forCellReuseIdentifier: orderDetailReuseIdentifier)
-
-        // comment cell
-        let commentNib = UINib(nibName: "CommentTableViewCell", bundle: nil) // Xibファイルの名前
-        tableView.registerNib(commentNib, forCellReuseIdentifier: commentReuseIdentifier)
-        tableView.rowHeight = UITableViewAutomaticDimension // 高さ自動
+        // nibの登録
+        tableView.registerNib(UINib(nibName: "OrderDetailTableViewCell", bundle: nil), forCellReuseIdentifier: orderDetailReuseIdentifier)
+        tableView.registerNib(UINib(nibName: "CommentTableViewCell", bundle: nil), forCellReuseIdentifier: commentReuseIdentifier)
         
         // ordersに要素が追加されたらクロージャ呼び出す
         FIRDatabase.database().reference().child(CommonConst.OrderPATH+"/"+orderData.id!+"/"+CommonConst.CommentPATH).observeEventType(.ChildAdded, withBlock: { snapshot in

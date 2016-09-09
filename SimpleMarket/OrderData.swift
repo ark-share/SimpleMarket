@@ -23,7 +23,8 @@ class OrderData: NSObject {
     var created: NSDate?
     
     // Comment
-    var comments: [CommentData] = [] // コメント数とか取る場合に必要か
+    //var comments: [CommentData] = [] // コメント数とか取る場合に必要か
+    var comment_count: Int? = 0
     
     init(snapshot: FIRDataSnapshot) { //, myId: String
         // key
@@ -40,10 +41,9 @@ class OrderData: NSObject {
         body = data["body"] as? String
         price = data["price"] as? String
         
-        // Comment
-        if let comments = data["comments"] as? [CommentData] {
-            print(comments)
-            self.comments = comments
+        // Comment ここだと商品一覧の各タグそれぞれ全部のコメントを取り出してる
+        if let comments = data["comments"] {
+            comment_count = comments.count
         }
         
         modified = NSDate(timeIntervalSinceReferenceDate: data["modified"] as! NSTimeInterval)

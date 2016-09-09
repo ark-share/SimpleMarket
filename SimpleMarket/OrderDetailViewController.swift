@@ -35,7 +35,8 @@ class OrderDetailViewController: UIViewController {
             }
             
             // コメント数は？
-            print("comments = \(orderData.comments.count)")
+            print("comments = \(orderData.comment_count!)")
+            commentButton.setTitle("コメント \(orderData.comment_count!)", forState: .Normal)
 
         }
         
