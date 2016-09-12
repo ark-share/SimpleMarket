@@ -35,7 +35,7 @@ class CommentAddViewController: UIViewController, UITableViewDelegate, UITableVi
             let commentRef = FIRDatabase.database().reference().child(CommonConst.OrderPATH+"/"+orderData.id!+"/"+CommonConst.CommentPATH)
 
             let body = commentTextField.text // String?型なのでアンラップする
-            let user = AppController().getDisplayName() // displayNameの事
+            let user = AppController().displayName // displayNameの事
             let modified = NSDate.timeIntervalSinceReferenceDate()
             let created = NSDate.timeIntervalSinceReferenceDate()
             
@@ -138,7 +138,7 @@ class CommentAddViewController: UIViewController, UITableViewDelegate, UITableVi
             return 210
         }
         else {
-            return 80
+            return 120
         }
     }
 

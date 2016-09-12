@@ -43,7 +43,7 @@ class UserLoginViewController: UIViewController {
                 else {
                     // NSUserDefaultsに保存して画面を閉じる
                     if let displayName = user?.displayName {
-                        AppController().setDisplayName(displayName)
+                        AppController().displayName = displayName
                     }
                     self.dismissViewControllerAnimated(true, completion: nil)
                 }
@@ -104,7 +104,7 @@ class UserLoginViewController: UIViewController {
                                         SVProgressHUD.dismiss()
                                         
                                         // NSUserDefaultsに保存して画面を閉じる
-                                        AppController().setDisplayName(displayName)
+                                        AppController().displayName = displayName
                                         self.dismissViewControllerAnimated(true, completion: nil)
                                     }
                                 }

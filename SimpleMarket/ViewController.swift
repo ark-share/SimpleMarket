@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     @IBAction func handleLogoutButton(sender: AnyObject) {
         UserLoginViewController().logout()
         
-        AppController().setDisplayName("") // clear
+        AppController().displayName = "" // clear
         
         // reload
         self.viewWillAppear(true)
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         
-        let displayName = AppController().getDisplayName()
+        let displayName = AppController().displayName
         displayNameLabel.text = displayName
     }
 

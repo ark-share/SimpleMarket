@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A30B0D191D824E8C00C20A76 /* OrderDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30B0D171D824E8C00C20A76 /* OrderDetailTableViewCell.swift */; };
 		A30B0D1A1D824E8C00C20A76 /* OrderDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A30B0D181D824E8C00C20A76 /* OrderDetailTableViewCell.xib */; };
+		A30B0D211D869B9400C20A76 /* OrderDetailBuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30B0D201D869B9400C20A76 /* OrderDetailBuyViewController.swift */; };
 		A32B5F7A1D62E7D300608BBF /* CommonConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B5F791D62E7D300608BBF /* CommonConst.swift */; };
 		A32B5F7C1D62E84600608BBF /* ButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B5F7B1D62E84600608BBF /* ButtonCustom.swift */; };
 		A32B5F7F1D62EFD300608BBF /* OrderAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B5F7E1D62EFD300608BBF /* OrderAddViewController.swift */; };
@@ -46,6 +47,7 @@
 		98BD852A395E2BD9D57DF6A2 /* Pods_SimpleMarket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleMarket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A30B0D171D824E8C00C20A76 /* OrderDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailTableViewCell.swift; sourceTree = "<group>"; };
 		A30B0D181D824E8C00C20A76 /* OrderDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderDetailTableViewCell.xib; sourceTree = "<group>"; };
+		A30B0D201D869B9400C20A76 /* OrderDetailBuyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailBuyViewController.swift; sourceTree = "<group>"; };
 		A32B5F791D62E7D300608BBF /* CommonConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonConst.swift; sourceTree = "<group>"; };
 		A32B5F7B1D62E84600608BBF /* ButtonCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCustom.swift; sourceTree = "<group>"; };
 		A32B5F7E1D62EFD300608BBF /* OrderAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderAddViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				A3FB363E1D62DEDD00EFB7C4 /* OrderIndexViewController.swift */,
 				A3A404F81D703FA10061DDB2 /* OrderIndexCollectionViewController.swift */,
 				A3CD058E1D77C6A500E969FC /* OrderDetailViewController.swift */,
+				A30B0D201D869B9400C20A76 /* OrderDetailBuyViewController.swift */,
 				A32B5F7E1D62EFD300608BBF /* OrderAddViewController.swift */,
 				A3436E621D65AE9700EE1F77 /* OrderSubmitViewController.swift */,
 				A3A404E41D6D8F6F0061DDB2 /* OrderIndexBuyViewController.swift */,
@@ -394,6 +397,7 @@
 				A3B2AE9A1D7FBCCC004D1CD8 /* CommentTableViewCell.swift in Sources */,
 				A3FB36271D62D26700EFB7C4 /* AppDelegate.swift in Sources */,
 				A3A404F61D7008110061DDB2 /* BuyTableViewController.swift in Sources */,
+				A30B0D211D869B9400C20A76 /* OrderDetailBuyViewController.swift in Sources */,
 				A3FB36431D62DF9B00EFB7C4 /* AppController.swift in Sources */,
 				A3CA8BC21D6BE19200397DBC /* LeftMenuViewController.swift in Sources */,
 			);

@@ -16,9 +16,9 @@ class OrderDetailViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var commentButton: UIButton!
     
-    
     var orderData: OrderData! // データを受け取って表示
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
