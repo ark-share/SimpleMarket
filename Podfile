@@ -12,5 +12,7 @@ target 'SimpleMarket' do
   pod 'SVProgressHUD'
   pod 'SlideMenuControllerSwift'
   pod 'FontAwesome.swift'
+  pod 'WebPay', '~> 2.0.3'
+  pod 'Alamofire', '~> 3.5'
 
 end

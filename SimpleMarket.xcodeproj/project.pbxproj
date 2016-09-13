@@ -10,6 +10,7 @@
 		A30B0D191D824E8C00C20A76 /* OrderDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30B0D171D824E8C00C20A76 /* OrderDetailTableViewCell.swift */; };
 		A30B0D1A1D824E8C00C20A76 /* OrderDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A30B0D181D824E8C00C20A76 /* OrderDetailTableViewCell.xib */; };
 		A30B0D211D869B9400C20A76 /* OrderDetailBuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30B0D201D869B9400C20A76 /* OrderDetailBuyViewController.swift */; };
+		A30B0D231D878D1E00C20A76 /* WebpayClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30B0D221D878D1E00C20A76 /* WebpayClient.swift */; };
 		A32B5F7A1D62E7D300608BBF /* CommonConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B5F791D62E7D300608BBF /* CommonConst.swift */; };
 		A32B5F7C1D62E84600608BBF /* ButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B5F7B1D62E84600608BBF /* ButtonCustom.swift */; };
 		A32B5F7F1D62EFD300608BBF /* OrderAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B5F7E1D62EFD300608BBF /* OrderAddViewController.swift */; };
@@ -48,6 +49,7 @@
 		A30B0D171D824E8C00C20A76 /* OrderDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailTableViewCell.swift; sourceTree = "<group>"; };
 		A30B0D181D824E8C00C20A76 /* OrderDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderDetailTableViewCell.xib; sourceTree = "<group>"; };
 		A30B0D201D869B9400C20A76 /* OrderDetailBuyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailBuyViewController.swift; sourceTree = "<group>"; };
+		A30B0D221D878D1E00C20A76 /* WebpayClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebpayClient.swift; sourceTree = "<group>"; };
 		A32B5F791D62E7D300608BBF /* CommonConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonConst.swift; sourceTree = "<group>"; };
 		A32B5F7B1D62E84600608BBF /* ButtonCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCustom.swift; sourceTree = "<group>"; };
 		A32B5F7E1D62EFD300608BBF /* OrderAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderAddViewController.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 				A3FB36421D62DF9B00EFB7C4 /* AppController.swift */,
 				A3CA8BC11D6BE19200397DBC /* LeftMenuViewController.swift */,
 				A3FB36281D62D26700EFB7C4 /* ViewController.swift */,
+				A30B0D221D878D1E00C20A76 /* WebpayClient.swift */,
 				A3CD058C1D766C0900E969FC /* Orders */,
 				A3CD058D1D766C7700E969FC /* Users */,
 				A3555B801D7D5AA2009709FB /* Comment */,
@@ -383,6 +386,7 @@
 				A3555B7F1D7D5A97009709FB /* CommentAddViewController.swift in Sources */,
 				A3436E601D658B9400EE1F77 /* OrderData.swift in Sources */,
 				A3A404EC1D6E93DE0061DDB2 /* BuyTableViewCell.swift in Sources */,
+				A30B0D231D878D1E00C20A76 /* WebpayClient.swift in Sources */,
 				A3436E631D65AE9700EE1F77 /* OrderSubmitViewController.swift in Sources */,
 				A32B5F7F1D62EFD300608BBF /* OrderAddViewController.swift in Sources */,
 				A3A404E51D6D8F6F0061DDB2 /* OrderIndexBuyViewController.swift in Sources */,

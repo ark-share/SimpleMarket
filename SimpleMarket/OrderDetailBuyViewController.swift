@@ -24,9 +24,14 @@ class OrderDetailBuyViewController: UIViewController {
     @IBAction func handleAddressButton(sender: AnyObject) {
         print("to address")
     }
+    // 購入するボタン
+    @IBAction func handleBuyButton(sender: AnyObject) {
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print("buy \(orderData.name!)")
 
         // 元からクレカを設定しておく
         AppController().buyPayment = 2
