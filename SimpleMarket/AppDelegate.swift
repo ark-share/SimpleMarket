@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import SlideMenuControllerSwift
 import FontAwesome_swift
+import WebPay
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,9 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
+        // firebase
         FIRApp.configure()
-        
-        
+        // webpay
+        WPYTokenizer.setPublicKey(WebpayClient.publicKey)
+       
         SlideMenuOptions.leftViewWidth = 320
         SlideMenuOptions.contentViewScale = 1.0
         SlideMenuOptions.panFromBezel = false // 左からのスライドを停止。スクロールメニューのスライドだけ有効にするため

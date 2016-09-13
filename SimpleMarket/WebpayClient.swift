@@ -10,13 +10,15 @@ import UIKit
 import Alamofire
 
 class WebpayClient: NSObject {
-    static let publicKey = "test_public_YOUR_KEY"
-    static let secretKey = "test_secret_YOUR_KEY"
+    static let publicKey = "test_public_d2I2vT8Wdag56lLe6eeGbbDW"
+    static let secretKey = "test_secret_6i66afbJL3Zb37g9kZgSUgue"
     
     class func charge(amount: Int, token: String, handler: ((Bool) -> Void)) {
         let param: [String : AnyObject] = ["amount": amount,
                                            "currency" : "jpy",
-                                           "card" : token]
+                                           "capture": true, // すぐに実売り上げにする＝true
+                                           "card" : token
+                                           ]
         Alamofire.request(.GET, "https://api.webpay.jp/v1/charges", parameters: param, encoding: .URL, headers: ["Authorization": "Bearer \(WebpayClient.secretKey)"])
             .responseJSON { response in
                 print(response.request)  // original URL request
