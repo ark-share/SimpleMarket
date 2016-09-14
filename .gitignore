@@ -2,5 +2,5 @@ AdobeCreativeSDK*
 Pods/*
 GoogleService-Info.plist
 Carthage/*
-SimpleMarket/KeyConst.swift
+KeyConst.swift
 
