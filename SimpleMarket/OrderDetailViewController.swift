@@ -56,14 +56,14 @@ class OrderDetailViewController: UIViewController {
         // to CommentAddSegue
         if segue.identifier == "CommentAddSegue" {
             // orderDataを「そのまま」引き継ぐ
-            let commentAddViewController = segue.destinationViewController as! CommentAddViewController
-            commentAddViewController.orderData = self.orderData
+            let view = segue.destinationViewController as! CommentAddViewController
+            view.orderData = self.orderData
         }
-        // to OrderDetailBuySegue
-        if segue.identifier == "OrderDetailBuySegue" {
+        // to OrderBuySegue
+        if segue.identifier == "OrderBuySegue" {
             // orderDataを「そのまま」引き継ぐ
-            let orderDetailBuyViewController = segue.destinationViewController as! OrderDetailBuyViewController
-            orderDetailBuyViewController.orderData = self.orderData
+            let view = segue.destinationViewController as! OrderBuyViewController
+            view.orderData = self.orderData
         }
         
     }

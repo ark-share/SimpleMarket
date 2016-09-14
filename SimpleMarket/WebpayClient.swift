@@ -10,8 +10,8 @@ import UIKit
 import Alamofire
 
 class WebpayClient: NSObject {
-    static let publicKey = "test_public_d2I2vT8Wdag56lLe6eeGbbDW"
-    static let secretKey = "test_secret_6i66afbJL3Zb37g9kZgSUgue"
+    static let publicKey = KeyConst.WebPayPublicKey
+    static let secretKey = KeyConst.WebPaySecretKey
     
     class func charge(amount: Int, token: String, handler: ((Bool) -> Void)) {
         let param: [String : AnyObject] = ["amount": amount,

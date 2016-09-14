@@ -35,8 +35,8 @@ class OrderAddViewController: UIViewController {
         orderRef.childByAutoId().setValue(data)
         
         //SVProgressHUD.showSuccessWithStatus("出品しました")
-        let submitViewController = self.storyboard?.instantiateViewControllerWithIdentifier("OrderSubmit")
-        presentViewController(submitViewController!, animated: true, completion: nil) // モーダル
+        let view = self.storyboard?.instantiateViewControllerWithIdentifier("OrderAddThanks")
+        presentViewController(view!, animated: true, completion: nil) // モーダル
     }
     
     

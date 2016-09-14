@@ -1,5 +1,5 @@
 //
-//  OrderDetailBuyViewController.swift
+//  OrderBuyViewController.swift
 //  SimpleMarket
 //
 //  Created by macpc on 2016/09/12.
@@ -9,14 +9,13 @@
 import UIKit
 import WebPay
 
-class OrderDetailBuyViewController: UIViewController {
+class OrderBuyViewController: UIViewController {
 
     @IBOutlet weak var paymentLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     
     var orderData: OrderData!
     let card = WPYCreditCard()
-    private var price = 120
 
     // 支払い方法ボタン
     @IBAction func handlePaymentButton(sender: AnyObject) {
@@ -35,7 +34,8 @@ class OrderDetailBuyViewController: UIViewController {
         card.cvc = "123"
         card.name = "TARO YAMADA"
         
-        let paymentViewController = WPYPaymentViewController(priceTag: "¥"+String(price), card: card, callback: { viewController, token, error in
+        // 表示価格はorderData.price
+        let paymentViewController = WPYPaymentViewController(priceTag: "¥"+orderData.price!, card: card, callback: { viewController, token, error in
             if let newError = error {
                 print("error:\(newError.localizedDescription)")
             } else {
@@ -55,9 +55,17 @@ class OrderDetailBuyViewController: UIViewController {
     }
     
     func charge(token: String){
-        WebpayClient.charge(price, token: token) { isSuccess in
+        // チャージ金額はorderData.price
+        WebpayClient.charge(Int(orderData.price!)!, token: token) { isSuccess in
             if isSuccess {
                 print("succeeded. Check your dashboard")
+                
+                // presentViewControllerだと、次の画面に遷移されない？全面作り直す
+                let view = self.storyboard!.instantiateViewControllerWithIdentifier("OrderBuyThanks") as! OrderBuyThanksViewController
+                view.order_id = self.orderData.id!
+                UIApplication.sharedApplication().keyWindow?.rootViewController = view
+                UIApplication.sharedApplication().keyWindow?.makeKeyWindow()
+                
             }else{
                 print("failed. Check logs.")
             }

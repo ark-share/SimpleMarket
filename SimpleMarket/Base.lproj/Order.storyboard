@@ -170,7 +170,7 @@
                                 </constraints>
                                 <state key="normal" title="取引する" backgroundImage="btn"/>
                                 <connections>
-                                    <segue destination="1a2-7t-CM6" kind="showDetail" identifier="OrderDetailBuySegue" id="JWy-ml-sZ1"/>
+                                    <segue destination="1a2-7t-CM6" kind="showDetail" identifier="OrderBuySegue" id="JWy-ml-sZ1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -216,10 +216,10 @@
             </objects>
             <point key="canvasLocation" x="1280.5" y="-1466"/>
         </scene>
-        <!--Order Detail Buy View Controller-->
+        <!--Order Buy View Controller-->
         <scene sceneID="7UJ-kY-TDK">
             <objects>
-                <viewController id="1a2-7t-CM6" customClass="OrderDetailBuyViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OrderBuy" id="1a2-7t-CM6" customClass="OrderBuyViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yoD-sO-Up8"/>
                         <viewControllerLayoutGuide type="bottom" id="XdR-K6-ehP"/>
@@ -604,10 +604,10 @@
             </objects>
             <point key="canvasLocation" x="194" y="-455"/>
         </scene>
-        <!--Order Submit View Controller-->
+        <!--Order Add Thanks View Controller-->
         <scene sceneID="5zs-aI-p5d">
             <objects>
-                <viewController storyboardIdentifier="OrderSubmit" id="Ff0-Jg-Ypb" customClass="OrderSubmitViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OrderAddThanks" id="Ff0-Jg-Ypb" customClass="OrderAddThanksViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WB0-Nc-T4S"/>
                         <viewControllerLayoutGuide type="bottom" id="LZ9-0Z-Fhv"/>
@@ -617,7 +617,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="出品が完了しました。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTG-Gb-ee3">
-                                <rect key="frame" x="20" y="40" width="170" height="21"/>
+                                <rect key="frame" x="30" y="40" width="170" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -650,7 +650,7 @@
                             <constraint firstItem="ORS-A8-Ou7" firstAttribute="top" secondItem="QTG-Gb-ee3" secondAttribute="bottom" constant="30" id="BS6-F0-56j"/>
                             <constraint firstItem="QTG-Gb-ee3" firstAttribute="top" secondItem="WB0-Nc-T4S" secondAttribute="bottom" constant="20" id="CEH-HE-bLm"/>
                             <constraint firstItem="ORS-A8-Ou7" firstAttribute="centerX" secondItem="ZSH-Cq-0DT" secondAttribute="centerX" id="CVX-Ka-vvS"/>
-                            <constraint firstItem="QTG-Gb-ee3" firstAttribute="leading" secondItem="ZSH-Cq-0DT" secondAttribute="leadingMargin" id="TaQ-ef-rdA"/>
+                            <constraint firstItem="QTG-Gb-ee3" firstAttribute="leading" secondItem="ZSH-Cq-0DT" secondAttribute="leadingMargin" constant="10" id="TaQ-ef-rdA"/>
                             <constraint firstItem="J78-4U-gwk" firstAttribute="centerX" secondItem="ZSH-Cq-0DT" secondAttribute="centerX" id="YU3-xM-2Fv"/>
                             <constraint firstItem="J78-4U-gwk" firstAttribute="top" secondItem="ORS-A8-Ou7" secondAttribute="bottom" constant="30" id="ira-gF-InZ"/>
                             <constraint firstItem="FQV-Jt-o9W" firstAttribute="top" secondItem="J78-4U-gwk" secondAttribute="bottom" constant="20" id="t44-2D-gD5"/>
@@ -698,6 +698,67 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oZI-IM-9Tb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-671" y="-651"/>
+        </scene>
+        <!--Order Buy Thanks View Controller-->
+        <scene sceneID="Kex-nu-um1">
+            <objects>
+                <viewController storyboardIdentifier="OrderBuyThanks" id="DYN-KS-Z5T" customClass="OrderBuyThanksViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bAS-ZI-0AW"/>
+                        <viewControllerLayoutGuide type="bottom" id="RiU-1T-Ha9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gxk-eR-2EM">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商品を購入しました。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rp9-Zk-NgC">
+                                <rect key="frame" x="30" y="40" width="170" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MqS-DG-EEY">
+                                <rect key="frame" x="50" y="162" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="sXm-UM-j00"/>
+                                </constraints>
+                                <state key="normal" title="取引画面へ" backgroundImage="btn"/>
+                                <connections>
+                                    <action selector="handleBuyTrade:" destination="DYN-KS-Z5T" eventType="touchUpInside" id="X2T-zG-c2r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zg6-AE-4iS">
+                                <rect key="frame" x="148" y="232" width="105" height="30"/>
+                                <state key="normal" title="買い物を続ける"/>
+                                <connections>
+                                    <action selector="handleOrderIndex:" destination="DYN-KS-Z5T" eventType="touchUpInside" id="kHP-4P-Yxl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="発送通知をお待ちください。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Bz-xB-DOz">
+                                <rect key="frame" x="30" y="91" width="221" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MqS-DG-EEY" firstAttribute="centerX" secondItem="gxk-eR-2EM" secondAttribute="centerX" id="9zT-Uv-hYI"/>
+                            <constraint firstItem="Rp9-Zk-NgC" firstAttribute="leading" secondItem="gxk-eR-2EM" secondAttribute="leadingMargin" constant="10" id="Bsg-E6-Gpx"/>
+                            <constraint firstItem="zg6-AE-4iS" firstAttribute="centerX" secondItem="gxk-eR-2EM" secondAttribute="centerX" id="GgA-lV-HQP"/>
+                            <constraint firstItem="MqS-DG-EEY" firstAttribute="top" secondItem="4Bz-xB-DOz" secondAttribute="bottom" constant="50" id="HVc-Tg-xmj"/>
+                            <constraint firstItem="zg6-AE-4iS" firstAttribute="top" secondItem="MqS-DG-EEY" secondAttribute="bottom" constant="30" id="LDe-mQ-7zH"/>
+                            <constraint firstItem="Rp9-Zk-NgC" firstAttribute="top" secondItem="bAS-ZI-0AW" secondAttribute="bottom" constant="20" id="UY1-UC-qCx"/>
+                            <constraint firstItem="4Bz-xB-DOz" firstAttribute="leading" secondItem="gxk-eR-2EM" secondAttribute="leadingMargin" constant="10" id="bhz-zq-s7x"/>
+                            <constraint firstItem="4Bz-xB-DOz" firstAttribute="top" secondItem="Rp9-Zk-NgC" secondAttribute="bottom" constant="30" id="tS2-t6-HEB"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="300"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xOm-uV-x8A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1015" y="-506"/>
         </scene>
     </scenes>
     <resources>

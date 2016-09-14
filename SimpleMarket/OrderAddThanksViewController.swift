@@ -9,7 +9,7 @@
 import UIKit
 
 // 出品完了
-class OrderSubmitViewController: UIViewController {
+class OrderAddThanksViewController: UIViewController {
 
     @IBAction func handleOrderAddButton(sender: AnyObject) {
 //        let view = self.storyboard!.instantiateViewControllerWithIdentifier("OrderAdd") as UIViewController
@@ -20,9 +20,6 @@ class OrderSubmitViewController: UIViewController {
     }
     
     @IBAction func handleOrderIndexButton(sender: AnyObject) {
-//        let view = self.storyboard!.instantiateViewControllerWithIdentifier("OrderIndex") as UIViewController
-//        presentViewController(view, animated: true, completion: nil)
-        
         // navが裏に隠れないように全面作り直す
         let view = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("OrderIndex") as UIViewController
         UIApplication.sharedApplication().keyWindow?.rootViewController = view

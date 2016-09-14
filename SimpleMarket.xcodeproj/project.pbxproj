@@ -9,17 +9,19 @@
 /* Begin PBXBuildFile section */
 		A30B0D191D824E8C00C20A76 /* OrderDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30B0D171D824E8C00C20A76 /* OrderDetailTableViewCell.swift */; };
 		A30B0D1A1D824E8C00C20A76 /* OrderDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A30B0D181D824E8C00C20A76 /* OrderDetailTableViewCell.xib */; };
-		A30B0D211D869B9400C20A76 /* OrderDetailBuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30B0D201D869B9400C20A76 /* OrderDetailBuyViewController.swift */; };
+		A30B0D211D869B9400C20A76 /* OrderBuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30B0D201D869B9400C20A76 /* OrderBuyViewController.swift */; };
 		A30B0D231D878D1E00C20A76 /* WebpayClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30B0D221D878D1E00C20A76 /* WebpayClient.swift */; };
 		A32B5F7A1D62E7D300608BBF /* CommonConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B5F791D62E7D300608BBF /* CommonConst.swift */; };
 		A32B5F7C1D62E84600608BBF /* ButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B5F7B1D62E84600608BBF /* ButtonCustom.swift */; };
 		A32B5F7F1D62EFD300608BBF /* OrderAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B5F7E1D62EFD300608BBF /* OrderAddViewController.swift */; };
 		A3436E5E1D65829F00EE1F77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3436E5D1D65829F00EE1F77 /* GoogleService-Info.plist */; };
 		A3436E601D658B9400EE1F77 /* OrderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3436E5F1D658B9400EE1F77 /* OrderData.swift */; };
-		A3436E631D65AE9700EE1F77 /* OrderSubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3436E621D65AE9700EE1F77 /* OrderSubmitViewController.swift */; };
+		A3436E631D65AE9700EE1F77 /* OrderAddThanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3436E621D65AE9700EE1F77 /* OrderAddThanksViewController.swift */; };
 		A3436E661D66D66E00EE1F77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3436E641D66CBE400EE1F77 /* Main.storyboard */; };
 		A3555B7D1D7D57BB009709FB /* Comment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3555B7C1D7D57BB009709FB /* Comment.storyboard */; };
 		A3555B7F1D7D5A97009709FB /* CommentAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3555B7E1D7D5A97009709FB /* CommentAddViewController.swift */; };
+		A391E58D1D88EC5000937B32 /* OrderBuyThanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A391E58C1D88EC5000937B32 /* OrderBuyThanksViewController.swift */; };
+		A391E58F1D8905FB00937B32 /* KeyConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = A391E58E1D8905FB00937B32 /* KeyConst.swift */; };
 		A3A404E51D6D8F6F0061DDB2 /* OrderIndexBuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A404E41D6D8F6F0061DDB2 /* OrderIndexBuyViewController.swift */; };
 		A3A404EC1D6E93DE0061DDB2 /* BuyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A404EA1D6E93DE0061DDB2 /* BuyTableViewCell.swift */; };
 		A3A404ED1D6E93DE0061DDB2 /* BuyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3A404EB1D6E93DE0061DDB2 /* BuyTableViewCell.xib */; };
@@ -48,17 +50,19 @@
 		98BD852A395E2BD9D57DF6A2 /* Pods_SimpleMarket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleMarket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A30B0D171D824E8C00C20A76 /* OrderDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailTableViewCell.swift; sourceTree = "<group>"; };
 		A30B0D181D824E8C00C20A76 /* OrderDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderDetailTableViewCell.xib; sourceTree = "<group>"; };
-		A30B0D201D869B9400C20A76 /* OrderDetailBuyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailBuyViewController.swift; sourceTree = "<group>"; };
+		A30B0D201D869B9400C20A76 /* OrderBuyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderBuyViewController.swift; sourceTree = "<group>"; };
 		A30B0D221D878D1E00C20A76 /* WebpayClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebpayClient.swift; sourceTree = "<group>"; };
 		A32B5F791D62E7D300608BBF /* CommonConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonConst.swift; sourceTree = "<group>"; };
 		A32B5F7B1D62E84600608BBF /* ButtonCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCustom.swift; sourceTree = "<group>"; };
 		A32B5F7E1D62EFD300608BBF /* OrderAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderAddViewController.swift; sourceTree = "<group>"; };
 		A3436E5D1D65829F00EE1F77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A3436E5F1D658B9400EE1F77 /* OrderData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderData.swift; sourceTree = "<group>"; };
-		A3436E621D65AE9700EE1F77 /* OrderSubmitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderSubmitViewController.swift; sourceTree = "<group>"; };
+		A3436E621D65AE9700EE1F77 /* OrderAddThanksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderAddThanksViewController.swift; sourceTree = "<group>"; };
 		A3436E641D66CBE400EE1F77 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A3555B7C1D7D57BB009709FB /* Comment.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Comment.storyboard; sourceTree = "<group>"; };
 		A3555B7E1D7D5A97009709FB /* CommentAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentAddViewController.swift; sourceTree = "<group>"; };
+		A391E58C1D88EC5000937B32 /* OrderBuyThanksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderBuyThanksViewController.swift; sourceTree = "<group>"; };
+		A391E58E1D8905FB00937B32 /* KeyConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyConst.swift; sourceTree = "<group>"; };
 		A3A404E41D6D8F6F0061DDB2 /* OrderIndexBuyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderIndexBuyViewController.swift; sourceTree = "<group>"; };
 		A3A404EA1D6E93DE0061DDB2 /* BuyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyTableViewCell.swift; sourceTree = "<group>"; };
 		A3A404EB1D6E93DE0061DDB2 /* BuyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyTableViewCell.xib; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				A32B5F791D62E7D300608BBF /* CommonConst.swift */,
+				A391E58E1D8905FB00937B32 /* KeyConst.swift */,
 				A32B5F7B1D62E84600608BBF /* ButtonCustom.swift */,
 			);
 			name = Config;
@@ -166,9 +171,10 @@
 				A3FB363E1D62DEDD00EFB7C4 /* OrderIndexViewController.swift */,
 				A3A404F81D703FA10061DDB2 /* OrderIndexCollectionViewController.swift */,
 				A3CD058E1D77C6A500E969FC /* OrderDetailViewController.swift */,
-				A30B0D201D869B9400C20A76 /* OrderDetailBuyViewController.swift */,
+				A30B0D201D869B9400C20A76 /* OrderBuyViewController.swift */,
+				A391E58C1D88EC5000937B32 /* OrderBuyThanksViewController.swift */,
 				A32B5F7E1D62EFD300608BBF /* OrderAddViewController.swift */,
-				A3436E621D65AE9700EE1F77 /* OrderSubmitViewController.swift */,
+				A3436E621D65AE9700EE1F77 /* OrderAddThanksViewController.swift */,
 				A3A404E41D6D8F6F0061DDB2 /* OrderIndexBuyViewController.swift */,
 				A3A404F41D7008110061DDB2 /* BuyTableViewController.swift */,
 				A3A404EA1D6E93DE0061DDB2 /* BuyTableViewCell.swift */,
@@ -383,11 +389,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3A404F91D703FA10061DDB2 /* OrderIndexCollectionViewController.swift in Sources */,
+				A391E58F1D8905FB00937B32 /* KeyConst.swift in Sources */,
 				A3555B7F1D7D5A97009709FB /* CommentAddViewController.swift in Sources */,
 				A3436E601D658B9400EE1F77 /* OrderData.swift in Sources */,
 				A3A404EC1D6E93DE0061DDB2 /* BuyTableViewCell.swift in Sources */,
 				A30B0D231D878D1E00C20A76 /* WebpayClient.swift in Sources */,
-				A3436E631D65AE9700EE1F77 /* OrderSubmitViewController.swift in Sources */,
+				A3436E631D65AE9700EE1F77 /* OrderAddThanksViewController.swift in Sources */,
 				A32B5F7F1D62EFD300608BBF /* OrderAddViewController.swift in Sources */,
 				A3A404E51D6D8F6F0061DDB2 /* OrderIndexBuyViewController.swift in Sources */,
 				A3A404FB1D74300D0061DDB2 /* UserLoginViewController.swift in Sources */,
@@ -401,8 +408,9 @@
 				A3B2AE9A1D7FBCCC004D1CD8 /* CommentTableViewCell.swift in Sources */,
 				A3FB36271D62D26700EFB7C4 /* AppDelegate.swift in Sources */,
 				A3A404F61D7008110061DDB2 /* BuyTableViewController.swift in Sources */,
-				A30B0D211D869B9400C20A76 /* OrderDetailBuyViewController.swift in Sources */,
+				A30B0D211D869B9400C20A76 /* OrderBuyViewController.swift in Sources */,
 				A3FB36431D62DF9B00EFB7C4 /* AppController.swift in Sources */,
+				A391E58D1D88EC5000937B32 /* OrderBuyThanksViewController.swift in Sources */,
 				A3CA8BC21D6BE19200397DBC /* LeftMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
