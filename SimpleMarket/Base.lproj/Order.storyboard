@@ -724,7 +724,7 @@
                                 </constraints>
                                 <state key="normal" title="取引画面へ" backgroundImage="btn"/>
                                 <connections>
-                                    <action selector="handleBuyTrade:" destination="DYN-KS-Z5T" eventType="touchUpInside" id="X2T-zG-c2r"/>
+                                    <segue destination="FC9-WQ-LyP" kind="show" identifier="BuyTradeSegue" id="Qqu-rj-sv6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zg6-AE-4iS">
@@ -759,6 +759,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xOm-uV-x8A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1015" y="-506"/>
+        </scene>
+        <!--BuyTrade-->
+        <scene sceneID="0Fk-Qq-15Y">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Trade" referencedIdentifier="BuyTrade" id="FC9-WQ-LyP" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OFJ-0N-9tl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1374.5" y="-487"/>
         </scene>
     </scenes>
     <resources>

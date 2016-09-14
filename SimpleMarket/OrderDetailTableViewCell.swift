@@ -19,6 +19,11 @@ class OrderDetailTableViewCell: UITableViewCell {
     
     var orderData: OrderData! // 前の画面からdataを受け取る
     
+    @IBAction func handleOrderDetail(sender: AnyObject) {
+        // ただの戻るボタンじゃないかも。ナビやスライドを裏に用意した上に詳細ページも出さないといけない？
+        
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

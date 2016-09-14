@@ -62,7 +62,7 @@ class OrderBuyViewController: UIViewController {
                 
                 // presentViewControllerだと、次の画面に遷移されない？全面作り直す
                 let view = self.storyboard!.instantiateViewControllerWithIdentifier("OrderBuyThanks") as! OrderBuyThanksViewController
-                view.order_id = self.orderData.id!
+                view.orderData = self.orderData!
                 UIApplication.sharedApplication().keyWindow?.rootViewController = view
                 UIApplication.sharedApplication().keyWindow?.makeKeyWindow()
                 

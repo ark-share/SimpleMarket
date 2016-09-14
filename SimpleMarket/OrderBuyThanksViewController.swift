@@ -11,11 +11,7 @@ import UIKit
 // 購入完了
 class OrderBuyThanksViewController: UIViewController {
 
-    var order_id: String! // 取引ページを特定するための商品ID
-    
-    @IBAction func handleBuyTrade(sender: AnyObject) {
-        
-    }
+    var orderData: OrderData! // 取引ページを表示するための商品データ
     
     @IBAction func handleOrderIndex(sender: AnyObject) {
         // navが裏に隠れないように全面作り直す
@@ -27,7 +23,7 @@ class OrderBuyThanksViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print(order_id!)
+        print(orderData.id!)
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,4 +31,14 @@ class OrderBuyThanksViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    // 取引画面へはSegue
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+
+        if segue.identifier == "BuyTradeSegue" {
+            // orderDataを「そのまま」引き継ぐ
+            let view = segue.destinationViewController as! BuyTradeViewController
+            view.orderData = self.orderData
+        }
+        
+    }
 }
