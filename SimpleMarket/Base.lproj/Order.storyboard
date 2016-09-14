@@ -599,10 +599,21 @@
                             <outlet property="delegate" destination="u07-Oe-qK0" id="Row-Vs-RDK"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="Qzh-Ka-ZxA" kind="show" identifier="BuyTradeSegue" id="zUH-fT-hos"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4iF-Fg-AcF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="194" y="-455"/>
+            <point key="canvasLocation" x="278" y="-446"/>
+        </scene>
+        <!--BuyTrade-->
+        <scene sceneID="jVt-Dl-nw0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Trade" referencedIdentifier="BuyTrade" id="Qzh-Ka-ZxA" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aGJ-2D-90H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="701.5" y="-487"/>
         </scene>
         <!--Order Add Thanks View Controller-->
         <scene sceneID="5zs-aI-p5d">
