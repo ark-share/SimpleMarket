@@ -18,7 +18,6 @@ class OrderDetailViewController: UIViewController {
     
     var orderData: OrderData! // データを受け取って表示
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,9 +34,9 @@ class OrderDetailViewController: UIViewController {
             }
             
             // コメント数は？
-            print("comments = \(orderData.comment_count!)")
-            commentButton.setTitle("コメント \(orderData.comment_count!)", forState: .Normal)
-
+            if orderData.comment_count! > 0 {
+                commentButton.setTitle("コメント \(orderData.comment_count!)", forState: .Normal)
+            }
         }
         
         // コメントボタンに吹き出し追加

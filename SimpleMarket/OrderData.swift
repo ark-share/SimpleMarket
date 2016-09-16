@@ -19,6 +19,8 @@ class OrderData: NSObject {
     var name: String? // タイトル名
     var body: String? // 本文
     var price: String? // 価格 Intの方がいい？
+    var status: String? // ステータス
+    var statusName: String? // ステータス名
     var modified: NSDate?
     var created: NSDate?
     
@@ -40,6 +42,11 @@ class OrderData: NSObject {
         name = data["name"] as? String
         body = data["body"] as? String
         price = data["price"] as? String
+        status = data["status"] as? String
+        
+        if status != nil {
+            statusName = CommonConst.OrderStatusArray[Int(status!)!]
+        }
         
         // Comment ここだと商品一覧の各タグそれぞれ全部のコメントを取り出してる
         if let comments = data["comments"] {
@@ -49,5 +56,17 @@ class OrderData: NSObject {
         modified = NSDate(timeIntervalSinceReferenceDate: data["modified"] as! NSTimeInterval)
         created = NSDate(timeIntervalSinceReferenceDate: data["created"] as! NSTimeInterval)
     }
+    
+    // 単一カラムを更新する
+    let ref = FIRDatabase.database().reference().child(CommonConst.OrderPATH)
+    func saveField(field: String, value: String) {
+        let modified = NSDate.timeIntervalSinceReferenceDate()
+        
+        // idはあらかじめセットされたものを使う
+        // status:0は出品中
+        let data = [field: value, "modified": modified]
+        ref.child(self.id!).updateChildValues(data as [NSObject : AnyObject])
+    }
+
     
 }

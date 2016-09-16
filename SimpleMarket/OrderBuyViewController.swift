@@ -8,6 +8,9 @@
 
 import UIKit
 import WebPay
+import SVProgressHUD
+import Firebase
+import FirebaseDatabase
 
 class OrderBuyViewController: UIViewController {
 
@@ -38,10 +41,15 @@ class OrderBuyViewController: UIViewController {
         let paymentViewController = WPYPaymentViewController(priceTag: "¥"+orderData.price!, card: card, callback: { viewController, token, error in
             if let newError = error {
                 print("error:\(newError.localizedDescription)")
+                
+                SVProgressHUD.showErrorWithStatus("\(newError.localizedDescription)")
             } else {
                 // 結果がcallbackで渡される。ここでTokenを受け取る
                 print("token = \(token.tokenId)")
                 self.charge(token.tokenId)
+                
+                // ステータスを 2：決済済み に
+                self.orderData.saveField("status", value: "2")
                 
                 // when transaction is complete
                 viewController.setPayButtonComplete()
@@ -49,9 +57,8 @@ class OrderBuyViewController: UIViewController {
             }
         })
         
-        //self.navigationController?.pushViewController(paymentViewController, animated: true)
-        self.presentViewController(paymentViewController, animated: true, completion: nil)
-        
+        // navを引き継ぐ
+        self.navigationController?.pushViewController(paymentViewController, animated: true)
     }
     
     func charge(token: String){

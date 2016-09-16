@@ -30,8 +30,9 @@ class OrderAddViewController: UIViewController {
         let price = priceTextField.text // String?
         let modified = NSDate.timeIntervalSinceReferenceDate()
         let created = NSDate.timeIntervalSinceReferenceDate()
-        
-        let data = ["name": name!, "body": body, "price": price!, "modified": modified, "created": created]
+
+        // status:0は出品中
+        let data = ["name": name!, "body": body, "price": price!, "status": "0", "modified": modified, "created": created]
         orderRef.childByAutoId().setValue(data)
         
         //SVProgressHUD.showSuccessWithStatus("出品しました")
