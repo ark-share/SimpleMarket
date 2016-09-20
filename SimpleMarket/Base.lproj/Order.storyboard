@@ -532,8 +532,10 @@
                     <size key="freeformSize" width="600" height="1200"/>
                     <connections>
                         <outlet property="bodyTextView" destination="5eN-5p-T9J" id="mwI-MA-yzG"/>
+                        <outlet property="imageView1" destination="qaZ-ta-33U" id="qvo-zi-yME"/>
                         <outlet property="nameTextField" destination="KMQ-zp-zrD" id="XhL-hi-1Sp"/>
                         <outlet property="priceTextField" destination="Pzi-GA-x9M" id="dwd-ZR-5Yz"/>
+                        <segue destination="RHK-Ci-3PZ" kind="show" identifier="ImageSelectSegue" id="0Y8-6g-9lh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lYg-93-qQv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -673,6 +675,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HiF-fP-4g5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-721" y="1156"/>
+        </scene>
+        <!--Image Select View Controller-->
+        <scene sceneID="iPa-Cz-9VD">
+            <objects>
+                <viewController id="RHK-Ci-3PZ" customClass="ImageSelectViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fke-ZS-aNE"/>
+                        <viewControllerLayoutGuide type="bottom" id="1qN-A1-ac7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ARi-v9-zn8">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3Z-kY-ZBu">
+                                <rect key="frame" x="50" y="114" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="upe-lF-BSc"/>
+                                </constraints>
+                                <state key="normal" title="写真ライブラリ"/>
+                                <connections>
+                                    <action selector="handleLibrary:" destination="RHK-Ci-3PZ" eventType="touchUpInside" id="v4Q-Iq-rM0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rse-id-Fs6">
+                                <rect key="frame" x="50" y="174" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="T3B-BW-jR9"/>
+                                </constraints>
+                                <state key="normal" title="カメラ起動"/>
+                                <connections>
+                                    <action selector="handleCamera:" destination="RHK-Ci-3PZ" eventType="touchUpInside" id="Uyu-up-2UK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rA-Sh-0kD">
+                                <rect key="frame" x="163" y="234" width="75" height="30"/>
+                                <state key="normal" title="キャンセル"/>
+                                <connections>
+                                    <action selector="handleCancel:" destination="RHK-Ci-3PZ" eventType="touchUpInside" id="dps-iX-xi9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0rA-Sh-0kD" firstAttribute="top" secondItem="rse-id-Fs6" secondAttribute="bottom" constant="30" id="2MW-cV-Bob"/>
+                            <constraint firstItem="t3Z-kY-ZBu" firstAttribute="centerX" secondItem="ARi-v9-zn8" secondAttribute="centerX" id="W3C-Gl-wKh"/>
+                            <constraint firstItem="rse-id-Fs6" firstAttribute="top" secondItem="t3Z-kY-ZBu" secondAttribute="bottom" constant="30" id="aIH-bB-N3S"/>
+                            <constraint firstItem="0rA-Sh-0kD" firstAttribute="centerX" secondItem="ARi-v9-zn8" secondAttribute="centerX" id="lfC-0j-P4z"/>
+                            <constraint firstItem="rse-id-Fs6" firstAttribute="centerX" secondItem="ARi-v9-zn8" secondAttribute="centerX" id="mFY-qo-UGu"/>
+                            <constraint firstItem="t3Z-kY-ZBu" firstAttribute="top" secondItem="fke-ZS-aNE" secondAttribute="bottom" constant="50" id="tuU-EM-xia"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="400"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ckK-Yi-BW8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-721" y="1597"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UFJ-jS-XyL">

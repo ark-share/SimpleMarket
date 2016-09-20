@@ -14,6 +14,9 @@ import SVProgressHUD
 // 新規出品
 class OrderAddViewController: UIViewController {
 
+    @IBOutlet weak var imageView1: UIImageView!
+    var image1: UIImage!
+    
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var bodyTextView: UITextView!
     @IBOutlet weak var priceTextField: UITextField!
@@ -49,6 +52,14 @@ class OrderAddViewController: UIViewController {
         nameTextField.text = "no name"
         bodyTextView.text = "no body"
         priceTextField.text = "100"
+        
+        // imageのセット
+        imageView1.image = image1
+        
+        // tapイベントを検出する
+        imageView1.userInteractionEnabled = true // タップできるようにする
+        let myTap = UITapGestureRecognizer(target: self, action: #selector(imageTap))
+        imageView1.addGestureRecognizer(myTap)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -62,11 +73,18 @@ class OrderAddViewController: UIViewController {
     }
     
     
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        
-//        if segue.identifier == "ImageAddSegue" {
-//            print("segue ImageAdd")
-//        }
-//        
-//    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "ImageSelectSegue" {
+            print("segue ImageAdd")
+        }
+        
+    }
+    
+    // imageタップ
+    func imageTap() {
+        performSegueWithIdentifier("ImageSelectSegue", sender: nil)
+    }
+    
+    
 }

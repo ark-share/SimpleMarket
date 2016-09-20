@@ -23,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // firebase
         FIRApp.configure()
+        // Adobe
+        AdobeUXAuthManager.sharedManager().setAuthenticationParametersWithClientID(CommonConst.ADOBE_CLIENT_ID, withClientSecret: CommonConst.ADOBE_CLIENT_SECRET)
         // webpay
         WPYTokenizer.setPublicKey(WebpayClient.publicKey)
        

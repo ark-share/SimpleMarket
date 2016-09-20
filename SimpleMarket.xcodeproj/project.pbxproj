@@ -23,6 +23,23 @@
 		A38F1CBF1D892220005C09C7 /* KeyConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1CBE1D892220005C09C7 /* KeyConst.swift */; };
 		A38F1CC11D892F0B005C09C7 /* BuyTradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1CC01D892F0B005C09C7 /* BuyTradeViewController.swift */; };
 		A38F1CC31D892F5A005C09C7 /* Trade.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A38F1CC21D892F5A005C09C7 /* Trade.storyboard */; };
+		A38F1CC81D90CCAD005C09C7 /* AdobeCreativeSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38F1CC41D90CCAD005C09C7 /* AdobeCreativeSDKCore.framework */; };
+		A38F1CC91D90CCAD005C09C7 /* AdobeCreativeSDKCoreResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A38F1CC51D90CCAD005C09C7 /* AdobeCreativeSDKCoreResources.bundle */; };
+		A38F1CCA1D90CCAD005C09C7 /* AdobeCreativeSDKImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38F1CC61D90CCAD005C09C7 /* AdobeCreativeSDKImage.framework */; };
+		A38F1CCB1D90CCAD005C09C7 /* AdobeCreativeSDKImageResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A38F1CC71D90CCAD005C09C7 /* AdobeCreativeSDKImageResources.bundle */; };
+		A38F1CCD1D90E359005C09C7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A38F1CCC1D90E359005C09C7 /* libc++.tbd */; };
+		A38F1CCF1D90E36B005C09C7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A38F1CCE1D90E36B005C09C7 /* libz.tbd */; };
+		A38F1CD11D90E379005C09C7 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A38F1CD01D90E379005C09C7 /* libz.1.2.5.tbd */; };
+		A38F1CD31D90E388005C09C7 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A38F1CD21D90E388005C09C7 /* libsqlite3.0.tbd */; };
+		A38F1CD51D90E392005C09C7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38F1CD41D90E392005C09C7 /* MobileCoreServices.framework */; };
+		A38F1CD71D90E39C005C09C7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38F1CD61D90E39C005C09C7 /* SystemConfiguration.framework */; };
+		A38F1CD91D90E3A6005C09C7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38F1CD81D90E3A6005C09C7 /* Accelerate.framework */; };
+		A38F1CDB1D90E3AE005C09C7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38F1CDA1D90E3AE005C09C7 /* CoreData.framework */; };
+		A38F1CDD1D90E3B6005C09C7 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38F1CDC1D90E3B6005C09C7 /* MessageUI.framework */; };
+		A38F1CDF1D90E3BD005C09C7 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38F1CDE1D90E3BD005C09C7 /* OpenGLES.framework */; };
+		A38F1CE11D90E3C5005C09C7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38F1CE01D90E3C5005C09C7 /* QuartzCore.framework */; };
+		A38F1CE31D90E3CB005C09C7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38F1CE21D90E3CB005C09C7 /* StoreKit.framework */; };
+		A38F1CE61D9108A4005C09C7 /* ImageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1CE51D9108A4005C09C7 /* ImageSelectViewController.swift */; };
 		A391E58D1D88EC5000937B32 /* OrderBuyThanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A391E58C1D88EC5000937B32 /* OrderBuyThanksViewController.swift */; };
 		A3A404E51D6D8F6F0061DDB2 /* OrderIndexBuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A404E41D6D8F6F0061DDB2 /* OrderIndexBuyViewController.swift */; };
 		A3A404EC1D6E93DE0061DDB2 /* BuyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A404EA1D6E93DE0061DDB2 /* BuyTableViewCell.swift */; };
@@ -66,6 +83,24 @@
 		A38F1CBE1D892220005C09C7 /* KeyConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyConst.swift; sourceTree = "<group>"; };
 		A38F1CC01D892F0B005C09C7 /* BuyTradeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyTradeViewController.swift; sourceTree = "<group>"; };
 		A38F1CC21D892F5A005C09C7 /* Trade.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Trade.storyboard; sourceTree = "<group>"; };
+		A38F1CC41D90CCAD005C09C7 /* AdobeCreativeSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdobeCreativeSDKCore.framework; sourceTree = "<group>"; };
+		A38F1CC51D90CCAD005C09C7 /* AdobeCreativeSDKCoreResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AdobeCreativeSDKCoreResources.bundle; sourceTree = "<group>"; };
+		A38F1CC61D90CCAD005C09C7 /* AdobeCreativeSDKImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdobeCreativeSDKImage.framework; sourceTree = "<group>"; };
+		A38F1CC71D90CCAD005C09C7 /* AdobeCreativeSDKImageResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AdobeCreativeSDKImageResources.bundle; sourceTree = "<group>"; };
+		A38F1CCC1D90E359005C09C7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		A38F1CCE1D90E36B005C09C7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		A38F1CD01D90E379005C09C7 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		A38F1CD21D90E388005C09C7 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		A38F1CD41D90E392005C09C7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A38F1CD61D90E39C005C09C7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A38F1CD81D90E3A6005C09C7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		A38F1CDA1D90E3AE005C09C7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A38F1CDC1D90E3B6005C09C7 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		A38F1CDE1D90E3BD005C09C7 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		A38F1CE01D90E3C5005C09C7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A38F1CE21D90E3CB005C09C7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		A38F1CE41D90FC37005C09C7 /* SimpleMarket-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleMarket-Bridging-Header.h"; sourceTree = "<group>"; };
+		A38F1CE51D9108A4005C09C7 /* ImageSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSelectViewController.swift; sourceTree = "<group>"; };
 		A391E58C1D88EC5000937B32 /* OrderBuyThanksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderBuyThanksViewController.swift; sourceTree = "<group>"; };
 		A3A404E41D6D8F6F0061DDB2 /* OrderIndexBuyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderIndexBuyViewController.swift; sourceTree = "<group>"; };
 		A3A404EA1D6E93DE0061DDB2 /* BuyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyTableViewCell.swift; sourceTree = "<group>"; };
@@ -97,7 +132,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A38F1CE31D90E3CB005C09C7 /* StoreKit.framework in Frameworks */,
+				A38F1CE11D90E3C5005C09C7 /* QuartzCore.framework in Frameworks */,
+				A38F1CDF1D90E3BD005C09C7 /* OpenGLES.framework in Frameworks */,
+				A38F1CDD1D90E3B6005C09C7 /* MessageUI.framework in Frameworks */,
+				A38F1CDB1D90E3AE005C09C7 /* CoreData.framework in Frameworks */,
+				A38F1CD91D90E3A6005C09C7 /* Accelerate.framework in Frameworks */,
+				A38F1CD71D90E39C005C09C7 /* SystemConfiguration.framework in Frameworks */,
+				A38F1CD51D90E392005C09C7 /* MobileCoreServices.framework in Frameworks */,
+				A38F1CD31D90E388005C09C7 /* libsqlite3.0.tbd in Frameworks */,
+				A38F1CD11D90E379005C09C7 /* libz.1.2.5.tbd in Frameworks */,
+				A38F1CCF1D90E36B005C09C7 /* libz.tbd in Frameworks */,
+				A38F1CCD1D90E359005C09C7 /* libc++.tbd in Frameworks */,
 				FC463A060400DEBBB1844B2E /* Pods_SimpleMarket.framework in Frameworks */,
+				A38F1CCA1D90CCAD005C09C7 /* AdobeCreativeSDKImage.framework in Frameworks */,
+				A38F1CC81D90CCAD005C09C7 /* AdobeCreativeSDKCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +228,7 @@
 				A30B0D201D869B9400C20A76 /* OrderBuyViewController.swift */,
 				A391E58C1D88EC5000937B32 /* OrderBuyThanksViewController.swift */,
 				A32B5F7E1D62EFD300608BBF /* OrderAddViewController.swift */,
+				A38F1CE51D9108A4005C09C7 /* ImageSelectViewController.swift */,
 				A3436E621D65AE9700EE1F77 /* OrderAddThanksViewController.swift */,
 				A3A404E41D6D8F6F0061DDB2 /* OrderIndexBuyViewController.swift */,
 				A3A404F41D7008110061DDB2 /* BuyTableViewController.swift */,
@@ -217,6 +267,10 @@
 		A3FB36251D62D26700EFB7C4 /* SimpleMarket */ = {
 			isa = PBXGroup;
 			children = (
+				A38F1CC41D90CCAD005C09C7 /* AdobeCreativeSDKCore.framework */,
+				A38F1CC51D90CCAD005C09C7 /* AdobeCreativeSDKCoreResources.bundle */,
+				A38F1CC61D90CCAD005C09C7 /* AdobeCreativeSDKImage.framework */,
+				A38F1CC71D90CCAD005C09C7 /* AdobeCreativeSDKImageResources.bundle */,
 				A32B5F7D1D62E8E400608BBF /* Config */,
 				A3FB36411D62DF2D00EFB7C4 /* Controller */,
 				A3436E611D658BA500EE1F77 /* Model */,
@@ -225,6 +279,7 @@
 				A3FB36321D62D26700EFB7C4 /* Info.plist */,
 				A3436E5D1D65829F00EE1F77 /* GoogleService-Info.plist */,
 				A3B2AE961D7FB29C004D1CD8 /* FontAwesome.otf */,
+				A38F1CE41D90FC37005C09C7 /* SimpleMarket-Bridging-Header.h */,
 			);
 			path = SimpleMarket;
 			sourceTree = "<group>";
@@ -259,6 +314,18 @@
 		BA366FE96756250B122F1F6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A38F1CE21D90E3CB005C09C7 /* StoreKit.framework */,
+				A38F1CE01D90E3C5005C09C7 /* QuartzCore.framework */,
+				A38F1CDE1D90E3BD005C09C7 /* OpenGLES.framework */,
+				A38F1CDC1D90E3B6005C09C7 /* MessageUI.framework */,
+				A38F1CDA1D90E3AE005C09C7 /* CoreData.framework */,
+				A38F1CD81D90E3A6005C09C7 /* Accelerate.framework */,
+				A38F1CD61D90E39C005C09C7 /* SystemConfiguration.framework */,
+				A38F1CD41D90E392005C09C7 /* MobileCoreServices.framework */,
+				A38F1CD21D90E388005C09C7 /* libsqlite3.0.tbd */,
+				A38F1CD01D90E379005C09C7 /* libz.1.2.5.tbd */,
+				A38F1CCE1D90E36B005C09C7 /* libz.tbd */,
+				A38F1CCC1D90E359005C09C7 /* libc++.tbd */,
 				98BD852A395E2BD9D57DF6A2 /* Pods_SimpleMarket.framework */,
 			);
 			name = Frameworks;
@@ -328,7 +395,9 @@
 				A3FB36311D62D26700EFB7C4 /* LaunchScreen.storyboard in Resources */,
 				A3436E661D66D66E00EE1F77 /* Main.storyboard in Resources */,
 				A3436E5E1D65829F00EE1F77 /* GoogleService-Info.plist in Resources */,
+				A38F1CC91D90CCAD005C09C7 /* AdobeCreativeSDKCoreResources.bundle in Resources */,
 				A3FB362E1D62D26700EFB7C4 /* Assets.xcassets in Resources */,
+				A38F1CCB1D90CCAD005C09C7 /* AdobeCreativeSDKImageResources.bundle in Resources */,
 				A30B0D1A1D824E8C00C20A76 /* OrderDetailTableViewCell.xib in Resources */,
 				A3555B7D1D7D57BB009709FB /* Comment.storyboard in Resources */,
 				A3B2AE971D7FB29C004D1CD8 /* FontAwesome.otf in Resources */,
@@ -401,6 +470,7 @@
 				A3436E601D658B9400EE1F77 /* OrderData.swift in Sources */,
 				A3A404EC1D6E93DE0061DDB2 /* BuyTableViewCell.swift in Sources */,
 				A30B0D231D878D1E00C20A76 /* WebpayClient.swift in Sources */,
+				A38F1CE61D9108A4005C09C7 /* ImageSelectViewController.swift in Sources */,
 				A3436E631D65AE9700EE1F77 /* OrderAddThanksViewController.swift in Sources */,
 				A32B5F7F1D62EFD300608BBF /* OrderAddViewController.swift in Sources */,
 				A3A404E51D6D8F6F0061DDB2 /* OrderIndexBuyViewController.swift in Sources */,
@@ -533,11 +603,68 @@
 			baseConfigurationReference = E42861653C1233EB0DBBA2FF /* Pods-SimpleMarket.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SimpleMarket",
+				);
 				INFOPLIST_FILE = SimpleMarket/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"icucore\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AdSupport\"",
+					"-framework",
+					"\"AddressBook\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseAuth\"",
+					"-framework",
+					"\"FirebaseDatabase\"",
+					"-framework",
+					"\"FirebaseInstanceID\"",
+					"-framework",
+					"\"FontAwesome_swift\"",
+					"-framework",
+					"\"GoogleInterchangeUtilities\"",
+					"-framework",
+					"\"GoogleNetworkingUtilities\"",
+					"-framework",
+					"\"GoogleParsingUtilities\"",
+					"-framework",
+					"\"GoogleSymbolUtilities\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"SVProgressHUD\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SlideMenuControllerSwift\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"WebPay\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.ark-share.app.SimpleMarket";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleMarket/SimpleMarket-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -546,11 +673,68 @@
 			baseConfigurationReference = 27C6FCB2F88DB2B75EEB7E05 /* Pods-SimpleMarket.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SimpleMarket",
+				);
 				INFOPLIST_FILE = SimpleMarket/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"icucore\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AdSupport\"",
+					"-framework",
+					"\"AddressBook\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseAuth\"",
+					"-framework",
+					"\"FirebaseDatabase\"",
+					"-framework",
+					"\"FirebaseInstanceID\"",
+					"-framework",
+					"\"FontAwesome_swift\"",
+					"-framework",
+					"\"GoogleInterchangeUtilities\"",
+					"-framework",
+					"\"GoogleNetworkingUtilities\"",
+					"-framework",
+					"\"GoogleParsingUtilities\"",
+					"-framework",
+					"\"GoogleSymbolUtilities\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"SVProgressHUD\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SlideMenuControllerSwift\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"WebPay\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.ark-share.app.SimpleMarket";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleMarket/SimpleMarket-Bridging-Header.h";
 				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
 			};
 			name = Release;
