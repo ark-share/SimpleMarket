@@ -28,6 +28,7 @@ class OrderAddViewController: UIViewController {
 
         let orderRef = FIRDatabase.database().reference().child(CommonConst.OrderPATH)
         
+        let imageData = UIImageJPEGRepresentation(imageView1.image!, 0.5) // 圧縮率0.5
         let name = nameTextField.text // String?型なのでアンラップする
         let body = bodyTextView.text
         let price = priceTextField.text // String?
@@ -35,7 +36,9 @@ class OrderAddViewController: UIViewController {
         let created = NSDate.timeIntervalSinceReferenceDate()
 
         // status:0は出品中
-        let data = ["name": name!, "body": body, "price": price!, "status": "0", "modified": modified, "created": created]
+        let data = [
+            "image": imageData!.base64EncodedStringWithOptions(.Encoding64CharacterLineLength),
+            "name": name!, "body": body, "price": price!, "status": "0", "modified": modified, "created": created]
         orderRef.childByAutoId().setValue(data)
         
         //SVProgressHUD.showSuccessWithStatus("出品しました")

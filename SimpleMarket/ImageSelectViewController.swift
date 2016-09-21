@@ -33,7 +33,7 @@ class ImageSelectViewController: UIViewController, UIImagePickerControllerDelega
             presentViewController(picker, animated: true, completion: nil)
         }
         else {
-            SVProgressHUD.showErrorWithStatus("起動できません")
+            SVProgressHUD.showErrorWithStatus("起動できません") // シミュレータでは起動不可
         }
     }
     
