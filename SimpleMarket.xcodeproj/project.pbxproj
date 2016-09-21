@@ -246,6 +246,13 @@
 			name = Users;
 			sourceTree = "<group>";
 		};
+		A3D48F991D927FE7000BD928 /* Trade */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Trade;
+			sourceTree = "<group>";
+		};
 		A3FB361A1D62D26700EFB7C4 = {
 			isa = PBXGroup;
 			children = (
@@ -305,6 +312,7 @@
 				A3FB36281D62D26700EFB7C4 /* ViewController.swift */,
 				A30B0D221D878D1E00C20A76 /* WebpayClient.swift */,
 				A3CD058C1D766C0900E969FC /* Orders */,
+				A3D48F991D927FE7000BD928 /* Trade */,
 				A3CD058D1D766C7700E969FC /* Users */,
 				A3555B801D7D5AA2009709FB /* Comment */,
 			);
@@ -641,8 +649,6 @@
 					"-framework",
 					"\"GoogleNetworkingUtilities\"",
 					"-framework",
-					"\"GoogleParsingUtilities\"",
-					"-framework",
 					"\"GoogleSymbolUtilities\"",
 					"-framework",
 					"\"GoogleUtilities\"",
@@ -665,6 +671,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.ark-share.app.SimpleMarket";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SimpleMarket/SimpleMarket-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -711,8 +718,6 @@
 					"-framework",
 					"\"GoogleNetworkingUtilities\"",
 					"-framework",
-					"\"GoogleParsingUtilities\"",
-					"-framework",
 					"\"GoogleSymbolUtilities\"",
 					"-framework",
 					"\"GoogleUtilities\"",
@@ -736,6 +741,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SimpleMarket/SimpleMarket-Bridging-Header.h";
 				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};

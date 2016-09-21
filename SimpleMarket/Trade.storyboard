@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Buy Trade View Controller-->
@@ -18,20 +19,102 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDM-s7-qbJ">
-                                <rect key="frame" x="98" y="91" width="42" height="21"/>
+                                <frame key="frameInset" minX="98" minY="91" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="400" height="600"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ssD-tl-JgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="226" y="176"/>
+            <point key="canvasLocation" x="219" y="248"/>
+        </scene>
+        <!--購入リスト-->
+        <scene sceneID="wwf-Oe-wUa">
+            <objects>
+                <viewController storyboardIdentifier="OrderIndexBuy" automaticallyAdjustsScrollViewInsets="NO" id="yjG-1p-Tko" customClass="OrderIndexBuyViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cKL-bj-aAT"/>
+                        <viewControllerLayoutGuide type="bottom" id="QcT-Wf-yOb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P6v-to-uIE">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5P4-9E-jMf"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qwy-WS-kA2">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="yuy-gt-Fmr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QcT-Wf-yOb" firstAttribute="top" secondItem="5P4-9E-jMf" secondAttribute="bottom" id="5Z2-qD-xjW"/>
+                            <constraint firstItem="5P4-9E-jMf" firstAttribute="leading" secondItem="P6v-to-uIE" secondAttribute="leading" id="AIJ-6L-njc"/>
+                            <constraint firstItem="Qwy-WS-kA2" firstAttribute="leading" secondItem="P6v-to-uIE" secondAttribute="leading" id="DVc-xC-GLk"/>
+                            <constraint firstAttribute="trailing" secondItem="5P4-9E-jMf" secondAttribute="trailing" id="QcF-7t-VNj"/>
+                            <constraint firstAttribute="trailing" secondItem="Qwy-WS-kA2" secondAttribute="trailing" id="gTY-D1-JWT"/>
+                            <constraint firstItem="Qwy-WS-kA2" firstAttribute="top" secondItem="cKL-bj-aAT" secondAttribute="bottom" id="hgk-Yh-44e"/>
+                            <constraint firstItem="5P4-9E-jMf" firstAttribute="top" secondItem="Qwy-WS-kA2" secondAttribute="bottom" id="vog-Ca-y9g"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="購入リスト" id="W5v-hH-Nym"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="600"/>
+                    <connections>
+                        <outlet property="headerView" destination="Qwy-WS-kA2" id="Jvx-cr-T2x"/>
+                        <outlet property="scrollView" destination="5P4-9E-jMf" id="Xv8-5D-seo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iqo-Vb-XiB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="161" y="-651"/>
+        </scene>
+        <!--Buy Table View Controller-->
+        <scene sceneID="44c-6U-zj4">
+            <objects>
+                <tableViewController storyboardIdentifier="BuyTable" id="Nmm-yC-J34" customClass="BuyTableViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="J8P-mx-6C1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <connections>
+                            <outlet property="dataSource" destination="Nmm-yC-J34" id="zTK-Xl-PfD"/>
+                            <outlet property="delegate" destination="Nmm-yC-J34" id="pgg-uM-8f9"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="jKw-Ji-FG8" kind="show" identifier="BuyTradeSegue" id="Iea-Lc-hcA"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qkg-CJ-uM8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="278" y="-446"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IJX-2u-3Te">
+            <objects>
+                <navigationController storyboardIdentifier="Navigation OrderIndexBuy" automaticallyAdjustsScrollViewInsets="NO" id="CZI-Rw-R4F" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="GmQ-YY-jAU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yjG-1p-Tko" kind="relationship" relationship="rootViewController" id="rOB-W7-ZuP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="alA-Jm-CPo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-671" y="-651"/>
         </scene>
     </scenes>
 </document>

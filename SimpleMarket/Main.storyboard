@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9Vf-8u-fp4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9Vf-8u-fp4">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,41 +19,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chN-7m-UfT">
-                                <rect key="frame" x="20" y="80" width="75" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chN-7m-UfT">
+                                <frame key="frameInset" minX="20" minY="80" width="75" height="30"/>
                                 <state key="normal" title="出品一覧へ"/>
                                 <connections>
                                     <segue destination="DJY-c0-Mq3" kind="show" id="sam-7e-beA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQt-j1-YbD">
-                                <rect key="frame" x="20" y="130" width="90" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQt-j1-YbD">
+                                <frame key="frameInset" minX="20" minY="130" width="90" height="30"/>
                                 <state key="normal" title="購入リストへ"/>
                                 <connections>
                                     <segue destination="3HU-Mj-X5h" kind="show" id="8bd-eH-W5L"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTK-3x-ZFP">
-                                <rect key="frame" x="20" y="180" width="60" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTK-3x-ZFP">
+                                <frame key="frameInset" minX="20" minY="180" width="60" height="30"/>
                                 <state key="normal" title="ログイン"/>
                                 <connections>
                                     <action selector="handleLoginButton:" destination="9Vf-8u-fp4" eventType="touchUpInside" id="VYC-hf-NQE"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ログインしていません" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AXy-H6-gXw">
-                                <rect key="frame" x="100" y="180" width="161" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ログインしていません" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AXy-H6-gXw">
+                                <frame key="frameInset" minX="100" minY="180" width="161" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKA-mz-NzY">
-                                <rect key="frame" x="261" y="180" width="119" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKA-mz-NzY">
+                                <frame key="frameInset" minX="261" minY="180" width="119" height="30"/>
                                 <state key="normal" title="ログアウト"/>
                                 <connections>
                                     <action selector="handleLogoutButton:" destination="9Vf-8u-fp4" eventType="touchUpInside" id="Uku-Of-r17"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="AXy-H6-gXw" firstAttribute="bottom" secondItem="mTK-3x-ZFP" secondAttribute="bottom" id="3bQ-fM-KfW"/>
                             <constraint firstItem="AXy-H6-gXw" firstAttribute="leading" secondItem="mTK-3x-ZFP" secondAttribute="trailing" constant="20" id="DLo-aR-Nh3"/>
@@ -83,15 +84,15 @@
                 <viewControllerPlaceholder storyboardName="Order" referencedIdentifier="OrderIndex" id="DJY-c0-Mq3" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NQO-1c-ErL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="625.5" y="-202"/>
+            <point key="canvasLocation" x="874" y="-6"/>
         </scene>
         <!--OrderIndexBuy-->
         <scene sceneID="dbd-Yw-A2N">
             <objects>
-                <viewControllerPlaceholder storyboardName="Order" referencedIdentifier="OrderIndexBuy" id="3HU-Mj-X5h" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Trade" referencedIdentifier="OrderIndexBuy" id="3HU-Mj-X5h" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5q0-ul-5Sf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="625.5" y="-134"/>
+            <point key="canvasLocation" x="892" y="46"/>
         </scene>
         <!--Left Menu View Controller-->
         <scene sceneID="5M3-t3-Do1">
@@ -105,15 +106,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRU-8p-tAe">
-                                <rect key="frame" x="30" y="80" width="71" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRU-8p-tAe">
+                                <frame key="frameInset" minX="30" minY="80" width="71" height="30"/>
                                 <state key="normal" title="Topへ戻る"/>
                                 <connections>
                                     <action selector="handleToTop:" destination="WPY-b6-c55" eventType="touchUpInside" id="1jJ-zS-o9P"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="gRU-8p-tAe" firstAttribute="leading" secondItem="D8u-VO-LzU" secondAttribute="leadingMargin" constant="10" id="RE3-ZC-XW5"/>
                             <constraint firstItem="gRU-8p-tAe" firstAttribute="top" secondItem="7st-ex-swW" secondAttribute="bottom" constant="60" id="TgJ-E4-lAW"/>

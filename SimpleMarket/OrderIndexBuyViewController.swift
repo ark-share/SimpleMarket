@@ -68,7 +68,7 @@ class OrderIndexBuyViewController: UIViewController, UIScrollViewDelegate {
     func makeTableViewByPage(page: Int) {
         
         //let table = BuyTableViewController(nibName: "BuyTableViewController", bundle: nil) nibじゃなくてもいい
-        let table = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("BuyTable") as! BuyTableViewController
+        let table = self.storyboard!.instantiateViewControllerWithIdentifier("BuyTable") as! BuyTableViewController
 
         // view配置
         table.view.frame = CGRectMake(self.view.frame.width * CGFloat(page), 0, self.view.frame.width, scrollView.frame.height)
