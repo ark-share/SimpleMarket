@@ -669,7 +669,7 @@
                                 </constraints>
                                 <state key="normal" title="取引画面へ" backgroundImage="btn"/>
                                 <connections>
-                                    <segue destination="FC9-WQ-LyP" kind="show" id="NtJ-7s-voY"/>
+                                    <segue destination="FC9-WQ-LyP" kind="show" identifier="TradeBuyDetailSegue" id="NtJ-7s-voY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zg6-AE-4iS">
