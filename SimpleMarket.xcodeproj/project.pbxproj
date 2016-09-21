@@ -21,7 +21,7 @@
 		A3555B7D1D7D57BB009709FB /* Comment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3555B7C1D7D57BB009709FB /* Comment.storyboard */; };
 		A3555B7F1D7D5A97009709FB /* CommentAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3555B7E1D7D5A97009709FB /* CommentAddViewController.swift */; };
 		A38F1CBF1D892220005C09C7 /* KeyConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1CBE1D892220005C09C7 /* KeyConst.swift */; };
-		A38F1CC11D892F0B005C09C7 /* BuyTradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1CC01D892F0B005C09C7 /* BuyTradeViewController.swift */; };
+		A38F1CC11D892F0B005C09C7 /* TradeBuyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1CC01D892F0B005C09C7 /* TradeBuyDetailViewController.swift */; };
 		A38F1CC31D892F5A005C09C7 /* Trade.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A38F1CC21D892F5A005C09C7 /* Trade.storyboard */; };
 		A38F1CC81D90CCAD005C09C7 /* AdobeCreativeSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38F1CC41D90CCAD005C09C7 /* AdobeCreativeSDKCore.framework */; };
 		A38F1CC91D90CCAD005C09C7 /* AdobeCreativeSDKCoreResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A38F1CC51D90CCAD005C09C7 /* AdobeCreativeSDKCoreResources.bundle */; };
@@ -81,7 +81,7 @@
 		A3555B7C1D7D57BB009709FB /* Comment.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Comment.storyboard; sourceTree = "<group>"; };
 		A3555B7E1D7D5A97009709FB /* CommentAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentAddViewController.swift; sourceTree = "<group>"; };
 		A38F1CBE1D892220005C09C7 /* KeyConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyConst.swift; sourceTree = "<group>"; };
-		A38F1CC01D892F0B005C09C7 /* BuyTradeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyTradeViewController.swift; sourceTree = "<group>"; };
+		A38F1CC01D892F0B005C09C7 /* TradeBuyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeBuyDetailViewController.swift; sourceTree = "<group>"; };
 		A38F1CC21D892F5A005C09C7 /* Trade.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Trade.storyboard; sourceTree = "<group>"; };
 		A38F1CC41D90CCAD005C09C7 /* AdobeCreativeSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdobeCreativeSDKCore.framework; sourceTree = "<group>"; };
 		A38F1CC51D90CCAD005C09C7 /* AdobeCreativeSDKCoreResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AdobeCreativeSDKCoreResources.bundle; sourceTree = "<group>"; };
@@ -233,7 +233,7 @@
 				A3A404E41D6D8F6F0061DDB2 /* OrderIndexBuyViewController.swift */,
 				A3A404F41D7008110061DDB2 /* BuyTableViewController.swift */,
 				A3A404EA1D6E93DE0061DDB2 /* BuyTableViewCell.swift */,
-				A38F1CC01D892F0B005C09C7 /* BuyTradeViewController.swift */,
+				A38F1CC01D892F0B005C09C7 /* TradeBuyDetailViewController.swift */,
 			);
 			name = Orders;
 			sourceTree = "<group>";
@@ -489,7 +489,7 @@
 				A30B0D191D824E8C00C20A76 /* OrderDetailTableViewCell.swift in Sources */,
 				A3FB36291D62D26700EFB7C4 /* ViewController.swift in Sources */,
 				A3FB363F1D62DEDD00EFB7C4 /* OrderIndexViewController.swift in Sources */,
-				A38F1CC11D892F0B005C09C7 /* BuyTradeViewController.swift in Sources */,
+				A38F1CC11D892F0B005C09C7 /* TradeBuyDetailViewController.swift in Sources */,
 				A3B2AE9D1D7FE684004D1CD8 /* CommentData.swift in Sources */,
 				A3B2AE9A1D7FBCCC004D1CD8 /* CommentTableViewCell.swift in Sources */,
 				A3FB36271D62D26700EFB7C4 /* AppDelegate.swift in Sources */,

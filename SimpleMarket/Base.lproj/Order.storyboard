@@ -481,12 +481,12 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="qTz-yc-mEA"/>
+                                        <exclude reference="4il-hG-lLt"/>
                                         <exclude reference="Ks6-fy-qDG"/>
                                         <exclude reference="Yiv-WR-xJ5"/>
-                                        <exclude reference="xMk-DR-RZR"/>
-                                        <exclude reference="qTz-yc-mEA"/>
                                         <exclude reference="NcU-Zj-jxN"/>
-                                        <exclude reference="4il-hG-lLt"/>
+                                        <exclude reference="xMk-DR-RZR"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -669,7 +669,7 @@
                                 </constraints>
                                 <state key="normal" title="取引画面へ" backgroundImage="btn"/>
                                 <connections>
-                                    <segue destination="FC9-WQ-LyP" kind="show" identifier="BuyTradeSegue" id="Qqu-rj-sv6"/>
+                                    <segue destination="FC9-WQ-LyP" kind="show" id="NtJ-7s-voY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zg6-AE-4iS">
@@ -705,13 +705,13 @@
             </objects>
             <point key="canvasLocation" x="1015" y="-506"/>
         </scene>
-        <!--BuyTrade-->
+        <!--TradeBuyDetail-->
         <scene sceneID="0Fk-Qq-15Y">
             <objects>
-                <viewControllerPlaceholder storyboardName="Trade" referencedIdentifier="BuyTrade" id="FC9-WQ-LyP" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Trade" referencedIdentifier="TradeBuyDetail" id="FC9-WQ-LyP" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OFJ-0N-9tl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1374.5" y="-487"/>
+            <point key="canvasLocation" x="1521" y="-480"/>
         </scene>
     </scenes>
     <resources>

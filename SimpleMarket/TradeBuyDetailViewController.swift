@@ -9,7 +9,7 @@
 import UIKit
 
 // 購入者、取引画面
-class BuyTradeViewController: UIViewController {
+class TradeBuyDetailViewController: UIViewController {
 
     
     var orderData: OrderData!

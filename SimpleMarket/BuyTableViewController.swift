@@ -69,7 +69,7 @@ class BuyTableViewController: UITableViewController {
     // セルから直にSegueを引いた場合はここは要らない。２回詳細ページが呼ばれてしまう
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         print("click buy cell")
-        performSegueWithIdentifier("BuyTradeSegue", sender: nil)
+        performSegueWithIdentifier("TradeBuyDetailSegue", sender: nil)
     }
     
     /*
@@ -110,9 +110,9 @@ class BuyTableViewController: UITableViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        let vc = segue.destinationViewController as! BuyTradeViewController
+        let vc = segue.destinationViewController as! TradeBuyDetailViewController
 
-        if segue.identifier == "BuyTradeSegue" {
+        if segue.identifier == "TradeBuyDetailSegue" {
             // orderDataを引き継ぐ
             let indexPath = self.tableView.indexPathForSelectedRow // どのセルを押した？
             vc.orderData = self.orderArray[indexPath!.row]

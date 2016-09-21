@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Buy Trade View Controller-->
+        <!--Trade Buy Detail View Controller-->
         <scene sceneID="qE4-QY-yqV">
             <objects>
-                <viewController storyboardIdentifier="BuyTrade" id="jKw-Ji-FG8" customClass="BuyTradeViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TradeBuyDetail" id="jKw-Ji-FG8" customClass="TradeBuyDetailViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ofe-sf-bee"/>
                         <viewControllerLayoutGuide type="bottom" id="Cob-d3-Nod"/>
@@ -91,7 +91,7 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <segue destination="jKw-Ji-FG8" kind="show" identifier="BuyTradeSegue" id="Iea-Lc-hcA"/>
+                        <segue destination="jKw-Ji-FG8" kind="show" identifier="TradeBuyDetailSegue" id="Iea-Lc-hcA"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qkg-CJ-uM8" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -34,9 +34,9 @@ class OrderBuyThanksViewController: UIViewController {
     // 取引画面へはSegue
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 
-        if segue.identifier == "BuyTradeSegue" {
+        if segue.identifier == "TradeBuyDetailSegue" {
             // orderDataを「そのまま」引き継ぐ
-            let view = segue.destinationViewController as! BuyTradeViewController
+            let view = segue.destinationViewController as! TradeBuyDetailViewController
             view.orderData = self.orderData
         }
         
