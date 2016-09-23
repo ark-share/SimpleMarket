@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 
-private let reuseIdentifier = "BuyCell"
+private let reuseIdentifier = "TradeBuyIndexCell"
 
 // 購入リスト（取引中、過去の取引）
 class BuyTableViewController: UITableViewController {
@@ -21,7 +21,7 @@ class BuyTableViewController: UITableViewController {
         super.viewDidLoad()
         
         // cell
-        let nib = UINib(nibName: "BuyTableViewCell", bundle: nil) // Xibファイルの名前
+        let nib = UINib(nibName: "TradeBuyIndexCell", bundle: nil) // Xibファイルの名前
         tableView.registerNib(nib, forCellReuseIdentifier: reuseIdentifier)
         tableView.rowHeight = UITableViewAutomaticDimension // 高さ自動
         
