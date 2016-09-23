@@ -23,10 +23,6 @@
 		A38F1CBF1D892220005C09C7 /* KeyConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1CBE1D892220005C09C7 /* KeyConst.swift */; };
 		A38F1CC11D892F0B005C09C7 /* TradeBuyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1CC01D892F0B005C09C7 /* TradeBuyDetailViewController.swift */; };
 		A38F1CC31D892F5A005C09C7 /* Trade.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A38F1CC21D892F5A005C09C7 /* Trade.storyboard */; };
-		A38F1CC81D90CCAD005C09C7 /* AdobeCreativeSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38F1CC41D90CCAD005C09C7 /* AdobeCreativeSDKCore.framework */; };
-		A38F1CC91D90CCAD005C09C7 /* AdobeCreativeSDKCoreResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A38F1CC51D90CCAD005C09C7 /* AdobeCreativeSDKCoreResources.bundle */; };
-		A38F1CCA1D90CCAD005C09C7 /* AdobeCreativeSDKImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38F1CC61D90CCAD005C09C7 /* AdobeCreativeSDKImage.framework */; };
-		A38F1CCB1D90CCAD005C09C7 /* AdobeCreativeSDKImageResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A38F1CC71D90CCAD005C09C7 /* AdobeCreativeSDKImageResources.bundle */; };
 		A38F1CCD1D90E359005C09C7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A38F1CCC1D90E359005C09C7 /* libc++.tbd */; };
 		A38F1CCF1D90E36B005C09C7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A38F1CCE1D90E36B005C09C7 /* libz.tbd */; };
 		A38F1CD11D90E379005C09C7 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A38F1CD01D90E379005C09C7 /* libz.1.2.5.tbd */; };
@@ -54,6 +50,10 @@
 		A3B2AE9D1D7FE684004D1CD8 /* CommentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B2AE9C1D7FE684004D1CD8 /* CommentData.swift */; };
 		A3CA8BC21D6BE19200397DBC /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CA8BC11D6BE19200397DBC /* LeftMenuViewController.swift */; };
 		A3CD058F1D77C6A500E969FC /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CD058E1D77C6A500E969FC /* OrderDetailViewController.swift */; };
+		A3DF4C0F1D94B9FB00603A6D /* AdobeCreativeSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3DF4C0B1D94B9FB00603A6D /* AdobeCreativeSDKCore.framework */; };
+		A3DF4C101D94B9FB00603A6D /* AdobeCreativeSDKCoreResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A3DF4C0C1D94B9FB00603A6D /* AdobeCreativeSDKCoreResources.bundle */; };
+		A3DF4C111D94B9FB00603A6D /* AdobeCreativeSDKImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3DF4C0D1D94B9FB00603A6D /* AdobeCreativeSDKImage.framework */; };
+		A3DF4C121D94B9FB00603A6D /* AdobeCreativeSDKImageResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A3DF4C0E1D94B9FB00603A6D /* AdobeCreativeSDKImageResources.bundle */; };
 		A3FB36271D62D26700EFB7C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB36261D62D26700EFB7C4 /* AppDelegate.swift */; };
 		A3FB36291D62D26700EFB7C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB36281D62D26700EFB7C4 /* ViewController.swift */; };
 		A3FB362C1D62D26700EFB7C4 /* Order.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FB362A1D62D26700EFB7C4 /* Order.storyboard */; };
@@ -83,10 +83,6 @@
 		A38F1CBE1D892220005C09C7 /* KeyConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyConst.swift; sourceTree = "<group>"; };
 		A38F1CC01D892F0B005C09C7 /* TradeBuyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeBuyDetailViewController.swift; sourceTree = "<group>"; };
 		A38F1CC21D892F5A005C09C7 /* Trade.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Trade.storyboard; sourceTree = "<group>"; };
-		A38F1CC41D90CCAD005C09C7 /* AdobeCreativeSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdobeCreativeSDKCore.framework; sourceTree = "<group>"; };
-		A38F1CC51D90CCAD005C09C7 /* AdobeCreativeSDKCoreResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AdobeCreativeSDKCoreResources.bundle; sourceTree = "<group>"; };
-		A38F1CC61D90CCAD005C09C7 /* AdobeCreativeSDKImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdobeCreativeSDKImage.framework; sourceTree = "<group>"; };
-		A38F1CC71D90CCAD005C09C7 /* AdobeCreativeSDKImageResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AdobeCreativeSDKImageResources.bundle; sourceTree = "<group>"; };
 		A38F1CCC1D90E359005C09C7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		A38F1CCE1D90E36B005C09C7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		A38F1CD01D90E379005C09C7 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
@@ -115,6 +111,10 @@
 		A3B2AE9C1D7FE684004D1CD8 /* CommentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentData.swift; sourceTree = "<group>"; };
 		A3CA8BC11D6BE19200397DBC /* LeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
 		A3CD058E1D77C6A500E969FC /* OrderDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailViewController.swift; sourceTree = "<group>"; };
+		A3DF4C0B1D94B9FB00603A6D /* AdobeCreativeSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdobeCreativeSDKCore.framework; sourceTree = "<group>"; };
+		A3DF4C0C1D94B9FB00603A6D /* AdobeCreativeSDKCoreResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AdobeCreativeSDKCoreResources.bundle; sourceTree = "<group>"; };
+		A3DF4C0D1D94B9FB00603A6D /* AdobeCreativeSDKImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdobeCreativeSDKImage.framework; sourceTree = "<group>"; };
+		A3DF4C0E1D94B9FB00603A6D /* AdobeCreativeSDKImageResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AdobeCreativeSDKImageResources.bundle; sourceTree = "<group>"; };
 		A3FB36231D62D26700EFB7C4 /* SimpleMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FB36261D62D26700EFB7C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3FB36281D62D26700EFB7C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +137,7 @@
 				A38F1CDF1D90E3BD005C09C7 /* OpenGLES.framework in Frameworks */,
 				A38F1CDD1D90E3B6005C09C7 /* MessageUI.framework in Frameworks */,
 				A38F1CDB1D90E3AE005C09C7 /* CoreData.framework in Frameworks */,
+				A3DF4C0F1D94B9FB00603A6D /* AdobeCreativeSDKCore.framework in Frameworks */,
 				A38F1CD91D90E3A6005C09C7 /* Accelerate.framework in Frameworks */,
 				A38F1CD71D90E39C005C09C7 /* SystemConfiguration.framework in Frameworks */,
 				A38F1CD51D90E392005C09C7 /* MobileCoreServices.framework in Frameworks */,
@@ -144,9 +145,8 @@
 				A38F1CD11D90E379005C09C7 /* libz.1.2.5.tbd in Frameworks */,
 				A38F1CCF1D90E36B005C09C7 /* libz.tbd in Frameworks */,
 				A38F1CCD1D90E359005C09C7 /* libc++.tbd in Frameworks */,
+				A3DF4C111D94B9FB00603A6D /* AdobeCreativeSDKImage.framework in Frameworks */,
 				FC463A060400DEBBB1844B2E /* Pods_SimpleMarket.framework in Frameworks */,
-				A38F1CCA1D90CCAD005C09C7 /* AdobeCreativeSDKImage.framework in Frameworks */,
-				A38F1CC81D90CCAD005C09C7 /* AdobeCreativeSDKCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +256,10 @@
 		A3FB361A1D62D26700EFB7C4 = {
 			isa = PBXGroup;
 			children = (
+				A3DF4C0B1D94B9FB00603A6D /* AdobeCreativeSDKCore.framework */,
+				A3DF4C0C1D94B9FB00603A6D /* AdobeCreativeSDKCoreResources.bundle */,
+				A3DF4C0D1D94B9FB00603A6D /* AdobeCreativeSDKImage.framework */,
+				A3DF4C0E1D94B9FB00603A6D /* AdobeCreativeSDKImageResources.bundle */,
 				A3FB36251D62D26700EFB7C4 /* SimpleMarket */,
 				A3FB36241D62D26700EFB7C4 /* Products */,
 				1B3E7EE70C3C740D36291861 /* Pods */,
@@ -274,10 +278,6 @@
 		A3FB36251D62D26700EFB7C4 /* SimpleMarket */ = {
 			isa = PBXGroup;
 			children = (
-				A38F1CC41D90CCAD005C09C7 /* AdobeCreativeSDKCore.framework */,
-				A38F1CC51D90CCAD005C09C7 /* AdobeCreativeSDKCoreResources.bundle */,
-				A38F1CC61D90CCAD005C09C7 /* AdobeCreativeSDKImage.framework */,
-				A38F1CC71D90CCAD005C09C7 /* AdobeCreativeSDKImageResources.bundle */,
 				A32B5F7D1D62E8E400608BBF /* Config */,
 				A3FB36411D62DF2D00EFB7C4 /* Controller */,
 				A3436E611D658BA500EE1F77 /* Model */,
@@ -403,9 +403,9 @@
 				A3FB36311D62D26700EFB7C4 /* LaunchScreen.storyboard in Resources */,
 				A3436E661D66D66E00EE1F77 /* Main.storyboard in Resources */,
 				A3436E5E1D65829F00EE1F77 /* GoogleService-Info.plist in Resources */,
-				A38F1CC91D90CCAD005C09C7 /* AdobeCreativeSDKCoreResources.bundle in Resources */,
+				A3DF4C101D94B9FB00603A6D /* AdobeCreativeSDKCoreResources.bundle in Resources */,
 				A3FB362E1D62D26700EFB7C4 /* Assets.xcassets in Resources */,
-				A38F1CCB1D90CCAD005C09C7 /* AdobeCreativeSDKImageResources.bundle in Resources */,
+				A3DF4C121D94B9FB00603A6D /* AdobeCreativeSDKImageResources.bundle in Resources */,
 				A30B0D1A1D824E8C00C20A76 /* OrderDetailTableViewCell.xib in Resources */,
 				A3555B7D1D7D57BB009709FB /* Comment.storyboard in Resources */,
 				A3B2AE971D7FB29C004D1CD8 /* FontAwesome.otf in Resources */,
@@ -565,6 +565,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -602,6 +603,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 2.3;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -614,6 +616,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SimpleMarket",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SimpleMarket/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -683,6 +686,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SimpleMarket",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SimpleMarket/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

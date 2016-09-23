@@ -314,7 +314,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
             endingLineNumber = "42"
-            landmarkName = "handleCancel(_:)"
+            landmarkName = "handleCancel(sender:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -330,7 +330,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
             endingLineNumber = "33"
-            landmarkName = "handleCamera(_:)"
+            landmarkName = "handleCamera(sender:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
