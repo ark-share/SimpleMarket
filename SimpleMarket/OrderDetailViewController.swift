@@ -14,6 +14,7 @@ class OrderDetailViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var commentButton: UIButton!
     
     var orderData: OrderData! // データを受け取って表示
@@ -31,6 +32,9 @@ class OrderDetailViewController: UIViewController {
             }
             if orderData.name != nil {
                 nameLabel.text = orderData.name
+            }
+            if orderData.status != nil {
+                statusLabel.text = orderData.statusName
             }
             
             // コメント数は？

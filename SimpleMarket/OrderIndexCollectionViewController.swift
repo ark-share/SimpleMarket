@@ -90,6 +90,10 @@ class OrderIndexCollectionViewController: UICollectionViewController, UICollecti
         if data.name != nil {
             nameLabel.text = data.name!
         }
+        let statusLabel = cell.viewWithTag(4) as! UILabel
+        if data.status != nil {
+            statusLabel.text = data.status!
+        }
         
         cell.layoutIfNeeded()
     

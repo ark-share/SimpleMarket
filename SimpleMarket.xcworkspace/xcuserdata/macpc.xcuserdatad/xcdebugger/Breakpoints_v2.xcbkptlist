@@ -165,11 +165,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SimpleMarket/OrderDetailViewController.swift"
-            timestampString = "495607814.887069"
+            timestampString = "496308839.942206"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "prepareForSegue(segue:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -197,11 +197,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SimpleMarket/OrderDetailViewController.swift"
-            timestampString = "495702654.730684"
+            timestampString = "496308839.942206"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -219,7 +219,7 @@
             startingLineNumber = "53"
             endingLineNumber = "53"
             landmarkName = "init(snapshot:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -235,7 +235,7 @@
             startingLineNumber = "52"
             endingLineNumber = "52"
             landmarkName = "init(snapshot:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -371,11 +371,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SimpleMarket/OrderIndexCollectionViewController.swift"
-            timestampString = "496137579.217151"
+            timestampString = "496308576.140169"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
             landmarkName = "collectionView(collectionView:didSelectItemAtIndexPath:)"
             landmarkType = "7">
          </BreakpointContent>

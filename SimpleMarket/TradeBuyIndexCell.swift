@@ -14,6 +14,7 @@ class TradeBuyIndexCell: UITableViewCell {
     @IBOutlet weak var orderImageView: UIImageView!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var statusLabel: UILabel!
     
     var orderData: OrderData!
     
@@ -38,6 +39,9 @@ class TradeBuyIndexCell: UITableViewCell {
         }
         if orderData.name != nil {
             nameLabel.text = orderData.name
+        }
+        if orderData.status != nil {
+            statusLabel.text = orderData.status
         }
         
         super.layoutSubviews()
