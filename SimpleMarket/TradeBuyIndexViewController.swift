@@ -1,5 +1,5 @@
 //
-//  OrderIndexBuyViewController.swift
+//  TradeBuyIndexViewController.swift
 //  SimpleMarket
 //
 //  Created by macpc on 2016/08/24.
@@ -10,7 +10,7 @@ import UIKit
 import SlideMenuControllerSwift
 
 // 購入リスト
-class OrderIndexBuyViewController: UIViewController, UIScrollViewDelegate {
+class TradeBuyIndexViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
@@ -67,8 +67,7 @@ class OrderIndexBuyViewController: UIViewController, UIScrollViewDelegate {
     // コンテンツの生成
     func makeTableViewByPage(page: Int) {
         
-        //let table = BuyTableViewController(nibName: "BuyTableViewController", bundle: nil) nibじゃなくてもいい
-        let table = UIStoryboard(name: "Trade", bundle: nil).instantiateViewControllerWithIdentifier("BuyTable") as! BuyTableViewController
+        let table = UIStoryboard(name: "Trade", bundle: nil).instantiateViewControllerWithIdentifier("TradeBuyTable") as! TradeBuyTableViewController
 
         // view配置
         table.view.frame = CGRectMake(self.view.frame.width * CGFloat(page), 0, self.view.frame.width, scrollView.frame.height)

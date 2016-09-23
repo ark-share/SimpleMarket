@@ -30,7 +30,7 @@
                                 <frame key="frameInset" minX="20" minY="130" width="90" height="30"/>
                                 <state key="normal" title="購入リストへ"/>
                                 <connections>
-                                    <segue destination="3HU-Mj-X5h" kind="show" id="8bd-eH-W5L"/>
+                                    <segue destination="3HU-Mj-X5h" kind="show" identifier="" id="8bd-eH-W5L"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTK-3x-ZFP">
@@ -86,10 +86,10 @@
             </objects>
             <point key="canvasLocation" x="874" y="-6"/>
         </scene>
-        <!--OrderIndexBuy-->
+        <!--TradeBuyIndex-->
         <scene sceneID="dbd-Yw-A2N">
             <objects>
-                <viewControllerPlaceholder storyboardName="Trade" referencedIdentifier="OrderIndexBuy" id="3HU-Mj-X5h" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Trade" referencedIdentifier="TradeBuyIndex" id="3HU-Mj-X5h" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5q0-ul-5Sf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="892" y="46"/>

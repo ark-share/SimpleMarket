@@ -38,7 +38,7 @@
         <!--購入リスト-->
         <scene sceneID="wwf-Oe-wUa">
             <objects>
-                <viewController storyboardIdentifier="OrderIndexBuy" automaticallyAdjustsScrollViewInsets="NO" id="yjG-1p-Tko" customClass="OrderIndexBuyViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TradeBuyIndex" automaticallyAdjustsScrollViewInsets="NO" id="yjG-1p-Tko" customClass="TradeBuyIndexViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cKL-bj-aAT"/>
                         <viewControllerLayoutGuide type="bottom" id="QcT-Wf-yOb"/>
@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="161" y="-651"/>
         </scene>
-        <!--Buy Table View Controller-->
+        <!--Trade Buy Table View Controller-->
         <scene sceneID="44c-6U-zj4">
             <objects>
-                <tableViewController storyboardIdentifier="BuyTable" id="Nmm-yC-J34" customClass="BuyTableViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="TradeBuyTable" id="Nmm-yC-J34" customClass="TradeBuyTableViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="J8P-mx-6C1">
                         <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,7 +103,7 @@
         <!--Navigation Controller-->
         <scene sceneID="IJX-2u-3Te">
             <objects>
-                <navigationController storyboardIdentifier="Navigation OrderIndexBuy" automaticallyAdjustsScrollViewInsets="NO" id="CZI-Rw-R4F" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Navigation TradeBuyIndex" automaticallyAdjustsScrollViewInsets="NO" id="CZI-Rw-R4F" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="GmQ-YY-jAU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

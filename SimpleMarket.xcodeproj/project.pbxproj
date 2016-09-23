@@ -37,10 +37,10 @@
 		A38F1CE31D90E3CB005C09C7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38F1CE21D90E3CB005C09C7 /* StoreKit.framework */; };
 		A38F1CE61D9108A4005C09C7 /* ImageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1CE51D9108A4005C09C7 /* ImageSelectViewController.swift */; };
 		A391E58D1D88EC5000937B32 /* OrderBuyThanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A391E58C1D88EC5000937B32 /* OrderBuyThanksViewController.swift */; };
-		A3A404E51D6D8F6F0061DDB2 /* OrderIndexBuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A404E41D6D8F6F0061DDB2 /* OrderIndexBuyViewController.swift */; };
+		A3A404E51D6D8F6F0061DDB2 /* TradeBuyIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A404E41D6D8F6F0061DDB2 /* TradeBuyIndexViewController.swift */; };
 		A3A404EC1D6E93DE0061DDB2 /* TradeBuyIndexCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A404EA1D6E93DE0061DDB2 /* TradeBuyIndexCell.swift */; };
 		A3A404ED1D6E93DE0061DDB2 /* TradeBuyIndexCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3A404EB1D6E93DE0061DDB2 /* TradeBuyIndexCell.xib */; };
-		A3A404F61D7008110061DDB2 /* BuyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A404F41D7008110061DDB2 /* BuyTableViewController.swift */; };
+		A3A404F61D7008110061DDB2 /* TradeBuyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A404F41D7008110061DDB2 /* TradeBuyTableViewController.swift */; };
 		A3A404F91D703FA10061DDB2 /* OrderIndexCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A404F81D703FA10061DDB2 /* OrderIndexCollectionViewController.swift */; };
 		A3A404FB1D74300D0061DDB2 /* UserLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A404FA1D74300D0061DDB2 /* UserLoginViewController.swift */; };
 		A3A404FD1D7430210061DDB2 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A404FC1D7430210061DDB2 /* User.storyboard */; };
@@ -98,10 +98,10 @@
 		A38F1CE41D90FC37005C09C7 /* SimpleMarket-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleMarket-Bridging-Header.h"; sourceTree = "<group>"; };
 		A38F1CE51D9108A4005C09C7 /* ImageSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSelectViewController.swift; sourceTree = "<group>"; };
 		A391E58C1D88EC5000937B32 /* OrderBuyThanksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderBuyThanksViewController.swift; sourceTree = "<group>"; };
-		A3A404E41D6D8F6F0061DDB2 /* OrderIndexBuyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderIndexBuyViewController.swift; sourceTree = "<group>"; };
+		A3A404E41D6D8F6F0061DDB2 /* TradeBuyIndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeBuyIndexViewController.swift; sourceTree = "<group>"; };
 		A3A404EA1D6E93DE0061DDB2 /* TradeBuyIndexCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeBuyIndexCell.swift; sourceTree = "<group>"; };
 		A3A404EB1D6E93DE0061DDB2 /* TradeBuyIndexCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradeBuyIndexCell.xib; sourceTree = "<group>"; };
-		A3A404F41D7008110061DDB2 /* BuyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyTableViewController.swift; sourceTree = "<group>"; };
+		A3A404F41D7008110061DDB2 /* TradeBuyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeBuyTableViewController.swift; sourceTree = "<group>"; };
 		A3A404F81D703FA10061DDB2 /* OrderIndexCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderIndexCollectionViewController.swift; sourceTree = "<group>"; };
 		A3A404FA1D74300D0061DDB2 /* UserLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLoginViewController.swift; sourceTree = "<group>"; };
 		A3A404FC1D7430210061DDB2 /* User.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
@@ -243,8 +243,8 @@
 		A3D48F991D927FE7000BD928 /* OrdersTrade */ = {
 			isa = PBXGroup;
 			children = (
-				A3A404E41D6D8F6F0061DDB2 /* OrderIndexBuyViewController.swift */,
-				A3A404F41D7008110061DDB2 /* BuyTableViewController.swift */,
+				A3A404E41D6D8F6F0061DDB2 /* TradeBuyIndexViewController.swift */,
+				A3A404F41D7008110061DDB2 /* TradeBuyTableViewController.swift */,
 				A3A404EA1D6E93DE0061DDB2 /* TradeBuyIndexCell.swift */,
 				A38F1CC01D892F0B005C09C7 /* TradeBuyDetailViewController.swift */,
 			);
@@ -489,7 +489,7 @@
 				A38F1CE61D9108A4005C09C7 /* ImageSelectViewController.swift in Sources */,
 				A3436E631D65AE9700EE1F77 /* OrderAddThanksViewController.swift in Sources */,
 				A32B5F7F1D62EFD300608BBF /* OrderAddViewController.swift in Sources */,
-				A3A404E51D6D8F6F0061DDB2 /* OrderIndexBuyViewController.swift in Sources */,
+				A3A404E51D6D8F6F0061DDB2 /* TradeBuyIndexViewController.swift in Sources */,
 				A3A404FB1D74300D0061DDB2 /* UserLoginViewController.swift in Sources */,
 				A32B5F7C1D62E84600608BBF /* ButtonCustom.swift in Sources */,
 				A3CD058F1D77C6A500E969FC /* OrderDetailViewController.swift in Sources */,
@@ -501,7 +501,7 @@
 				A3B2AE9D1D7FE684004D1CD8 /* CommentData.swift in Sources */,
 				A3B2AE9A1D7FBCCC004D1CD8 /* CommentTableViewCell.swift in Sources */,
 				A3FB36271D62D26700EFB7C4 /* AppDelegate.swift in Sources */,
-				A3A404F61D7008110061DDB2 /* BuyTableViewController.swift in Sources */,
+				A3A404F61D7008110061DDB2 /* TradeBuyTableViewController.swift in Sources */,
 				A30B0D211D869B9400C20A76 /* OrderBuyViewController.swift in Sources */,
 				A3FB36431D62DF9B00EFB7C4 /* AppController.swift in Sources */,
 				A391E58D1D88EC5000937B32 /* OrderBuyThanksViewController.swift in Sources */,

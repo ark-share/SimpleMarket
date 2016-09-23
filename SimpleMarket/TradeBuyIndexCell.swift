@@ -1,5 +1,5 @@
 //
-//  BuyTableViewCell.swift
+//  TradeBuyIndex TableViewCell.swift
 //  SimpleMarket
 //
 //  Created by macpc on 2016/08/25.

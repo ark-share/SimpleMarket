@@ -1,5 +1,5 @@
 //
-//  BuyTableViewController.swift
+//  TradeBuyTableViewController.swift
 //  SimpleMarket
 //
 //  Created by macpc on 2016/08/26.
@@ -13,7 +13,7 @@ import FirebaseDatabase
 private let reuseIdentifier = "TradeBuyCell"
 
 // 購入リスト（取引中、過去の取引）
-class BuyTableViewController: UITableViewController {
+class TradeBuyTableViewController: UITableViewController {
     
     var orderArray: [OrderData] = [] // 一覧用データ
     
