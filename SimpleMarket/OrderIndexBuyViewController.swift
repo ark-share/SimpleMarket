@@ -68,7 +68,7 @@ class OrderIndexBuyViewController: UIViewController, UIScrollViewDelegate {
     func makeTableViewByPage(page: Int) {
         
         //let table = BuyTableViewController(nibName: "BuyTableViewController", bundle: nil) nibじゃなくてもいい
-        let table = self.storyboard!.instantiateViewControllerWithIdentifier("BuyTable") as! BuyTableViewController
+        let table = UIStoryboard(name: "Trade", bundle: nil).instantiateViewControllerWithIdentifier("BuyTable") as! BuyTableViewController
 
         // view配置
         table.view.frame = CGRectMake(self.view.frame.width * CGFloat(page), 0, self.view.frame.width, scrollView.frame.height)
@@ -163,12 +163,11 @@ class OrderIndexBuyViewController: UIViewController, UIScrollViewDelegate {
         
         self.view.addSubview(orderAddButton)
     }
+    // 固定ボタンからのアクション
     func handleOrderAddButton(sender: UIButton, event:UIEvent) {
-        // 移動　これだとナビを引き継がない
-//        let add = self.storyboard!.instantiateViewControllerWithIdentifier("OrderAdd") as UIViewController
-//        presentViewController(add, animated: true, completion: nil)
-        
-        performSegueWithIdentifier("OrderAddSegue", sender: nil)
+        // navを引き継ぐ
+        let orderAdd = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("OrderAdd")
+        self.navigationController?.pushViewController(orderAdd, animated: true)
     }
     
 }

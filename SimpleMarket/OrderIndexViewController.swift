@@ -174,12 +174,11 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
         
         self.view.addSubview(orderAddButton)
     }
+    // 固定ボタンからのアクション
     func handleOrderAddButton(sender: UIButton, event:UIEvent) {
-        // 移動　これだとナビを引き継がない
-//        let add = self.storyboard!.instantiateViewControllerWithIdentifier("OrderAdd") as UIViewController
-//        presentViewController(add, animated: true, completion: nil)
-        
-        performSegueWithIdentifier("OrderAddSegue", sender: nil)
+        // navを引き継ぐ
+        let orderAdd = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("OrderAdd")
+        self.navigationController?.pushViewController(orderAdd, animated: true)
     }
     
 }

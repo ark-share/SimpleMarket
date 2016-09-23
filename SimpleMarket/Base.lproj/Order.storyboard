@@ -50,7 +50,6 @@
                     <connections>
                         <outlet property="headerView" destination="Ac2-s0-wpB" id="Zvr-6a-iUv"/>
                         <outlet property="scrollView" destination="i8L-wJ-aYQ" id="MQu-v1-9dj"/>
-                        <segue destination="P7I-Qh-RiL" kind="show" identifier="OrderAddSegue" id="Xog-43-lKe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qzt-QJ-1r7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -347,7 +346,7 @@
                         <viewControllerLayoutGuide type="bottom" id="8Ka-Pa-H5v"/>
                     </layoutGuides>
                     <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="H30-Q6-Rgc">
-                        <rect key="frame" x="0.0" y="64" width="600" height="1136"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1200"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B4r-pT-FCF">
@@ -512,7 +511,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lYg-93-qQv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-729" y="537"/>
+            <point key="canvasLocation" x="-782" y="-639"/>
         </scene>
         <!--Order Add Thanks View Controller-->
         <scene sceneID="5zs-aI-p5d">
@@ -570,7 +569,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HiF-fP-4g5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-721" y="1156"/>
+            <point key="canvasLocation" x="150" y="-256"/>
         </scene>
         <!--Image Select View Controller-->
         <scene sceneID="iPa-Cz-9VD">
@@ -625,7 +624,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ckK-Yi-BW8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-721" y="1597"/>
+            <point key="canvasLocation" x="-782" y="111"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UFJ-jS-XyL">
