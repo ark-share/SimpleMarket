@@ -28,7 +28,13 @@ class OrderAddViewController: UIViewController {
 
         let orderRef = FIRDatabase.database().reference().child(CommonConst.OrderPATH)
         
-        let imageData = UIImageJPEGRepresentation(imageView1.image!, 0.5) // 圧縮率0.5
+        // image1
+        var imageString = ""
+        if imageView1.image != nil {
+            let imageData = UIImageJPEGRepresentation(imageView1.image!, 0.5) // 圧縮率0.5
+            imageString = imageData!.base64EncodedStringWithOptions(.Encoding64CharacterLineLength)
+        }
+        
         let name = nameTextField.text // String?型なのでアンラップする
         let body = bodyTextView.text
         let price = priceTextField.text // String?
@@ -37,7 +43,7 @@ class OrderAddViewController: UIViewController {
 
         // status:0は出品中
         let data = [
-            "image": imageData!.base64EncodedStringWithOptions(.Encoding64CharacterLineLength),
+            "image": imageString,
             "name": name!, "body": body, "price": price!, "status": "0", "modified": modified, "created": created]
         orderRef.childByAutoId().setValue(data)
         

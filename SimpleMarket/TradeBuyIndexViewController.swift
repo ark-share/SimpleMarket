@@ -67,7 +67,7 @@ class TradeBuyIndexViewController: UIViewController, UIScrollViewDelegate {
     // コンテンツの生成
     func makeTableViewByPage(page: Int) {
         
-        let table = UIStoryboard(name: "Trade", bundle: nil).instantiateViewControllerWithIdentifier("TradeBuyTable") as! TradeBuyTableViewController
+        let table = UIStoryboard(name: "TradeBuy", bundle: nil).instantiateViewControllerWithIdentifier("TradeBuyTable") as! TradeBuyTableViewController
 
         // view配置
         table.view.frame = CGRectMake(self.view.frame.width * CGFloat(page), 0, self.view.frame.width, scrollView.frame.height)

@@ -89,7 +89,7 @@
         <!--TradeBuyIndex-->
         <scene sceneID="dbd-Yw-A2N">
             <objects>
-                <viewControllerPlaceholder storyboardName="Trade" referencedIdentifier="TradeBuyIndex" id="3HU-Mj-X5h" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="TradeBuy" referencedIdentifier="TradeBuyIndex" id="3HU-Mj-X5h" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5q0-ul-5Sf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="892" y="46"/>

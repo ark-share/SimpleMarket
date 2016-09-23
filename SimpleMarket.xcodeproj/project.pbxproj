@@ -22,7 +22,7 @@
 		A3555B7F1D7D5A97009709FB /* CommentAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3555B7E1D7D5A97009709FB /* CommentAddViewController.swift */; };
 		A38F1CBF1D892220005C09C7 /* KeyConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1CBE1D892220005C09C7 /* KeyConst.swift */; };
 		A38F1CC11D892F0B005C09C7 /* TradeBuyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1CC01D892F0B005C09C7 /* TradeBuyDetailViewController.swift */; };
-		A38F1CC31D892F5A005C09C7 /* Trade.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A38F1CC21D892F5A005C09C7 /* Trade.storyboard */; };
+		A38F1CC31D892F5A005C09C7 /* TradeBuy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A38F1CC21D892F5A005C09C7 /* TradeBuy.storyboard */; };
 		A38F1CCD1D90E359005C09C7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A38F1CCC1D90E359005C09C7 /* libc++.tbd */; };
 		A38F1CCF1D90E36B005C09C7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A38F1CCE1D90E36B005C09C7 /* libz.tbd */; };
 		A38F1CD11D90E379005C09C7 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A38F1CD01D90E379005C09C7 /* libz.1.2.5.tbd */; };
@@ -82,7 +82,7 @@
 		A3555B7E1D7D5A97009709FB /* CommentAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentAddViewController.swift; sourceTree = "<group>"; };
 		A38F1CBE1D892220005C09C7 /* KeyConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyConst.swift; sourceTree = "<group>"; };
 		A38F1CC01D892F0B005C09C7 /* TradeBuyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeBuyDetailViewController.swift; sourceTree = "<group>"; };
-		A38F1CC21D892F5A005C09C7 /* Trade.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Trade.storyboard; sourceTree = "<group>"; };
+		A38F1CC21D892F5A005C09C7 /* TradeBuy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TradeBuy.storyboard; sourceTree = "<group>"; };
 		A38F1CCC1D90E359005C09C7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		A38F1CCE1D90E36B005C09C7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		A38F1CD01D90E379005C09C7 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
@@ -240,7 +240,7 @@
 			name = Users;
 			sourceTree = "<group>";
 		};
-		A3D48F991D927FE7000BD928 /* OrdersTrade */ = {
+		A3D48F991D927FE7000BD928 /* TradeBuy */ = {
 			isa = PBXGroup;
 			children = (
 				A3A404E41D6D8F6F0061DDB2 /* TradeBuyIndexViewController.swift */,
@@ -248,16 +248,16 @@
 				A3A404EA1D6E93DE0061DDB2 /* TradeBuyIndexCell.swift */,
 				A38F1CC01D892F0B005C09C7 /* TradeBuyDetailViewController.swift */,
 			);
-			name = OrdersTrade;
+			name = TradeBuy;
 			sourceTree = "<group>";
 		};
-		A3DF4C131D94F7BF00603A6D /* OrdersTrade */ = {
+		A3DF4C131D94F7BF00603A6D /* TradeBuy */ = {
 			isa = PBXGroup;
 			children = (
-				A38F1CC21D892F5A005C09C7 /* Trade.storyboard */,
+				A38F1CC21D892F5A005C09C7 /* TradeBuy.storyboard */,
 				A3A404EB1D6E93DE0061DDB2 /* TradeBuyIndexCell.xib */,
 			);
-			name = OrdersTrade;
+			name = TradeBuy;
 			sourceTree = "<group>";
 		};
 		A3FB361A1D62D26700EFB7C4 = {
@@ -304,7 +304,7 @@
 				A3FB362F1D62D26700EFB7C4 /* LaunchScreen.storyboard */,
 				A3436E641D66CBE400EE1F77 /* Main.storyboard */,
 				A30B0D1C1D82501100C20A76 /* Orders */,
-				A3DF4C131D94F7BF00603A6D /* OrdersTrade */,
+				A3DF4C131D94F7BF00603A6D /* TradeBuy */,
 				A30B0D1D1D82504400C20A76 /* Users */,
 				A30B0D1B1D824FF200C20A76 /* Comments */,
 			);
@@ -320,7 +320,7 @@
 				A3FB36281D62D26700EFB7C4 /* ViewController.swift */,
 				A30B0D221D878D1E00C20A76 /* WebpayClient.swift */,
 				A3CD058C1D766C0900E969FC /* Orders */,
-				A3D48F991D927FE7000BD928 /* OrdersTrade */,
+				A3D48F991D927FE7000BD928 /* TradeBuy */,
 				A3CD058D1D766C7700E969FC /* Users */,
 				A3555B801D7D5AA2009709FB /* Comment */,
 			);
@@ -421,7 +421,7 @@
 				A3A404FD1D7430210061DDB2 /* User.storyboard in Resources */,
 				A3A404ED1D6E93DE0061DDB2 /* TradeBuyIndexCell.xib in Resources */,
 				A3B2AE9B1D7FBCCC004D1CD8 /* CommentTableViewCell.xib in Resources */,
-				A38F1CC31D892F5A005C09C7 /* Trade.storyboard in Resources */,
+				A38F1CC31D892F5A005C09C7 /* TradeBuy.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
