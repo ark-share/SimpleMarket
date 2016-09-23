@@ -9,7 +9,7 @@
 import UIKit
 
 // 購入リストのセル
-class BuyTableViewCell: UITableViewCell {
+class TradeBuyIndexCell: UITableViewCell {
 
     @IBOutlet weak var orderImageView: UIImageView!
     @IBOutlet weak var priceLabel: UILabel!

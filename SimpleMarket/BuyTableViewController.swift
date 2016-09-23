@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 
-private let reuseIdentifier = "TradeBuyIndexCell"
+private let reuseIdentifier = "TradeBuyCell"
 
 // 購入リスト（取引中、過去の取引）
 class BuyTableViewController: UITableViewController {
@@ -56,7 +56,7 @@ class BuyTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath) as! BuyTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath) as! TradeBuyIndexCell
         cell.orderData = orderArray[indexPath.row]
         
         return cell

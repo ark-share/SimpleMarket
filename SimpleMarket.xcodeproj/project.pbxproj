@@ -38,7 +38,7 @@
 		A38F1CE61D9108A4005C09C7 /* ImageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1CE51D9108A4005C09C7 /* ImageSelectViewController.swift */; };
 		A391E58D1D88EC5000937B32 /* OrderBuyThanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A391E58C1D88EC5000937B32 /* OrderBuyThanksViewController.swift */; };
 		A3A404E51D6D8F6F0061DDB2 /* OrderIndexBuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A404E41D6D8F6F0061DDB2 /* OrderIndexBuyViewController.swift */; };
-		A3A404EC1D6E93DE0061DDB2 /* BuyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A404EA1D6E93DE0061DDB2 /* BuyTableViewCell.swift */; };
+		A3A404EC1D6E93DE0061DDB2 /* TradeBuyIndexCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A404EA1D6E93DE0061DDB2 /* TradeBuyIndexCell.swift */; };
 		A3A404ED1D6E93DE0061DDB2 /* TradeBuyIndexCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3A404EB1D6E93DE0061DDB2 /* TradeBuyIndexCell.xib */; };
 		A3A404F61D7008110061DDB2 /* BuyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A404F41D7008110061DDB2 /* BuyTableViewController.swift */; };
 		A3A404F91D703FA10061DDB2 /* OrderIndexCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A404F81D703FA10061DDB2 /* OrderIndexCollectionViewController.swift */; };
@@ -99,7 +99,7 @@
 		A38F1CE51D9108A4005C09C7 /* ImageSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSelectViewController.swift; sourceTree = "<group>"; };
 		A391E58C1D88EC5000937B32 /* OrderBuyThanksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderBuyThanksViewController.swift; sourceTree = "<group>"; };
 		A3A404E41D6D8F6F0061DDB2 /* OrderIndexBuyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderIndexBuyViewController.swift; sourceTree = "<group>"; };
-		A3A404EA1D6E93DE0061DDB2 /* BuyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyTableViewCell.swift; sourceTree = "<group>"; };
+		A3A404EA1D6E93DE0061DDB2 /* TradeBuyIndexCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeBuyIndexCell.swift; sourceTree = "<group>"; };
 		A3A404EB1D6E93DE0061DDB2 /* TradeBuyIndexCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradeBuyIndexCell.xib; sourceTree = "<group>"; };
 		A3A404F41D7008110061DDB2 /* BuyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyTableViewController.swift; sourceTree = "<group>"; };
 		A3A404F81D703FA10061DDB2 /* OrderIndexCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderIndexCollectionViewController.swift; sourceTree = "<group>"; };
@@ -245,7 +245,7 @@
 			children = (
 				A3A404E41D6D8F6F0061DDB2 /* OrderIndexBuyViewController.swift */,
 				A3A404F41D7008110061DDB2 /* BuyTableViewController.swift */,
-				A3A404EA1D6E93DE0061DDB2 /* BuyTableViewCell.swift */,
+				A3A404EA1D6E93DE0061DDB2 /* TradeBuyIndexCell.swift */,
 				A38F1CC01D892F0B005C09C7 /* TradeBuyDetailViewController.swift */,
 			);
 			name = OrdersTrade;
@@ -484,7 +484,7 @@
 				A38F1CBF1D892220005C09C7 /* KeyConst.swift in Sources */,
 				A3555B7F1D7D5A97009709FB /* CommentAddViewController.swift in Sources */,
 				A3436E601D658B9400EE1F77 /* OrderData.swift in Sources */,
-				A3A404EC1D6E93DE0061DDB2 /* BuyTableViewCell.swift in Sources */,
+				A3A404EC1D6E93DE0061DDB2 /* TradeBuyIndexCell.swift in Sources */,
 				A30B0D231D878D1E00C20A76 /* WebpayClient.swift in Sources */,
 				A38F1CE61D9108A4005C09C7 /* ImageSelectViewController.swift in Sources */,
 				A3436E631D65AE9700EE1F77 /* OrderAddThanksViewController.swift in Sources */,
