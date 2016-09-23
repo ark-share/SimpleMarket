@@ -13,7 +13,8 @@ import Firebase
 import FirebaseDatabase
 
 class OrderBuyViewController: UIViewController {
-
+    
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var paymentLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     
@@ -82,7 +83,11 @@ class OrderBuyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("buy \(orderData.name!)")
+        if orderData != nil {
+            if orderData.image != nil {
+                imageView.image = orderData.image!
+            }
+        }
 
         // 元からクレカを設定しておく
         AppController().buyPayment = 2

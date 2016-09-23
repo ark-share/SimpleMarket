@@ -78,7 +78,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="295" height="295"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bio-uL-ILS">
+                                        <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bio-uL-ILS">
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="Bio-uL-ILS" secondAttribute="height" multiplier="4:3" id="Zq1-oQ-XhY"/>
                                             </constraints>
@@ -139,7 +139,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="66P-cB-seP">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="66P-cB-seP">
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="66P-cB-seP" secondAttribute="height" multiplier="4:3" id="OIO-Fu-5Dw"/>
                                 </constraints>
@@ -234,10 +234,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="htf-Z6-O2A">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="htf-Z6-O2A">
                                 <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="eQz-fk-oPG"/>
+                                    <constraint firstAttribute="width" constant="100" id="eQz-fk-oPG"/>
                                     <constraint firstAttribute="width" secondItem="htf-Z6-O2A" secondAttribute="height" multiplier="1:1" id="wgH-3L-0dv"/>
                                 </constraints>
                             </imageView>
@@ -345,6 +345,7 @@
                     <size key="freeformSize" width="400" height="600"/>
                     <connections>
                         <outlet property="addressLabel" destination="cW6-PW-8c7" id="0O8-iF-zhf"/>
+                        <outlet property="imageView" destination="htf-Z6-O2A" id="OpW-9I-I3z"/>
                         <outlet property="paymentLabel" destination="Rtm-E8-WwV" id="FlI-cF-5I1"/>
                     </connections>
                 </viewController>
@@ -366,28 +367,28 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B4r-pT-FCF">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qaZ-ta-33U">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qaZ-ta-33U">
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="2Uz-yT-nsc"/>
                                             <constraint firstAttribute="width" secondItem="qaZ-ta-33U" secondAttribute="height" multiplier="1:1" id="kmv-kT-exE"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zVi-5q-dnb">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zVi-5q-dnb">
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="zVi-5q-dnb" secondAttribute="height" multiplier="1:1" id="4gV-q0-x7A"/>
                                             <constraint firstAttribute="width" constant="100" id="QZp-aP-Efu"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xxa-Pe-zgs">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xxa-Pe-zgs">
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="9x7-yh-WEz"/>
                                             <constraint firstAttribute="width" secondItem="xxa-Pe-zgs" secondAttribute="height" multiplier="1:1" id="ZAf-bg-E0D"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mMa-0R-uWF">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mMa-0R-uWF">
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="2kx-AC-FSQ"/>
