@@ -25,7 +25,7 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cD0-sd-Tsv">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cD0-sd-Tsv">
                         <constraints>
                             <constraint firstAttribute="width" constant="100" id="F8q-gK-vAv"/>
                             <constraint firstAttribute="width" secondItem="cD0-sd-Tsv" secondAttribute="height" multiplier="1:1" id="fh1-2d-2S0"/>

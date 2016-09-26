@@ -17,6 +17,8 @@ class TradeBuyTableViewController: UITableViewController {
     
     var orderArray: [OrderData] = [] // 一覧用データ
     
+    var statusArray: [String] = [] // 表示するステータスの商品
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,8 +33,12 @@ class TradeBuyTableViewController: UITableViewController {
             // データを設定する
             //if let uid = FIRAuth.auth()?.currentUser?.uid {
             let data = OrderData(snapshot: snapshot) //, myId: uid
-            self.orderArray.insert(data, atIndex: 0)
-            
+            // statusの中に指定したステータスがあるかどうか　たとえばarrayが[1,2]の場合、statusが1や2だったら表示される
+            if data.status != nil {
+                if (self.statusArray.indexOf(data.status!) != nil) {
+                    self.orderArray.insert(data, atIndex: 0)
+                }
+            }
             self.tableView.reloadData() // 再表示
             //}
         })
@@ -63,12 +69,11 @@ class TradeBuyTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 80
+        return 100
     }
     
     // セルから直にSegueを引いた場合はここは要らない。２回詳細ページが呼ばれてしまう
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        print("click buy cell")
         performSegueWithIdentifier("TradeBuyDetailSegue", sender: nil)
     }
     

@@ -69,6 +69,18 @@ class TradeBuyIndexViewController: UIViewController, UIScrollViewDelegate {
         
         let table = UIStoryboard(name: "TradeBuy", bundle: nil).instantiateViewControllerWithIdentifier("TradeBuyTable") as! TradeBuyTableViewController
 
+        // statusによって異なるページに表示させる
+        if page == 0 {
+            table.statusArray = ["0"]
+        }
+        else if page == 0 {
+            table.statusArray = ["1", "2", "3", "4", "5"]
+        }
+        else if page == 0 {
+            table.statusArray = ["6"]
+        }
+        
+        
         // view配置
         table.view.frame = CGRectMake(self.view.frame.width * CGFloat(page), 0, self.view.frame.width, scrollView.frame.height)
         

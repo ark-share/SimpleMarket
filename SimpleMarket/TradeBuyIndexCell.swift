@@ -32,7 +32,7 @@ class TradeBuyIndexCell: UITableViewCell {
     override func layoutSubviews() {
         
         if orderData.image != nil {
-            imageView!.image = orderData.image
+            orderImageView.image = orderData.image
         }
         if orderData.price != nil {
             priceLabel.text = orderData.price
