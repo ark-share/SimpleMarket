@@ -26,8 +26,7 @@
                                     <segue destination="DJY-c0-Mq3" kind="show" id="sam-7e-beA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQt-j1-YbD">
-                                <frame key="frameInset" minX="20" minY="130" width="90" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQt-j1-YbD">
                                 <state key="normal" title="購入リストへ"/>
                                 <connections>
                                     <segue destination="3HU-Mj-X5h" kind="show" identifier="" id="8bd-eH-W5L"/>
@@ -52,6 +51,9 @@
                                     <action selector="handleLogoutButton:" destination="9Vf-8u-fp4" eventType="touchUpInside" id="Uku-Of-r17"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHZ-pe-3Ah">
+                                <state key="normal" title="出品リストへ"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -62,8 +64,10 @@
                             <constraint firstItem="pQt-j1-YbD" firstAttribute="leading" secondItem="WoA-IZ-CUW" secondAttribute="leadingMargin" id="SPd-if-Asd"/>
                             <constraint firstItem="pQt-j1-YbD" firstAttribute="top" secondItem="chN-7m-UfT" secondAttribute="bottom" constant="20" id="bZC-se-tSo"/>
                             <constraint firstItem="DKA-mz-NzY" firstAttribute="bottom" secondItem="AXy-H6-gXw" secondAttribute="bottom" id="cO4-iw-wD6"/>
+                            <constraint firstItem="zHZ-pe-3Ah" firstAttribute="leading" secondItem="pQt-j1-YbD" secondAttribute="trailing" constant="30" id="dyb-Av-esh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="DKA-mz-NzY" secondAttribute="trailing" id="eMK-zI-3LS"/>
                             <constraint firstItem="mTK-3x-ZFP" firstAttribute="top" secondItem="pQt-j1-YbD" secondAttribute="bottom" constant="20" id="gf5-7e-88M"/>
+                            <constraint firstItem="zHZ-pe-3Ah" firstAttribute="top" secondItem="chN-7m-UfT" secondAttribute="bottom" constant="20" id="tHe-cW-Jwy"/>
                             <constraint firstItem="DKA-mz-NzY" firstAttribute="leading" secondItem="AXy-H6-gXw" secondAttribute="trailing" id="tTd-6a-efZ"/>
                             <constraint firstItem="chN-7m-UfT" firstAttribute="leading" secondItem="WoA-IZ-CUW" secondAttribute="leadingMargin" id="zE2-LJ-RRn"/>
                         </constraints>

@@ -23,17 +23,17 @@ class TradeBuyIndexViewController: UIViewController, UIScrollViewDelegate {
 
         scrollView.delegate = self
         
-        scrollView.frame = CGRectMake(0, 0, self.view.frame.width, scrollView.frame.height) // スクロールの横幅を画面に合わせる 縦は変更しない 親ビューはwidth414なのに scrollのwidthが誤って600になってしまうため
+        scrollView.frame = CGRectMake(0, 0, self.view.frame.width, scrollView.frame.height) // スクロールの横幅を画面に合わせる
         scrollView.contentSize = CGSizeMake(self.view.frame.width * 3, scrollView.frame.height) // 3画面
         scrollView.pagingEnabled = true
         
-        makeTableViewByPage(0)
-        makeTableViewByPage(1)
-        makeTableViewByPage(2)
+        makeTableViewByPage(0, statusArray: ["0"])
+        makeTableViewByPage(1, statusArray: ["1", "2", "3", "4", "5"])
+        makeTableViewByPage(2, statusArray: ["6"])
         
-        makeTabButtonByPage(0)
-        makeTabButtonByPage(1)
-        makeTabButtonByPage(2)
+        makeTabButtonByPage(0, title: "お気に入り")
+        makeTabButtonByPage(1, title: "取引中")
+        makeTabButtonByPage(2, title: "過去の取引")
         
         // 選択状態にする
         setSelectedButton(self.tabButtons[0], selected: true)
@@ -50,36 +50,27 @@ class TradeBuyIndexViewController: UIViewController, UIScrollViewDelegate {
     // ナビの生成
     func makeNavigation() {
         
-        // slide用のbar準備
-        let image = UIImage.fontAwesomeIconWithName(.Bars, textColor: UIColor.blackColor(), size: CGSizeMake(30, 30))
-        self.addLeftBarButtonWithImage(image)
-        
-        // navを用意
+        // nav
         let nav = UINavigationController(rootViewController: self)
         
-        // スライドを用意
+        // スライドメニュー
         let leftMenu = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("LeftMenu") as! LeftMenuViewController
         let slide = SlideMenuController(mainViewController: nav, leftMenuViewController: leftMenu)
+        
+        // スライドメニューopenボタン
+        let image = UIImage.fontAwesomeIconWithName(.Bars, textColor: UIColor.blackColor(), size: CGSizeMake(30, 30))
+        self.addLeftBarButtonWithImage(image)
         
         UIApplication.sharedApplication().keyWindow?.rootViewController = slide
     }
     
     // コンテンツの生成
-    func makeTableViewByPage(page: Int) {
+    func makeTableViewByPage(page: Int, statusArray: [String]) {
         
         let table = UIStoryboard(name: "TradeBuy", bundle: nil).instantiateViewControllerWithIdentifier("TradeBuyTable") as! TradeBuyTableViewController
 
-        // statusによって異なるページに表示させる
-        if page == 0 {
-            table.statusArray = ["0"]
-        }
-        else if page == 1 {
-            table.statusArray = ["1", "2", "3", "4", "5"]
-        }
-        else if page == 2 {
-            table.statusArray = ["6"]
-        }
-        
+        // 指定ステータスの商品を表示する
+        table.statusArray = statusArray
         // view配置
         table.view.frame = CGRectMake(self.view.frame.width * CGFloat(page), 0, self.view.frame.width, scrollView.frame.height)
         
@@ -90,7 +81,7 @@ class TradeBuyIndexViewController: UIViewController, UIScrollViewDelegate {
         table.didMoveToParentViewController(self) // 追加の完了を伝える
     }
     // tab buttonの生成
-    func makeTabButtonByPage(page: Int) {
+    func makeTabButtonByPage(page: Int, title: String) {
         let tabButton = UIButton()
         tabButton.frame = CGRectMake(0, 0, self.view.frame.width / 3, 40) // 位置も指定できるが、ボタンのサイズだけ
         
@@ -98,17 +89,7 @@ class TradeBuyIndexViewController: UIViewController, UIScrollViewDelegate {
         tabButton.center = CGPointMake(self.view.frame.width / 4 * CGFloat(page + 1), 40)
         
         // タイトル通常時
-        //tabButton.setTitle("ボタン \(page)", forState: .Normal)
-        // statusによって異なるページに表示させる
-        if page == 0 {
-            tabButton.setTitle("お気に入り", forState: .Normal)
-        }
-        else if page == 1 {
-            tabButton.setTitle("取引中", forState: .Normal)
-        }
-        else if page == 2 {
-            tabButton.setTitle("過去の取引", forState: .Normal)
-        }
+        tabButton.setTitle(title, forState: .Normal)
         tabButton.setTitleColor(UIColor.lightGrayColor(), forState: .Normal) // 未選択はグレー
         tabButton.setTitleColor(UIColor.orangeColor(), forState: .Highlighted)
         tabButton.setTitleColor(UIColor.orangeColor(), forState: .Selected)
@@ -160,7 +141,7 @@ class TradeBuyIndexViewController: UIViewController, UIScrollViewDelegate {
             }
         }
     }
-    // ドラッグでスクロール後 ＞縦スクロールには反応しない
+    // ドラッグでスクロール後（縦スクロールには反応しない）
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
         self.scrollViewDidEndScrollingAnimation(scrollView) // 同じ
     }

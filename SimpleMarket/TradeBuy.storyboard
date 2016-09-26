@@ -131,5 +131,131 @@
             </objects>
             <point key="canvasLocation" x="-671" y="-651"/>
         </scene>
+        <!--Trade Sell Detail View Controller-->
+        <scene sceneID="2qs-XD-zcO">
+            <objects>
+                <viewController storyboardIdentifier="TradeSellDetail" id="dh5-vf-OIS" customClass="TradeSellDetailViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZnT-dc-7a2"/>
+                        <viewControllerLayoutGuide type="bottom" id="o1n-M6-0pb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ahg-9B-2Sl">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ステータス" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izb-Zu-ETu">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xi-Vk-DRW">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="izb-Zu-ETu" firstAttribute="leading" secondItem="Ahg-9B-2Sl" secondAttribute="leadingMargin" constant="10" id="7ZK-dt-Dt4"/>
+                            <constraint firstItem="izb-Zu-ETu" firstAttribute="top" secondItem="ZnT-dc-7a2" secondAttribute="bottom" constant="30" id="hif-ja-Eza"/>
+                            <constraint firstItem="1xi-Vk-DRW" firstAttribute="top" secondItem="ZnT-dc-7a2" secondAttribute="bottom" constant="30" id="r7K-Dj-IRS"/>
+                            <constraint firstItem="1xi-Vk-DRW" firstAttribute="leading" secondItem="izb-Zu-ETu" secondAttribute="trailing" constant="20" id="zv2-rt-Zls"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="600"/>
+                    <connections>
+                        <outlet property="statusLabel" destination="1xi-Vk-DRW" id="Y84-lp-nEz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J3W-Vg-oGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2072" y="221"/>
+        </scene>
+        <!--購入リスト-->
+        <scene sceneID="RNd-WQ-QBC">
+            <objects>
+                <viewController storyboardIdentifier="TradeSellIndex" automaticallyAdjustsScrollViewInsets="NO" id="JoS-Up-JBH" customClass="TradeSellIndexViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Lt-uT-8KA"/>
+                        <viewControllerLayoutGuide type="bottom" id="t7C-A5-dJZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QcH-gz-kQb">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yam-sd-szY"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iB2-Ys-0Mf">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="asC-V2-L8I"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Yam-sd-szY" secondAttribute="trailing" id="6ec-M5-cqw"/>
+                            <constraint firstItem="iB2-Ys-0Mf" firstAttribute="leading" secondItem="QcH-gz-kQb" secondAttribute="leading" id="GR8-DM-tNQ"/>
+                            <constraint firstAttribute="trailing" secondItem="iB2-Ys-0Mf" secondAttribute="trailing" id="Qzk-yo-W8v"/>
+                            <constraint firstItem="iB2-Ys-0Mf" firstAttribute="top" secondItem="0Lt-uT-8KA" secondAttribute="bottom" id="cOH-ge-Pka"/>
+                            <constraint firstItem="Yam-sd-szY" firstAttribute="leading" secondItem="QcH-gz-kQb" secondAttribute="leading" id="fOk-Xr-HhP"/>
+                            <constraint firstItem="Yam-sd-szY" firstAttribute="top" secondItem="iB2-Ys-0Mf" secondAttribute="bottom" id="rDu-Dl-vQG"/>
+                            <constraint firstItem="t7C-A5-dJZ" firstAttribute="top" secondItem="Yam-sd-szY" secondAttribute="bottom" id="wtz-If-abZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="購入リスト" id="SLM-Ct-ggT"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="600"/>
+                    <connections>
+                        <outlet property="headerView" destination="iB2-Ys-0Mf" id="NHR-GU-Shh"/>
+                        <outlet property="scrollView" destination="Yam-sd-szY" id="NCM-Rf-kdU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dUt-Pj-MxP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1954" y="-650"/>
+        </scene>
+        <!--Trade Sell Table View Controller-->
+        <scene sceneID="xns-wD-8p4">
+            <objects>
+                <tableViewController storyboardIdentifier="TradeSellTable" id="fxU-k3-7Kp" customClass="TradeSellTableViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="h86-G5-Sp1">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <connections>
+                            <outlet property="dataSource" destination="fxU-k3-7Kp" id="I1T-5B-zHC"/>
+                            <outlet property="delegate" destination="fxU-k3-7Kp" id="QCg-E8-YHO"/>
+                        </connections>
+                    </tableView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="600"/>
+                    <connections>
+                        <segue destination="dh5-vf-OIS" kind="show" identifier="TradeBuyDetailSegue" id="MhI-AQ-4gj">
+                            <nil key="action"/>
+                        </segue>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="taG-8A-fez" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2072" y="-444"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pJQ-0u-CjO">
+            <objects>
+                <navigationController storyboardIdentifier="Navigation TradeSellIndex" automaticallyAdjustsScrollViewInsets="NO" id="lCp-HI-dk9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XOw-C3-uWr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JoS-Up-JBH" kind="relationship" relationship="rootViewController" id="L8j-ub-2Id"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o1h-jq-fmJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1124" y="-652"/>
+        </scene>
     </scenes>
 </document>

@@ -72,8 +72,7 @@
                                     <action selector="handleCreateUserButton:" destination="frW-vi-wkb" eventType="touchUpInside" id="3sP-6V-bqG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3R-CE-tVF">
-                                <frame key="frameInset" minX="50" minY="400" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3R-CE-tVF">
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <action selector="handleBackButton:" destination="frW-vi-wkb" eventType="touchUpInside" id="In0-M4-hmX"/>

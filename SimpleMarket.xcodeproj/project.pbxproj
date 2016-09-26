@@ -54,6 +54,11 @@
 		A3DF4C101D94B9FB00603A6D /* AdobeCreativeSDKCoreResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A3DF4C0C1D94B9FB00603A6D /* AdobeCreativeSDKCoreResources.bundle */; };
 		A3DF4C111D94B9FB00603A6D /* AdobeCreativeSDKImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3DF4C0D1D94B9FB00603A6D /* AdobeCreativeSDKImage.framework */; };
 		A3DF4C121D94B9FB00603A6D /* AdobeCreativeSDKImageResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A3DF4C0E1D94B9FB00603A6D /* AdobeCreativeSDKImageResources.bundle */; };
+		A3F74A501D98FB5E000A9720 /* TradeSellIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F74A4F1D98FB5E000A9720 /* TradeSellIndexViewController.swift */; };
+		A3F74A521D98FC30000A9720 /* TradeSellTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F74A511D98FC30000A9720 /* TradeSellTableViewController.swift */; };
+		A3F74A551D98FC56000A9720 /* TradeSellIndexCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F74A531D98FC56000A9720 /* TradeSellIndexCell.swift */; };
+		A3F74A561D98FC56000A9720 /* TradeSellIndexCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3F74A541D98FC56000A9720 /* TradeSellIndexCell.xib */; };
+		A3F74A581D98FC79000A9720 /* TradeSellDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F74A571D98FC79000A9720 /* TradeSellDetailViewController.swift */; };
 		A3FB36271D62D26700EFB7C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB36261D62D26700EFB7C4 /* AppDelegate.swift */; };
 		A3FB36291D62D26700EFB7C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB36281D62D26700EFB7C4 /* ViewController.swift */; };
 		A3FB362C1D62D26700EFB7C4 /* Order.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FB362A1D62D26700EFB7C4 /* Order.storyboard */; };
@@ -115,6 +120,11 @@
 		A3DF4C0C1D94B9FB00603A6D /* AdobeCreativeSDKCoreResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AdobeCreativeSDKCoreResources.bundle; sourceTree = "<group>"; };
 		A3DF4C0D1D94B9FB00603A6D /* AdobeCreativeSDKImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdobeCreativeSDKImage.framework; sourceTree = "<group>"; };
 		A3DF4C0E1D94B9FB00603A6D /* AdobeCreativeSDKImageResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AdobeCreativeSDKImageResources.bundle; sourceTree = "<group>"; };
+		A3F74A4F1D98FB5E000A9720 /* TradeSellIndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeSellIndexViewController.swift; sourceTree = "<group>"; };
+		A3F74A511D98FC30000A9720 /* TradeSellTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeSellTableViewController.swift; sourceTree = "<group>"; };
+		A3F74A531D98FC56000A9720 /* TradeSellIndexCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeSellIndexCell.swift; sourceTree = "<group>"; };
+		A3F74A541D98FC56000A9720 /* TradeSellIndexCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradeSellIndexCell.xib; sourceTree = "<group>"; };
+		A3F74A571D98FC79000A9720 /* TradeSellDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeSellDetailViewController.swift; sourceTree = "<group>"; };
 		A3FB36231D62D26700EFB7C4 /* SimpleMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FB36261D62D26700EFB7C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3FB36281D62D26700EFB7C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -244,9 +254,13 @@
 			isa = PBXGroup;
 			children = (
 				A3A404E41D6D8F6F0061DDB2 /* TradeBuyIndexViewController.swift */,
+				A3F74A4F1D98FB5E000A9720 /* TradeSellIndexViewController.swift */,
 				A3A404F41D7008110061DDB2 /* TradeBuyTableViewController.swift */,
+				A3F74A511D98FC30000A9720 /* TradeSellTableViewController.swift */,
 				A3A404EA1D6E93DE0061DDB2 /* TradeBuyIndexCell.swift */,
+				A3F74A531D98FC56000A9720 /* TradeSellIndexCell.swift */,
 				A38F1CC01D892F0B005C09C7 /* TradeBuyDetailViewController.swift */,
+				A3F74A571D98FC79000A9720 /* TradeSellDetailViewController.swift */,
 			);
 			name = TradeBuy;
 			sourceTree = "<group>";
@@ -256,6 +270,7 @@
 			children = (
 				A38F1CC21D892F5A005C09C7 /* TradeBuy.storyboard */,
 				A3A404EB1D6E93DE0061DDB2 /* TradeBuyIndexCell.xib */,
+				A3F74A541D98FC56000A9720 /* TradeSellIndexCell.xib */,
 			);
 			name = TradeBuy;
 			sourceTree = "<group>";
@@ -421,6 +436,7 @@
 				A3A404FD1D7430210061DDB2 /* User.storyboard in Resources */,
 				A3A404ED1D6E93DE0061DDB2 /* TradeBuyIndexCell.xib in Resources */,
 				A3B2AE9B1D7FBCCC004D1CD8 /* CommentTableViewCell.xib in Resources */,
+				A3F74A561D98FC56000A9720 /* TradeSellIndexCell.xib in Resources */,
 				A38F1CC31D892F5A005C09C7 /* TradeBuy.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,9 +504,11 @@
 				A30B0D231D878D1E00C20A76 /* WebpayClient.swift in Sources */,
 				A38F1CE61D9108A4005C09C7 /* ImageSelectViewController.swift in Sources */,
 				A3436E631D65AE9700EE1F77 /* OrderAddThanksViewController.swift in Sources */,
+				A3F74A521D98FC30000A9720 /* TradeSellTableViewController.swift in Sources */,
 				A32B5F7F1D62EFD300608BBF /* OrderAddViewController.swift in Sources */,
 				A3A404E51D6D8F6F0061DDB2 /* TradeBuyIndexViewController.swift in Sources */,
 				A3A404FB1D74300D0061DDB2 /* UserLoginViewController.swift in Sources */,
+				A3F74A581D98FC79000A9720 /* TradeSellDetailViewController.swift in Sources */,
 				A32B5F7C1D62E84600608BBF /* ButtonCustom.swift in Sources */,
 				A3CD058F1D77C6A500E969FC /* OrderDetailViewController.swift in Sources */,
 				A32B5F7A1D62E7D300608BBF /* CommonConst.swift in Sources */,
@@ -498,6 +516,7 @@
 				A3FB36291D62D26700EFB7C4 /* ViewController.swift in Sources */,
 				A3FB363F1D62DEDD00EFB7C4 /* OrderIndexViewController.swift in Sources */,
 				A38F1CC11D892F0B005C09C7 /* TradeBuyDetailViewController.swift in Sources */,
+				A3F74A551D98FC56000A9720 /* TradeSellIndexCell.swift in Sources */,
 				A3B2AE9D1D7FE684004D1CD8 /* CommentData.swift in Sources */,
 				A3B2AE9A1D7FBCCC004D1CD8 /* CommentTableViewCell.swift in Sources */,
 				A3FB36271D62D26700EFB7C4 /* AppDelegate.swift in Sources */,
@@ -506,6 +525,7 @@
 				A3FB36431D62DF9B00EFB7C4 /* AppController.swift in Sources */,
 				A391E58D1D88EC5000937B32 /* OrderBuyThanksViewController.swift in Sources */,
 				A3CA8BC21D6BE19200397DBC /* LeftMenuViewController.swift in Sources */,
+				A3F74A501D98FB5E000A9720 /* TradeSellIndexViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
