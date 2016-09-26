@@ -80,7 +80,6 @@ class TradeBuyIndexViewController: UIViewController, UIScrollViewDelegate {
             table.statusArray = ["6"]
         }
         
-        
         // view配置
         table.view.frame = CGRectMake(self.view.frame.width * CGFloat(page), 0, self.view.frame.width, scrollView.frame.height)
         
@@ -99,7 +98,17 @@ class TradeBuyIndexViewController: UIViewController, UIScrollViewDelegate {
         tabButton.center = CGPointMake(self.view.frame.width / 4 * CGFloat(page + 1), 40)
         
         // タイトル通常時
-        tabButton.setTitle("ボタン \(page)", forState: .Normal)
+        //tabButton.setTitle("ボタン \(page)", forState: .Normal)
+        // statusによって異なるページに表示させる
+        if page == 0 {
+            tabButton.setTitle("お気に入り", forState: .Normal)
+        }
+        else if page == 1 {
+            tabButton.setTitle("取引中", forState: .Normal)
+        }
+        else if page == 2 {
+            tabButton.setTitle("過去の取引", forState: .Normal)
+        }
         tabButton.setTitleColor(UIColor.lightGrayColor(), forState: .Normal) // 未選択はグレー
         tabButton.setTitleColor(UIColor.orangeColor(), forState: .Highlighted)
         tabButton.setTitleColor(UIColor.orangeColor(), forState: .Selected)
