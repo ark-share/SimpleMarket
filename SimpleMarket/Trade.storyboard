@@ -165,14 +165,14 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="400" height="600"/>
                     <connections>
-                        <outlet property="statusLabel" destination="1xi-Vk-DRW" id="Y84-lp-nEz"/>
+                        <outlet property="statusLabel" destination="1xi-Vk-DRW" id="8Mj-47-wXk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3W-Vg-oGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2072" y="221"/>
         </scene>
-        <!--購入リスト-->
+        <!--出品リスト-->
         <scene sceneID="RNd-WQ-QBC">
             <objects>
                 <viewController storyboardIdentifier="TradeSellIndex" automaticallyAdjustsScrollViewInsets="NO" id="JoS-Up-JBH" customClass="TradeSellIndexViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
@@ -202,12 +202,12 @@
                             <constraint firstItem="t7C-A5-dJZ" firstAttribute="top" secondItem="Yam-sd-szY" secondAttribute="bottom" id="wtz-If-abZ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="購入リスト" id="SLM-Ct-ggT"/>
+                    <navigationItem key="navigationItem" title="出品リスト" id="SLM-Ct-ggT"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="400" height="600"/>
                     <connections>
-                        <outlet property="headerView" destination="iB2-Ys-0Mf" id="NHR-GU-Shh"/>
-                        <outlet property="scrollView" destination="Yam-sd-szY" id="NCM-Rf-kdU"/>
+                        <outlet property="headerView" destination="iB2-Ys-0Mf" id="E5l-o8-c2N"/>
+                        <outlet property="scrollView" destination="Yam-sd-szY" id="iFP-ZE-tGk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dUt-Pj-MxP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -230,7 +230,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="400" height="600"/>
                     <connections>
-                        <segue destination="dh5-vf-OIS" kind="show" identifier="TradeBuyDetailSegue" id="MhI-AQ-4gj">
+                        <segue destination="dh5-vf-OIS" kind="show" identifier="TradeSellDetailSegue" id="MhI-AQ-4gj">
                             <nil key="action"/>
                         </segue>
                     </connections>
@@ -244,7 +244,7 @@
             <objects>
                 <navigationController storyboardIdentifier="Navigation TradeSellIndex" automaticallyAdjustsScrollViewInsets="NO" id="lCp-HI-dk9" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XOw-C3-uWr">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="XOw-C3-uWr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

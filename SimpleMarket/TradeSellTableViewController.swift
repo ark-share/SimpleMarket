@@ -7,17 +7,39 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
+
+private let reuseIdentifier = "TradeSellCell"
 
 class TradeSellTableViewController: UITableViewController {
 
+    var orderArray: [OrderData] = [] // 一覧用データ
+    var statusArray: [String] = [] // 表示するステータスの商品
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        // cell
+        let nib = UINib(nibName: "TradeSellIndexCell", bundle: nil) // Xibファイルの名前
+        tableView.registerNib(nib, forCellReuseIdentifier: reuseIdentifier)
+        tableView.rowHeight = UITableViewAutomaticDimension // 高さ自動
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        // ordersに要素が追加されたらクロージャ呼び出す
+        FIRDatabase.database().reference().child(CommonConst.OrderPATH).observeEventType(.ChildAdded, withBlock: { snapshot in
+            
+            // データを設定する
+            //if let uid = FIRAuth.auth()?.currentUser?.uid {
+            let data = OrderData(snapshot: snapshot) //, myId: uid
+            // statusの中に指定したステータスがあるかどうか　たとえばarrayが[1,2]の場合、statusが1や2だったら表示される
+            if data.status != nil {
+                if (self.statusArray.indexOf(data.status!) != nil) {
+                    self.orderArray.insert(data, atIndex: 0)
+                }
+            }
+            self.tableView.reloadData() // 再表示
+            //}
+        })
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,62 +56,35 @@ class TradeSellTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return orderArray.count
     }
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath) as! TradeSellIndexCell
+        cell.orderData = orderArray[indexPath.row]
+        
         return cell
     }
-    */
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 100
     }
-    */
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+    // セルから直にSegueを引いた場合はここは要らない。２回詳細ページが呼ばれてしまう
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        performSegueWithIdentifier("TradeSellDetailSegue", sender: nil)
     }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let vc = segue.destinationViewController as! TradeSellDetailViewController
+        
+        if segue.identifier == "TradeSellDetailSegue" {
+            // orderDataを引き継ぐ
+            let indexPath = self.tableView.indexPathForSelectedRow // どのセルを押した？
+            vc.orderData = self.orderArray[indexPath!.row]
+        }
     }
-    */
 
 }

@@ -387,11 +387,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SimpleMarket/TradeBuyIndexViewController.swift"
-            timestampString = "496564788.912377"
+            timestampString = "496568172.752811"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "makeNavigation()"
             landmarkType = "7">
          </BreakpointContent>

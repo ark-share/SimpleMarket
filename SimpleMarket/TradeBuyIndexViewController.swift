@@ -22,7 +22,6 @@ class TradeBuyIndexViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
 
         scrollView.delegate = self
-        
         scrollView.frame = CGRectMake(0, 0, self.view.frame.width, scrollView.frame.height) // スクロールの横幅を画面に合わせる
         scrollView.contentSize = CGSizeMake(self.view.frame.width * 3, scrollView.frame.height) // 3画面
         scrollView.pagingEnabled = true
@@ -67,7 +66,7 @@ class TradeBuyIndexViewController: UIViewController, UIScrollViewDelegate {
     // コンテンツの生成
     func makeTableViewByPage(page: Int, statusArray: [String]) {
         
-        let table = UIStoryboard(name: "TradeBuy", bundle: nil).instantiateViewControllerWithIdentifier("TradeBuyTable") as! TradeBuyTableViewController
+        let table = UIStoryboard(name: "Trade", bundle: nil).instantiateViewControllerWithIdentifier("TradeBuyTable") as! TradeBuyTableViewController
 
         // 指定ステータスの商品を表示する
         table.statusArray = statusArray

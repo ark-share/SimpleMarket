@@ -10,10 +10,28 @@ import UIKit
 
 class TradeSellDetailViewController: UIViewController {
 
+    @IBOutlet weak var statusLabel: UILabel!
+
+    var orderData: OrderData!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if orderData != nil {
+//            if orderData.image != nil {
+//                imageView.image = orderData.image!
+//            }
+//            if orderData.price != nil {
+//                priceLabel.text = orderData.price
+//            }
+//            if orderData.name != nil {
+//                nameLabel.text = orderData.name
+//            }
+            if orderData.status != nil {
+                statusLabel.text = orderData.statusName
+            }
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {

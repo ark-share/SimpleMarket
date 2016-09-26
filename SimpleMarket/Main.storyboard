@@ -53,6 +53,9 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHZ-pe-3Ah">
                                 <state key="normal" title="出品リストへ"/>
+                                <connections>
+                                    <segue destination="4NM-jJ-cEn" kind="show" id="BfO-iu-0cG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -88,15 +91,23 @@
                 <viewControllerPlaceholder storyboardName="Order" referencedIdentifier="OrderIndex" id="DJY-c0-Mq3" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NQO-1c-ErL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="874" y="-6"/>
+            <point key="canvasLocation" x="874" y="-25"/>
         </scene>
         <!--TradeBuyIndex-->
         <scene sceneID="dbd-Yw-A2N">
             <objects>
-                <viewControllerPlaceholder storyboardName="TradeBuy" referencedIdentifier="TradeBuyIndex" id="3HU-Mj-X5h" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Trade" referencedIdentifier="TradeBuyIndex" id="3HU-Mj-X5h" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5q0-ul-5Sf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="892" y="46"/>
+            <point key="canvasLocation" x="892" y="22"/>
+        </scene>
+        <!--TradeSellIndex-->
+        <scene sceneID="DWk-ga-raw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Trade" referencedIdentifier="TradeSellIndex" id="4NM-jJ-cEn" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cDI-Sy-Jp6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="892" y="66"/>
         </scene>
         <!--Left Menu View Controller-->
         <scene sceneID="5M3-t3-Do1">

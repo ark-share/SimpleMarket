@@ -10,6 +10,13 @@ import UIKit
 
 class TradeSellIndexCell: UITableViewCell {
 
+    @IBOutlet weak var orderImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var statusLabel: UILabel!
+    
+    var orderData: OrderData!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,4 +28,21 @@ class TradeSellIndexCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    override func layoutSubviews() {
+        
+        if orderData.image != nil {
+            orderImageView.image = orderData.image
+        }
+        if orderData.price != nil {
+            priceLabel.text = orderData.price
+        }
+        if orderData.name != nil {
+            nameLabel.text = orderData.name
+        }
+        if orderData.status != nil {
+            statusLabel.text = orderData.status
+        }
+        
+        super.layoutSubviews()
+    }
 }

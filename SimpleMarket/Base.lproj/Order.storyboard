@@ -723,7 +723,7 @@
         <!--TradeBuyDetail-->
         <scene sceneID="0Fk-Qq-15Y">
             <objects>
-                <viewControllerPlaceholder storyboardName="TradeBuy" referencedIdentifier="TradeBuyDetail" id="FC9-WQ-LyP" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Trade" referencedIdentifier="TradeBuyDetail" id="FC9-WQ-LyP" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OFJ-0N-9tl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1620" y="-493"/>
