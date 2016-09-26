@@ -73,10 +73,10 @@ class TradeBuyIndexViewController: UIViewController, UIScrollViewDelegate {
         if page == 0 {
             table.statusArray = ["0"]
         }
-        else if page == 0 {
+        else if page == 1 {
             table.statusArray = ["1", "2", "3", "4", "5"]
         }
-        else if page == 0 {
+        else if page == 2 {
             table.statusArray = ["6"]
         }
         
