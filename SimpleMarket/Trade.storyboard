@@ -142,7 +142,7 @@
             <objects>
                 <navigationController storyboardIdentifier="Navigation TradeBuyIndex" automaticallyAdjustsScrollViewInsets="NO" id="CZI-Rw-R4F" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="GmQ-YY-jAU">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GmQ-YY-jAU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -292,7 +292,7 @@
             <objects>
                 <navigationController storyboardIdentifier="Navigation TradeSellIndex" automaticallyAdjustsScrollViewInsets="NO" id="lCp-HI-dk9" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="XOw-C3-uWr">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XOw-C3-uWr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

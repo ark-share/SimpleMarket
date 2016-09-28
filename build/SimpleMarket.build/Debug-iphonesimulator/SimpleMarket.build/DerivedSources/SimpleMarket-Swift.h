@@ -216,12 +216,15 @@ SWIFT_CLASS("_TtC12SimpleMarket25ImageSelectViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIEvent;
 
 SWIFT_CLASS("_TtC12SimpleMarket22LeftMenuViewController")
 @interface LeftMenuViewController : UIViewController
 - (IBAction)handleToTop:(id _Nonnull)sender;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (void)makeUserImageButton;
+- (void)handleUserImageButton:(UIButton * _Nonnull)sender event:(UIEvent * _Nonnull)event;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -361,7 +364,6 @@ SWIFT_CLASS("_TtC12SimpleMarket34OrderIndexCollectionViewController")
 @end
 
 @class UIScrollView;
-@class UIEvent;
 @class UIView;
 
 SWIFT_CLASS("_TtC12SimpleMarket24OrderIndexViewController")

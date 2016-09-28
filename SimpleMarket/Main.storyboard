@@ -121,8 +121,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRU-8p-tAe">
-                                <frame key="frameInset" minX="30" minY="80" width="71" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4p1-1T-wQj">
+                                <state key="normal" title="購入リストへ"/>
+                                <connections>
+                                    <segue destination="R1q-Jy-0ba" kind="show" id="FTQ-HS-ljN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUi-VG-7XS">
+                                <state key="normal" title="出品リストへ"/>
+                                <connections>
+                                    <segue destination="mHb-fj-xDD" kind="show" id="k1M-xX-yl7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cw-VE-OVz">
+                                <state key="normal" title="ホーム"/>
+                                <connections>
+                                    <segue destination="tGh-xI-ex6" kind="show" id="eOt-Qy-ws7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="いいね" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rf5-p3-CFv">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="売り上げ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bF-zy-hNy">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRU-8p-tAe">
                                 <state key="normal" title="Topへ戻る"/>
                                 <connections>
                                     <action selector="handleToTop:" destination="WPY-b6-c55" eventType="touchUpInside" id="1jJ-zS-o9P"/>
@@ -131,8 +158,18 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="gRU-8p-tAe" firstAttribute="leading" secondItem="D8u-VO-LzU" secondAttribute="leadingMargin" constant="10" id="RE3-ZC-XW5"/>
-                            <constraint firstItem="gRU-8p-tAe" firstAttribute="top" secondItem="7st-ex-swW" secondAttribute="bottom" constant="60" id="TgJ-E4-lAW"/>
+                            <constraint firstItem="BUi-VG-7XS" firstAttribute="top" secondItem="4p1-1T-wQj" secondAttribute="bottom" constant="20" id="1qV-DX-ddy"/>
+                            <constraint firstItem="4p1-1T-wQj" firstAttribute="top" secondItem="Rf5-p3-CFv" secondAttribute="bottom" constant="20" id="6I7-gU-jtC"/>
+                            <constraint firstItem="9bF-zy-hNy" firstAttribute="leading" secondItem="D8u-VO-LzU" secondAttribute="leadingMargin" constant="20" id="BGL-va-mUs"/>
+                            <constraint firstItem="gRU-8p-tAe" firstAttribute="top" secondItem="7st-ex-swW" secondAttribute="bottom" constant="40" id="Fbf-5L-CTW"/>
+                            <constraint firstItem="2cw-VE-OVz" firstAttribute="leading" secondItem="D8u-VO-LzU" secondAttribute="leadingMargin" constant="20" id="G7u-MT-m0x"/>
+                            <constraint firstItem="Rf5-p3-CFv" firstAttribute="top" secondItem="2cw-VE-OVz" secondAttribute="bottom" constant="20" id="g9T-5t-Gks"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gRU-8p-tAe" secondAttribute="trailing" constant="20" id="g9c-Ge-UCu"/>
+                            <constraint firstItem="9bF-zy-hNy" firstAttribute="top" secondItem="BUi-VG-7XS" secondAttribute="bottom" constant="20" id="hmP-X0-Yv0"/>
+                            <constraint firstItem="BUi-VG-7XS" firstAttribute="leading" secondItem="D8u-VO-LzU" secondAttribute="leadingMargin" constant="20" id="pmD-Rp-UkU"/>
+                            <constraint firstItem="2cw-VE-OVz" firstAttribute="top" secondItem="7st-ex-swW" secondAttribute="bottom" constant="135" id="rTp-hI-mFb"/>
+                            <constraint firstItem="4p1-1T-wQj" firstAttribute="leading" secondItem="D8u-VO-LzU" secondAttribute="leadingMargin" constant="20" id="uIK-K5-qlh"/>
+                            <constraint firstItem="Rf5-p3-CFv" firstAttribute="leading" secondItem="D8u-VO-LzU" secondAttribute="leadingMargin" constant="20" id="wfi-Ut-FmS"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -141,6 +178,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vha-Ap-14d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="284" y="689"/>
+        </scene>
+        <!--OrderIndex-->
+        <scene sceneID="b4c-HB-urs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Order" referencedIdentifier="OrderIndex" id="tGh-xI-ex6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vjp-kV-1O5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="874" y="604"/>
+        </scene>
+        <!--TradeBuyIndex-->
+        <scene sceneID="Lvk-yB-Gpq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Trade" referencedIdentifier="TradeBuyIndex" id="R1q-Jy-0ba" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sMl-u9-37Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="892" y="650"/>
+        </scene>
+        <!--TradeSellIndex-->
+        <scene sceneID="xXK-lw-DhJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Trade" referencedIdentifier="TradeSellIndex" id="mHb-fj-xDD" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VSr-p3-clH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="892" y="695"/>
         </scene>
     </scenes>
 </document>

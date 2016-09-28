@@ -60,7 +60,7 @@
         <scene sceneID="Jsq-XN-rZQ">
             <objects>
                 <collectionViewController storyboardIdentifier="OrderCollection" id="35W-WV-RSd" customClass="OrderIndexCollectionViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="6ta-2B-Nwg">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="6ta-2B-Nwg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -496,12 +496,12 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="qTz-yc-mEA"/>
+                                        <exclude reference="4il-hG-lLt"/>
                                         <exclude reference="Ks6-fy-qDG"/>
                                         <exclude reference="Yiv-WR-xJ5"/>
-                                        <exclude reference="xMk-DR-RZR"/>
-                                        <exclude reference="qTz-yc-mEA"/>
                                         <exclude reference="NcU-Zj-jxN"/>
-                                        <exclude reference="4il-hG-lLt"/>
+                                        <exclude reference="xMk-DR-RZR"/>
                                     </mask>
                                 </variation>
                             </view>
