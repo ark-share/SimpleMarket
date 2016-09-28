@@ -7,14 +7,14 @@ provides-member:
 - ["C12SimpleMarket12ButtonCustom", ""]
 provides-dynamic-lookup:
 - "borderWidth"
-- "borderColor"
-- "textColor"
 - "cornerRadius"
+- "textColor"
+- "borderColor"
 depends-top-level:
-- "ButtonCustom"
 - "CGFloat"
 - "UIColor"
 - "UIButton"
+- "ButtonCustom"
 depends-member:
 - !private ["Ps9AnyObject", "CGColor"]
 - ["Ps9AnyObject", "UIColor"]

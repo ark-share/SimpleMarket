@@ -6,25 +6,25 @@ provides-nominal:
 provides-member:
 - ["C12SimpleMarket14ViewController", ""]
 provides-dynamic-lookup:
-- "handleLoginButton"
+- "didReceiveMemoryWarning"
 - "viewWillAppear"
-- "handleLogoutButton"
-- "viewDidLoad"
 - "prepareForSegue"
 - "displayNameLabel"
-- "didReceiveMemoryWarning"
+- "viewDidLoad"
+- "handleLoginButton"
+- "handleLogoutButton"
 depends-top-level:
-- "UITextField"
-- "AnyObject"
 - "ViewController"
-- !private "StringLiteralType"
-- "Bool"
-- "UIViewController"
-- !private "AppController"
-- "UIStoryboardSegue"
-- !private "BooleanLiteralType"
 - !private "UIStoryboard"
+- !private "AppController"
+- !private "StringLiteralType"
 - !private "UserLoginViewController"
+- "UITextField"
+- "UIStoryboardSegue"
+- "AnyObject"
+- "Bool"
+- !private "BooleanLiteralType"
+- "UIViewController"
 depends-member:
 - !private ["Ps9AnyObject", "AppController"]
 - !private ["Ps9AnyObject", "UIStoryboard"]

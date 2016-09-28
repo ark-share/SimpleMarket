@@ -149,31 +149,53 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRU-8p-tAe">
-                                <state key="normal" title="Topへ戻る"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgF-En-mph">
+                                <state key="normal" title="ログイン"/>
                                 <connections>
-                                    <action selector="handleToTop:" destination="WPY-b6-c55" eventType="touchUpInside" id="1jJ-zS-o9P"/>
+                                    <action selector="handleLogin:" destination="WPY-b6-c55" eventType="touchUpInside" id="Gxe-2C-HhW"/>
+                                    <action selector="handleLoginButton:" destination="9Vf-8u-fp4" eventType="touchUpInside" id="jOl-hs-IVY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mv5-pl-Dzf">
+                                <state key="normal" title="ログアウト"/>
+                                <connections>
+                                    <action selector="handleLogout:" destination="WPY-b6-c55" eventType="touchUpInside" id="lO0-V2-Mac"/>
+                                    <action selector="handleLogoutButton:" destination="9Vf-8u-fp4" eventType="touchUpInside" id="eiw-ff-PGn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="display name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRn-PO-on0">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="BUi-VG-7XS" firstAttribute="top" secondItem="4p1-1T-wQj" secondAttribute="bottom" constant="20" id="1qV-DX-ddy"/>
                             <constraint firstItem="4p1-1T-wQj" firstAttribute="top" secondItem="Rf5-p3-CFv" secondAttribute="bottom" constant="20" id="6I7-gU-jtC"/>
                             <constraint firstItem="9bF-zy-hNy" firstAttribute="leading" secondItem="D8u-VO-LzU" secondAttribute="leadingMargin" constant="20" id="BGL-va-mUs"/>
-                            <constraint firstItem="gRU-8p-tAe" firstAttribute="top" secondItem="7st-ex-swW" secondAttribute="bottom" constant="40" id="Fbf-5L-CTW"/>
+                            <constraint firstItem="LgF-En-mph" firstAttribute="leading" secondItem="D8u-VO-LzU" secondAttribute="leadingMargin" constant="150" id="EAF-h3-Y1G"/>
                             <constraint firstItem="2cw-VE-OVz" firstAttribute="leading" secondItem="D8u-VO-LzU" secondAttribute="leadingMargin" constant="20" id="G7u-MT-m0x"/>
+                            <constraint firstItem="mv5-pl-Dzf" firstAttribute="leading" secondItem="D8u-VO-LzU" secondAttribute="leadingMargin" constant="20" id="JVW-Ir-mHa"/>
+                            <constraint firstItem="mv5-pl-Dzf" firstAttribute="top" secondItem="9bF-zy-hNy" secondAttribute="bottom" constant="60" id="Pq6-ds-KEg"/>
                             <constraint firstItem="Rf5-p3-CFv" firstAttribute="top" secondItem="2cw-VE-OVz" secondAttribute="bottom" constant="20" id="g9T-5t-Gks"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="gRU-8p-tAe" secondAttribute="trailing" constant="20" id="g9c-Ge-UCu"/>
                             <constraint firstItem="9bF-zy-hNy" firstAttribute="top" secondItem="BUi-VG-7XS" secondAttribute="bottom" constant="20" id="hmP-X0-Yv0"/>
+                            <constraint firstItem="LgF-En-mph" firstAttribute="top" secondItem="7st-ex-swW" secondAttribute="bottom" constant="60" id="jLe-Pg-AKY"/>
                             <constraint firstItem="BUi-VG-7XS" firstAttribute="leading" secondItem="D8u-VO-LzU" secondAttribute="leadingMargin" constant="20" id="pmD-Rp-UkU"/>
                             <constraint firstItem="2cw-VE-OVz" firstAttribute="top" secondItem="7st-ex-swW" secondAttribute="bottom" constant="135" id="rTp-hI-mFb"/>
                             <constraint firstItem="4p1-1T-wQj" firstAttribute="leading" secondItem="D8u-VO-LzU" secondAttribute="leadingMargin" constant="20" id="uIK-K5-qlh"/>
+                            <constraint firstItem="gRn-PO-on0" firstAttribute="top" secondItem="7st-ex-swW" secondAttribute="bottom" constant="60" id="uJX-N6-7dK"/>
+                            <constraint firstItem="gRn-PO-on0" firstAttribute="leading" secondItem="D8u-VO-LzU" secondAttribute="leadingMargin" constant="150" id="viU-CL-mqp"/>
                             <constraint firstItem="Rf5-p3-CFv" firstAttribute="leading" secondItem="D8u-VO-LzU" secondAttribute="leadingMargin" constant="20" id="wfi-Ut-FmS"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="400" height="600"/>
+                    <connections>
+                        <outlet property="displayNameLabel" destination="gRn-PO-on0" id="Y2u-YV-gOp"/>
+                        <outlet property="loginButton" destination="LgF-En-mph" id="rW6-lA-7jE"/>
+                        <outlet property="logoutButton" destination="mv5-pl-Dzf" id="7Ay-Js-0JF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vha-Ap-14d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

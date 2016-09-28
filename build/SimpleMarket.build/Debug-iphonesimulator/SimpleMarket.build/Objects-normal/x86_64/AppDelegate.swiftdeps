@@ -6,29 +6,31 @@ provides-nominal:
 provides-member:
 - ["C12SimpleMarket11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationWillTerminate"
-- "window"
 - "applicationDidBecomeActive"
-- "applicationWillEnterForeground"
 - "applicationWillResignActive"
 - "application"
+- "applicationWillTerminate"
+- "applicationWillEnterForeground"
+- "window"
 - "applicationDidEnterBackground"
 depends-top-level:
+- "UIWindow"
+- "UIApplication"
+- !private "FIRApp"
 - !private "WPYTokenizer"
+- !private "SlideMenuOptions"
+- !private "BooleanLiteralType"
+- !private "WebpayClient"
+- "NSObject"
+- "AppDelegate"
+- !private "AdobeUXAuthManager"
 - "UIResponder"
 - "UIApplicationDelegate"
-- "UIWindow"
-- "NSObject"
-- !private "WebpayClient"
+- !private "UIStoryboard"
+- !private "CommonConst"
 - "Bool"
 - "AnyObject"
-- "AppDelegate"
-- "UIApplication"
-- !private "CommonConst"
-- !private "BooleanLiteralType"
-- !private "SlideMenuOptions"
-- !private "AdobeUXAuthManager"
-- !private "FIRApp"
+- !private "UIViewController"
 depends-member:
 - !private ["CSo18AdobeUXAuthManager", "setAuthenticationParametersWithClientID"]
 - !private ["CSo18AdobeUXAuthManager", "sharedManager"]
@@ -36,6 +38,7 @@ depends-member:
 - !private ["Ps9AnyObject", "CommonConst"]
 - !private ["Ps9AnyObject", "FIRApp"]
 - !private ["Ps9AnyObject", "SlideMenuOptions"]
+- !private ["Ps9AnyObject", "UIStoryboard"]
 - !private ["Ps9AnyObject", "WPYTokenizer"]
 - !private ["Ps9AnyObject", "WebpayClient"]
 - ["Ps9AnyObject", "application"]
@@ -52,7 +55,10 @@ depends-member:
 - ["Ps9AnyObject", "applicationWillTerminate"]
 - !private ["Ps9AnyObject", "configure"]
 - ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "instantiateViewControllerWithIdentifier"]
+- !private ["Ps9AnyObject", "makeKeyWindow"]
 - !private ["Ps9AnyObject", "publicKey"]
+- !private ["Ps9AnyObject", "rootViewController"]
 - !private ["Ps9AnyObject", "setAuthenticationParametersWithClientID"]
 - !private ["Ps9AnyObject", "setPublicKey"]
 - !private ["Ps9AnyObject", "sharedManager"]
@@ -66,6 +72,8 @@ depends-member:
 - ["C12SimpleMarket11AppDelegate", "NSObject"]
 - !private ["C12SimpleMarket11AppDelegate", "SlideMenuOptions"]
 - ["C12SimpleMarket11AppDelegate", "UIApplication"]
+- !private ["C12SimpleMarket11AppDelegate", "UIStoryboard"]
+- !private ["C12SimpleMarket11AppDelegate", "UIViewController"]
 - ["C12SimpleMarket11AppDelegate", "UIWindow"]
 - !private ["C12SimpleMarket11AppDelegate", "WPYTokenizer"]
 - !private ["C12SimpleMarket11AppDelegate", "WebpayClient"]
@@ -84,11 +92,14 @@ depends-member:
 - ["C12SimpleMarket11AppDelegate", "deinit"]
 - ["C12SimpleMarket11AppDelegate", "init"]
 - ["C12SimpleMarket11AppDelegate", "window"]
+- !private ["PSo15CALayerDelegate", "makeKeyWindow"]
+- !private ["PSo15CALayerDelegate", "rootViewController"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["Ps11CVarArgType", "AdobeUXAuthManager"]
 - !private ["Ps11CVarArgType", "CommonConst"]
 - !private ["Ps11CVarArgType", "FIRApp"]
 - !private ["Ps11CVarArgType", "SlideMenuOptions"]
+- !private ["Ps11CVarArgType", "UIStoryboard"]
 - !private ["Ps11CVarArgType", "WPYTokenizer"]
 - !private ["Ps11CVarArgType", "WebpayClient"]
 - ["Ps11CVarArgType", "application"]
@@ -105,7 +116,10 @@ depends-member:
 - ["Ps11CVarArgType", "applicationWillTerminate"]
 - !private ["Ps11CVarArgType", "configure"]
 - ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "instantiateViewControllerWithIdentifier"]
+- !private ["Ps11CVarArgType", "makeKeyWindow"]
 - !private ["Ps11CVarArgType", "publicKey"]
+- !private ["Ps11CVarArgType", "rootViewController"]
 - !private ["Ps11CVarArgType", "setAuthenticationParametersWithClientID"]
 - !private ["Ps11CVarArgType", "setPublicKey"]
 - !private ["Ps11CVarArgType", "sharedManager"]
@@ -117,6 +131,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "CommonConst"]
 - !private ["Ps28CustomDebugStringConvertible", "FIRApp"]
 - !private ["Ps28CustomDebugStringConvertible", "SlideMenuOptions"]
+- !private ["Ps28CustomDebugStringConvertible", "UIStoryboard"]
 - !private ["Ps28CustomDebugStringConvertible", "WPYTokenizer"]
 - !private ["Ps28CustomDebugStringConvertible", "WebpayClient"]
 - ["Ps28CustomDebugStringConvertible", "application"]
@@ -133,7 +148,10 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "applicationWillTerminate"]
 - !private ["Ps28CustomDebugStringConvertible", "configure"]
 - ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "instantiateViewControllerWithIdentifier"]
+- !private ["Ps28CustomDebugStringConvertible", "makeKeyWindow"]
 - !private ["Ps28CustomDebugStringConvertible", "publicKey"]
+- !private ["Ps28CustomDebugStringConvertible", "rootViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "setAuthenticationParametersWithClientID"]
 - !private ["Ps28CustomDebugStringConvertible", "setPublicKey"]
 - !private ["Ps28CustomDebugStringConvertible", "sharedManager"]
@@ -143,6 +161,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "CommonConst"]
 - !private ["Ps23CustomStringConvertible", "FIRApp"]
 - !private ["Ps23CustomStringConvertible", "SlideMenuOptions"]
+- !private ["Ps23CustomStringConvertible", "UIStoryboard"]
 - !private ["Ps23CustomStringConvertible", "WPYTokenizer"]
 - !private ["Ps23CustomStringConvertible", "WebpayClient"]
 - ["Ps23CustomStringConvertible", "application"]
@@ -159,7 +178,10 @@ depends-member:
 - ["Ps23CustomStringConvertible", "applicationWillTerminate"]
 - !private ["Ps23CustomStringConvertible", "configure"]
 - ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "instantiateViewControllerWithIdentifier"]
+- !private ["Ps23CustomStringConvertible", "makeKeyWindow"]
 - !private ["Ps23CustomStringConvertible", "publicKey"]
+- !private ["Ps23CustomStringConvertible", "rootViewController"]
 - !private ["Ps23CustomStringConvertible", "setAuthenticationParametersWithClientID"]
 - !private ["Ps23CustomStringConvertible", "setPublicKey"]
 - !private ["Ps23CustomStringConvertible", "sharedManager"]
@@ -169,6 +191,7 @@ depends-member:
 - !private ["Ps9Equatable", "CommonConst"]
 - !private ["Ps9Equatable", "FIRApp"]
 - !private ["Ps9Equatable", "SlideMenuOptions"]
+- !private ["Ps9Equatable", "UIStoryboard"]
 - !private ["Ps9Equatable", "WPYTokenizer"]
 - !private ["Ps9Equatable", "WebpayClient"]
 - ["Ps9Equatable", "application"]
@@ -185,7 +208,10 @@ depends-member:
 - ["Ps9Equatable", "applicationWillTerminate"]
 - !private ["Ps9Equatable", "configure"]
 - ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "instantiateViewControllerWithIdentifier"]
+- !private ["Ps9Equatable", "makeKeyWindow"]
 - !private ["Ps9Equatable", "publicKey"]
+- !private ["Ps9Equatable", "rootViewController"]
 - !private ["Ps9Equatable", "setAuthenticationParametersWithClientID"]
 - !private ["Ps9Equatable", "setPublicKey"]
 - !private ["Ps9Equatable", "sharedManager"]
@@ -196,6 +222,7 @@ depends-member:
 - !private ["Ps8Hashable", "CommonConst"]
 - !private ["Ps8Hashable", "FIRApp"]
 - !private ["Ps8Hashable", "SlideMenuOptions"]
+- !private ["Ps8Hashable", "UIStoryboard"]
 - !private ["Ps8Hashable", "WPYTokenizer"]
 - !private ["Ps8Hashable", "WebpayClient"]
 - ["Ps8Hashable", "application"]
@@ -212,12 +239,17 @@ depends-member:
 - ["Ps8Hashable", "applicationWillTerminate"]
 - !private ["Ps8Hashable", "configure"]
 - ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "instantiateViewControllerWithIdentifier"]
+- !private ["Ps8Hashable", "makeKeyWindow"]
 - !private ["Ps8Hashable", "publicKey"]
+- !private ["Ps8Hashable", "rootViewController"]
 - !private ["Ps8Hashable", "setAuthenticationParametersWithClientID"]
 - !private ["Ps8Hashable", "setPublicKey"]
 - !private ["Ps8Hashable", "sharedManager"]
 - ["Ps8Hashable", "window"]
 - ["Ps8Hashable", ""]
+- !private ["PSo8NSCoding", "makeKeyWindow"]
+- !private ["PSo8NSCoding", "rootViewController"]
 - !private ["CSo8NSObject", "AdobeUXAuthManager"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
@@ -226,6 +258,8 @@ depends-member:
 - ["CSo8NSObject", "NSObject"]
 - !private ["CSo8NSObject", "SlideMenuOptions"]
 - ["CSo8NSObject", "UIApplication"]
+- !private ["CSo8NSObject", "UIStoryboard"]
+- !private ["CSo8NSObject", "UIViewController"]
 - ["CSo8NSObject", "UIWindow"]
 - !private ["CSo8NSObject", "WPYTokenizer"]
 - !private ["CSo8NSObject", "WebpayClient"]
@@ -243,7 +277,10 @@ depends-member:
 - ["CSo8NSObject", "applicationWillTerminate"]
 - !private ["CSo8NSObject", "configure"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "instantiateViewControllerWithIdentifier"]
+- !private ["CSo8NSObject", "makeKeyWindow"]
 - !private ["CSo8NSObject", "publicKey"]
+- !private ["CSo8NSObject", "rootViewController"]
 - !private ["CSo8NSObject", "setAuthenticationParametersWithClientID"]
 - !private ["CSo8NSObject", "setPublicKey"]
 - !private ["CSo8NSObject", "sharedManager"]
@@ -252,6 +289,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "CommonConst"]
 - !private ["PSo16NSObjectProtocol", "FIRApp"]
 - !private ["PSo16NSObjectProtocol", "SlideMenuOptions"]
+- !private ["PSo16NSObjectProtocol", "UIStoryboard"]
 - !private ["PSo16NSObjectProtocol", "WPYTokenizer"]
 - !private ["PSo16NSObjectProtocol", "WebpayClient"]
 - ["PSo16NSObjectProtocol", "application"]
@@ -268,7 +306,10 @@ depends-member:
 - ["PSo16NSObjectProtocol", "applicationWillTerminate"]
 - !private ["PSo16NSObjectProtocol", "configure"]
 - ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "instantiateViewControllerWithIdentifier"]
+- !private ["PSo16NSObjectProtocol", "makeKeyWindow"]
 - !private ["PSo16NSObjectProtocol", "publicKey"]
+- !private ["PSo16NSObjectProtocol", "rootViewController"]
 - !private ["PSo16NSObjectProtocol", "setAuthenticationParametersWithClientID"]
 - !private ["PSo16NSObjectProtocol", "setPublicKey"]
 - !private ["PSo16NSObjectProtocol", "sharedManager"]
@@ -277,10 +318,17 @@ depends-member:
 - !private ["V24SlideMenuControllerSwift16SlideMenuOptions", "contentViewScale"]
 - !private ["V24SlideMenuControllerSwift16SlideMenuOptions", "leftViewWidth"]
 - !private ["V24SlideMenuControllerSwift16SlideMenuOptions", "panFromBezel"]
+- !private ["PSo29UIAccessibilityIdentification", "makeKeyWindow"]
+- !private ["PSo29UIAccessibilityIdentification", "rootViewController"]
+- !private ["PSo12UIAppearance", "makeKeyWindow"]
+- !private ["PSo12UIAppearance", "rootViewController"]
+- !private ["PSo21UIAppearanceContainer", "makeKeyWindow"]
+- !private ["PSo21UIAppearanceContainer", "rootViewController"]
 - !private ["PSo21UIApplicationDelegate", "AdobeUXAuthManager"]
 - !private ["PSo21UIApplicationDelegate", "CommonConst"]
 - !private ["PSo21UIApplicationDelegate", "FIRApp"]
 - !private ["PSo21UIApplicationDelegate", "SlideMenuOptions"]
+- !private ["PSo21UIApplicationDelegate", "UIStoryboard"]
 - !private ["PSo21UIApplicationDelegate", "WPYTokenizer"]
 - !private ["PSo21UIApplicationDelegate", "WebpayClient"]
 - ["PSo21UIApplicationDelegate", "application"]
@@ -297,6 +345,14 @@ depends-member:
 - ["PSo21UIApplicationDelegate", "applicationWillTerminate"]
 - ["PSo21UIApplicationDelegate", "window"]
 - ["PSo21UIApplicationDelegate", ""]
+- !private ["PSo17UICoordinateSpace", "makeKeyWindow"]
+- !private ["PSo17UICoordinateSpace", "rootViewController"]
+- !private ["PSo13UIDynamicItem", "makeKeyWindow"]
+- !private ["PSo13UIDynamicItem", "rootViewController"]
+- !private ["PSo18UIFocusEnvironment", "makeKeyWindow"]
+- !private ["PSo18UIFocusEnvironment", "rootViewController"]
+- !private ["PSo11UIFocusItem", "makeKeyWindow"]
+- !private ["PSo11UIFocusItem", "rootViewController"]
 - !private ["CSo11UIResponder", "AdobeUXAuthManager"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
@@ -305,6 +361,8 @@ depends-member:
 - ["CSo11UIResponder", "NSObject"]
 - !private ["CSo11UIResponder", "SlideMenuOptions"]
 - ["CSo11UIResponder", "UIApplication"]
+- !private ["CSo11UIResponder", "UIStoryboard"]
+- !private ["CSo11UIResponder", "UIViewController"]
 - ["CSo11UIResponder", "UIWindow"]
 - !private ["CSo11UIResponder", "WPYTokenizer"]
 - !private ["CSo11UIResponder", "WebpayClient"]
@@ -321,12 +379,15 @@ depends-member:
 - ["CSo11UIResponder", "applicationWillResignActive"]
 - ["CSo11UIResponder", "applicationWillTerminate"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "makeKeyWindow"]
+- !private ["CSo11UIResponder", "rootViewController"]
 - ["CSo11UIResponder", "window"]
 - ["CSo11UIResponder", ""]
 - !private ["PSo30UIResponderStandardEditActions", "AdobeUXAuthManager"]
 - !private ["PSo30UIResponderStandardEditActions", "CommonConst"]
 - !private ["PSo30UIResponderStandardEditActions", "FIRApp"]
 - !private ["PSo30UIResponderStandardEditActions", "SlideMenuOptions"]
+- !private ["PSo30UIResponderStandardEditActions", "UIStoryboard"]
 - !private ["PSo30UIResponderStandardEditActions", "WPYTokenizer"]
 - !private ["PSo30UIResponderStandardEditActions", "WebpayClient"]
 - ["PSo30UIResponderStandardEditActions", "application"]
@@ -342,14 +403,27 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "applicationWillResignActive"]
 - ["PSo30UIResponderStandardEditActions", "applicationWillTerminate"]
 - ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "makeKeyWindow"]
+- !private ["PSo30UIResponderStandardEditActions", "rootViewController"]
 - ["PSo30UIResponderStandardEditActions", "window"]
 - ["PSo30UIResponderStandardEditActions", ""]
+- !private ["CSo12UIStoryboard", "init"]
+- !private ["CSo12UIStoryboard", "instantiateViewControllerWithIdentifier"]
+- !private ["PSo18UITraitEnvironment", "makeKeyWindow"]
+- !private ["PSo18UITraitEnvironment", "rootViewController"]
+- !private ["CSo6UIView", "makeKeyWindow"]
+- !private ["CSo6UIView", "rootViewController"]
+- !private ["CSo8UIWindow", "makeKeyWindow"]
+- !private ["CSo8UIWindow", "rootViewController"]
 - !private ["CSo12WPYTokenizer", "setPublicKey"]
 - !private ["C12SimpleMarket12WebpayClient", "publicKey"]
+- !private ["Ps12_Reflectable", "makeKeyWindow"]
+- !private ["Ps12_Reflectable", "rootViewController"]
 depends-nominal:
 - !private "CSo18AdobeUXAuthManager"
 - "Ps9AnyObject"
 - "C12SimpleMarket11AppDelegate"
+- !private "PSo15CALayerDelegate"
 - !private "V12CoreGraphics7CGFloat"
 - "Ps11CVarArgType"
 - !private "V12SimpleMarket11CommonConst"
@@ -358,14 +432,27 @@ depends-nominal:
 - "Ps9Equatable"
 - !private "CSo6FIRApp"
 - "Ps8Hashable"
+- !private "PSo8NSCoding"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "V24SlideMenuControllerSwift16SlideMenuOptions"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- !private "PSo21UIAppearanceContainer"
 - "PSo21UIApplicationDelegate"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
+- !private "CSo12UIStoryboard"
+- !private "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- !private "CSo8UIWindow"
 - !private "CSo12WPYTokenizer"
 - !private "C12SimpleMarket12WebpayClient"
+- !private "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"

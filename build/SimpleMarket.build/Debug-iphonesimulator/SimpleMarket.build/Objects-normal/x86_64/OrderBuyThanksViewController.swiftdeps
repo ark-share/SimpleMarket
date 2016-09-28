@@ -6,22 +6,22 @@ provides-nominal:
 provides-member:
 - ["C12SimpleMarket28OrderBuyThanksViewController", ""]
 provides-dynamic-lookup:
-- "handleTradeBuyDetail"
-- "didReceiveMemoryWarning"
 - "orderData"
-- "handleOrderIndex"
 - "viewDidLoad"
+- "handleOrderIndex"
+- "didReceiveMemoryWarning"
+- "handleTradeBuyDetail"
 depends-top-level:
-- "OrderBuyThanksViewController"
-- "UIViewController"
-- !private "TradeBuyDetailViewController"
-- !private "StringLiteralType"
-- !private "UIApplication"
-- "AnyObject"
 - !private "UIStoryboard"
+- "UIViewController"
 - "OrderData"
 - !private "BooleanLiteralType"
+- "OrderBuyThanksViewController"
 - !private "print"
+- !private "UIApplication"
+- !private "StringLiteralType"
+- "AnyObject"
+- !private "TradeBuyDetailViewController"
 depends-member:
 - !private ["Ps9AnyObject", "UIApplication"]
 - !private ["Ps9AnyObject", "UIStoryboard"]

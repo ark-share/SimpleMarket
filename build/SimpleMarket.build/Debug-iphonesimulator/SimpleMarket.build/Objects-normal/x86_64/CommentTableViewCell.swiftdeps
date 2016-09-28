@@ -6,19 +6,19 @@ provides-nominal:
 provides-member:
 - ["C12SimpleMarket20CommentTableViewCell", ""]
 provides-dynamic-lookup:
+- "setSelected"
 - "bodyLabel"
+- "nameLabel"
+- "commentData"
 - "awakeFromNib"
 - "layoutSubviews"
-- "commentData"
-- "setSelected"
-- "nameLabel"
 depends-top-level:
+- "UILabel"
+- "UITableViewCell"
+- "Bool"
+- "CommentData"
 - "CommentTableViewCell"
 - !private "!="
-- "Bool"
-- "UILabel"
-- "CommentData"
-- "UITableViewCell"
 depends-member:
 - ["Ps9AnyObject", "awakeFromNib"]
 - !private ["Ps9AnyObject", "body"]

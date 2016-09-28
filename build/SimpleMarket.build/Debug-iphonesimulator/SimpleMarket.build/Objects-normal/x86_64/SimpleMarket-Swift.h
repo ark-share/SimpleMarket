@@ -220,8 +220,14 @@ SWIFT_CLASS("_TtC12SimpleMarket25ImageSelectViewController")
 
 SWIFT_CLASS("_TtC12SimpleMarket22LeftMenuViewController")
 @interface LeftMenuViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified displayNameLabel;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified loginButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified logoutButton;
 - (IBAction)handleToTop:(id _Nonnull)sender;
+- (IBAction)handleLogin:(id _Nonnull)sender;
+- (IBAction)handleLogout:(id _Nonnull)sender;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (void)makeUserImageButton;
 - (void)handleUserImageButton:(UIButton * _Nonnull)sender event:(UIEvent * _Nonnull)event;

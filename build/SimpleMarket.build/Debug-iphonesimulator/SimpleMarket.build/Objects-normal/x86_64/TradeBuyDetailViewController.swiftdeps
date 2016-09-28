@@ -9,16 +9,16 @@ provides-dynamic-lookup:
 - "didReceiveMemoryWarning"
 - "infoTextView"
 - "orderData"
-- "viewDidLoad"
 - "statusLabel"
+- "viewDidLoad"
 depends-top-level:
-- !private "AppController"
-- "OrderData"
-- "UIViewController"
-- !private "!="
 - "UITextView"
+- !private "AppController"
+- !private "!="
 - "UILabel"
+- "OrderData"
 - "TradeBuyDetailViewController"
+- "UIViewController"
 depends-member:
 - !private ["Ps9AnyObject", "AppController"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]

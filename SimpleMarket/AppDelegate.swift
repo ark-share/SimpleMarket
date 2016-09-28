@@ -33,9 +33,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SlideMenuOptions.panFromBezel = false // 左からのスライドを停止。スクロールメニューのスライドだけ有効にするため
         
         // 移動
-//        let view = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("OrderIndex") as UIViewController
-//        self.window?.rootViewController = view
-//        self.window?.makeKeyWindow()
+        let view = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("OrderIndex") as UIViewController
+        self.window?.rootViewController = view
+        self.window?.makeKeyWindow()
         
         return true
     }

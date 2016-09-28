@@ -6,20 +6,20 @@ provides-nominal:
 provides-member:
 - ["C12SimpleMarket18TradeSellIndexCell", ""]
 provides-dynamic-lookup:
-- "nameLabel"
-- "setSelected"
 - "orderData"
+- "awakeFromNib"
+- "layoutSubviews"
 - "orderImageView"
 - "priceLabel"
 - "statusLabel"
-- "awakeFromNib"
-- "layoutSubviews"
+- "setSelected"
+- "nameLabel"
 depends-top-level:
-- !private "!="
+- "UIImageView"
 - "Bool"
+- !private "!="
 - "OrderData"
 - "UITableViewCell"
-- "UIImageView"
 - "TradeSellIndexCell"
 - "UILabel"
 depends-member:

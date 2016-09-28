@@ -6,28 +6,28 @@ provides-nominal:
 provides-member:
 - ["C12SimpleMarket24OrderDetailTableViewCell", ""]
 provides-dynamic-lookup:
-- "layoutSubviews"
-- "setSelected"
-- "handleOrderDetail"
-- "priceLabel"
 - "nameLabel"
-- "orderDetailButton"
-- "orderImageView"
-- "orderData"
 - "awakeFromNib"
+- "layoutSubviews"
+- "priceLabel"
+- "handleOrderDetail"
+- "orderData"
+- "orderImageView"
+- "orderDetailButton"
+- "setSelected"
 depends-top-level:
-- !private "CGSizeMake"
 - "AnyObject"
-- !private "UIColor"
+- !private "!="
 - "UITableViewCell"
+- "UILabel"
+- !private "UIImage"
+- "OrderData"
 - "UIImageView"
 - "UIButton"
-- !private "UIImage"
-- "Bool"
-- "OrderData"
-- "UILabel"
-- !private "!="
+- !private "CGSizeMake"
+- !private "UIColor"
 - "OrderDetailTableViewCell"
+- "Bool"
 depends-member:
 - !private ["Ps9AnyObject", "CGSizeMake"]
 - !private ["Ps9AnyObject", "UIColor"]

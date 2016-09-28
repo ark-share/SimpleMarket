@@ -7,13 +7,13 @@ provides-member:
 - ["V12SimpleMarket11CommonConst", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Dictionary"
-- "FloatLiteralType"
 - "Int"
 - "IntegerLiteralType"
+- "String"
 - "CommonConst"
 - "StringLiteralType"
-- "String"
+- "Dictionary"
+- "FloatLiteralType"
 depends-member:
 - ["Ps14CollectionType", "Key"]
 - ["Ps14CollectionType", "Value"]

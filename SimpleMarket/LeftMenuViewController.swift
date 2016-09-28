@@ -7,9 +7,14 @@
 //
 
 import UIKit
+import Firebase
 
 // スライドメニュー
 class LeftMenuViewController: UIViewController {
+    
+    @IBOutlet weak var displayNameLabel: UILabel!
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var logoutButton: UIButton!
     
     private var userImageButton: UIButton! // ユーザーイメージ（ボタン）
     
@@ -20,13 +25,48 @@ class LeftMenuViewController: UIViewController {
         UIApplication.sharedApplication().keyWindow?.makeKeyWindow()
     }
 
+    // ログイン
+    @IBAction func handleLogin(sender: AnyObject) {
+        // modal
+        let view = UIStoryboard(name: "User", bundle: nil).instantiateViewControllerWithIdentifier("UserLogin") as UIViewController
+        presentViewController(view, animated: true, completion: nil)
+        
+        self.viewDidLoad() // 閉じるだけでは画面が変わらないので更新する
+    }
+
+    // ログアウト
+    @IBAction func handleLogout(sender: AnyObject) {
+        UserLoginViewController().logout()
+        
+        AppController().displayName = "" // clear
+        //self.viewWillAppear(true)        // reload
+        self.viewDidLoad()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         makeUserImageButton()
+        
+        // ログイン中
+        if FIRAuth.auth()?.currentUser != nil {
+            
+            let displayName = AppController().displayName
+            displayNameLabel.text = displayName
+            
+            loginButton.hidden = true // ログインボタン不要
+        }
+        // ログインしていない
+        else {
+            displayNameLabel.hidden = true // 表示名不要
+            logoutButton.hidden = true // ログアウトボタン不要
+        }
     }
 
+    override func viewWillAppear(animated: Bool) {
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

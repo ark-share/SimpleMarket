@@ -6,22 +6,22 @@ provides-nominal:
 provides-member:
 - ["C12SimpleMarket12WebpayClient", ""]
 provides-dynamic-lookup:
-- "secretKey"
-- "charge"
 - "publicKey"
+- "charge"
+- "secretKey"
 depends-top-level:
-- !private "AnyObject"
-- "KeyConst"
-- "NSObject"
-- !private "Alamofire"
-- "WebpayClient"
-- "Bool"
-- !private "Dictionary"
+- !private "print"
 - "Void"
 - "Int"
+- !private "Dictionary"
+- "Bool"
+- !private "AnyObject"
+- "KeyConst"
 - "String"
+- !private "Alamofire"
+- "WebpayClient"
 - !private "BooleanLiteralType"
-- !private "print"
+- "NSObject"
 depends-member:
 - !private ["Ps9AnyObject", "Alamofire"]
 - ["Ps9AnyObject", "KeyConst"]
