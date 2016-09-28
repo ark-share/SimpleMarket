@@ -262,10 +262,10 @@ SWIFT_CLASS("_TtC12SimpleMarket22OrderAddViewController")
 SWIFT_CLASS("_TtC12SimpleMarket28OrderBuyThanksViewController")
 @interface OrderBuyThanksViewController : UIViewController
 @property (nonatomic, strong) OrderData * _Null_unspecified orderData;
+- (IBAction)handleTradeBuyDetail:(id _Nonnull)sender;
 - (IBAction)handleOrderIndex:(id _Nonnull)sender;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
-- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

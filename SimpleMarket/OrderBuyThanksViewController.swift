@@ -13,6 +13,18 @@ class OrderBuyThanksViewController: UIViewController {
 
     var orderData: OrderData! // 取引ページを表示するための商品データ
     
+    @IBAction func handleTradeBuyDetail(sender: AnyObject) {
+        // navが裏に隠れないように全面作り直す また、戻る画面は「購入リスト」に変わる
+        let index = UIStoryboard(name: "Trade", bundle: nil).instantiateViewControllerWithIdentifier("TradeBuyIndex")
+        UIApplication.sharedApplication().keyWindow?.rootViewController = index
+        UIApplication.sharedApplication().keyWindow?.makeKeyWindow()
+        
+        // navを引き継ぐ(indexページにdetailを付与する
+        let detail = UIStoryboard(name: "Trade", bundle: nil).instantiateViewControllerWithIdentifier("TradeBuyDetail") as! TradeBuyDetailViewController
+        detail.orderData = self.orderData
+        index.navigationController?.pushViewController(detail, animated: true)
+    }
+    
     @IBAction func handleOrderIndex(sender: AnyObject) {
         // navが裏に隠れないように全面作り直す
         let view = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("OrderIndex")
@@ -31,14 +43,5 @@ class OrderBuyThanksViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    // 取引画面へはSegue
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 
-        if segue.identifier == "TradeBuyDetailSegue" {
-            // orderDataを「そのまま」引き継ぐ
-            let view = segue.destinationViewController as! TradeBuyDetailViewController
-            view.orderData = self.orderData
-        }
-        
-    }
 }
