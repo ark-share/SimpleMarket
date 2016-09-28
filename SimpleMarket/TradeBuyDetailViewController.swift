@@ -12,6 +12,7 @@ import UIKit
 class TradeBuyDetailViewController: UIViewController {
 
     @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var infoTextView: UITextView!
     
     var orderData: OrderData!
     
@@ -30,7 +31,11 @@ class TradeBuyDetailViewController: UIViewController {
 //            }
             if orderData.status != nil {
                 statusLabel.text = orderData.statusName
+                
+                // 案内メッセージ
+                infoTextView.text = AppController().getInfoMessageforBuy(orderData.status!)
             }
+            
             
         }
     }

@@ -14,7 +14,7 @@
                         <viewControllerLayoutGuide type="top" id="0ru-b4-FQy"/>
                         <viewControllerLayoutGuide type="bottom" id="RyT-t0-N7C"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="DZW-xs-MST">
+                    <view key="view" contentMode="scaleToFill" id="DZW-xs-MST" customClass="I">
                         <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -48,7 +48,7 @@
                                     <action selector="handleLoginButton:" destination="frW-vi-wkb" eventType="touchUpInside" id="3tc-Qf-plC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxF-px-zKb" customClass="ButtonCustom" customModule="SimpleMarket" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxF-px-zKb">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="R4t-f9-emp"/>
                                     <constraint firstAttribute="width" constant="300" id="xHX-93-A2m"/>

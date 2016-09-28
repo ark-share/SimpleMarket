@@ -76,10 +76,10 @@ class UserLoginViewController: UIViewController {
             FIRAuth.auth()?.createUserWithEmail(address, password: password) { user, error in
                 if error != nil {
                     // 登録に失敗
-                    if let error = error!.userInfo["NSLocalizedDescription"] {
-                        SVProgressHUD.showErrorWithStatus(String(error))
+                    if let error = error {
+                        SVProgressHUD.showErrorWithStatus(error.localizedDescription)
                     }
-                    //print(error)
+                    print(error)
                 }
                 else {
                     

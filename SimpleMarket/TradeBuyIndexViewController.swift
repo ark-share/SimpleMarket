@@ -30,7 +30,7 @@ class TradeBuyIndexViewController: UIViewController, UIScrollViewDelegate {
         makeTableViewByPage(1, statusArray: ["1", "2", "3", "4", "5"])
         makeTableViewByPage(2, statusArray: ["6"])
         
-        makeTabButtonByPage(0, title: "お気に入り")
+        makeTabButtonByPage(0, title: "入金待ち")
         makeTabButtonByPage(1, title: "取引中")
         makeTabButtonByPage(2, title: "過去の取引")
         

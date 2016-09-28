@@ -92,4 +92,59 @@ class AppController: NSObject {
         }
     }
     
+    // ステータス別に案内メッセージを返す
+    // [0:"出品中", 1:"入金待ち", 2:"決済済み/未発送", 3:"配達待ち/発送済み", 4:"受取評価待ち/配達済み", 5:"完了評価待ち", 6:"取引完了"]
+    func getInfoMessageforBuy(status: String) -> String {
+        var info: String = "buy"
+        
+        if status == "0" {
+            info = ""
+        }
+        if status == "1" {
+            info = "入金確認をお待ち下さい。購入から２４時間経過しても確認されない場合は、運営までお問い合わせください。"
+        }
+        if status == "2" {
+            info = "商品の発送をお待ち下さい。購入から４８時間経過しても発送通知がない場合は、出品者までお問い合わせください。"
+        }
+        if status == "3" {
+            info = "運送業者の配達をお待ち下さい。"
+        }
+        if status == "4" {
+            info = "受け取り評価してください。"
+        }
+        if status == "5" {
+            info = "売り手による完了評価をお待ち下さい。"
+        }
+        if status == "6" {
+            info = ""
+        }
+        
+        return info
+    }
+    func getInfoMessageforSell(status: String) -> String {
+        var info: String = "sell"
+        
+        if status == "0" {
+            info = ""
+        }
+        if status == "1" {
+            info = "購入者の入金をお待ち下さい"
+        }
+        if status == "2" {
+            info = "商品を発送してください。発送したのち、次の発送通知を実施してください。"
+        }
+        if status == "3" {
+            info = "運送業者の配達をお待ち下さい。"
+        }
+        if status == "4" {
+            info = "購入者の受け取り評価をお待ち下さい。配達から２４時間経過しても評価がない場合は、購入者までお問い合わせください。"
+        }
+        if status == "5" {
+            info = "完了評価してください。利益が確定します。"
+        }
+        if status == "6" {
+            info = ""
+        }
+        return info
+    }
 }
