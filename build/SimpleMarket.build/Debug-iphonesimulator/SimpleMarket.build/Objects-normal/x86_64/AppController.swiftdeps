@@ -1,0 +1,434 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AppController"
+provides-nominal:
+- "C12SimpleMarket13AppController"
+provides-member:
+- ["C12SimpleMarket13AppController", ""]
+provides-dynamic-lookup:
+- "buyAddress"
+- "buyPayment"
+- "getInfoMessageforBuy"
+- "displayName"
+- "isLogin"
+- "getInfoMessageforSell"
+- "openLoginView"
+depends-top-level:
+- !private "dispatch_async"
+- !private "=="
+- !private "dispatch_get_main_queue"
+- "AppController"
+- "String"
+- !private "UIStoryboard"
+- "UIViewController"
+- !private "NSUserDefaults"
+- !private "!="
+- !private "FIRAuth"
+- "Int"
+- "NSObject"
+- !private "BooleanLiteralType"
+- !private "UnicodeScalarType"
+- !private "CommonConst"
+- "Bool"
+depends-member:
+- !private ["Ps9AnyObject", "CommonConst"]
+- !private ["Ps9AnyObject", "FIRAuth"]
+- !private ["Ps9AnyObject", "NSUserDefaults"]
+- !private ["Ps9AnyObject", "UIStoryboard"]
+- !private ["Ps9AnyObject", "auth"]
+- ["Ps9AnyObject", "buyAddress"]
+- ["Ps9AnyObject", "buyPayment"]
+- !private ["Ps9AnyObject", "currentUser"]
+- !private ["Ps9AnyObject", "dispatch_async"]
+- !private ["Ps9AnyObject", "dispatch_get_main_queue"]
+- ["Ps9AnyObject", "displayName"]
+- ["Ps9AnyObject", "getInfoMessageforBuy"]
+- ["Ps9AnyObject", "getInfoMessageforSell"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "instantiateViewControllerWithIdentifier"]
+- ["Ps9AnyObject", "isLogin"]
+- !private ["Ps9AnyObject", "objectForKey"]
+- ["Ps9AnyObject", "openLoginView"]
+- !private ["Ps9AnyObject", "presentViewController"]
+- !private ["Ps9AnyObject", "setValue"]
+- !private ["Ps9AnyObject", "standardUserDefaults"]
+- !private ["Ps9AnyObject", "synchronize"]
+- ["Ps9AnyObject", ""]
+- ["C12SimpleMarket13AppController", "Bool"]
+- !private ["C12SimpleMarket13AppController", "CommonConst"]
+- !private ["C12SimpleMarket13AppController", "FIRAuth"]
+- ["C12SimpleMarket13AppController", "Int"]
+- !private ["C12SimpleMarket13AppController", "NSUserDefaults"]
+- ["C12SimpleMarket13AppController", "String"]
+- !private ["C12SimpleMarket13AppController", "UIStoryboard"]
+- ["C12SimpleMarket13AppController", "UIViewController"]
+- ["C12SimpleMarket13AppController", "buyAddress"]
+- ["C12SimpleMarket13AppController", "buyPayment"]
+- ["C12SimpleMarket13AppController", "deinit"]
+- !private ["C12SimpleMarket13AppController", "dispatch_async"]
+- !private ["C12SimpleMarket13AppController", "dispatch_get_main_queue"]
+- ["C12SimpleMarket13AppController", "displayName"]
+- ["C12SimpleMarket13AppController", "getInfoMessageforBuy"]
+- ["C12SimpleMarket13AppController", "getInfoMessageforSell"]
+- ["C12SimpleMarket13AppController", "init"]
+- ["C12SimpleMarket13AppController", "isLogin"]
+- ["C12SimpleMarket13AppController", "openLoginView"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "CommonConst"]
+- !private ["Ps11CVarArgType", "FIRAuth"]
+- !private ["Ps11CVarArgType", "NSUserDefaults"]
+- !private ["Ps11CVarArgType", "UIStoryboard"]
+- !private ["Ps11CVarArgType", "auth"]
+- ["Ps11CVarArgType", "buyAddress"]
+- ["Ps11CVarArgType", "buyPayment"]
+- !private ["Ps11CVarArgType", "currentUser"]
+- !private ["Ps11CVarArgType", "dispatch_async"]
+- !private ["Ps11CVarArgType", "dispatch_get_main_queue"]
+- ["Ps11CVarArgType", "displayName"]
+- ["Ps11CVarArgType", "getInfoMessageforBuy"]
+- ["Ps11CVarArgType", "getInfoMessageforSell"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "instantiateViewControllerWithIdentifier"]
+- ["Ps11CVarArgType", "isLogin"]
+- !private ["Ps11CVarArgType", "objectForKey"]
+- ["Ps11CVarArgType", "openLoginView"]
+- !private ["Ps11CVarArgType", "presentViewController"]
+- !private ["Ps11CVarArgType", "setValue"]
+- !private ["Ps11CVarArgType", "standardUserDefaults"]
+- !private ["Ps11CVarArgType", "synchronize"]
+- ["Ps11CVarArgType", ""]
+- !private ["V12SimpleMarket11CommonConst", "BuyAddressKey"]
+- !private ["V12SimpleMarket11CommonConst", "BuyPaymentKey"]
+- !private ["V12SimpleMarket11CommonConst", "DisplayNameKey"]
+- !private ["Ps28CustomDebugStringConvertible", "CommonConst"]
+- !private ["Ps28CustomDebugStringConvertible", "FIRAuth"]
+- !private ["Ps28CustomDebugStringConvertible", "NSUserDefaults"]
+- !private ["Ps28CustomDebugStringConvertible", "UIStoryboard"]
+- !private ["Ps28CustomDebugStringConvertible", "auth"]
+- ["Ps28CustomDebugStringConvertible", "buyAddress"]
+- ["Ps28CustomDebugStringConvertible", "buyPayment"]
+- !private ["Ps28CustomDebugStringConvertible", "currentUser"]
+- !private ["Ps28CustomDebugStringConvertible", "dispatch_async"]
+- !private ["Ps28CustomDebugStringConvertible", "dispatch_get_main_queue"]
+- ["Ps28CustomDebugStringConvertible", "displayName"]
+- ["Ps28CustomDebugStringConvertible", "getInfoMessageforBuy"]
+- ["Ps28CustomDebugStringConvertible", "getInfoMessageforSell"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "instantiateViewControllerWithIdentifier"]
+- ["Ps28CustomDebugStringConvertible", "isLogin"]
+- !private ["Ps28CustomDebugStringConvertible", "objectForKey"]
+- ["Ps28CustomDebugStringConvertible", "openLoginView"]
+- !private ["Ps28CustomDebugStringConvertible", "presentViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "setValue"]
+- !private ["Ps28CustomDebugStringConvertible", "standardUserDefaults"]
+- !private ["Ps28CustomDebugStringConvertible", "synchronize"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "CommonConst"]
+- !private ["Ps23CustomStringConvertible", "FIRAuth"]
+- !private ["Ps23CustomStringConvertible", "NSUserDefaults"]
+- !private ["Ps23CustomStringConvertible", "UIStoryboard"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "auth"]
+- ["Ps23CustomStringConvertible", "buyAddress"]
+- ["Ps23CustomStringConvertible", "buyPayment"]
+- !private ["Ps23CustomStringConvertible", "currentUser"]
+- !private ["Ps23CustomStringConvertible", "dispatch_async"]
+- !private ["Ps23CustomStringConvertible", "dispatch_get_main_queue"]
+- ["Ps23CustomStringConvertible", "displayName"]
+- ["Ps23CustomStringConvertible", "getInfoMessageforBuy"]
+- ["Ps23CustomStringConvertible", "getInfoMessageforSell"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "instantiateViewControllerWithIdentifier"]
+- ["Ps23CustomStringConvertible", "isLogin"]
+- !private ["Ps23CustomStringConvertible", "objectForKey"]
+- ["Ps23CustomStringConvertible", "openLoginView"]
+- !private ["Ps23CustomStringConvertible", "presentViewController"]
+- !private ["Ps23CustomStringConvertible", "setValue"]
+- !private ["Ps23CustomStringConvertible", "standardUserDefaults"]
+- !private ["Ps23CustomStringConvertible", "synchronize"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "CommonConst"]
+- !private ["Ps9Equatable", "FIRAuth"]
+- !private ["Ps9Equatable", "NSUserDefaults"]
+- !private ["Ps9Equatable", "UIStoryboard"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "auth"]
+- ["Ps9Equatable", "buyAddress"]
+- ["Ps9Equatable", "buyPayment"]
+- !private ["Ps9Equatable", "currentUser"]
+- !private ["Ps9Equatable", "dispatch_async"]
+- !private ["Ps9Equatable", "dispatch_get_main_queue"]
+- ["Ps9Equatable", "displayName"]
+- ["Ps9Equatable", "getInfoMessageforBuy"]
+- ["Ps9Equatable", "getInfoMessageforSell"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "instantiateViewControllerWithIdentifier"]
+- ["Ps9Equatable", "isLogin"]
+- !private ["Ps9Equatable", "objectForKey"]
+- ["Ps9Equatable", "openLoginView"]
+- !private ["Ps9Equatable", "presentViewController"]
+- !private ["Ps9Equatable", "setValue"]
+- !private ["Ps9Equatable", "standardUserDefaults"]
+- !private ["Ps9Equatable", "synchronize"]
+- ["Ps9Equatable", ""]
+- !private ["CSo7FIRAuth", "auth"]
+- !private ["CSo7FIRAuth", "currentUser"]
+- !private ["Ps8Hashable", "CommonConst"]
+- !private ["Ps8Hashable", "FIRAuth"]
+- !private ["Ps8Hashable", "NSUserDefaults"]
+- !private ["Ps8Hashable", "UIStoryboard"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "auth"]
+- ["Ps8Hashable", "buyAddress"]
+- ["Ps8Hashable", "buyPayment"]
+- !private ["Ps8Hashable", "currentUser"]
+- !private ["Ps8Hashable", "dispatch_async"]
+- !private ["Ps8Hashable", "dispatch_get_main_queue"]
+- ["Ps8Hashable", "displayName"]
+- ["Ps8Hashable", "getInfoMessageforBuy"]
+- ["Ps8Hashable", "getInfoMessageforSell"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "instantiateViewControllerWithIdentifier"]
+- ["Ps8Hashable", "isLogin"]
+- !private ["Ps8Hashable", "objectForKey"]
+- ["Ps8Hashable", "openLoginView"]
+- !private ["Ps8Hashable", "presentViewController"]
+- !private ["Ps8Hashable", "setValue"]
+- !private ["Ps8Hashable", "standardUserDefaults"]
+- !private ["Ps8Hashable", "synchronize"]
+- ["Ps8Hashable", ""]
+- !private ["Si", "deinit"]
+- !private ["PSo8NSCoding", "presentViewController"]
+- !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
+- ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "CommonConst"]
+- !private ["CSo8NSObject", "FIRAuth"]
+- ["CSo8NSObject", "Int"]
+- !private ["CSo8NSObject", "NSUserDefaults"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UIStoryboard"]
+- ["CSo8NSObject", "UIViewController"]
+- !private ["CSo8NSObject", "auth"]
+- ["CSo8NSObject", "buyAddress"]
+- ["CSo8NSObject", "buyPayment"]
+- !private ["CSo8NSObject", "currentUser"]
+- !private ["CSo8NSObject", "dispatch_async"]
+- !private ["CSo8NSObject", "dispatch_get_main_queue"]
+- ["CSo8NSObject", "displayName"]
+- ["CSo8NSObject", "getInfoMessageforBuy"]
+- ["CSo8NSObject", "getInfoMessageforSell"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "instantiateViewControllerWithIdentifier"]
+- ["CSo8NSObject", "isLogin"]
+- !private ["CSo8NSObject", "objectForKey"]
+- ["CSo8NSObject", "openLoginView"]
+- !private ["CSo8NSObject", "presentViewController"]
+- !private ["CSo8NSObject", "setValue"]
+- !private ["CSo8NSObject", "standardUserDefaults"]
+- !private ["CSo8NSObject", "synchronize"]
+- ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "CommonConst"]
+- !private ["PSo16NSObjectProtocol", "FIRAuth"]
+- !private ["PSo16NSObjectProtocol", "NSUserDefaults"]
+- !private ["PSo16NSObjectProtocol", "UIStoryboard"]
+- !private ["PSo16NSObjectProtocol", "auth"]
+- ["PSo16NSObjectProtocol", "buyAddress"]
+- ["PSo16NSObjectProtocol", "buyPayment"]
+- !private ["PSo16NSObjectProtocol", "currentUser"]
+- !private ["PSo16NSObjectProtocol", "dispatch_async"]
+- !private ["PSo16NSObjectProtocol", "dispatch_get_main_queue"]
+- ["PSo16NSObjectProtocol", "displayName"]
+- ["PSo16NSObjectProtocol", "getInfoMessageforBuy"]
+- ["PSo16NSObjectProtocol", "getInfoMessageforSell"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "instantiateViewControllerWithIdentifier"]
+- ["PSo16NSObjectProtocol", "isLogin"]
+- !private ["PSo16NSObjectProtocol", "objectForKey"]
+- ["PSo16NSObjectProtocol", "openLoginView"]
+- !private ["PSo16NSObjectProtocol", "presentViewController"]
+- !private ["PSo16NSObjectProtocol", "setValue"]
+- !private ["PSo16NSObjectProtocol", "standardUserDefaults"]
+- !private ["PSo16NSObjectProtocol", "synchronize"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["CSo14NSUserDefaults", "objectForKey"]
+- !private ["CSo14NSUserDefaults", "setValue"]
+- !private ["CSo14NSUserDefaults", "standardUserDefaults"]
+- !private ["CSo14NSUserDefaults", "synchronize"]
+- !private ["Sq", "deinit"]
+- !private ["SS", "deinit"]
+- !private ["PSo21UIAppearanceContainer", "presentViewController"]
+- !private ["PSo18UIContentContainer", "presentViewController"]
+- !private ["PSo18UIFocusEnvironment", "presentViewController"]
+- !private ["CSo11UIResponder", "presentViewController"]
+- !private ["PSo30UIResponderStandardEditActions", "presentViewController"]
+- !private ["PSo16UIStateRestoring", "presentViewController"]
+- !private ["CSo12UIStoryboard", "init"]
+- !private ["CSo12UIStoryboard", "instantiateViewControllerWithIdentifier"]
+- !private ["PSo18UITraitEnvironment", "presentViewController"]
+- !private ["CSo16UIViewController", "presentViewController"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+depends-nominal:
+- "Ps9AnyObject"
+- "C12SimpleMarket13AppController"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- "Ps11CVarArgType"
+- !private "V12SimpleMarket11CommonConst"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "CSo7FIRAuth"
+- "Ps8Hashable"
+- !private "Si"
+- !private "PSo8NSCoding"
+- !private "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "CSo14NSUserDefaults"
+- !private "Sq"
+- !private "SS"
+- !private "PSo21UIAppearanceContainer"
+- !private "PSo18UIContentContainer"
+- !private "PSo18UIFocusEnvironment"
+- !private "CSo11UIResponder"
+- !private "PSo30UIResponderStandardEditActions"
+- !private "PSo16UIStateRestoring"
+- !private "CSo12UIStoryboard"
+- !private "PSo18UITraitEnvironment"
+- !private "CSo16UIViewController"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/macpc/Documents/SimpleMarket/SimpleMarket/SimpleMarket-Bridging-Header.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKCore.framework/Headers/AdobeCreativeSDKCore.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKCore.framework/Headers/AdobeAuthError.h"
+- "/Users/macpc/Documents/Lesson8/Instagram/Pods/Firebase/Headers/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKCore.framework/Headers/AdobeAuthUserProfile.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKCore.framework/Headers/AdobeCreativeSDKVersion.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKCore.framework/Headers/AdobeError.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKCore.framework/Headers/AdobeNetworkError.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKCore.framework/Headers/AdobeNetworkHTTPAsyncRequest.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKCore.framework/Headers/AdobeNetworkStatus.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKCore.framework/Headers/AdobeUXAuthDelegate.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKCore.framework/Headers/AdobeUXAuthManager.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKCore.framework/Headers/AdobeUXInAppPurchase.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKImage.framework/Headers/AdobeCreativeSDKImage.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKImage.framework/Headers/AdobeUXImageEditorViewController.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKImage.framework/Headers/AdobeImageEditorOpenGLManager.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKImage.framework/Headers/AdobeImageEditorContext.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKImage.framework/Headers/AdobeImageEditorCustomization.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKImage.framework/Headers/AdobeImageEditorProduct.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKImage.framework/Headers/AdobeImageEditorSession.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKImage.framework/Headers/AdobeUXImageEditorViewController+InAppPurchase.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKImage.framework/Headers/AdobeUXImageEditorViewController+Compatibility.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKImage.framework/Headers/AdobeImageEditorCustomization+Compatibility.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKImage.framework/Headers/AdobeImageEditorLegacySDKCompatibility.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/Firebase/Analytics/Sources/module.modulemap"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/macpc/Documents/SimpleMarket/Pods/Firebase/Analytics/Sources/Firebase.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/SlideMenuControllerSwift/SlideMenuControllerSwift.framework/Modules/SlideMenuControllerSwift.swiftmodule/x86_64.swiftmodule"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/SlideMenuControllerSwift/SlideMenuControllerSwift.framework/Headers/SlideMenuControllerSwift-Swift.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/SlideMenuControllerSwift/SlideMenuControllerSwift.framework/Headers/SlideMenuControllerSwift.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/SlideMenuControllerSwift/SlideMenuControllerSwift.framework/Headers/SlideMenuControllerSwift-umbrella.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/SlideMenuControllerSwift/SlideMenuControllerSwift.framework/Modules/module.modulemap"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/FontAwesome_swift.swiftmodule/x86_64.swiftmodule"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome_swift-Swift.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome.swift-umbrella.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/module.modulemap"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYDeviceSettings.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYConstants.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYBundleManager.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYErrors.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYToken.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/Webpay.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYTokenizer.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYTokenBuilder.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYErrorBuilder.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYCommunicator.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYAvailabilityBuilder.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYSupportedBrandsView.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYPaymentViewController.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYCardFormView.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYCardFormCell.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYNumberFieldModel.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYNumberField.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYNameFieldModel.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYNameField.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYTextField.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYMenuDisabledTextField.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYExpiryFieldModel.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYExpiryField.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYCvcFieldModel.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYCvcField.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYCvcExplanationView.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYCreditCard.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYAbstractFieldModel.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYAbstractCardFieldSubclass.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYAbstractCardField.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYExpiryPickerView.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYExpiryAccessoryView.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WebPay-umbrella.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Modules/module.modulemap"
+interface-hash: "157c9298c18fed281939f53cffba7b6c"

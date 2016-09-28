@@ -1,0 +1,701 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "OrderData"
+provides-nominal:
+- "C12SimpleMarket9OrderData"
+provides-member:
+- ["C12SimpleMarket9OrderData", ""]
+provides-dynamic-lookup:
+- "statusName"
+- "body"
+- "price"
+- "created"
+- "id"
+- "status"
+- "imageString"
+- "ref"
+- "name"
+- "modified"
+- "image"
+- "saveField"
+depends-top-level:
+- !private "AnyObject"
+- "String"
+- !private "Dictionary"
+- "NSDate"
+- "OrderData"
+- "FIRDatabase"
+- "NSObject"
+- "UIImage"
+- "Int"
+- "FIRDataSnapshot"
+- !private "!="
+- !private "NSData"
+- !private "NSDataBase64DecodingOptions"
+- "CommonConst"
+- !private "NSTimeInterval"
+depends-member:
+- ["Ps9AnyObject", "CommonConst"]
+- ["Ps9AnyObject", "FIRDatabase"]
+- !private ["Ps9AnyObject", "Int"]
+- !private ["Ps9AnyObject", "Key"]
+- !private ["Ps9AnyObject", "NSData"]
+- !private ["Ps9AnyObject", "NSDataBase64DecodingOptions"]
+- !private ["Ps9AnyObject", "NSDate"]
+- !private ["Ps9AnyObject", "UIImage"]
+- !private ["Ps9AnyObject", "Value"]
+- ["Ps9AnyObject", "body"]
+- ["Ps9AnyObject", "child"]
+- ["Ps9AnyObject", "comment_count"]
+- !private ["Ps9AnyObject", "count"]
+- ["Ps9AnyObject", "created"]
+- ["Ps9AnyObject", "database"]
+- ["Ps9AnyObject", "id"]
+- ["Ps9AnyObject", "image"]
+- ["Ps9AnyObject", "imageString"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "key"]
+- ["Ps9AnyObject", "modified"]
+- ["Ps9AnyObject", "name"]
+- ["Ps9AnyObject", "price"]
+- ["Ps9AnyObject", "ref"]
+- ["Ps9AnyObject", "reference"]
+- ["Ps9AnyObject", "saveField"]
+- ["Ps9AnyObject", "status"]
+- ["Ps9AnyObject", "statusName"]
+- !private ["Ps9AnyObject", "timeIntervalSinceReferenceDate"]
+- !private ["Ps9AnyObject", "updateChildValues"]
+- !private ["Ps9AnyObject", "value"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps23ArrayLiteralConvertible", "IgnoreUnknownCharacters"]
+- !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["Ps22BidirectionalIndexType", "init"]
+- !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Ps21BitwiseOperationsType", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- ["Ps11CVarArgType", "CommonConst"]
+- ["Ps11CVarArgType", "FIRDatabase"]
+- !private ["Ps11CVarArgType", "Int"]
+- !private ["Ps11CVarArgType", "IntegerLiteralType"]
+- !private ["Ps11CVarArgType", "Key"]
+- !private ["Ps11CVarArgType", "NSData"]
+- !private ["Ps11CVarArgType", "NSDataBase64DecodingOptions"]
+- !private ["Ps11CVarArgType", "NSDate"]
+- !private ["Ps11CVarArgType", "UIImage"]
+- !private ["Ps11CVarArgType", "Value"]
+- ["Ps11CVarArgType", "body"]
+- ["Ps11CVarArgType", "child"]
+- ["Ps11CVarArgType", "comment_count"]
+- ["Ps11CVarArgType", "created"]
+- ["Ps11CVarArgType", "database"]
+- ["Ps11CVarArgType", "id"]
+- ["Ps11CVarArgType", "image"]
+- ["Ps11CVarArgType", "imageString"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "key"]
+- ["Ps11CVarArgType", "modified"]
+- ["Ps11CVarArgType", "name"]
+- ["Ps11CVarArgType", "price"]
+- ["Ps11CVarArgType", "ref"]
+- ["Ps11CVarArgType", "reference"]
+- ["Ps11CVarArgType", "saveField"]
+- ["Ps11CVarArgType", "status"]
+- ["Ps11CVarArgType", "statusName"]
+- !private ["Ps11CVarArgType", "timeIntervalSinceReferenceDate"]
+- !private ["Ps11CVarArgType", "updateChildValues"]
+- !private ["Ps11CVarArgType", "value"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps14CollectionType", "Generator"]
+- !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "Key"]
+- !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "Value"]
+- !private ["Ps14CollectionType", "_Element"]
+- !private ["Ps14CollectionType", "subscript"]
+- ["V12SimpleMarket11CommonConst", "OrderPATH"]
+- !private ["V12SimpleMarket11CommonConst", "OrderStatusArray"]
+- !private ["Ps10Comparable", "Distance"]
+- !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps10Comparable", "_DisabledRangeIndex"]
+- !private ["Ps10Comparable", "init"]
+- ["Ps28CustomDebugStringConvertible", "CommonConst"]
+- ["Ps28CustomDebugStringConvertible", "FIRDatabase"]
+- !private ["Ps28CustomDebugStringConvertible", "Generator"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "Int"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
+- !private ["Ps28CustomDebugStringConvertible", "NSData"]
+- !private ["Ps28CustomDebugStringConvertible", "NSDataBase64DecodingOptions"]
+- !private ["Ps28CustomDebugStringConvertible", "NSDate"]
+- ["Ps28CustomDebugStringConvertible", "Some"]
+- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "UIImage"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- ["Ps28CustomDebugStringConvertible", "body"]
+- ["Ps28CustomDebugStringConvertible", "child"]
+- ["Ps28CustomDebugStringConvertible", "comment_count"]
+- ["Ps28CustomDebugStringConvertible", "created"]
+- ["Ps28CustomDebugStringConvertible", "database"]
+- ["Ps28CustomDebugStringConvertible", "id"]
+- ["Ps28CustomDebugStringConvertible", "image"]
+- ["Ps28CustomDebugStringConvertible", "imageString"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "key"]
+- ["Ps28CustomDebugStringConvertible", "modified"]
+- ["Ps28CustomDebugStringConvertible", "name"]
+- ["Ps28CustomDebugStringConvertible", "price"]
+- ["Ps28CustomDebugStringConvertible", "ref"]
+- ["Ps28CustomDebugStringConvertible", "reference"]
+- ["Ps28CustomDebugStringConvertible", "saveField"]
+- ["Ps28CustomDebugStringConvertible", "status"]
+- ["Ps28CustomDebugStringConvertible", "statusName"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "timeIntervalSinceReferenceDate"]
+- !private ["Ps28CustomDebugStringConvertible", "updateChildValues"]
+- !private ["Ps28CustomDebugStringConvertible", "value"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "CommonConst"]
+- ["Ps23CustomStringConvertible", "FIRDatabase"]
+- !private ["Ps23CustomStringConvertible", "Generator"]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "Int"]
+- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "Key"]
+- !private ["Ps23CustomStringConvertible", "NSData"]
+- !private ["Ps23CustomStringConvertible", "NSDataBase64DecodingOptions"]
+- !private ["Ps23CustomStringConvertible", "NSDate"]
+- !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "UIImage"]
+- !private ["Ps23CustomStringConvertible", "Value"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "body"]
+- ["Ps23CustomStringConvertible", "child"]
+- ["Ps23CustomStringConvertible", "comment_count"]
+- ["Ps23CustomStringConvertible", "created"]
+- ["Ps23CustomStringConvertible", "database"]
+- ["Ps23CustomStringConvertible", "id"]
+- ["Ps23CustomStringConvertible", "image"]
+- ["Ps23CustomStringConvertible", "imageString"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "key"]
+- ["Ps23CustomStringConvertible", "modified"]
+- ["Ps23CustomStringConvertible", "name"]
+- ["Ps23CustomStringConvertible", "price"]
+- ["Ps23CustomStringConvertible", "ref"]
+- ["Ps23CustomStringConvertible", "reference"]
+- ["Ps23CustomStringConvertible", "saveField"]
+- ["Ps23CustomStringConvertible", "status"]
+- ["Ps23CustomStringConvertible", "statusName"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "timeIntervalSinceReferenceDate"]
+- !private ["Ps23CustomStringConvertible", "updateChildValues"]
+- !private ["Ps23CustomStringConvertible", "value"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Vs10Dictionary", "Generator"]
+- !private ["Vs10Dictionary", "Index"]
+- !private ["Vs10Dictionary", "Key"]
+- !private ["Vs10Dictionary", "SubSequence"]
+- !private ["Vs10Dictionary", "Value"]
+- !private ["Vs10Dictionary", "_Element"]
+- !private ["Vs10Dictionary", "deinit"]
+- !private ["Vs10Dictionary", "subscript"]
+- !private ["Vs15DictionaryIndex", "Distance"]
+- !private ["Vs15DictionaryIndex", "_DisabledRangeIndex"]
+- !private ["Ps28DictionaryLiteralConvertible", "Generator"]
+- !private ["Ps28DictionaryLiteralConvertible", "Index"]
+- !private ["Ps28DictionaryLiteralConvertible", "Key"]
+- !private ["Ps28DictionaryLiteralConvertible", "SubSequence"]
+- !private ["Ps28DictionaryLiteralConvertible", "Value"]
+- !private ["Ps28DictionaryLiteralConvertible", "_Element"]
+- !private ["Ps28DictionaryLiteralConvertible", "subscript"]
+- !private ["Sd", "deinit"]
+- ["Ps9Equatable", "CommonConst"]
+- !private ["Ps9Equatable", "Distance"]
+- ["Ps9Equatable", "FIRDatabase"]
+- !private ["Ps9Equatable", "IgnoreUnknownCharacters"]
+- !private ["Ps9Equatable", "Int"]
+- !private ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "Key"]
+- !private ["Ps9Equatable", "NSData"]
+- !private ["Ps9Equatable", "NSDataBase64DecodingOptions"]
+- !private ["Ps9Equatable", "NSDate"]
+- !private ["Ps9Equatable", "UIImage"]
+- !private ["Ps9Equatable", "Value"]
+- !private ["Ps9Equatable", "_DisabledRangeIndex"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "body"]
+- ["Ps9Equatable", "child"]
+- ["Ps9Equatable", "comment_count"]
+- ["Ps9Equatable", "created"]
+- ["Ps9Equatable", "database"]
+- ["Ps9Equatable", "id"]
+- ["Ps9Equatable", "image"]
+- ["Ps9Equatable", "imageString"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "key"]
+- ["Ps9Equatable", "modified"]
+- ["Ps9Equatable", "name"]
+- ["Ps9Equatable", "price"]
+- ["Ps9Equatable", "ref"]
+- ["Ps9Equatable", "reference"]
+- ["Ps9Equatable", "saveField"]
+- ["Ps9Equatable", "status"]
+- ["Ps9Equatable", "statusName"]
+- !private ["Ps9Equatable", "timeIntervalSinceReferenceDate"]
+- !private ["Ps9Equatable", "updateChildValues"]
+- !private ["Ps9Equatable", "value"]
+- ["Ps9Equatable", ""]
+- !private ["CSo15FIRDataSnapshot", "key"]
+- !private ["CSo15FIRDataSnapshot", "value"]
+- ["CSo11FIRDatabase", "database"]
+- ["CSo11FIRDatabase", "reference"]
+- ["CSo16FIRDatabaseQuery", "child"]
+- !private ["CSo16FIRDatabaseQuery", "updateChildValues"]
+- ["CSo20FIRDatabaseReference", "child"]
+- !private ["CSo20FIRDatabaseReference", "updateChildValues"]
+- !private ["Ps16ForwardIndexType", "Distance"]
+- !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
+- !private ["Ps16ForwardIndexType", "_DisabledRangeIndex"]
+- !private ["Ps16ForwardIndexType", "init"]
+- !private ["Ps13GeneratorType", "Element"]
+- ["Ps8Hashable", "CommonConst"]
+- ["Ps8Hashable", "FIRDatabase"]
+- !private ["Ps8Hashable", "Int"]
+- !private ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "Key"]
+- !private ["Ps8Hashable", "NSData"]
+- !private ["Ps8Hashable", "NSDataBase64DecodingOptions"]
+- !private ["Ps8Hashable", "NSDate"]
+- !private ["Ps8Hashable", "UIImage"]
+- !private ["Ps8Hashable", "Value"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "body"]
+- ["Ps8Hashable", "child"]
+- ["Ps8Hashable", "comment_count"]
+- ["Ps8Hashable", "created"]
+- ["Ps8Hashable", "database"]
+- ["Ps8Hashable", "id"]
+- ["Ps8Hashable", "image"]
+- ["Ps8Hashable", "imageString"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "key"]
+- ["Ps8Hashable", "modified"]
+- ["Ps8Hashable", "name"]
+- ["Ps8Hashable", "price"]
+- ["Ps8Hashable", "ref"]
+- ["Ps8Hashable", "reference"]
+- ["Ps8Hashable", "saveField"]
+- ["Ps8Hashable", "status"]
+- ["Ps8Hashable", "statusName"]
+- !private ["Ps8Hashable", "timeIntervalSinceReferenceDate"]
+- !private ["Ps8Hashable", "updateChildValues"]
+- !private ["Ps8Hashable", "value"]
+- ["Ps8Hashable", ""]
+- !private ["Ps9Indexable", "Generator"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "Key"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "Value"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "subscript"]
+- !private ["Vs17IndexingGenerator", "Element"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "init"]
+- !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps21IntegerArithmeticType", "init"]
+- !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps25IntegerLiteralConvertible", "init"]
+- !private ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["Ps11IntegerType", "init"]
+- !private ["Ps14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "init"]
+- !private ["PSo8NSCoding", "Key"]
+- !private ["PSo8NSCoding", "Value"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "timeIntervalSinceReferenceDate"]
+- !private ["PSo9NSCopying", "Key"]
+- !private ["PSo9NSCopying", "Value"]
+- !private ["PSo9NSCopying", "deinit"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "timeIntervalSinceReferenceDate"]
+- !private ["CSo6NSData", "init"]
+- !private ["VSC27NSDataBase64DecodingOptions", "IgnoreUnknownCharacters"]
+- !private ["CSo6NSDate", "init"]
+- !private ["CSo6NSDate", "timeIntervalSinceReferenceDate"]
+- !private ["CSo12NSDictionary", "Key"]
+- !private ["CSo12NSDictionary", "Value"]
+- !private ["CSo12NSDictionary", "deinit"]
+- !private ["PSo17NSFastEnumeration", "Key"]
+- !private ["PSo17NSFastEnumeration", "Value"]
+- !private ["PSo16NSMutableCopying", "Key"]
+- !private ["PSo16NSMutableCopying", "Value"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "CommonConst"]
+- ["CSo8NSObject", "FIRDataSnapshot"]
+- ["CSo8NSObject", "FIRDatabase"]
+- ["CSo8NSObject", "Int"]
+- !private ["CSo8NSObject", "Key"]
+- !private ["CSo8NSObject", "NSData"]
+- !private ["CSo8NSObject", "NSDataBase64DecodingOptions"]
+- ["CSo8NSObject", "NSDate"]
+- !private ["CSo8NSObject", "NSObject"]
+- !private ["CSo8NSObject", "NSTimeInterval"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UIImage"]
+- !private ["CSo8NSObject", "Value"]
+- ["CSo8NSObject", "body"]
+- ["CSo8NSObject", "child"]
+- ["CSo8NSObject", "comment_count"]
+- ["CSo8NSObject", "created"]
+- ["CSo8NSObject", "database"]
+- ["CSo8NSObject", "id"]
+- ["CSo8NSObject", "image"]
+- ["CSo8NSObject", "imageString"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "key"]
+- ["CSo8NSObject", "modified"]
+- ["CSo8NSObject", "name"]
+- ["CSo8NSObject", "price"]
+- ["CSo8NSObject", "ref"]
+- ["CSo8NSObject", "reference"]
+- ["CSo8NSObject", "saveField"]
+- ["CSo8NSObject", "status"]
+- ["CSo8NSObject", "statusName"]
+- !private ["CSo8NSObject", "timeIntervalSinceReferenceDate"]
+- !private ["CSo8NSObject", "updateChildValues"]
+- !private ["CSo8NSObject", "value"]
+- ["CSo8NSObject", ""]
+- ["PSo16NSObjectProtocol", "CommonConst"]
+- ["PSo16NSObjectProtocol", "FIRDatabase"]
+- !private ["PSo16NSObjectProtocol", "Int"]
+- !private ["PSo16NSObjectProtocol", "Key"]
+- !private ["PSo16NSObjectProtocol", "NSData"]
+- !private ["PSo16NSObjectProtocol", "NSDataBase64DecodingOptions"]
+- !private ["PSo16NSObjectProtocol", "NSDate"]
+- !private ["PSo16NSObjectProtocol", "UIImage"]
+- !private ["PSo16NSObjectProtocol", "Value"]
+- ["PSo16NSObjectProtocol", "body"]
+- ["PSo16NSObjectProtocol", "child"]
+- ["PSo16NSObjectProtocol", "comment_count"]
+- ["PSo16NSObjectProtocol", "created"]
+- ["PSo16NSObjectProtocol", "database"]
+- ["PSo16NSObjectProtocol", "id"]
+- ["PSo16NSObjectProtocol", "image"]
+- ["PSo16NSObjectProtocol", "imageString"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "key"]
+- ["PSo16NSObjectProtocol", "modified"]
+- ["PSo16NSObjectProtocol", "name"]
+- ["PSo16NSObjectProtocol", "price"]
+- ["PSo16NSObjectProtocol", "ref"]
+- ["PSo16NSObjectProtocol", "reference"]
+- ["PSo16NSObjectProtocol", "saveField"]
+- ["PSo16NSObjectProtocol", "status"]
+- ["PSo16NSObjectProtocol", "statusName"]
+- !private ["PSo16NSObjectProtocol", "timeIntervalSinceReferenceDate"]
+- !private ["PSo16NSObjectProtocol", "updateChildValues"]
+- !private ["PSo16NSObjectProtocol", "value"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "Key"]
+- !private ["PSo14NSSecureCoding", "Value"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "timeIntervalSinceReferenceDate"]
+- ["Ps21NilLiteralConvertible", "Some"]
+- !private ["Ps13OptionSetType", "IgnoreUnknownCharacters"]
+- ["Sq", "Some"]
+- ["Sq", "deinit"]
+- !private ["C12SimpleMarket9OrderData", "AnyObject"]
+- ["C12SimpleMarket9OrderData", "CommonConst"]
+- ["C12SimpleMarket9OrderData", "FIRDataSnapshot"]
+- ["C12SimpleMarket9OrderData", "FIRDatabase"]
+- ["C12SimpleMarket9OrderData", "Int"]
+- !private ["C12SimpleMarket9OrderData", "NSData"]
+- !private ["C12SimpleMarket9OrderData", "NSDataBase64DecodingOptions"]
+- ["C12SimpleMarket9OrderData", "NSDate"]
+- !private ["C12SimpleMarket9OrderData", "NSObject"]
+- !private ["C12SimpleMarket9OrderData", "NSTimeInterval"]
+- ["C12SimpleMarket9OrderData", "String"]
+- ["C12SimpleMarket9OrderData", "UIImage"]
+- ["C12SimpleMarket9OrderData", "body"]
+- ["C12SimpleMarket9OrderData", "comment_count"]
+- ["C12SimpleMarket9OrderData", "created"]
+- ["C12SimpleMarket9OrderData", "deinit"]
+- ["C12SimpleMarket9OrderData", "id"]
+- ["C12SimpleMarket9OrderData", "image"]
+- ["C12SimpleMarket9OrderData", "imageString"]
+- ["C12SimpleMarket9OrderData", "init"]
+- ["C12SimpleMarket9OrderData", "modified"]
+- ["C12SimpleMarket9OrderData", "name"]
+- ["C12SimpleMarket9OrderData", "price"]
+- ["C12SimpleMarket9OrderData", "ref"]
+- ["C12SimpleMarket9OrderData", "saveField"]
+- ["C12SimpleMarket9OrderData", "status"]
+- ["C12SimpleMarket9OrderData", "statusName"]
+- !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Ps21RandomAccessIndexType", "init"]
+- !private ["Ps16RawRepresentable", "IgnoreUnknownCharacters"]
+- !private ["Ps12SequenceType", "Element"]
+- !private ["Ps12SequenceType", "Generator"]
+- !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "Key"]
+- !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "Value"]
+- !private ["Ps12SequenceType", "_Element"]
+- !private ["Ps12SequenceType", "subscript"]
+- !private ["Ps14SetAlgebraType", "IgnoreUnknownCharacters"]
+- !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps17SignedIntegerType", "init"]
+- !private ["Ps16SignedNumberType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "init"]
+- !private ["Vs5Slice", "Generator"]
+- !private ["Vs5Slice", "Index"]
+- !private ["Vs5Slice", "SubSequence"]
+- !private ["Vs5Slice", "_Element"]
+- !private ["Vs12StaticString", "deinit"]
+- !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["Ps10Strideable", "init"]
+- !private ["SS", "deinit"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["CSo7UIImage", "init"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "init"]
+- !private ["Ps24_ImageLiteralConvertible", "init"]
+- !private ["Ps14_Incrementable", "Distance"]
+- !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps14_Incrementable", "_DisabledRangeIndex"]
+- !private ["Ps14_Incrementable", "init"]
+- !private ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps22_IntegerArithmeticType", "init"]
+- !private ["Ps12_IntegerType", "IntegerLiteralType"]
+- !private ["Ps12_IntegerType", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "Generator"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
+- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["Ps22_RandomAccessAmbiguity", "init"]
+- !private ["Ps12_Reflectable", "Generator"]
+- !private ["Ps12_Reflectable", "Index"]
+- !private ["Ps12_Reflectable", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "Key"]
+- ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "SubSequence"]
+- !private ["Ps12_Reflectable", "Value"]
+- !private ["Ps12_Reflectable", "_Element"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "subscript"]
+- !private ["Ps12_Reflectable", "timeIntervalSinceReferenceDate"]
+- !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps18_SignedIntegerType", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "Ps22BidirectionalIndexType"
+- !private "Ps21BitwiseOperationsType"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- "Ps11CVarArgType"
+- !private "Ps14CollectionType"
+- "V12SimpleMarket11CommonConst"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- !private "Vs15DictionaryIndex"
+- !private "Ps28DictionaryLiteralConvertible"
+- !private "Sd"
+- "Ps9Equatable"
+- !private "CSo15FIRDataSnapshot"
+- "CSo11FIRDatabase"
+- "CSo16FIRDatabaseQuery"
+- "CSo20FIRDatabaseReference"
+- !private "Ps16ForwardIndexType"
+- !private "Ps13GeneratorType"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Vs17IndexingGenerator"
+- !private "Si"
+- !private "Ps21IntegerArithmeticType"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps11IntegerType"
+- !private "Ps14MirrorPathType"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo6NSData"
+- !private "VSC27NSDataBase64DecodingOptions"
+- !private "CSo6NSDate"
+- !private "CSo12NSDictionary"
+- !private "PSo17NSFastEnumeration"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- "Ps21NilLiteralConvertible"
+- !private "Ps13OptionSetType"
+- "Sq"
+- "C12SimpleMarket9OrderData"
+- !private "Ps21RandomAccessIndexType"
+- !private "Ps16RawRepresentable"
+- !private "Ps12SequenceType"
+- !private "Ps14SetAlgebraType"
+- !private "Ps17SignedIntegerType"
+- !private "Ps16SignedNumberType"
+- !private "Vs5Slice"
+- !private "Vs12StaticString"
+- !private "Ps10Strideable"
+- !private "SS"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "CSo7UIImage"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps24_ImageLiteralConvertible"
+- !private "Ps14_Incrementable"
+- !private "Ps22_IntegerArithmeticType"
+- !private "Ps12_IntegerType"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps22_RandomAccessAmbiguity"
+- "Ps12_Reflectable"
+- !private "Ps18_SignedIntegerType"
+depends-dynamic-lookup:
+- !private "count"
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/macpc/Documents/SimpleMarket/SimpleMarket/SimpleMarket-Bridging-Header.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKCore.framework/Headers/AdobeCreativeSDKCore.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKCore.framework/Headers/AdobeAuthError.h"
+- "/Users/macpc/Documents/Lesson8/Instagram/Pods/Firebase/Headers/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKCore.framework/Headers/AdobeAuthUserProfile.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKCore.framework/Headers/AdobeCreativeSDKVersion.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKCore.framework/Headers/AdobeError.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKCore.framework/Headers/AdobeNetworkError.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKCore.framework/Headers/AdobeNetworkHTTPAsyncRequest.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKCore.framework/Headers/AdobeNetworkStatus.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKCore.framework/Headers/AdobeUXAuthDelegate.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKCore.framework/Headers/AdobeUXAuthManager.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKCore.framework/Headers/AdobeUXInAppPurchase.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKImage.framework/Headers/AdobeCreativeSDKImage.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKImage.framework/Headers/AdobeUXImageEditorViewController.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKImage.framework/Headers/AdobeImageEditorOpenGLManager.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKImage.framework/Headers/AdobeImageEditorContext.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKImage.framework/Headers/AdobeImageEditorCustomization.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKImage.framework/Headers/AdobeImageEditorProduct.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKImage.framework/Headers/AdobeImageEditorSession.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKImage.framework/Headers/AdobeUXImageEditorViewController+InAppPurchase.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKImage.framework/Headers/AdobeUXImageEditorViewController+Compatibility.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKImage.framework/Headers/AdobeImageEditorCustomization+Compatibility.h"
+- "/Users/macpc/Documents/SimpleMarket/AdobeCreativeSDKImage.framework/Headers/AdobeImageEditorLegacySDKCompatibility.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/Firebase/Analytics/Sources/module.modulemap"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/macpc/Documents/SimpleMarket/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/macpc/Documents/SimpleMarket/Pods/Firebase/Analytics/Sources/Firebase.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/SlideMenuControllerSwift/SlideMenuControllerSwift.framework/Modules/SlideMenuControllerSwift.swiftmodule/x86_64.swiftmodule"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/SlideMenuControllerSwift/SlideMenuControllerSwift.framework/Headers/SlideMenuControllerSwift-Swift.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/SlideMenuControllerSwift/SlideMenuControllerSwift.framework/Headers/SlideMenuControllerSwift.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/SlideMenuControllerSwift/SlideMenuControllerSwift.framework/Headers/SlideMenuControllerSwift-umbrella.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/SlideMenuControllerSwift/SlideMenuControllerSwift.framework/Modules/module.modulemap"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/FontAwesome_swift.swiftmodule/x86_64.swiftmodule"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome_swift-Swift.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome.swift-umbrella.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/module.modulemap"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYDeviceSettings.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYConstants.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYBundleManager.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYErrors.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYToken.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/Webpay.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYTokenizer.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYTokenBuilder.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYErrorBuilder.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYCommunicator.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYAvailabilityBuilder.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYSupportedBrandsView.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYPaymentViewController.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYCardFormView.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYCardFormCell.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYNumberFieldModel.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYNumberField.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYNameFieldModel.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYNameField.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYTextField.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYMenuDisabledTextField.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYExpiryFieldModel.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYExpiryField.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYCvcFieldModel.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYCvcField.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYCvcExplanationView.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYCreditCard.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYAbstractFieldModel.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYAbstractCardFieldSubclass.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYAbstractCardField.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYExpiryPickerView.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYExpiryAccessoryView.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WebPay-umbrella.h"
+- "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Modules/module.modulemap"
+interface-hash: "3d659c01e35d34aff5b5c028af5dbbb8"

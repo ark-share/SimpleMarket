@@ -1,0 +1,38 @@
+#import <UIKit/UIKit.h>
+
+#import "WPYExpiryAccessoryView.h"
+#import "WPYExpiryPickerView.h"
+#import "WPYAbstractCardField.h"
+#import "WPYAbstractCardFieldSubclass.h"
+#import "WPYAbstractFieldModel.h"
+#import "WPYCvcExplanationView.h"
+#import "WPYCvcField.h"
+#import "WPYCvcFieldModel.h"
+#import "WPYExpiryField.h"
+#import "WPYExpiryFieldModel.h"
+#import "WPYMenuDisabledTextField.h"
+#import "WPYNameField.h"
+#import "WPYNameFieldModel.h"
+#import "WPYNumberField.h"
+#import "WPYNumberFieldModel.h"
+#import "WPYTextField.h"
+#import "WPYCardFormCell.h"
+#import "WPYCardFormView.h"
+#import "WPYPaymentViewController.h"
+#import "WPYSupportedBrandsView.h"
+#import "WPYAvailabilityBuilder.h"
+#import "WPYCommunicator.h"
+#import "WPYErrorBuilder.h"
+#import "WPYTokenBuilder.h"
+#import "WPYTokenizer.h"
+#import "Webpay.h"
+#import "WPYBundleManager.h"
+#import "WPYConstants.h"
+#import "WPYCreditCard.h"
+#import "WPYDeviceSettings.h"
+#import "WPYErrors.h"
+#import "WPYToken.h"
+
+FOUNDATION_EXPORT double WebPayVersionNumber;
+FOUNDATION_EXPORT const unsigned char WebPayVersionString[];
+

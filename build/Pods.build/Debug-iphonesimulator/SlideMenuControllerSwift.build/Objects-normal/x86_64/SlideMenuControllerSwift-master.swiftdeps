@@ -1,0 +1,5 @@
+version: "Apple Swift version 2.3 (swiftlang-800.10.12 clang-800.0.38)"
+options: "554c36da43815013ba2f948538addcd5"
+build_time: [528191482, 49158000]
+inputs:
+  "/Users/macpc/Documents/SimpleMarket/Pods/SlideMenuControllerSwift/Source/SlideMenuController.swift": [527761632, 0]
