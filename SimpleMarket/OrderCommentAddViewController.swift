@@ -66,7 +66,7 @@ class OrderCommentAddViewController: UIViewController, UITableViewDelegate, UITa
         tableView.registerNib(UINib(nibName: "OrderDetailTableViewCell", bundle: nil), forCellReuseIdentifier: orderDetailReuseIdentifier)
         tableView.registerNib(UINib(nibName: "CommentTableViewCell", bundle: nil), forCellReuseIdentifier: commentReuseIdentifier)
         
-        // ordersに要素が追加されたらクロージャ呼び出す
+        // ordersに要素が追加されたらクロージャ呼び出す OrderCommentPATH=商品コメントを取り出す
         FIRDatabase.database().reference().child(CommonConst.OrderPATH+"/"+orderData.id!+"/"+CommonConst.OrderCommentPATH).observeEventType(.ChildAdded, withBlock: { snapshot in
             
             // データを設定する

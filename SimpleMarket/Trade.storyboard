@@ -39,15 +39,18 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sA-rK-tnl">
-                                        <frame key="frameInset" minX="28" minY="162" width="62" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sA-rK-tnl">
                                         <state key="normal" title="コメント"/>
+                                        <connections>
+                                            <segue destination="Ztv-eI-HZX" kind="show" identifier="TradeCommentAddSegue" id="qPt-qf-Kay"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="2sA-rK-tnl" firstAttribute="leading" secondItem="pgA-vb-ySb" secondAttribute="leading" constant="20" id="6cw-1d-xhw"/>
                                     <constraint firstItem="Kg7-cf-eOg" firstAttribute="leading" secondItem="pgA-vb-ySb" secondAttribute="leadingMargin" constant="20" id="Cvw-aN-4db"/>
+                                    <constraint firstItem="2sA-rK-tnl" firstAttribute="top" secondItem="GXL-sj-E43" secondAttribute="bottom" constant="30" id="Gwo-mr-maD"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="GXL-sj-E43" secondAttribute="trailing" constant="20" id="KBj-yO-JnE"/>
                                     <constraint firstItem="Kg7-cf-eOg" firstAttribute="top" secondItem="pgA-vb-ySb" secondAttribute="topMargin" constant="30" id="L63-Ak-GfF"/>
                                     <constraint firstItem="GXL-sj-E43" firstAttribute="leading" secondItem="pgA-vb-ySb" secondAttribute="leadingMargin" constant="12" id="Q6j-Pb-qAB"/>
@@ -69,6 +72,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="400" height="800"/>
                     <connections>
+                        <outlet property="commentButton" destination="2sA-rK-tnl" id="dv4-sz-dgc"/>
                         <outlet property="infoTextView" destination="GXL-sj-E43" id="X3j-8R-MiV"/>
                         <outlet property="statusLabel" destination="hQI-EB-sy9" id="XLo-GJ-tGo"/>
                     </connections>
@@ -76,6 +80,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ssD-tl-JgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="277" y="382"/>
+        </scene>
+        <!--TradeCommentAdd-->
+        <scene sceneID="btD-sD-kCZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Comment" referencedIdentifier="TradeCommentAdd" id="Ztv-eI-HZX" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hHL-pD-gzo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="953" y="176"/>
         </scene>
         <!--購入リスト-->
         <scene sceneID="wwf-Oe-wUa">
@@ -192,14 +204,22 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFT-Lr-D14">
+                                        <state key="normal" title="コメント"/>
+                                        <connections>
+                                            <segue destination="vxq-vS-vkw" kind="show" identifier="TradeCommentAddSegue" id="PTm-y1-Spr"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="fhL-GZ-Xnb" firstAttribute="top" secondItem="gSa-uH-xWu" secondAttribute="bottom" constant="20" id="0dg-WW-hmu"/>
                                     <constraint firstItem="6S9-CZ-soV" firstAttribute="top" secondItem="Scb-py-A5z" secondAttribute="topMargin" constant="30" id="0n9-4s-hTa"/>
+                                    <constraint firstItem="oFT-Lr-D14" firstAttribute="top" secondItem="fhL-GZ-Xnb" secondAttribute="bottom" constant="30" id="HgE-rC-8Rj"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="fhL-GZ-Xnb" secondAttribute="trailing" constant="20" id="Nph-fD-ive"/>
                                     <constraint firstItem="gSa-uH-xWu" firstAttribute="leading" secondItem="6S9-CZ-soV" secondAttribute="trailing" constant="20" id="XTI-Jd-yTF"/>
                                     <constraint firstItem="fhL-GZ-Xnb" firstAttribute="leading" secondItem="Scb-py-A5z" secondAttribute="leadingMargin" constant="20" id="gRf-n7-dkK"/>
+                                    <constraint firstItem="oFT-Lr-D14" firstAttribute="leading" secondItem="Scb-py-A5z" secondAttribute="leading" constant="20" id="msH-Ux-cPW"/>
                                     <constraint firstItem="gSa-uH-xWu" firstAttribute="top" secondItem="Scb-py-A5z" secondAttribute="topMargin" constant="30" id="qZF-mE-XZf"/>
                                     <constraint firstAttribute="height" constant="800" id="vnW-Q1-9RU"/>
                                     <constraint firstItem="6S9-CZ-soV" firstAttribute="leading" secondItem="Scb-py-A5z" secondAttribute="leadingMargin" constant="20" id="zWF-OE-NR3"/>
@@ -217,6 +237,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="400" height="800"/>
                     <connections>
+                        <outlet property="commentButton" destination="oFT-Lr-D14" id="PCA-wE-Jwh"/>
                         <outlet property="infoTextView" destination="fhL-GZ-Xnb" id="jNG-CG-cea"/>
                         <outlet property="statusLabel" destination="gSa-uH-xWu" id="Qmf-Rs-T5e"/>
                     </connections>
@@ -224,6 +245,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3W-Vg-oGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2072" y="381"/>
+        </scene>
+        <!--TradeCommentAdd-->
+        <scene sceneID="k7t-Wa-sdC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Comment" referencedIdentifier="TradeCommentAdd" id="vxq-vS-vkw" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Muy-lh-Wom" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2730" y="150"/>
         </scene>
         <!--出品リスト-->
         <scene sceneID="RNd-WQ-QBC">

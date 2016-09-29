@@ -12,7 +12,8 @@ class TradeSellDetailViewController: UIViewController {
 
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var infoTextView: UITextView!
-
+    @IBOutlet weak var commentButton: UIButton!
+    
     var orderData: OrderData!
 
     override func viewDidLoad() {
@@ -35,6 +36,10 @@ class TradeSellDetailViewController: UIViewController {
                 infoTextView.text = AppController().getInfoMessageforSell(orderData.status!)
             }
             
+            // コメント数は？
+            if orderData.trade_comment_count! > 0 {
+                commentButton.setTitle("コメント \(orderData.trade_comment_count!)", forState: .Normal)
+            }
         }
     }
 
@@ -42,16 +47,14 @@ class TradeSellDetailViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // to OrderCommentAddSegue
+        if segue.identifier == "TradeCommentAddSegue" {
+            // orderDataを「そのまま」引き継ぐ
+            let view = segue.destinationViewController as! TradeCommentAddViewController
+            view.orderData = self.orderData
+        }
     }
-    */
 
 }
