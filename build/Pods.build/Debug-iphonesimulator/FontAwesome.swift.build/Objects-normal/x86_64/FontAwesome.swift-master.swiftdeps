@@ -1,7 +1,0 @@
-version: "Apple Swift version 2.3 (swiftlang-800.10.12 clang-800.0.38)"
-options: "c9b11e5ebd20082420f342fa17308326"
-build_time: [528191480, 122344000]
-inputs:
-  "/Users/macpc/Documents/SimpleMarket/Pods/FontAwesome.swift/FontAwesome/Enum.swift": [527761633, 0]
-  "/Users/macpc/Documents/SimpleMarket/Pods/FontAwesome.swift/FontAwesome/FontAwesome.swift": [527761796, 0]
-  "/Users/macpc/Documents/SimpleMarket/Pods/FontAwesome.swift/FontAwesome/FontAwesomeView.swift": [527761633, 0]

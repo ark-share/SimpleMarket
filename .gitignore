@@ -3,3 +3,5 @@ Pods/*
 GoogleService-Info.plist
 Carthage/*
 KeyConst.swift
+build/*
+
