@@ -34,11 +34,17 @@ class OrderCommentAddViewController: UIViewController, UITableViewDelegate, UITa
             let commentRef = FIRDatabase.database().reference().child(CommonConst.OrderPATH+"/"+orderData.id!+"/"+CommonConst.OrderCommentPATH)
 
             let body = commentTextField.text // String?型なのでアンラップする
-            let user = AppController().displayName // displayNameの事
+            //let user = AppController().displayName // displayNameの事
             let modified = NSDate.timeIntervalSinceReferenceDate()
             let created = NSDate.timeIntervalSinceReferenceDate()
             
-            let data = ["body": body!, "user": user, "modified": modified, "created": created]
+            let user_id = FIRAuth.auth()?.currentUser?.uid
+            let user_name = FIRAuth.auth()?.currentUser?.displayName
+            
+            let data = [
+                "body": body!,
+                "user_id": user_id!, "user_name": user_name!,
+                "modified": modified, "created": created]
             commentRef.childByAutoId().setValue(data)
         }
     }

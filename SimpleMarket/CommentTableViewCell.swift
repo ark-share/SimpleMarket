@@ -29,8 +29,8 @@ class CommentTableViewCell: UITableViewCell {
     
     override func layoutSubviews() {
         
-        if commentData.user != nil {
-            nameLabel.text = commentData.user
+        if commentData.user_name != nil {
+            nameLabel.text = commentData.user_name
         }
         if commentData.body != nil {
             bodyLabel.text = commentData.body

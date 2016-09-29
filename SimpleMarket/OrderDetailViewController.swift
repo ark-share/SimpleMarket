@@ -38,8 +38,8 @@ class OrderDetailViewController: UIViewController {
             }
             
             // コメント数は？
-            if orderData.comment_count! > 0 {
-                commentButton.setTitle("コメント \(orderData.comment_count!)", forState: .Normal)
+            if orderData.order_comment_count! > 0 {
+                commentButton.setTitle("コメント \(orderData.order_comment_count!)", forState: .Normal)
             }
         }
         

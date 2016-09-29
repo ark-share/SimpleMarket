@@ -40,11 +40,16 @@ class OrderAddViewController: UIViewController {
         let price = priceTextField.text // String?
         let modified = NSDate.timeIntervalSinceReferenceDate()
         let created = NSDate.timeIntervalSinceReferenceDate()
-
+        
+        let user_id = FIRAuth.auth()?.currentUser?.uid
+        let user_name = FIRAuth.auth()?.currentUser?.displayName
+        
         // status:0は出品中
         let data = [
             "image": imageString,
-            "name": name!, "body": body, "price": price!, "status": "0", "modified": modified, "created": created]
+            "name": name!, "body": body, "price": price!, "status": "0",
+            "user_id": user_id!, "user_name": user_name!,
+            "modified": modified, "created": created]
         orderRef.childByAutoId().setValue(data)
         
         //SVProgressHUD.showSuccessWithStatus("出品しました")
