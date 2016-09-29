@@ -6,30 +6,30 @@ provides-nominal:
 provides-member:
 - ["C12SimpleMarket13AppController", ""]
 provides-dynamic-lookup:
-- "openLoginView"
 - "getInfoMessageforBuy"
-- "displayName"
 - "buyPayment"
-- "getInfoMessageforSell"
 - "buyAddress"
 - "isLogin"
+- "getInfoMessageforSell"
+- "openLoginView"
+- "displayName"
 depends-top-level:
 - "Bool"
 - !private "=="
-- "UIViewController"
-- !private "FIRAuth"
 - !private "NSUserDefaults"
-- !private "CommonConst"
-- !private "dispatch_get_main_queue"
-- "AppController"
-- !private "dispatch_async"
-- !private "UIStoryboard"
-- !private "UnicodeScalarType"
 - !private "!="
-- !private "BooleanLiteralType"
-- "Int"
+- !private "UnicodeScalarType"
 - "NSObject"
 - "String"
+- "Int"
+- "UIViewController"
+- !private "dispatch_get_main_queue"
+- !private "dispatch_async"
+- !private "UIStoryboard"
+- "AppController"
+- !private "BooleanLiteralType"
+- !private "CommonConst"
+- !private "FIRAuth"
 depends-member:
 - !private ["Ps9AnyObject", "CommonConst"]
 - !private ["Ps9AnyObject", "FIRAuth"]

@@ -6,33 +6,33 @@ provides-nominal:
 provides-member:
 - ["C12SimpleMarket25OrderDetailViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
-- "nameLabel"
-- "viewDidLoad"
 - "priceLabel"
-- "orderData"
-- "prepareForSegue"
+- "nameLabel"
 - "commentButton"
-- "statusLabel"
+- "orderData"
+- "viewDidLoad"
+- "prepareForSegue"
 - "imageView"
+- "didReceiveMemoryWarning"
+- "statusLabel"
 depends-top-level:
 - !private "UIImage"
 - "UIButton"
-- "OrderDetailViewController"
-- "AnyObject"
-- "OrderData"
+- !private "CGSizeMake"
 - !private "OrderBuyViewController"
-- !private "CommentAddViewController"
+- !private "=="
+- !private "StringLiteralType"
+- "AnyObject"
 - "UIStoryboardSegue"
 - !private "UIColor"
 - "UILabel"
-- !private "!="
-- !private "=="
+- !private "OrderCommentAddViewController"
 - "UIViewController"
 - "UIImageView"
-- !private "StringLiteralType"
-- !private "CGSizeMake"
 - !private ">"
+- !private "!="
+- "OrderData"
+- "OrderDetailViewController"
 depends-member:
 - !private ["Ps9AnyObject", "CGSizeMake"]
 - !private ["Ps9AnyObject", "UIColor"]
@@ -99,7 +99,6 @@ depends-member:
 - ["Ps11CVarArgType", "viewDidLoad"]
 - ["Ps11CVarArgType", ""]
 - !private ["Vs9Character", "deinit"]
-- !private ["C12SimpleMarket24CommentAddViewController", "orderData"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "CGSizeMake"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
@@ -265,8 +264,8 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "AnyObject"]
 - !private ["CSo8NSObject", "CGSizeMake"]
-- !private ["CSo8NSObject", "CommentAddViewController"]
 - !private ["CSo8NSObject", "OrderBuyViewController"]
+- !private ["CSo8NSObject", "OrderCommentAddViewController"]
 - ["CSo8NSObject", "OrderData"]
 - ["CSo8NSObject", "UIButton"]
 - !private ["CSo8NSObject", "UIColor"]
@@ -332,6 +331,7 @@ depends-member:
 - !private ["Ps13OptionSetType", "Normal"]
 - !private ["Sq", "deinit"]
 - !private ["C12SimpleMarket22OrderBuyViewController", "orderData"]
+- !private ["C12SimpleMarket29OrderCommentAddViewController", "orderData"]
 - !private ["C12SimpleMarket9OrderData", "comment_count"]
 - !private ["C12SimpleMarket9OrderData", "deinit"]
 - !private ["C12SimpleMarket9OrderData", "image"]
@@ -341,8 +341,8 @@ depends-member:
 - !private ["C12SimpleMarket9OrderData", "statusName"]
 - ["C12SimpleMarket25OrderDetailViewController", "AnyObject"]
 - !private ["C12SimpleMarket25OrderDetailViewController", "CGSizeMake"]
-- !private ["C12SimpleMarket25OrderDetailViewController", "CommentAddViewController"]
 - !private ["C12SimpleMarket25OrderDetailViewController", "OrderBuyViewController"]
+- !private ["C12SimpleMarket25OrderDetailViewController", "OrderCommentAddViewController"]
 - ["C12SimpleMarket25OrderDetailViewController", "OrderData"]
 - ["C12SimpleMarket25OrderDetailViewController", "UIButton"]
 - !private ["C12SimpleMarket25OrderDetailViewController", "UIColor"]
@@ -452,8 +452,8 @@ depends-member:
 - !private ["CSo7UILabel", "text"]
 - ["CSo11UIResponder", "AnyObject"]
 - !private ["CSo11UIResponder", "CGSizeMake"]
-- !private ["CSo11UIResponder", "CommentAddViewController"]
 - !private ["CSo11UIResponder", "OrderBuyViewController"]
+- !private ["CSo11UIResponder", "OrderCommentAddViewController"]
 - ["CSo11UIResponder", "OrderData"]
 - ["CSo11UIResponder", "UIButton"]
 - !private ["CSo11UIResponder", "UIColor"]
@@ -536,8 +536,8 @@ depends-member:
 - !private ["CSo6UIView", "text"]
 - ["CSo16UIViewController", "AnyObject"]
 - !private ["CSo16UIViewController", "CGSizeMake"]
-- !private ["CSo16UIViewController", "CommentAddViewController"]
 - !private ["CSo16UIViewController", "OrderBuyViewController"]
+- !private ["CSo16UIViewController", "OrderCommentAddViewController"]
 - ["CSo16UIViewController", "OrderData"]
 - ["CSo16UIViewController", "UIButton"]
 - !private ["CSo16UIViewController", "UIColor"]
@@ -591,7 +591,6 @@ depends-nominal:
 - !private "V12CoreGraphics7CGFloat"
 - "Ps11CVarArgType"
 - !private "Vs9Character"
-- !private "C12SimpleMarket24CommentAddViewController"
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
@@ -619,6 +618,7 @@ depends-nominal:
 - !private "Ps13OptionSetType"
 - !private "Sq"
 - !private "C12SimpleMarket22OrderBuyViewController"
+- !private "C12SimpleMarket29OrderCommentAddViewController"
 - !private "C12SimpleMarket9OrderData"
 - "C12SimpleMarket25OrderDetailViewController"
 - !private "Ps16OutputStreamType"

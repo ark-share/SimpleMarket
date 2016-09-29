@@ -6,29 +6,29 @@ provides-nominal:
 provides-member:
 - ["C12SimpleMarket23UserLoginViewController", ""]
 provides-dynamic-lookup:
+- "handleLoginButton"
+- "handleBackButton"
 - "didReceiveMemoryWarning"
+- "mailAddressText"
+- "logout"
+- "displayNameText"
 - "viewDidLoad"
 - "passwordText"
-- "handleBackButton"
-- "displayNameText"
 - "handleCreateUserButton"
-- "logout"
-- "mailAddressText"
-- "handleLoginButton"
 depends-top-level:
+- !private "FIRAuth"
+- "AnyObject"
+- !private "print"
+- !private "AppController"
+- !private "StringLiteralType"
+- "UITextField"
 - "UserLoginViewController"
 - !private "||"
 - !private "!="
 - !private "<"
-- !private "StringLiteralType"
-- "UITextField"
-- !private "AppController"
-- !private "FIRAuth"
-- "BooleanLiteralType"
 - !private "SVProgressHUD"
-- "AnyObject"
+- "BooleanLiteralType"
 - "UIViewController"
-- !private "print"
 depends-member:
 - !private ["Ps9AnyObject", "AppController"]
 - !private ["Ps9AnyObject", "FIRAuth"]

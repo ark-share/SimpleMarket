@@ -6,20 +6,20 @@ provides-nominal:
 provides-member:
 - ["C12SimpleMarket11CommentData", ""]
 provides-dynamic-lookup:
-- "body"
-- "id"
-- "created"
 - "user"
+- "created"
 - "modified"
+- "id"
+- "body"
 depends-top-level:
-- "String"
-- "NSObject"
-- !private "StringLiteralType"
-- "CommentData"
-- "NSDate"
-- !private "NSTimeInterval"
 - !private "AnyObject"
 - "FIRDataSnapshot"
+- !private "StringLiteralType"
+- !private "NSTimeInterval"
+- "String"
+- "NSDate"
+- "NSObject"
+- "CommentData"
 depends-member:
 - !private ["Ps9AnyObject", "NSDate"]
 - ["Ps9AnyObject", "body"]

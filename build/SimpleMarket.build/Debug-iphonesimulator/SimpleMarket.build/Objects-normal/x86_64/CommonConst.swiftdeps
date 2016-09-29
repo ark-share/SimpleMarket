@@ -7,12 +7,12 @@ provides-member:
 - ["V12SimpleMarket11CommonConst", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Int"
-- "IntegerLiteralType"
-- "String"
 - "CommonConst"
-- "StringLiteralType"
+- "IntegerLiteralType"
 - "Dictionary"
+- "StringLiteralType"
+- "String"
+- "Int"
 - "FloatLiteralType"
 depends-member:
 - ["Ps14CollectionType", "Key"]
@@ -22,12 +22,13 @@ depends-member:
 - ["V12SimpleMarket11CommonConst", "BuyAddressKey"]
 - ["V12SimpleMarket11CommonConst", "BuyPaymentArray"]
 - ["V12SimpleMarket11CommonConst", "BuyPaymentKey"]
-- ["V12SimpleMarket11CommonConst", "CommentPATH"]
 - ["V12SimpleMarket11CommonConst", "DisplayNameKey"]
 - ["V12SimpleMarket11CommonConst", "Int"]
+- ["V12SimpleMarket11CommonConst", "OrderCommentPATH"]
 - ["V12SimpleMarket11CommonConst", "OrderPATH"]
 - ["V12SimpleMarket11CommonConst", "OrderStatusArray"]
 - ["V12SimpleMarket11CommonConst", "String"]
+- ["V12SimpleMarket11CommonConst", "TradeCommentPATH"]
 - ["V12SimpleMarket11CommonConst", "init"]
 - ["Ps28CustomDebugStringConvertible", "Key"]
 - ["Ps28CustomDebugStringConvertible", "Value"]
@@ -181,4 +182,4 @@ depends-external:
 - "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WPYExpiryAccessoryView.h"
 - "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Headers/WebPay-umbrella.h"
 - "/Users/macpc/Documents/SimpleMarket/build/Debug-iphonesimulator/WebPay/WebPay.framework/Modules/module.modulemap"
-interface-hash: "9cb3002caf8941e424786797f0db611b"
+interface-hash: "ae63fc55398002a362a5343cb248b535"

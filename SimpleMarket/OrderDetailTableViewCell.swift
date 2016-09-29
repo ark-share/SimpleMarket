@@ -21,7 +21,16 @@ class OrderDetailTableViewCell: UITableViewCell {
     
     @IBAction func handleOrderDetail(sender: AnyObject) {
         // ただの戻るボタンじゃないかも。ナビやスライドを裏に用意した上に詳細ページも出さないといけない？
+     
+        // navが裏に隠れないように全面作り直す また、戻る画面は「商品一覧」に変わる
+        let index = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("OrderIndex")
+        UIApplication.sharedApplication().keyWindow?.rootViewController = index
+        UIApplication.sharedApplication().keyWindow?.makeKeyWindow()
         
+        // navを引き継ぐ(indexページにdetailを付与する
+        let detail = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("OrderDetail") as! OrderDetailViewController
+        detail.orderData = self.orderData
+        index.navigationController?.pushViewController(detail, animated: true)
     }
     
     override func awakeFromNib() {

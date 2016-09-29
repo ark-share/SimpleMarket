@@ -282,7 +282,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "53"
             endingLineNumber = "53"
-            landmarkName = "handleBuyButton(_:)"
+            landmarkName = "handleBuyButton(sender:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

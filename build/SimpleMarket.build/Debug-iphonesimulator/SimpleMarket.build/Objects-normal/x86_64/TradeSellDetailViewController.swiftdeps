@@ -7,18 +7,18 @@ provides-member:
 - ["C12SimpleMarket29TradeSellDetailViewController", ""]
 provides-dynamic-lookup:
 - "statusLabel"
-- "infoTextView"
 - "viewDidLoad"
-- "orderData"
+- "infoTextView"
 - "didReceiveMemoryWarning"
+- "orderData"
 depends-top-level:
-- "UITextView"
 - "OrderData"
 - !private "AppController"
+- !private "!="
+- "UITextView"
+- "UILabel"
 - "TradeSellDetailViewController"
 - "UIViewController"
-- !private "!="
-- "UILabel"
 depends-member:
 - !private ["Ps9AnyObject", "AppController"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]

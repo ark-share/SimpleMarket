@@ -11,17 +11,17 @@ provides-dynamic-lookup:
 - "secretKey"
 depends-top-level:
 - !private "print"
-- "Void"
-- "Int"
-- !private "Dictionary"
 - "Bool"
+- "Int"
+- "Void"
 - !private "AnyObject"
-- "KeyConst"
-- "String"
-- !private "Alamofire"
-- "WebpayClient"
-- !private "BooleanLiteralType"
 - "NSObject"
+- !private "Alamofire"
+- "KeyConst"
+- "WebpayClient"
+- !private "Dictionary"
+- !private "BooleanLiteralType"
+- "String"
 depends-member:
 - !private ["Ps9AnyObject", "Alamofire"]
 - ["Ps9AnyObject", "KeyConst"]

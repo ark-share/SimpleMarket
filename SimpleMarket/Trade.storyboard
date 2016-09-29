@@ -39,6 +39,11 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sA-rK-tnl">
+                                        <frame key="frameInset" minX="28" minY="162" width="62" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="コメント"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -142,7 +147,7 @@
             <objects>
                 <navigationController storyboardIdentifier="Navigation TradeBuyIndex" automaticallyAdjustsScrollViewInsets="NO" id="CZI-Rw-R4F" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GmQ-YY-jAU">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="GmQ-YY-jAU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -292,7 +297,7 @@
             <objects>
                 <navigationController storyboardIdentifier="Navigation TradeSellIndex" automaticallyAdjustsScrollViewInsets="NO" id="lCp-HI-dk9" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XOw-C3-uWr">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="XOw-C3-uWr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

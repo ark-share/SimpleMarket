@@ -8,20 +8,20 @@ provides-member:
 provides-dynamic-lookup:
 - "statusLabel"
 - "setSelected"
+- "nameLabel"
 - "awakeFromNib"
 - "layoutSubviews"
-- "nameLabel"
 - "orderImageView"
 - "orderData"
 - "priceLabel"
 depends-top-level:
-- "UIImageView"
-- "UITableViewCell"
-- !private "!="
 - "OrderData"
-- "UILabel"
+- "UIImageView"
+- !private "!="
 - "TradeBuyIndexCell"
 - "Bool"
+- "UITableViewCell"
+- "UILabel"
 depends-member:
 - ["Ps9AnyObject", "awakeFromNib"]
 - !private ["Ps9AnyObject", "image"]

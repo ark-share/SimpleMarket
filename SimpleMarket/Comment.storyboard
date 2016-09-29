@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Comment Add View Controller-->
+        <!--Order Comment Add View Controller-->
         <scene sceneID="BlX-6B-dNM">
             <objects>
-                <viewController storyboardIdentifier="CommentAdd" id="8YI-h7-GFT" customClass="CommentAddViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OrderCommentAdd" id="8YI-h7-GFT" customClass="OrderCommentAddViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ioz-ia-7Vb"/>
                         <viewControllerLayoutGuide type="bottom" id="E8k-ZZ-cLt"/>
@@ -84,6 +84,85 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gcJ-OY-2e8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="490" y="273"/>
+        </scene>
+        <!--Trade Comment Add View Controller-->
+        <scene sceneID="i9H-OT-9li">
+            <objects>
+                <viewController storyboardIdentifier="TradeCommentAdd" id="BaF-Tk-2JW" customClass="TradeCommentAddViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wK9-9h-HZC"/>
+                        <viewControllerLayoutGuide type="bottom" id="6mi-D8-rqg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="slu-Js-e4s">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2i6-ZD-cpw">
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ここにコメントを入力" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yBQ-zc-vKG">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="announce" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiX-zF-FNS">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXb-sO-YAr">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="2Jv-ZS-jRm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <state key="normal" title="送信" backgroundImage="btn"/>
+                                        <connections>
+                                            <action selector="handleSubmitButton:" destination="BaF-Tk-2JW" eventType="touchUpInside" id="fG3-AM-w3V"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="yBQ-zc-vKG" firstAttribute="leading" secondItem="2i6-ZD-cpw" secondAttribute="leading" constant="10" id="5gy-co-KmF"/>
+                                    <constraint firstAttribute="trailing" secondItem="rXb-sO-YAr" secondAttribute="trailing" constant="10" id="8EJ-Ky-5kG"/>
+                                    <constraint firstItem="rXb-sO-YAr" firstAttribute="centerY" secondItem="yBQ-zc-vKG" secondAttribute="centerY" id="9X5-2o-2GW"/>
+                                    <constraint firstItem="jiX-zF-FNS" firstAttribute="centerY" secondItem="yBQ-zc-vKG" secondAttribute="centerY" id="Cbx-sY-TC6"/>
+                                    <constraint firstItem="rXb-sO-YAr" firstAttribute="leading" secondItem="yBQ-zc-vKG" secondAttribute="trailing" constant="10" id="R8Z-fT-dFp"/>
+                                    <constraint firstItem="rXb-sO-YAr" firstAttribute="leading" secondItem="jiX-zF-FNS" secondAttribute="trailing" constant="10" id="Ts0-6Y-7XC"/>
+                                    <constraint firstAttribute="height" constant="60" id="bVN-Yq-zjb"/>
+                                    <constraint firstItem="rXb-sO-YAr" firstAttribute="top" secondItem="2i6-ZD-cpw" secondAttribute="top" constant="10" id="mmT-bs-d2S"/>
+                                    <constraint firstItem="jiX-zF-FNS" firstAttribute="leading" secondItem="2i6-ZD-cpw" secondAttribute="leading" constant="20" id="oV3-VP-acd"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yiE-xr-0zJ">
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BaF-Tk-2JW" id="xg3-ez-8L4"/>
+                                    <outlet property="delegate" destination="BaF-Tk-2JW" id="Z8A-CC-Cs6"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yiE-xr-0zJ" firstAttribute="top" secondItem="wK9-9h-HZC" secondAttribute="bottom" id="7EY-Bo-cDh"/>
+                            <constraint firstItem="6mi-D8-rqg" firstAttribute="top" secondItem="2i6-ZD-cpw" secondAttribute="bottom" id="BqA-I6-UQa"/>
+                            <constraint firstItem="2i6-ZD-cpw" firstAttribute="top" secondItem="yiE-xr-0zJ" secondAttribute="bottom" id="SiN-WX-64H"/>
+                            <constraint firstAttribute="trailing" secondItem="2i6-ZD-cpw" secondAttribute="trailing" id="ad1-hs-nhu"/>
+                            <constraint firstAttribute="trailing" secondItem="yiE-xr-0zJ" secondAttribute="trailing" id="d6F-Fb-27j"/>
+                            <constraint firstItem="yiE-xr-0zJ" firstAttribute="leading" secondItem="slu-Js-e4s" secondAttribute="leading" id="eXB-M9-9fm"/>
+                            <constraint firstItem="2i6-ZD-cpw" firstAttribute="leading" secondItem="slu-Js-e4s" secondAttribute="leading" id="m2D-g3-Qsa"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="600"/>
+                    <connections>
+                        <outlet property="announceLabel" destination="jiX-zF-FNS" id="j9u-m8-apg"/>
+                        <outlet property="commentTextField" destination="yBQ-zc-vKG" id="oSO-wd-5dn"/>
+                        <outlet property="submitButton" destination="rXb-sO-YAr" id="iS6-Dr-BfA"/>
+                        <outlet property="tableView" destination="yiE-xr-0zJ" id="Tth-SE-KTf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iaV-Nc-ayZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1330" y="273"/>
         </scene>
     </scenes>
     <resources>

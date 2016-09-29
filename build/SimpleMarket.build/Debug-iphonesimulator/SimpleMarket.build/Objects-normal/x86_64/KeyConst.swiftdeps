@@ -7,8 +7,8 @@ provides-member:
 - ["V12SimpleMarket8KeyConst", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "StringLiteralType"
 - "KeyConst"
+- "StringLiteralType"
 depends-member:
 - ["V12SimpleMarket8KeyConst", "WebPayPublicKey"]
 - ["V12SimpleMarket8KeyConst", "WebPaySecretKey"]

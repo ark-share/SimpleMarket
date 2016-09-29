@@ -18,8 +18,9 @@
 		A3436E601D658B9400EE1F77 /* OrderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3436E5F1D658B9400EE1F77 /* OrderData.swift */; };
 		A3436E631D65AE9700EE1F77 /* OrderAddThanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3436E621D65AE9700EE1F77 /* OrderAddThanksViewController.swift */; };
 		A3436E661D66D66E00EE1F77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3436E641D66CBE400EE1F77 /* Main.storyboard */; };
+		A35532CA1D9C9FAD0046F111 /* TradeCommentAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35532C91D9C9FAD0046F111 /* TradeCommentAddViewController.swift */; };
 		A3555B7D1D7D57BB009709FB /* Comment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3555B7C1D7D57BB009709FB /* Comment.storyboard */; };
-		A3555B7F1D7D5A97009709FB /* CommentAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3555B7E1D7D5A97009709FB /* CommentAddViewController.swift */; };
+		A3555B7F1D7D5A97009709FB /* OrderCommentAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3555B7E1D7D5A97009709FB /* OrderCommentAddViewController.swift */; };
 		A38F1CBF1D892220005C09C7 /* KeyConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1CBE1D892220005C09C7 /* KeyConst.swift */; };
 		A38F1CC11D892F0B005C09C7 /* TradeBuyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1CC01D892F0B005C09C7 /* TradeBuyDetailViewController.swift */; };
 		A38F1CC31D892F5A005C09C7 /* Trade.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A38F1CC21D892F5A005C09C7 /* Trade.storyboard */; };
@@ -83,8 +84,9 @@
 		A3436E5F1D658B9400EE1F77 /* OrderData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderData.swift; sourceTree = "<group>"; };
 		A3436E621D65AE9700EE1F77 /* OrderAddThanksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderAddThanksViewController.swift; sourceTree = "<group>"; };
 		A3436E641D66CBE400EE1F77 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A35532C91D9C9FAD0046F111 /* TradeCommentAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeCommentAddViewController.swift; sourceTree = "<group>"; };
 		A3555B7C1D7D57BB009709FB /* Comment.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Comment.storyboard; sourceTree = "<group>"; };
-		A3555B7E1D7D5A97009709FB /* CommentAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentAddViewController.swift; sourceTree = "<group>"; };
+		A3555B7E1D7D5A97009709FB /* OrderCommentAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCommentAddViewController.swift; sourceTree = "<group>"; };
 		A38F1CBE1D892220005C09C7 /* KeyConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyConst.swift; sourceTree = "<group>"; };
 		A38F1CC01D892F0B005C09C7 /* TradeBuyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeBuyDetailViewController.swift; sourceTree = "<group>"; };
 		A38F1CC21D892F5A005C09C7 /* Trade.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Trade.storyboard; sourceTree = "<group>"; };
@@ -220,7 +222,8 @@
 		A3555B801D7D5AA2009709FB /* Comment */ = {
 			isa = PBXGroup;
 			children = (
-				A3555B7E1D7D5A97009709FB /* CommentAddViewController.swift */,
+				A3555B7E1D7D5A97009709FB /* OrderCommentAddViewController.swift */,
+				A35532C91D9C9FAD0046F111 /* TradeCommentAddViewController.swift */,
 				A3B2AE981D7FBCCC004D1CD8 /* CommentTableViewCell.swift */,
 				A30B0D171D824E8C00C20A76 /* OrderDetailTableViewCell.swift */,
 			);
@@ -498,13 +501,14 @@
 			files = (
 				A3A404F91D703FA10061DDB2 /* OrderIndexCollectionViewController.swift in Sources */,
 				A38F1CBF1D892220005C09C7 /* KeyConst.swift in Sources */,
-				A3555B7F1D7D5A97009709FB /* CommentAddViewController.swift in Sources */,
+				A3555B7F1D7D5A97009709FB /* OrderCommentAddViewController.swift in Sources */,
 				A3436E601D658B9400EE1F77 /* OrderData.swift in Sources */,
 				A3A404EC1D6E93DE0061DDB2 /* TradeBuyIndexCell.swift in Sources */,
 				A30B0D231D878D1E00C20A76 /* WebpayClient.swift in Sources */,
 				A38F1CE61D9108A4005C09C7 /* ImageSelectViewController.swift in Sources */,
 				A3436E631D65AE9700EE1F77 /* OrderAddThanksViewController.swift in Sources */,
 				A3F74A521D98FC30000A9720 /* TradeSellTableViewController.swift in Sources */,
+				A35532CA1D9C9FAD0046F111 /* TradeCommentAddViewController.swift in Sources */,
 				A32B5F7F1D62EFD300608BBF /* OrderAddViewController.swift in Sources */,
 				A3A404E51D6D8F6F0061DDB2 /* TradeBuyIndexViewController.swift in Sources */,
 				A3A404FB1D74300D0061DDB2 /* UserLoginViewController.swift in Sources */,

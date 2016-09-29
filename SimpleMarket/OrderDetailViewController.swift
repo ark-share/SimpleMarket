@@ -56,10 +56,10 @@ class OrderDetailViewController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // to CommentAddSegue
-        if segue.identifier == "CommentAddSegue" {
+        // to OrderCommentAddSegue
+        if segue.identifier == "OrderCommentAddSegue" {
             // orderDataを「そのまま」引き継ぐ
-            let view = segue.destinationViewController as! CommentAddViewController
+            let view = segue.destinationViewController as! OrderCommentAddViewController
             view.orderData = self.orderData
         }
         // to OrderBuySegue

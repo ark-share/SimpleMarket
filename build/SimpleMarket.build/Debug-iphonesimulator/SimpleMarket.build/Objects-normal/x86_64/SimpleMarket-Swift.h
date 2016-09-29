@@ -143,35 +143,6 @@ SWIFT_CLASS("_TtC12SimpleMarket12ButtonCustom")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class OrderData;
-@class CommentData;
-@class UITableView;
-@class NSIndexPath;
-@class UITableViewCell;
-@class UITextField;
-@class UILabel;
-@class NSBundle;
-
-SWIFT_CLASS("_TtC12SimpleMarket24CommentAddViewController")
-@interface CommentAddViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
-@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified commentTextField;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified announceLabel;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified submitButton;
-@property (nonatomic, strong) OrderData * _Null_unspecified orderData;
-@property (nonatomic, copy) NSArray<CommentData *> * _Nonnull commentArray;
-- (IBAction)handleSubmitButton:(id _Nonnull)sender;
-- (void)viewDidLoad;
-- (void)viewDidAppear:(BOOL)animated;
-- (void)didReceiveMemoryWarning;
-- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
-- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @class NSDate;
 @class FIRDataSnapshot;
 
@@ -185,6 +156,7 @@ SWIFT_CLASS("_TtC12SimpleMarket11CommentData")
 - (nonnull instancetype)initWithSnapshot:(FIRDataSnapshot * _Nonnull)snapshot OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UILabel;
 
 SWIFT_CLASS("_TtC12SimpleMarket20CommentTableViewCell")
 @interface CommentTableViewCell : UITableViewCell
@@ -201,6 +173,7 @@ SWIFT_CLASS("_TtC12SimpleMarket20CommentTableViewCell")
 @class UIImagePickerController;
 @class AdobeUXImageEditorViewController;
 @class UIImage;
+@class NSBundle;
 
 SWIFT_CLASS("_TtC12SimpleMarket25ImageSelectViewController")
 @interface ImageSelectViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, AdobeUXImageEditorViewControllerDelegate>
@@ -248,6 +221,7 @@ SWIFT_CLASS("_TtC12SimpleMarket28OrderAddThanksViewController")
 
 @class UIStoryboardSegue;
 @class UIImageView;
+@class UITextField;
 @class UITextView;
 
 SWIFT_CLASS("_TtC12SimpleMarket22OrderAddViewController")
@@ -267,6 +241,7 @@ SWIFT_CLASS("_TtC12SimpleMarket22OrderAddViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class OrderData;
 
 SWIFT_CLASS("_TtC12SimpleMarket28OrderBuyThanksViewController")
 @interface OrderBuyThanksViewController : UIViewController
@@ -294,6 +269,29 @@ SWIFT_CLASS("_TtC12SimpleMarket22OrderBuyViewController")
 - (void)charge:(NSString * _Nonnull)token;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITableView;
+@class NSIndexPath;
+
+SWIFT_CLASS("_TtC12SimpleMarket29OrderCommentAddViewController")
+@interface OrderCommentAddViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified commentTextField;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified announceLabel;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified submitButton;
+@property (nonatomic, strong) OrderData * _Null_unspecified orderData;
+@property (nonatomic, copy) NSArray<CommentData *> * _Nonnull orderCommentArray;
+- (IBAction)handleSubmitButton:(id _Nonnull)sender;
+- (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)didReceiveMemoryWarning;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -453,6 +451,27 @@ SWIFT_CLASS("_TtC12SimpleMarket27TradeBuyTableViewController")
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC12SimpleMarket29TradeCommentAddViewController")
+@interface TradeCommentAddViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified commentTextField;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified announceLabel;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified submitButton;
+@property (nonatomic, strong) OrderData * _Null_unspecified orderData;
+@property (nonatomic, copy) NSArray<CommentData *> * _Nonnull tradeCommentArray;
+- (IBAction)handleSubmitButton:(id _Nonnull)sender;
+- (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)didReceiveMemoryWarning;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
