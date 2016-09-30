@@ -34,5 +34,6 @@ class CommentData: NSObject {
         modified = NSDate(timeIntervalSinceReferenceDate: data["modified"] as! NSTimeInterval)
         created = NSDate(timeIntervalSinceReferenceDate: data["created"] as! NSTimeInterval)
     }
+ 
     
 }

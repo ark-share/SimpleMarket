@@ -159,7 +159,7 @@
             <objects>
                 <navigationController storyboardIdentifier="Navigation TradeBuyIndex" automaticallyAdjustsScrollViewInsets="NO" id="CZI-Rw-R4F" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="GmQ-YY-jAU">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GmQ-YY-jAU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -210,13 +210,24 @@
                                             <segue destination="vxq-vS-vkw" kind="show" identifier="TradeCommentAddSegue" id="PTm-y1-Spr"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7b4-sC-mlE">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="3QA-wW-bVh"/>
+                                        </constraints>
+                                        <state key="normal" title="発送済みにする" backgroundImage="btn"/>
+                                        <connections>
+                                            <action selector="handlePosted:" destination="dh5-vf-OIS" eventType="touchUpInside" id="Xbc-Kx-v4P"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="fhL-GZ-Xnb" firstAttribute="top" secondItem="gSa-uH-xWu" secondAttribute="bottom" constant="20" id="0dg-WW-hmu"/>
                                     <constraint firstItem="6S9-CZ-soV" firstAttribute="top" secondItem="Scb-py-A5z" secondAttribute="topMargin" constant="30" id="0n9-4s-hTa"/>
+                                    <constraint firstItem="7b4-sC-mlE" firstAttribute="centerX" secondItem="Scb-py-A5z" secondAttribute="centerX" id="Fjr-Na-cjC"/>
                                     <constraint firstItem="oFT-Lr-D14" firstAttribute="top" secondItem="fhL-GZ-Xnb" secondAttribute="bottom" constant="30" id="HgE-rC-8Rj"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="fhL-GZ-Xnb" secondAttribute="trailing" constant="20" id="Nph-fD-ive"/>
+                                    <constraint firstItem="7b4-sC-mlE" firstAttribute="top" secondItem="oFT-Lr-D14" secondAttribute="bottom" constant="50" id="P9T-pF-fTu"/>
                                     <constraint firstItem="gSa-uH-xWu" firstAttribute="leading" secondItem="6S9-CZ-soV" secondAttribute="trailing" constant="20" id="XTI-Jd-yTF"/>
                                     <constraint firstItem="fhL-GZ-Xnb" firstAttribute="leading" secondItem="Scb-py-A5z" secondAttribute="leadingMargin" constant="20" id="gRf-n7-dkK"/>
                                     <constraint firstItem="oFT-Lr-D14" firstAttribute="leading" secondItem="Scb-py-A5z" secondAttribute="leading" constant="20" id="msH-Ux-cPW"/>
@@ -239,6 +250,7 @@
                     <connections>
                         <outlet property="commentButton" destination="oFT-Lr-D14" id="PCA-wE-Jwh"/>
                         <outlet property="infoTextView" destination="fhL-GZ-Xnb" id="jNG-CG-cea"/>
+                        <outlet property="postedButton" destination="7b4-sC-mlE" id="zhl-0p-9lw"/>
                         <outlet property="statusLabel" destination="gSa-uH-xWu" id="Qmf-Rs-T5e"/>
                     </connections>
                 </viewController>
@@ -326,7 +338,7 @@
             <objects>
                 <navigationController storyboardIdentifier="Navigation TradeSellIndex" automaticallyAdjustsScrollViewInsets="NO" id="lCp-HI-dk9" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="XOw-C3-uWr">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XOw-C3-uWr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -340,4 +352,7 @@
             <point key="canvasLocation" x="1124" y="-652"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="btn" width="300" height="40"/>
+    </resources>
 </document>

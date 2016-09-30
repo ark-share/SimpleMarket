@@ -13,8 +13,22 @@ class TradeSellDetailViewController: UIViewController {
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var infoTextView: UITextView!
     @IBOutlet weak var commentButton: UIButton!
+    @IBOutlet weak var postedButton: UIButton!
     
     var orderData: OrderData!
+    
+    // 発送済み
+    @IBAction func handlePosted(sender: AnyObject) {
+        // ステータスを 2 → 3：発送済み に
+        self.orderData.saveField("status", value: "3")
+        
+        // trade_commentsにも流す
+        if orderData.id != nil {
+            self.orderData.saveTradeComment(orderData.id!, body: "(発送しました)")
+        }
+        
+        self.navigationController?.popViewControllerAnimated(true) // 前の画面へ
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

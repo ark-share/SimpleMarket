@@ -30,22 +30,7 @@ class TradeCommentAddViewController: UIViewController {
     // 送信ボタン
     @IBAction func handleSubmitButton(sender: AnyObject) {
         if orderData.id != nil {
-            // コメントの保存先
-            let commentRef = FIRDatabase.database().reference().child(CommonConst.OrderPATH+"/"+orderData.id!+"/"+CommonConst.TradeCommentPATH)
-            
-            let body = commentTextField.text // String?型なのでアンラップする
-            //let user = AppController().displayName // displayNameの事
-            let modified = NSDate.timeIntervalSinceReferenceDate()
-            let created = NSDate.timeIntervalSinceReferenceDate()
-            
-            let user_id = FIRAuth.auth()?.currentUser?.uid
-            let user_name = FIRAuth.auth()?.currentUser?.displayName
-            
-            let data = [
-                "body": body!,
-                "user_id": user_id!, "user_name": user_name!,
-                "modified": modified, "created": created]
-            commentRef.childByAutoId().setValue(data)
+            orderData.saveTradeComment(orderData.id!, body: commentTextField.text!)
         }
     }
     

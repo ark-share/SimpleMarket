@@ -67,6 +67,7 @@ class OrderData: NSObject {
     }
     
     // 単一カラムを更新する
+    // self.orderData.saveFieldのように呼ぶ
     let ref = FIRDatabase.database().reference().child(CommonConst.OrderPATH)
     func saveField(field: String, value: String) {
         let modified = NSDate.timeIntervalSinceReferenceDate()
@@ -76,6 +77,33 @@ class OrderData: NSObject {
         let data = [field: value, "modified": modified]
         ref.child(self.id!).updateChildValues(data as [NSObject : AnyObject])
     }
+//    // 複数保存 型が異なって保存ができない
+//    func save(datas: [String : String?]) {
+//        let modified = NSDate.timeIntervalSinceReferenceDate()
+//        
+//        // idはあらかじめセットされたものを使う
+//        //datas["modified"] = modified
+//        ref.child(self.id!).updateChildValues(datas as [NSObject : AnyObject])
+//    }
 
+    // tradeコメントの投稿 >> これCommentDataクラスに起きたいけど、CommentDat().みたいに呼ぼうとするとinit()が走ってしまう　どうするか
+    func saveTradeComment(order_id: String, body: String) {
+        // 保存先
+        let commentRef = FIRDatabase.database().reference().child(CommonConst.OrderPATH+"/"+order_id+"/"+CommonConst.TradeCommentPATH)
+        
+        //let user = AppController().displayName // displayNameの事
+        let modified = NSDate.timeIntervalSinceReferenceDate()
+        let created = NSDate.timeIntervalSinceReferenceDate()
+        
+        let user_id = FIRAuth.auth()?.currentUser?.uid
+        let user_name = FIRAuth.auth()?.currentUser?.displayName
+        
+        let data = [
+            "body": body,
+            "user_id": user_id!, "user_name": user_name!,
+            "modified": modified, "created": created]
+        
+        commentRef.childByAutoId().setValue(data)
+    }
     
 }
