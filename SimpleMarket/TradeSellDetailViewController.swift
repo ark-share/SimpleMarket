@@ -14,6 +14,7 @@ class TradeSellDetailViewController: UIViewController {
     @IBOutlet weak var infoTextView: UITextView!
     @IBOutlet weak var commentButton: UIButton!
     @IBOutlet weak var postedButton: UIButton! // ステータスによっては非表示に
+    @IBOutlet weak var doneButton: UIButton! // ステータスによっては非表示に
     
     var orderData: OrderData!
     
@@ -29,11 +30,24 @@ class TradeSellDetailViewController: UIViewController {
         
         self.navigationController?.popViewControllerAnimated(true) // 前の画面へ
     }
+    // 完了評価
+    @IBAction func handleDone(sender: AnyObject) {
+        // ステータスを 5 → 6：取引完了 に
+        self.orderData.saveField("status", value: "6")
+        
+        // trade_commentsにも流す
+        if orderData.id != nil {
+            self.orderData.saveTradeComment(orderData.id!, body: "(取引完了しました)")
+        }
+        
+        self.navigationController?.popViewControllerAnimated(true) // 前の画面へ
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.postedButton.hidden = true
+        self.doneButton.hidden = true
 
         if orderData != nil {
 //            if orderData.image != nil {
@@ -54,6 +68,9 @@ class TradeSellDetailViewController: UIViewController {
                 // ボタン表示
                 if orderData.status! == "2" {
                     self.postedButton.hidden = false // ボタンを有効に
+                }
+                if orderData.status! == "5" {
+                    self.doneButton.hidden = false // ボタンを有効に
                 }
             }
             
