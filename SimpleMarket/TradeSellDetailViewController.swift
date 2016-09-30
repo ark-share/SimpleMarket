@@ -57,6 +57,12 @@ class TradeSellDetailViewController: UIViewController {
         }
     }
 
+    override func viewWillAppear(animated: Bool) {
+        if orderData != nil {
+            
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

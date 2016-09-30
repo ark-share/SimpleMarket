@@ -74,6 +74,10 @@ class OrderAddViewController: UIViewController {
         imageView1.userInteractionEnabled = true // タップできるようにする
         let myTap = UITapGestureRecognizer(target: self, action: #selector(imageTap))
         imageView1.addGestureRecognizer(myTap)
+        
+        // 背景タップ
+        let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        self.view.addGestureRecognizer(tapGesture)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -98,6 +102,10 @@ class OrderAddViewController: UIViewController {
     // imageタップ
     func imageTap() {
         performSegueWithIdentifier("ImageSelectSegue", sender: nil)
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     
