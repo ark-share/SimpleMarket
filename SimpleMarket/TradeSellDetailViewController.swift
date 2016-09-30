@@ -21,11 +21,16 @@ class TradeSellDetailViewController: UIViewController {
     // 発送済み
     @IBAction func handlePosted(sender: AnyObject) {
         // ステータスを 2 → 3：発送済み に
-        self.orderData.saveField("status", value: "3")
-        
-        // trade_commentsにも流す
-        if orderData.id != nil {
-            self.orderData.saveTradeComment(orderData.id!, body: "(発送しました)")
+        if orderData.status! == "2" {
+            self.orderData.saveField("status", value: "3")
+            
+            // trade_commentsにも流す
+            if orderData.id != nil {
+                self.orderData.saveTradeComment(orderData.id!, body: "(発送しました)")
+            }
+        }
+        else {
+            print("stauts error")
         }
         
         self.navigationController?.popViewControllerAnimated(true) // 前の画面へ
@@ -33,11 +38,16 @@ class TradeSellDetailViewController: UIViewController {
     // 完了評価
     @IBAction func handleDone(sender: AnyObject) {
         // ステータスを 5 → 6：取引完了 に
-        self.orderData.saveField("status", value: "6")
-        
-        // trade_commentsにも流す
-        if orderData.id != nil {
-            self.orderData.saveTradeComment(orderData.id!, body: "(取引完了しました)")
+        if orderData.status! == "5" {
+            self.orderData.saveField("status", value: "6")
+            
+            // trade_commentsにも流す
+            if orderData.id != nil {
+                self.orderData.saveTradeComment(orderData.id!, body: "(取引完了しました)")
+            }
+        }
+        else {
+            print("stauts error")
         }
         
         self.navigationController?.popViewControllerAnimated(true) // 前の画面へ

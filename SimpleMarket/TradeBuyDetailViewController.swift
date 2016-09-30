@@ -21,11 +21,16 @@ class TradeBuyDetailViewController: UIViewController {
     // 受け取り
     @IBAction func handleReceived(sender: AnyObject) {
         // ステータスを 3 or 4 → 5：完了評価待ち に
-        self.orderData.saveField("status", value: "5")
-        
-        // trade_commentsにも流す
-        if orderData.id != nil {
-            self.orderData.saveTradeComment(orderData.id!, body: "(受け取りました)")
+        if orderData.status! == "3" || orderData.status! == "4" {
+            self.orderData.saveField("status", value: "5")
+            
+            // trade_commentsにも流す
+            if orderData.id != nil {
+                self.orderData.saveTradeComment(orderData.id!, body: "(受け取りました)")
+            }
+        }
+        else {
+            print("stauts error")
         }
         
         self.navigationController?.popViewControllerAnimated(true) // 前の画面へ
