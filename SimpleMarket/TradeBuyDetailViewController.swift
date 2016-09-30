@@ -14,11 +14,27 @@ class TradeBuyDetailViewController: UIViewController {
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var infoTextView: UITextView!
     @IBOutlet weak var commentButton: UIButton!
+    @IBOutlet weak var receivedButton: UIButton! // ステータスによっては非表示に
     
     var orderData: OrderData!
+
+    // 受け取り
+    @IBAction func handleReceived(sender: AnyObject) {
+        // ステータスを 3 or 4 → 5：完了評価待ち に
+        self.orderData.saveField("status", value: "5")
+        
+        // trade_commentsにも流す
+        if orderData.id != nil {
+            self.orderData.saveTradeComment(orderData.id!, body: "(受け取りました)")
+        }
+        
+        self.navigationController?.popViewControllerAnimated(true) // 前の画面へ
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.receivedButton.hidden = true
 
         if orderData != nil {
 //            if orderData.image != nil {
@@ -35,6 +51,11 @@ class TradeBuyDetailViewController: UIViewController {
                 
                 // 案内メッセージ
                 infoTextView.text = AppController().getInfoMessageforBuy(orderData.status!)
+                
+                // ボタン表示
+                if orderData.status! == "3" || orderData.status! == "4" {
+                    self.receivedButton.hidden = false // ボタンを有効に
+                }
             }
             
             // コメント数は？

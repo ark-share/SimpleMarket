@@ -13,7 +13,7 @@ class TradeSellDetailViewController: UIViewController {
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var infoTextView: UITextView!
     @IBOutlet weak var commentButton: UIButton!
-    @IBOutlet weak var postedButton: UIButton!
+    @IBOutlet weak var postedButton: UIButton! // ステータスによっては非表示に
     
     var orderData: OrderData!
     
@@ -32,6 +32,8 @@ class TradeSellDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.postedButton.hidden = true
 
         if orderData != nil {
 //            if orderData.image != nil {
@@ -48,6 +50,11 @@ class TradeSellDetailViewController: UIViewController {
                 
                 // 案内メッセージ
                 infoTextView.text = AppController().getInfoMessageforSell(orderData.status!)
+                
+                // ボタン表示
+                if orderData.status! == "2" {
+                    self.postedButton.hidden = false // ボタンを有効に
+                }
             }
             
             // コメント数は？

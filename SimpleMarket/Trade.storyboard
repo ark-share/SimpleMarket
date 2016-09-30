@@ -45,11 +45,23 @@
                                             <segue destination="Ztv-eI-HZX" kind="show" identifier="TradeCommentAddSegue" id="qPt-qf-Kay"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wiF-kN-RxE">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="CVG-PO-dbN"/>
+                                        </constraints>
+                                        <state key="normal" title="受け取り評価する" backgroundImage="btn"/>
+                                        <connections>
+                                            <action selector="handlePosted:" destination="dh5-vf-OIS" eventType="touchUpInside" id="vcR-jf-iI5"/>
+                                            <action selector="handleReceived:" destination="jKw-Ji-FG8" eventType="touchUpInside" id="huB-cP-1O9"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="wiF-kN-RxE" firstAttribute="top" secondItem="2sA-rK-tnl" secondAttribute="bottom" constant="50" id="69N-18-Lmc"/>
                                     <constraint firstItem="2sA-rK-tnl" firstAttribute="leading" secondItem="pgA-vb-ySb" secondAttribute="leading" constant="20" id="6cw-1d-xhw"/>
                                     <constraint firstItem="Kg7-cf-eOg" firstAttribute="leading" secondItem="pgA-vb-ySb" secondAttribute="leadingMargin" constant="20" id="Cvw-aN-4db"/>
+                                    <constraint firstItem="wiF-kN-RxE" firstAttribute="centerX" secondItem="pgA-vb-ySb" secondAttribute="centerX" id="FLg-3I-Vdu"/>
                                     <constraint firstItem="2sA-rK-tnl" firstAttribute="top" secondItem="GXL-sj-E43" secondAttribute="bottom" constant="30" id="Gwo-mr-maD"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="GXL-sj-E43" secondAttribute="trailing" constant="20" id="KBj-yO-JnE"/>
                                     <constraint firstItem="Kg7-cf-eOg" firstAttribute="top" secondItem="pgA-vb-ySb" secondAttribute="topMargin" constant="30" id="L63-Ak-GfF"/>
@@ -74,6 +86,7 @@
                     <connections>
                         <outlet property="commentButton" destination="2sA-rK-tnl" id="dv4-sz-dgc"/>
                         <outlet property="infoTextView" destination="GXL-sj-E43" id="X3j-8R-MiV"/>
+                        <outlet property="receivedButton" destination="wiF-kN-RxE" id="Hb5-pe-YdQ"/>
                         <outlet property="statusLabel" destination="hQI-EB-sy9" id="XLo-GJ-tGo"/>
                     </connections>
                 </viewController>
@@ -159,7 +172,7 @@
             <objects>
                 <navigationController storyboardIdentifier="Navigation TradeBuyIndex" automaticallyAdjustsScrollViewInsets="NO" id="CZI-Rw-R4F" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GmQ-YY-jAU">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="GmQ-YY-jAU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -338,7 +351,7 @@
             <objects>
                 <navigationController storyboardIdentifier="Navigation TradeSellIndex" automaticallyAdjustsScrollViewInsets="NO" id="lCp-HI-dk9" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XOw-C3-uWr">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="XOw-C3-uWr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
