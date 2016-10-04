@@ -7,10 +7,11 @@
 //
 
 import UIKit
-import Firebase
+import Firebase // ログイン ログアウト
+import MessageUI // 問い合わせ用
 
 // スライドメニュー
-class LeftMenuViewController: UIViewController {
+class LeftMenuViewController: UIViewController, MFMailComposeViewControllerDelegate {
     
     @IBOutlet weak var displayNameLabel: UILabel!
     @IBOutlet weak var loginButton: UIButton!
@@ -33,7 +34,22 @@ class LeftMenuViewController: UIViewController {
         
         self.viewDidLoad() // 閉じるだけでは画面が変わらないので更新する
     }
-
+    // 問い合わせ
+    @IBAction func handleContact(sender: AnyObject) {
+        if MFMailComposeViewController.canSendMail() == false {
+            print("cannot use email.")
+            return
+        }
+        
+        let mail = MFMailComposeViewController()
+        let to = ["info@ark-share.jp"]
+        
+        mail.mailComposeDelegate = self // MFMailComposeViewControllerDelegateプロトコルのadoptが必要。紐つけてdeleteのメソッドを利用できるようにする
+        mail.setSubject("問い合わせ")
+        mail.setToRecipients(to)
+        mail.setMessageBody("", isHTML: false)
+        self.presentViewController(mail, animated: true, completion: nil)
+    }
     // ログアウト
     @IBAction func handleLogout(sender: AnyObject) {
         UserLoginViewController().logout()
@@ -97,5 +113,11 @@ class LeftMenuViewController: UIViewController {
         self.navigationController?.pushViewController(orderAdd, animated: true)
     }
 
+    // 問い合わせ用 これがないとメールを閉じれない
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     
 }

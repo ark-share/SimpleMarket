@@ -144,10 +144,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A38F1CDD1D90E3B6005C09C7 /* MessageUI.framework in Frameworks */,
 				A38F1CE31D90E3CB005C09C7 /* StoreKit.framework in Frameworks */,
 				A38F1CE11D90E3C5005C09C7 /* QuartzCore.framework in Frameworks */,
 				A38F1CDF1D90E3BD005C09C7 /* OpenGLES.framework in Frameworks */,
-				A38F1CDD1D90E3B6005C09C7 /* MessageUI.framework in Frameworks */,
 				A38F1CDB1D90E3AE005C09C7 /* CoreData.framework in Frameworks */,
 				A3DF4C0F1D94B9FB00603A6D /* AdobeCreativeSDKCore.framework in Frameworks */,
 				A38F1CD91D90E3A6005C09C7 /* Accelerate.framework in Frameworks */,

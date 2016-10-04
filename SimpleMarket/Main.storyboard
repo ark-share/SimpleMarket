@@ -156,6 +156,17 @@
                                     <action selector="handleLoginButton:" destination="9Vf-8u-fp4" eventType="touchUpInside" id="jOl-hs-IVY"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="display name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRn-PO-on0">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44u-Wb-VCk">
+                                <state key="normal" title="問い合わせ"/>
+                                <connections>
+                                    <action selector="handleContact:" destination="WPY-b6-c55" eventType="touchUpInside" id="A6S-WO-Jqa"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mv5-pl-Dzf">
                                 <state key="normal" title="ログアウト"/>
                                 <connections>
@@ -163,28 +174,25 @@
                                     <action selector="handleLogoutButton:" destination="9Vf-8u-fp4" eventType="touchUpInside" id="eiw-ff-PGn"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="display name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRn-PO-on0">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="BUi-VG-7XS" firstAttribute="top" secondItem="4p1-1T-wQj" secondAttribute="bottom" constant="20" id="1qV-DX-ddy"/>
+                            <constraint firstItem="mv5-pl-Dzf" firstAttribute="top" secondItem="44u-Wb-VCk" secondAttribute="bottom" constant="20" id="4WX-bp-5Cc"/>
                             <constraint firstItem="4p1-1T-wQj" firstAttribute="top" secondItem="Rf5-p3-CFv" secondAttribute="bottom" constant="20" id="6I7-gU-jtC"/>
+                            <constraint firstItem="mv5-pl-Dzf" firstAttribute="leading" secondItem="D8u-VO-LzU" secondAttribute="leadingMargin" constant="20" id="9eS-ck-lqi"/>
                             <constraint firstItem="9bF-zy-hNy" firstAttribute="leading" secondItem="D8u-VO-LzU" secondAttribute="leadingMargin" constant="20" id="BGL-va-mUs"/>
                             <constraint firstItem="LgF-En-mph" firstAttribute="leading" secondItem="D8u-VO-LzU" secondAttribute="leadingMargin" constant="150" id="EAF-h3-Y1G"/>
                             <constraint firstItem="2cw-VE-OVz" firstAttribute="leading" secondItem="D8u-VO-LzU" secondAttribute="leadingMargin" constant="20" id="G7u-MT-m0x"/>
-                            <constraint firstItem="mv5-pl-Dzf" firstAttribute="leading" secondItem="D8u-VO-LzU" secondAttribute="leadingMargin" constant="20" id="JVW-Ir-mHa"/>
-                            <constraint firstItem="mv5-pl-Dzf" firstAttribute="top" secondItem="9bF-zy-hNy" secondAttribute="bottom" constant="60" id="Pq6-ds-KEg"/>
+                            <constraint firstItem="44u-Wb-VCk" firstAttribute="leading" secondItem="D8u-VO-LzU" secondAttribute="leadingMargin" constant="20" id="aPJ-i4-WUm"/>
                             <constraint firstItem="Rf5-p3-CFv" firstAttribute="top" secondItem="2cw-VE-OVz" secondAttribute="bottom" constant="20" id="g9T-5t-Gks"/>
                             <constraint firstItem="9bF-zy-hNy" firstAttribute="top" secondItem="BUi-VG-7XS" secondAttribute="bottom" constant="20" id="hmP-X0-Yv0"/>
                             <constraint firstItem="LgF-En-mph" firstAttribute="top" secondItem="7st-ex-swW" secondAttribute="bottom" constant="60" id="jLe-Pg-AKY"/>
                             <constraint firstItem="BUi-VG-7XS" firstAttribute="leading" secondItem="D8u-VO-LzU" secondAttribute="leadingMargin" constant="20" id="pmD-Rp-UkU"/>
-                            <constraint firstItem="2cw-VE-OVz" firstAttribute="top" secondItem="7st-ex-swW" secondAttribute="bottom" constant="135" id="rTp-hI-mFb"/>
+                            <constraint firstItem="2cw-VE-OVz" firstAttribute="top" secondItem="7st-ex-swW" secondAttribute="bottom" constant="150" id="rTp-hI-mFb"/>
                             <constraint firstItem="4p1-1T-wQj" firstAttribute="leading" secondItem="D8u-VO-LzU" secondAttribute="leadingMargin" constant="20" id="uIK-K5-qlh"/>
                             <constraint firstItem="gRn-PO-on0" firstAttribute="top" secondItem="7st-ex-swW" secondAttribute="bottom" constant="60" id="uJX-N6-7dK"/>
+                            <constraint firstItem="44u-Wb-VCk" firstAttribute="top" secondItem="9bF-zy-hNy" secondAttribute="bottom" constant="50" id="ua7-bI-3fN"/>
                             <constraint firstItem="gRn-PO-on0" firstAttribute="leading" secondItem="D8u-VO-LzU" secondAttribute="leadingMargin" constant="150" id="viU-CL-mqp"/>
                             <constraint firstItem="Rf5-p3-CFv" firstAttribute="leading" secondItem="D8u-VO-LzU" secondAttribute="leadingMargin" constant="20" id="wfi-Ut-FmS"/>
                         </constraints>
