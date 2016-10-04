@@ -15,7 +15,6 @@ class TradeBuyIndexViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     
-    private var orderAddButton: UIButton! // 固定ボタン
     private var tabButtons: [UIButton] = [] // メニュー複数
     
     override func viewDidLoad() {
@@ -38,9 +37,13 @@ class TradeBuyIndexViewController: UIViewController, UIScrollViewDelegate {
         setSelectedButton(self.tabButtons[0], selected: true)
         
         makeNavigation()
-        makeAddButton()
+
     }
 
+    override func viewWillAppear(animated: Bool) {
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -143,31 +146,6 @@ class TradeBuyIndexViewController: UIViewController, UIScrollViewDelegate {
     // ドラッグでスクロール後（縦スクロールには反応しない）
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
         self.scrollViewDidEndScrollingAnimation(scrollView) // 同じ
-    }
-    
-    // 固定の新規ボタン
-    func makeAddButton() {
-        orderAddButton = UIButton()
-        orderAddButton.frame = CGRectMake(0, 0, 80, 80)
-        orderAddButton.tintColor = UIColor.whiteColor() // 画像の色がもともと灰色だから白くはならない
-        orderAddButton.backgroundColor = UIColor.orangeColor()
-        orderAddButton.layer.masksToBounds = true
-        orderAddButton.layer.cornerRadius = 40.0
-        orderAddButton.layer.position = CGPoint(x: self.view.frame.width - 60, y: self.view.frame.height - 60)
-        orderAddButton.tag = 1
-        orderAddButton.addTarget(self, action:#selector(handleOrderAddButton(_:event:)), forControlEvents: .TouchUpInside)
-        
-        //let image = UIImage(named: "camera")
-        let image = UIImage.fontAwesomeIconWithName(.Camera, textColor: UIColor.whiteColor(), size: CGSizeMake(40, 40))
-        orderAddButton.setImage(image, forState: .Normal)
-        
-        self.view.addSubview(orderAddButton)
-    }
-    // 固定ボタンからのアクション
-    func handleOrderAddButton(sender: UIButton, event:UIEvent) {
-        // navを引き継ぐ
-        let orderAdd = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("OrderAdd")
-        self.navigationController?.pushViewController(orderAdd, animated: true)
     }
     
 }

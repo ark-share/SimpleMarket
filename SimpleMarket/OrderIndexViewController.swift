@@ -43,6 +43,14 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
         makeAddButton()
     }
     
+    override func viewWillAppear(animated: Bool) {
+        // add buttonのアニメーション
+        UIView.animateWithDuration(0.3, animations: { Void in
+            //self.orderAddButton.frame.origin.y = UIScreen.mainScreen().bounds.height - 60 // 元の-10から-60へ
+            self.orderAddButton.layer.position.y = self.view.frame.height - 60
+        })
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -164,7 +172,7 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
         orderAddButton.backgroundColor = UIColor.orangeColor()
         orderAddButton.layer.masksToBounds = true
         orderAddButton.layer.cornerRadius = 40.0
-        orderAddButton.layer.position = CGPoint(x: self.view.frame.width - 60, y: self.view.frame.height - 60)
+        orderAddButton.layer.position = CGPoint(x: self.view.frame.width - 60, y: self.view.frame.height - 10) // yの-10 から -60へアニメーションさせる
         orderAddButton.tag = 1
         orderAddButton.addTarget(self, action:#selector(handleOrderAddButton(_:event:)), forControlEvents: .TouchUpInside)
 
@@ -176,6 +184,11 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
     }
     // 固定ボタンからのアクション
     func handleOrderAddButton(sender: UIButton, event:UIEvent) {
+        
+        UIView.animateWithDuration(0.1, animations: { Void in
+            self.orderAddButton.layer.position.y = self.view.frame.height - 10 // tapしたらボタンを下の方に隠す
+        })
+
         // navを引き継ぐ
         let orderAdd = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("OrderAdd")
         self.navigationController?.pushViewController(orderAdd, animated: true)
