@@ -44,8 +44,8 @@ class OrderDetailViewController: UIViewController {
         }
         
         // コメントボタンに吹き出し追加
-        let image = UIImage.fontAwesomeIconWithName(.CommentO, textColor: UIColor.blackColor(), size: CGSizeMake(22, 22))
-        commentButton.setImage(image, forState: .Normal)
+        //let image = UIImage.fontAwesomeIconWithName(.CommentO, textColor: UIColor.blackColor(), size: CGSizeMake(22, 22))
+        //commentButton.setImage(image, forState: .Normal)
         
     }
 

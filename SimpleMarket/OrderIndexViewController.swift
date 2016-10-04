@@ -25,16 +25,16 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
         scrollView.delegate = self
         
         scrollView.frame = CGRectMake(0, 0, self.view.frame.width, scrollView.frame.height) // スクロールの横幅を画面に合わせる
-        scrollView.contentSize = CGSizeMake(self.view.frame.width * 3, scrollView.frame.height) // 3画面
+        scrollView.contentSize = CGSizeMake(self.view.frame.width * 1, scrollView.frame.height) // 1 -> 3画面
         scrollView.pagingEnabled = true
         
         makeCollectionViewByPage(0)
-        makeCollectionViewByPage(1)
-        makeCollectionViewByPage(2)
+        //makeCollectionViewByPage(1)
+        //makeCollectionViewByPage(2)
         
-        makeTabButtonByPage(0)
-        makeTabButtonByPage(1)
-        makeTabButtonByPage(2)
+        makeTabButtonByPage(0, title: "すべて")
+        //makeTabButtonByPage(1, title: "")
+        //makeTabButtonByPage(2, title: "")
         
         // 選択状態にする
         setSelectedButton(self.tabButtons[0], selected: true)
@@ -78,7 +78,7 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
         collection.didMoveToParentViewController(self) // 追加の完了を伝える
     }
     // tab buttonの生成
-    func makeTabButtonByPage(page: Int) {
+    func makeTabButtonByPage(page: Int, title: String) {
         let tabButton = UIButton()
         tabButton.frame = CGRectMake(0, 0, self.view.frame.width / 3, 40) // 位置も指定できるが、ボタンのサイズだけ
         
@@ -86,7 +86,7 @@ class OrderIndexViewController: UIViewController, UIScrollViewDelegate {
         tabButton.center = CGPointMake(self.view.frame.width / 4 * CGFloat(page + 1), 40)
         
         // タイトル通常時
-        tabButton.setTitle("ボタン \(page)", forState: .Normal)
+        tabButton.setTitle(title, forState: .Normal)
         tabButton.setTitleColor(UIColor.lightGrayColor(), forState: .Normal) // 未選択はグレー
         tabButton.setTitleColor(UIColor.orangeColor(), forState: .Highlighted)
         tabButton.setTitleColor(UIColor.orangeColor(), forState: .Selected)

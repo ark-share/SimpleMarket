@@ -70,6 +70,7 @@ class OrderIndexCollectionViewController: UICollectionViewController, UICollecti
         return orderArray.count
     }
 
+    // セルそれぞれの設定。outletせずにパーツをtag番号で特定する
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
     
         // 再利用できるセルを作る
@@ -91,8 +92,15 @@ class OrderIndexCollectionViewController: UICollectionViewController, UICollecti
             nameLabel.text = data.name!
         }
         let statusLabel = cell.viewWithTag(4) as! UILabel
-        if data.status != nil {
-            statusLabel.text = data.status!
+        if data.status != "0" {
+            statusLabel.text = data.statusName!
+        }
+        else {
+            statusLabel.hidden = true
+        }
+        let soldOutLabel = cell.viewWithTag(5) as! UILabel // Sold out
+        if data.status == "0" {
+            soldOutLabel.hidden = true
         }
         
         cell.layoutIfNeeded()

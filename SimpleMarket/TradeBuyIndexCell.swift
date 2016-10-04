@@ -41,7 +41,7 @@ class TradeBuyIndexCell: UITableViewCell {
             nameLabel.text = orderData.name
         }
         if orderData.status != nil {
-            statusLabel.text = orderData.status
+            statusLabel.text = orderData.statusName
         }
         
         super.layoutSubviews()

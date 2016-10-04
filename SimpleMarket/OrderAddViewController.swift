@@ -52,9 +52,12 @@ class OrderAddViewController: UIViewController {
             "modified": modified, "created": created]
         orderRef.childByAutoId().setValue(data)
         
+        print("key \(orderRef.key)")
+        
         //SVProgressHUD.showSuccessWithStatus("出品しました")
-        let view = self.storyboard?.instantiateViewControllerWithIdentifier("OrderAddThanks")
-        presentViewController(view!, animated: true, completion: nil) // モーダル
+        let thank = self.storyboard?.instantiateViewControllerWithIdentifier("OrderAddThanks") as! OrderAddThanksViewController
+        //thank.orderData = newData 保存したてのデータが取れない
+        presentViewController(thank, animated: true, completion: nil) // モーダル
     }
     
     

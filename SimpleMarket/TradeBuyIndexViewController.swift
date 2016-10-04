@@ -26,8 +26,8 @@ class TradeBuyIndexViewController: UIViewController, UIScrollViewDelegate {
         scrollView.contentSize = CGSizeMake(self.view.frame.width * 3, scrollView.frame.height) // 3画面
         scrollView.pagingEnabled = true
         
-        makeTableViewByPage(0, statusArray: ["0"])
-        makeTableViewByPage(1, statusArray: ["1", "2", "3", "4", "5"])
+        makeTableViewByPage(0, statusArray: ["1"])
+        makeTableViewByPage(1, statusArray: ["2", "3", "4", "5"])
         makeTableViewByPage(2, statusArray: ["6"])
         
         makeTabButtonByPage(0, title: "入金待ち")

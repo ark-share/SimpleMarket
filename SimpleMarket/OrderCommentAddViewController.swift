@@ -77,6 +77,11 @@ class OrderCommentAddViewController: UIViewController, UITableViewDelegate, UITa
             self.tableView.reloadData() // 再表示
             //}
         })
+        
+        // 背景タップ
+        let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        self.view.addGestureRecognizer(tapGesture)
+
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -147,5 +152,8 @@ class OrderCommentAddViewController: UIViewController, UITableViewDelegate, UITa
         }
     }
 
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
 
 }
