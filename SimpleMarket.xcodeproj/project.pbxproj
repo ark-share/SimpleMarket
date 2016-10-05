@@ -37,6 +37,7 @@
 		A38F1CE11D90E3C5005C09C7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38F1CE01D90E3C5005C09C7 /* QuartzCore.framework */; };
 		A38F1CE31D90E3CB005C09C7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38F1CE21D90E3CB005C09C7 /* StoreKit.framework */; };
 		A38F1CE61D9108A4005C09C7 /* ImageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1CE51D9108A4005C09C7 /* ImageSelectViewController.swift */; };
+		A39060981DA4C39200C07515 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39060971DA4C39200C07515 /* HelpViewController.swift */; };
 		A391E58D1D88EC5000937B32 /* OrderBuyThanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A391E58C1D88EC5000937B32 /* OrderBuyThanksViewController.swift */; };
 		A3A404E51D6D8F6F0061DDB2 /* TradeBuyIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A404E41D6D8F6F0061DDB2 /* TradeBuyIndexViewController.swift */; };
 		A3A404EC1D6E93DE0061DDB2 /* TradeBuyIndexCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A404EA1D6E93DE0061DDB2 /* TradeBuyIndexCell.swift */; };
@@ -104,6 +105,7 @@
 		A38F1CE21D90E3CB005C09C7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		A38F1CE41D90FC37005C09C7 /* SimpleMarket-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleMarket-Bridging-Header.h"; sourceTree = "<group>"; };
 		A38F1CE51D9108A4005C09C7 /* ImageSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSelectViewController.swift; sourceTree = "<group>"; };
+		A39060971DA4C39200C07515 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		A391E58C1D88EC5000937B32 /* OrderBuyThanksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderBuyThanksViewController.swift; sourceTree = "<group>"; };
 		A3A404E41D6D8F6F0061DDB2 /* TradeBuyIndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeBuyIndexViewController.swift; sourceTree = "<group>"; };
 		A3A404EA1D6E93DE0061DDB2 /* TradeBuyIndexCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeBuyIndexCell.swift; sourceTree = "<group>"; };
@@ -337,6 +339,7 @@
 				A3CA8BC11D6BE19200397DBC /* LeftMenuViewController.swift */,
 				A3FB36281D62D26700EFB7C4 /* ViewController.swift */,
 				A30B0D221D878D1E00C20A76 /* WebpayClient.swift */,
+				A39060971DA4C39200C07515 /* HelpViewController.swift */,
 				A3CD058C1D766C0900E969FC /* Orders */,
 				A3D48F991D927FE7000BD928 /* Trade */,
 				A3CD058D1D766C7700E969FC /* Users */,
@@ -526,6 +529,7 @@
 				A3FB36271D62D26700EFB7C4 /* AppDelegate.swift in Sources */,
 				A3A404F61D7008110061DDB2 /* TradeBuyTableViewController.swift in Sources */,
 				A30B0D211D869B9400C20A76 /* OrderBuyViewController.swift in Sources */,
+				A39060981DA4C39200C07515 /* HelpViewController.swift in Sources */,
 				A3FB36431D62DF9B00EFB7C4 /* AppController.swift in Sources */,
 				A391E58D1D88EC5000937B32 /* OrderBuyThanksViewController.swift in Sources */,
 				A3CA8BC21D6BE19200397DBC /* LeftMenuViewController.swift in Sources */,

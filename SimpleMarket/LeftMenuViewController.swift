@@ -50,6 +50,13 @@ class LeftMenuViewController: UIViewController, MFMailComposeViewControllerDeleg
         mail.setMessageBody("", isHTML: false)
         self.presentViewController(mail, animated: true, completion: nil)
     }
+    // ヘルプページへ
+    @IBAction func handleHelp(sender: AnyObject) {
+        let view = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Help") as UIViewController
+        UIApplication.sharedApplication().keyWindow?.rootViewController = view
+        UIApplication.sharedApplication().keyWindow?.makeKeyWindow()
+
+    }
     // ログアウト
     @IBAction func handleLogout(sender: AnyObject) {
         UserLoginViewController().logout()

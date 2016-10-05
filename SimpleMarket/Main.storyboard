@@ -174,6 +174,12 @@
                                     <action selector="handleLogoutButton:" destination="9Vf-8u-fp4" eventType="touchUpInside" id="eiw-ff-PGn"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9Y-vb-q0T">
+                                <state key="normal" title="help"/>
+                                <connections>
+                                    <action selector="handleHelp:" destination="WPY-b6-c55" eventType="touchUpInside" id="XuT-h2-6ai"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -188,6 +194,8 @@
                             <constraint firstItem="Rf5-p3-CFv" firstAttribute="top" secondItem="2cw-VE-OVz" secondAttribute="bottom" constant="20" id="g9T-5t-Gks"/>
                             <constraint firstItem="9bF-zy-hNy" firstAttribute="top" secondItem="BUi-VG-7XS" secondAttribute="bottom" constant="20" id="hmP-X0-Yv0"/>
                             <constraint firstItem="LgF-En-mph" firstAttribute="top" secondItem="7st-ex-swW" secondAttribute="bottom" constant="60" id="jLe-Pg-AKY"/>
+                            <constraint firstItem="p9Y-vb-q0T" firstAttribute="top" secondItem="9bF-zy-hNy" secondAttribute="bottom" constant="50" id="mN8-fN-fad"/>
+                            <constraint firstItem="p9Y-vb-q0T" firstAttribute="leading" secondItem="44u-Wb-VCk" secondAttribute="trailing" constant="75" id="pWY-bX-55n"/>
                             <constraint firstItem="BUi-VG-7XS" firstAttribute="leading" secondItem="D8u-VO-LzU" secondAttribute="leadingMargin" constant="20" id="pmD-Rp-UkU"/>
                             <constraint firstItem="2cw-VE-OVz" firstAttribute="top" secondItem="7st-ex-swW" secondAttribute="bottom" constant="150" id="rTp-hI-mFb"/>
                             <constraint firstItem="4p1-1T-wQj" firstAttribute="leading" secondItem="D8u-VO-LzU" secondAttribute="leadingMargin" constant="20" id="uIK-K5-qlh"/>
@@ -207,7 +215,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vha-Ap-14d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="284" y="689"/>
+            <point key="canvasLocation" x="283.19999999999999" y="688.15592203898052"/>
         </scene>
         <!--OrderIndex-->
         <scene sceneID="b4c-HB-urs">
@@ -232,6 +240,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VSr-p3-clH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="892" y="695"/>
+        </scene>
+        <!--ヘルプ-->
+        <scene sceneID="GNE-KI-rc3">
+            <objects>
+                <viewController storyboardIdentifier="Help" title="ヘルプ" id="RHc-Mz-9AL" customClass="HelpViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zWo-u3-qXf"/>
+                        <viewControllerLayoutGuide type="bottom" id="ytH-JG-3iR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qqb-Rz-wil">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tIW-Wz-9z7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1612" y="718"/>
         </scene>
     </scenes>
 </document>
