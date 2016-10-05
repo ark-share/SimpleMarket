@@ -16,6 +16,8 @@ class TradeSellTableViewController: UITableViewController {
 
     var orderArray: [OrderData] = [] // 一覧用データ
     var statusArray: [String] = [] // 表示するステータスの商品
+    var tabButton: UIButton! // カウント数表示用に受け取る
+    var tabTitle: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +41,11 @@ class TradeSellTableViewController: UITableViewController {
             }
             self.tableView.reloadData() // 再表示
             //}
+            
+            // カウント数をタブに反映する
+            if self.tabButton != nil {
+                self.tabButton.setTitle("\(self.tabTitle) \(self.orderArray.count)", forState: .Normal)
+            }
         })
     }
 

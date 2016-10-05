@@ -25,13 +25,13 @@ class TradeBuyIndexViewController: UIViewController, UIScrollViewDelegate {
         scrollView.contentSize = CGSizeMake(self.view.frame.width * 3, scrollView.frame.height) // 3画面
         scrollView.pagingEnabled = true
         
-        makeTableViewByPage(0, statusArray: ["1"])
-        makeTableViewByPage(1, statusArray: ["2", "3", "4", "5"])
-        makeTableViewByPage(2, statusArray: ["6"])
-        
         makeTabButtonByPage(0, title: "入金待ち")
         makeTabButtonByPage(1, title: "取引中")
         makeTabButtonByPage(2, title: "過去の取引")
+        
+        makeTableViewByPage(0, statusArray: ["1"])
+        makeTableViewByPage(1, statusArray: ["2", "3", "4", "5"])
+        makeTableViewByPage(2, statusArray: ["6"])
         
         // 選択状態にする
         setSelectedButton(self.tabButtons[0], selected: true)
@@ -73,6 +73,11 @@ class TradeBuyIndexViewController: UIViewController, UIScrollViewDelegate {
 
         // 指定ステータスの商品を表示する
         table.statusArray = statusArray
+        
+        // カウント数変更のため、tabButtonsを渡しておく
+        table.tabButton = self.tabButtons[page]
+        table.tabTitle = self.tabButtons[page].currentTitle
+        
         // view配置
         table.view.frame = CGRectMake(self.view.frame.width * CGFloat(page), 0, self.view.frame.width, scrollView.frame.height)
         
