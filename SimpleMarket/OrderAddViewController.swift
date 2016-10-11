@@ -23,10 +23,24 @@ class OrderAddViewController: UIViewController {
     
     //var orderData: OrderData!
     
+    
     // 出品する
     @IBAction func handleSubmitButton(sender: AnyObject) {
+        
+        let id:String = NSUUID().UUIDString // 商品番号として使えないか？
+        //print("key= \(id)") // key= 9A36CF98-8827-458B-8FFD-54CD46D47F56
 
-        let orderRef = FIRDatabase.database().reference().child(CommonConst.OrderPATH)
+        addOrder(id)
+        
+        //SVProgressHUD.showSuccessWithStatus("出品しました")
+        let thank = self.storyboard?.instantiateViewControllerWithIdentifier("OrderAddThanks") as! OrderAddThanksViewController
+        //thank.orderData = newData 保存したてのデータが取れない
+        presentViewController(thank, animated: true, completion: nil) // モーダル
+    }
+    
+    private func addOrder(id: String) {
+        let ref = FIRDatabase.database().reference().child(CommonConst.OrderPATH)
+        let autoid = ref.childByAutoId()
         
         // image1
         var imageString = ""
@@ -50,15 +64,12 @@ class OrderAddViewController: UIViewController {
             "name": name!, "body": body, "price": price!, "status": "0",
             "user_id": user_id!, "user_name": user_name!,
             "modified": modified, "created": created]
-        orderRef.childByAutoId().setValue(data)
+        //ref.child(id).setValue(data) // childByAutoId は使わない 共通の商品idを使う
         
-        print("key \(orderRef.key)")
-        
-        //SVProgressHUD.showSuccessWithStatus("出品しました")
-        let thank = self.storyboard?.instantiateViewControllerWithIdentifier("OrderAddThanks") as! OrderAddThanksViewController
-        //thank.orderData = newData 保存したてのデータが取れない
-        presentViewController(thank, animated: true, completion: nil) // モーダル
+        autoid.setValue(data)
+        print("autoid = \(autoid.key)")
     }
+    
     
     
     override func viewDidLoad() {

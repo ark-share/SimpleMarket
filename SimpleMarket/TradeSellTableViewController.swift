@@ -14,6 +14,8 @@ private let reuseIdentifier = "TradeSellCell"
 
 class TradeSellTableViewController: UITableViewController {
 
+    var userArray: [UserData] = [] // はじめにユーザーが持つ商品だけを取り出す
+    
     var orderArray: [OrderData] = [] // 一覧用データ
     var statusArray: [String] = [] // 表示するステータスの商品
     var tabButton: UIButton! // カウント数表示用に受け取る
@@ -26,6 +28,8 @@ class TradeSellTableViewController: UITableViewController {
         let nib = UINib(nibName: "TradeSellIndexCell", bundle: nil) // Xibファイルの名前
         tableView.registerNib(nib, forCellReuseIdentifier: reuseIdentifier)
         tableView.rowHeight = UITableViewAutomaticDimension // 高さ自動
+        
+        let user_id = FIRAuth.auth()?.currentUser?.uid // 該当ユーザーのデータに限る
 
         // ordersに要素が追加されたらクロージャ呼び出す
         FIRDatabase.database().reference().child(CommonConst.OrderPATH).observeEventType(.ChildAdded, withBlock: { snapshot in
@@ -34,8 +38,8 @@ class TradeSellTableViewController: UITableViewController {
             //if let uid = FIRAuth.auth()?.currentUser?.uid {
             let data = OrderData(snapshot: snapshot) //, myId: uid
             // statusの中に指定したステータスがあるかどうか　たとえばarrayが[1,2]の場合、statusが1や2だったら表示される
-            if data.status != nil {
-                if (self.statusArray.indexOf(data.status!) != nil) {
+            if data.user_id != nil && data.status != nil {
+                if (data.user_id == user_id && self.statusArray.indexOf(data.status!) != nil) {
                     self.orderArray.insert(data, atIndex: 0)
                 }
             }
@@ -47,6 +51,7 @@ class TradeSellTableViewController: UITableViewController {
                 self.tabButton.setTitle("\(self.tabTitle) \(self.orderArray.count)", forState: .Normal)
             }
         })
+        
     }
 
     override func didReceiveMemoryWarning() {

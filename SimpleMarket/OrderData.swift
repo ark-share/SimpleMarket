@@ -23,6 +23,8 @@ class OrderData: NSObject {
     var statusName: String? // ステータス名
     var user_id: String?
     var user_name: String? // ユーザー名（表示用）
+    var buy_user_id: String?
+    var buy_user_name: String? // ユーザー名（表示用）
     var modified: NSDate?
     var created: NSDate?
     
@@ -61,14 +63,18 @@ class OrderData: NSObject {
         
         user_id = data["user_id"] as? String
         user_name = data["user_name"] as? String
-        
+        buy_user_id = data["buy_user_id"] as? String
+        buy_user_name = data["buy_user_name"] as? String
+
         modified = NSDate(timeIntervalSinceReferenceDate: data["modified"] as! NSTimeInterval)
         created = NSDate(timeIntervalSinceReferenceDate: data["created"] as! NSTimeInterval)
     }
     
+    let ref = FIRDatabase.database().reference().child(CommonConst.OrderPATH)
+
+    
     // 単一カラムを更新する
     // self.orderData.saveFieldのように呼ぶ
-    let ref = FIRDatabase.database().reference().child(CommonConst.OrderPATH)
     func saveField(field: String, value: String) {
         let modified = NSDate.timeIntervalSinceReferenceDate()
         
@@ -87,6 +93,7 @@ class OrderData: NSObject {
 //    }
 
     // tradeコメントの投稿 >> これCommentDataクラスに起きたいけど、CommentDat().みたいに呼ぼうとするとinit()が走ってしまう　どうするか
+    // システムが投稿するコメントなのでorder_commentの処理は作ってない
     func saveTradeComment(order_id: String, body: String) {
         // 保存先
         let commentRef = FIRDatabase.database().reference().child(CommonConst.OrderPATH+"/"+order_id+"/"+CommonConst.TradeCommentPATH)
