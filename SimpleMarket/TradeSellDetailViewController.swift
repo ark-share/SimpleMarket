@@ -91,11 +91,12 @@ class TradeSellDetailViewController: UIViewController {
         }
     }
 
+    
     override func viewWillAppear(animated: Bool) {
-        if orderData != nil {
-            
-        }
+        super.viewDidDisappear(animated)
+        viewDidLoad() // 戻ってきても画面更新する
     }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

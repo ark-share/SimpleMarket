@@ -49,6 +49,11 @@ class OrderDetailViewController: UIViewController {
         //commentButton.setImage(image, forState: .Normal)
         
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        viewDidLoad() // 戻ってきても画面更新する
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

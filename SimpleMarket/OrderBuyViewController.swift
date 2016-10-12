@@ -19,11 +19,16 @@ class OrderBuyViewController: UIViewController {
     @IBOutlet weak var addressLabel: UILabel!
     
     var orderData: OrderData!
+    var selectedPayment: String!
     let card = WPYCreditCard()
 
     // 支払い方法ボタン
     @IBAction func handlePaymentButton(sender: AnyObject) {
         print("to payment")
+        
+        // navを引き継ぐ
+        let payment = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("SelectPayment") as! SelectPaymentViewController
+        self.navigationController?.pushViewController(payment, animated: true)
     }
     // 配送先ボタン
     @IBAction func handleAddressButton(sender: AnyObject) {
@@ -82,12 +87,9 @@ class OrderBuyViewController: UIViewController {
     private func boughtOrder(status: String) {
         let user_id = FIRAuth.auth()?.currentUser?.uid
         let user_name = FIRAuth.auth()?.currentUser?.displayName
-        //let user = ["user_id": user_id!, "user_name": user_name]
         
         // ステータスを 2：決済済み に
         self.orderData.saveField("status", value: status) // 決済済みにするなら2をセット
-//        self.orderData.saveField("buy_user_id", value: user_id!)
-//        self.orderData.saveField("buy_user_name", value: user_name!)
     
         let  datas = ["buy_user_id":user_id!, "buy_user_name":user_name!]
         self.orderData.save(datas) // 複数一括保存
@@ -104,12 +106,19 @@ class OrderBuyViewController: UIViewController {
             }
         }
 
-        // 元からクレカを設定しておく
-        AppController().buyPayment = 2
+        // 設定なければ(-1)なら銀行をセッット
+        if AppController().buyPayment < 0 {
+            AppController().buyPayment = 1 // 初期設定あればここでセット
+        }
         paymentLabel.text = CommonConst.BuyPaymentArray[ AppController().buyPayment ]
 
         AppController().buyAddress = "大阪府大阪市北区"
         addressLabel.text = AppController().buyAddress
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        viewDidLoad() // 戻ってきても画面更新する
     }
 
     override func didReceiveMemoryWarning() {

@@ -39,6 +39,7 @@
 		A38F1CE61D9108A4005C09C7 /* ImageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1CE51D9108A4005C09C7 /* ImageSelectViewController.swift */; };
 		A39060981DA4C39200C07515 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39060971DA4C39200C07515 /* HelpViewController.swift */; };
 		A390609A1DA790EB00C07515 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39060991DA790EB00C07515 /* UserData.swift */; };
+		A390609C1DADDB5900C07515 /* SelectPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390609B1DADDB5900C07515 /* SelectPaymentViewController.swift */; };
 		A391E58D1D88EC5000937B32 /* OrderBuyThanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A391E58C1D88EC5000937B32 /* OrderBuyThanksViewController.swift */; };
 		A3A404E51D6D8F6F0061DDB2 /* TradeBuyIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A404E41D6D8F6F0061DDB2 /* TradeBuyIndexViewController.swift */; };
 		A3A404EC1D6E93DE0061DDB2 /* TradeBuyIndexCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A404EA1D6E93DE0061DDB2 /* TradeBuyIndexCell.swift */; };
@@ -108,6 +109,7 @@
 		A38F1CE51D9108A4005C09C7 /* ImageSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSelectViewController.swift; sourceTree = "<group>"; };
 		A39060971DA4C39200C07515 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		A39060991DA790EB00C07515 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		A390609B1DADDB5900C07515 /* SelectPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPaymentViewController.swift; sourceTree = "<group>"; };
 		A391E58C1D88EC5000937B32 /* OrderBuyThanksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderBuyThanksViewController.swift; sourceTree = "<group>"; };
 		A3A404E41D6D8F6F0061DDB2 /* TradeBuyIndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeBuyIndexViewController.swift; sourceTree = "<group>"; };
 		A3A404EA1D6E93DE0061DDB2 /* TradeBuyIndexCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeBuyIndexCell.swift; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 				A32B5F7E1D62EFD300608BBF /* OrderAddViewController.swift */,
 				A3436E621D65AE9700EE1F77 /* OrderAddThanksViewController.swift */,
 				A38F1CE51D9108A4005C09C7 /* ImageSelectViewController.swift */,
+				A390609B1DADDB5900C07515 /* SelectPaymentViewController.swift */,
 			);
 			name = Orders;
 			sourceTree = "<group>";
@@ -538,6 +541,7 @@
 				A391E58D1D88EC5000937B32 /* OrderBuyThanksViewController.swift in Sources */,
 				A3CA8BC21D6BE19200397DBC /* LeftMenuViewController.swift in Sources */,
 				A3F74A501D98FB5E000A9720 /* TradeSellIndexViewController.swift in Sources */,
+				A390609C1DADDB5900C07515 /* SelectPaymentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

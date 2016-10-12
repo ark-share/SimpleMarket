@@ -364,6 +364,70 @@
             </objects>
             <point key="canvasLocation" x="931" y="-931"/>
         </scene>
+        <!--Select Payment View Controller-->
+        <scene sceneID="dx8-5p-yVf">
+            <objects>
+                <viewController storyboardIdentifier="SelectPayment" id="HKL-1I-ZDP" customClass="SelectPaymentViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DMn-tE-w0p"/>
+                        <viewControllerLayoutGuide type="bottom" id="8mM-Pr-czJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xr4-0f-qlm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNS-qL-xhB">
+                                <state key="normal" title="コンビニ決済"/>
+                                <connections>
+                                    <action selector="pay0:" destination="HKL-1I-ZDP" eventType="touchUpInside" id="sH9-U0-H7t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTM-DO-Odb">
+                                <state key="normal" title="銀行決済"/>
+                                <connections>
+                                    <action selector="pay1:" destination="HKL-1I-ZDP" eventType="touchUpInside" id="Sm8-Yg-ZBK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHL-Uf-YI2">
+                                <state key="normal" title="クレジットカード決済"/>
+                                <connections>
+                                    <action selector="pay2:" destination="HKL-1I-ZDP" eventType="touchUpInside" id="oUb-Sa-xxo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="準備中" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmo-au-1ST">
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NuN-6u-skW">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="準備中" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxm-do-LWi">
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FHL-Uf-YI2" firstAttribute="leading" secondItem="Xr4-0f-qlm" secondAttribute="leadingMargin" constant="20" id="4c7-Mi-OPI"/>
+                            <constraint firstItem="qmo-au-1ST" firstAttribute="top" secondItem="DMn-tE-w0p" secondAttribute="bottom" constant="36" id="4dL-F8-lYD"/>
+                            <constraint firstItem="qmo-au-1ST" firstAttribute="leading" secondItem="qNS-qL-xhB" secondAttribute="trailing" constant="120" id="6kV-iZ-f4b"/>
+                            <constraint firstItem="NuN-6u-skW" firstAttribute="leading" secondItem="FHL-Uf-YI2" secondAttribute="trailing" constant="59" id="M0m-T4-34l"/>
+                            <constraint firstItem="zTM-DO-Odb" firstAttribute="leading" secondItem="Xr4-0f-qlm" secondAttribute="leadingMargin" constant="20" id="S39-d6-DX1"/>
+                            <constraint firstItem="zTM-DO-Odb" firstAttribute="top" secondItem="qNS-qL-xhB" secondAttribute="bottom" constant="30" id="SnA-fF-mme"/>
+                            <constraint firstItem="qNS-qL-xhB" firstAttribute="leading" secondItem="Xr4-0f-qlm" secondAttribute="leadingMargin" constant="20" id="UvC-TJ-3SZ"/>
+                            <constraint firstItem="NuN-6u-skW" firstAttribute="top" secondItem="qmo-au-1ST" secondAttribute="bottom" constant="102" id="e5N-AJ-KcO"/>
+                            <constraint firstItem="FHL-Uf-YI2" firstAttribute="top" secondItem="zTM-DO-Odb" secondAttribute="bottom" constant="30" id="pjH-KC-Qad"/>
+                            <constraint firstItem="qNS-qL-xhB" firstAttribute="top" secondItem="DMn-tE-w0p" secondAttribute="bottom" constant="30" id="u1V-h0-Ypb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9jj-hh-IQD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1728.8" y="-904.49775112443785"/>
+        </scene>
         <!--Order Add View Controller-->
         <scene sceneID="rUh-oG-VKA">
             <objects>
