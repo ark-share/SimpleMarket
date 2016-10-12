@@ -49,8 +49,7 @@ class OrderBuyViewController: UIViewController {
                 print("token = \(token.tokenId)")
                 self.charge(token.tokenId)
                 
-                
-                self.changeOrder()
+                self.boughtOrder("2")
                 
                 // when transaction is complete
                 viewController.setPayButtonComplete()
@@ -80,16 +79,18 @@ class OrderBuyViewController: UIViewController {
         }
     }
     
-    private func changeOrder() {
+    private func boughtOrder(status: String) {
         let user_id = FIRAuth.auth()?.currentUser?.uid
         let user_name = FIRAuth.auth()?.currentUser?.displayName
         //let user = ["user_id": user_id!, "user_name": user_name]
         
         // ステータスを 2：決済済み に
-        self.orderData.saveField("status", value: "2")
-        self.orderData.saveField("buy_user_id", value: user_id!)
-        self.orderData.saveField("buy_user_name", value: user_name!)
-        //self.orderData.save(user) // 複数一括保存が上手くいかない
+        self.orderData.saveField("status", value: status) // 決済済みにするなら2をセット
+//        self.orderData.saveField("buy_user_id", value: user_id!)
+//        self.orderData.saveField("buy_user_name", value: user_name!)
+    
+        let  datas = ["buy_user_id":user_id!, "buy_user_name":user_name!]
+        self.orderData.save(datas) // 複数一括保存
     }
     
     

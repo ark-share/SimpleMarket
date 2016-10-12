@@ -83,14 +83,16 @@ class OrderData: NSObject {
         let data = [field: value, "modified": modified]
         ref.child(self.id!).updateChildValues(data as [NSObject : AnyObject])
     }
-//    // 複数保存 型が異なって保存ができない
-//    func save(datas: [String : String?]) {
-//        let modified = NSDate.timeIntervalSinceReferenceDate()
-//        
-//        // idはあらかじめセットされたものを使う
-//        //datas["modified"] = modified
-//        ref.child(self.id!).updateChildValues(datas as [NSObject : AnyObject])
-//    }
+    // 複数保存 型が異なって保存ができない
+    func save(datas: [NSObject : AnyObject]) {
+        let modified = NSDate.timeIntervalSinceReferenceDate()
+        
+        // idはあらかじめセットされたものを使う
+        var values = datas as? Dictionary
+        values!["modified"] = modified
+        
+        ref.child(self.id!).updateChildValues(values! as [NSObject : AnyObject])
+    }
 
     // tradeコメントの投稿 >> これCommentDataクラスに起きたいけど、CommentDat().みたいに呼ぼうとするとinit()が走ってしまう　どうするか
     // システムが投稿するコメントなのでorder_commentの処理は作ってない

@@ -14,7 +14,6 @@ private let reuseIdentifier = "TradeSellCell"
 
 class TradeSellTableViewController: UITableViewController {
 
-    var userArray: [UserData] = [] // はじめにユーザーが持つ商品だけを取り出す
     
     var orderArray: [OrderData] = [] // 一覧用データ
     var statusArray: [String] = [] // 表示するステータスの商品

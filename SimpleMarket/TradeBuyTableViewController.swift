@@ -15,7 +15,6 @@ private let reuseIdentifier = "TradeBuyCell"
 // 購入リスト（取引中、過去の取引）
 class TradeBuyTableViewController: UITableViewController {
     
-    var userArray: [UserData] = [] // はじめにユーザーが持つ商品だけを取り出す
     
     var orderArray: [OrderData] = [] // 一覧用データ
     var statusArray: [String] = [] // 表示するステータスの商品

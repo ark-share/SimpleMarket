@@ -27,10 +27,7 @@ class OrderAddViewController: UIViewController {
     // 出品する
     @IBAction func handleSubmitButton(sender: AnyObject) {
         
-        let id:String = NSUUID().UUIDString // 商品番号として使えないか？
-        //print("key= \(id)") // key= 9A36CF98-8827-458B-8FFD-54CD46D47F56
-
-        addOrder(id)
+        addOrder()
         
         //SVProgressHUD.showSuccessWithStatus("出品しました")
         let thank = self.storyboard?.instantiateViewControllerWithIdentifier("OrderAddThanks") as! OrderAddThanksViewController
@@ -38,7 +35,8 @@ class OrderAddViewController: UIViewController {
         presentViewController(thank, animated: true, completion: nil) // モーダル
     }
     
-    private func addOrder(id: String) {
+    // 出品 autoidを返す
+    private func addOrder() -> String {
         let ref = FIRDatabase.database().reference().child(CommonConst.OrderPATH)
         let autoid = ref.childByAutoId()
         
@@ -68,6 +66,8 @@ class OrderAddViewController: UIViewController {
         
         autoid.setValue(data)
         print("autoid = \(autoid.key)")
+        
+        return autoid.key
     }
     
     
