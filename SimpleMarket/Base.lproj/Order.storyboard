@@ -373,7 +373,7 @@
                         <viewControllerLayoutGuide type="bottom" id="8mM-Pr-czJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Xr4-0f-qlm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNS-qL-xhB">
@@ -423,10 +423,65 @@
                             <constraint firstItem="qNS-qL-xhB" firstAttribute="top" secondItem="DMn-tE-w0p" secondAttribute="bottom" constant="30" id="u1V-h0-Ypb"/>
                         </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="300"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9jj-hh-IQD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1728.8" y="-904.49775112443785"/>
+        </scene>
+        <!--Input Address View Controller-->
+        <scene sceneID="dpt-v4-7Pd">
+            <objects>
+                <viewController storyboardIdentifier="InputAddress" id="To8-2M-wP1" customClass="InputAddressViewController" customModule="SimpleMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7px-a8-lf9"/>
+                        <viewControllerLayoutGuide type="bottom" id="BOB-tz-rHR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lhb-b8-poa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="配送先" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynT-RW-qNa">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4YF-p7-cRg">
+                                <state key="normal" title="保存"/>
+                                <connections>
+                                    <action selector="handleSubmit:" destination="To8-2M-wP1" eventType="touchUpInside" id="1i7-Z8-Mmj"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="住所" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gbD-B8-kru">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Adx-Rz-hr5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4YF-p7-cRg" firstAttribute="top" secondItem="gbD-B8-kru" secondAttribute="bottom" constant="20" id="05X-Y5-SJr"/>
+                            <constraint firstItem="4YF-p7-cRg" firstAttribute="leading" secondItem="Lhb-b8-poa" secondAttribute="leadingMargin" constant="20" id="0Uf-y7-20I"/>
+                            <constraint firstItem="gbD-B8-kru" firstAttribute="top" secondItem="ynT-RW-qNa" secondAttribute="bottom" constant="20" id="JgH-GY-IgH"/>
+                            <constraint firstItem="ynT-RW-qNa" firstAttribute="top" secondItem="7px-a8-lf9" secondAttribute="bottom" constant="30" id="Q0u-lY-lDP"/>
+                            <constraint firstItem="ynT-RW-qNa" firstAttribute="leading" secondItem="Lhb-b8-poa" secondAttribute="leadingMargin" constant="20" id="eit-do-S9g"/>
+                            <constraint firstItem="gbD-B8-kru" firstAttribute="leading" secondItem="Lhb-b8-poa" secondAttribute="leadingMargin" constant="20" id="qJ6-F2-jm8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gbD-B8-kru" secondAttribute="trailing" constant="20" id="yqW-5Y-dAt"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="300"/>
+                    <connections>
+                        <outlet property="addressField" destination="gbD-B8-kru" id="akg-AZ-rv0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Gn-jF-thn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1777" y="-667"/>
         </scene>
         <!--Order Add View Controller-->
         <scene sceneID="rUh-oG-VKA">

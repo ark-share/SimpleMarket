@@ -33,37 +33,46 @@ class OrderBuyViewController: UIViewController {
     // 配送先ボタン
     @IBAction func handleAddressButton(sender: AnyObject) {
         print("to address")
+        
+        // navを引き継ぐ
+        let payment = UIStoryboard(name: "Order", bundle: nil).instantiateViewControllerWithIdentifier("InputAddress") as! InputAddressViewController
+        self.navigationController?.pushViewController(payment, animated: true)
     }
     // 購入するボタン
     @IBAction func handleBuyButton(sender: AnyObject) {
         
-        card.number = "4242 4242 4242 4242"
-        card.expiryMonth = WPYMonth(rawValue: 8)!
-        card.expiryYear = 2017
-        card.cvc = "123"
-        card.name = "TARO YAMADA"
+        if AppController().buyPayment == 2 {
+            // クレカ決済する
+            card.number = "4242 4242 4242 4242"
+            card.expiryMonth = WPYMonth(rawValue: 8)!
+            card.expiryYear = 2017
+            card.cvc = "123"
+            card.name = "TARO YAMADA"
+            
+            // 表示価格はorderData.price
+            let paymentViewController = WPYPaymentViewController(priceTag: "¥"+orderData.price!, card: card, callback: { viewController, token, error in
+                if let newError = error {
+                    print("error:\(newError.localizedDescription)")
+                    
+                    SVProgressHUD.showErrorWithStatus("\(newError.localizedDescription)")
+                } else {
+                    // 結果がcallbackで渡される。ここでTokenを受け取る
+                    print("token = \(token.tokenId)")
+                    self.charge(token.tokenId)
+                    
+                    self.boughtOrder("2")
+                    
+                    // when transaction is complete
+                    viewController.setPayButtonComplete()
+                    viewController.dismissAfterDelay(2.0)
+                }
+            })
+            // navを引き継ぐ
+            self.navigationController?.pushViewController(paymentViewController, animated: true)
+        }
         
-        // 表示価格はorderData.price
-        let paymentViewController = WPYPaymentViewController(priceTag: "¥"+orderData.price!, card: card, callback: { viewController, token, error in
-            if let newError = error {
-                print("error:\(newError.localizedDescription)")
-                
-                SVProgressHUD.showErrorWithStatus("\(newError.localizedDescription)")
-            } else {
-                // 結果がcallbackで渡される。ここでTokenを受け取る
-                print("token = \(token.tokenId)")
-                self.charge(token.tokenId)
-                
-                self.boughtOrder("2")
-                
-                // when transaction is complete
-                viewController.setPayButtonComplete()
-                viewController.dismissAfterDelay(2.0)
-            }
-        })
-        
-        // navを引き継ぐ
-        self.navigationController?.pushViewController(paymentViewController, animated: true)
+        // 他の決済へ
+        SVProgressHUD.showErrorWithStatus("銀行は未実装")
     }
     
     func charge(token: String){
@@ -112,7 +121,9 @@ class OrderBuyViewController: UIViewController {
         }
         paymentLabel.text = CommonConst.BuyPaymentArray[ AppController().buyPayment ]
 
-        AppController().buyAddress = "大阪府大阪市北区"
+        if AppController().buyAddress == "" {
+            AppController().buyAddress = "大阪府大阪市北区"
+        }
         addressLabel.text = AppController().buyAddress
     }
     
