@@ -31,6 +31,9 @@ class TradeCommentAddViewController: UIViewController {
     @IBAction func handleSubmitButton(sender: AnyObject) {
         if orderData.id != nil {
             orderData.saveTradeComment(orderData.id!, body: commentTextField.text!)
+            
+            // 一覧まで戻ってorderArrayを取得し直すまでカウント値が増えない　数値だけ増やしておく
+            orderData.trade_comment_count = orderData.trade_comment_count! + 1
         }
     }
     

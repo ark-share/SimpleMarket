@@ -31,21 +31,12 @@ class OrderCommentAddViewController: UIViewController, UITableViewDelegate, UITa
     @IBAction func handleSubmitButton(sender: AnyObject) {
         if orderData.id != nil {
             // コメントの保存先
-            let commentRef = FIRDatabase.database().reference().child(CommonConst.OrderPATH+"/"+orderData.id!+"/"+CommonConst.OrderCommentPATH)
-
-            let body = commentTextField.text // String?型なのでアンラップする
-            //let user = AppController().displayName // displayNameの事
-            let modified = NSDate.timeIntervalSinceReferenceDate()
-            let created = NSDate.timeIntervalSinceReferenceDate()
+            orderData.saveOrderComment(orderData.id!, body: commentTextField.text!)
             
-            let user_id = FIRAuth.auth()?.currentUser?.uid
-            let user_name = FIRAuth.auth()?.currentUser?.displayName
             
-            let data = [
-                "body": body!,
-                "user_id": user_id!, "user_name": user_name!,
-                "modified": modified, "created": created]
-            commentRef.childByAutoId().setValue(data)
+            
+            // 一覧まで戻ってorderArrayを取得し直すまでカウント値が増えない　数値だけ増やしておく
+            orderData.order_comment_count = orderData.order_comment_count! + 1
         }
     }
 

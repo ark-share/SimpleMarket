@@ -94,10 +94,6 @@ class OrderAddViewController: UIViewController {
         self.view.addGestureRecognizer(tapGesture)
     }
     
-    override func viewWillAppear(animated: Bool) {
-        
-    
-    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

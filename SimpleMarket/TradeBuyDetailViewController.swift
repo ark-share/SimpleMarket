@@ -72,7 +72,7 @@ class TradeBuyDetailViewController: UIViewController {
 
     
     override func viewWillAppear(animated: Bool) {
-        super.viewDidDisappear(animated)
+        super.viewWillAppear(animated)
         viewDidLoad() // 戻ってきても画面更新する
     }
 

@@ -52,7 +52,14 @@ class TradeSellTableViewController: UITableViewController {
         })
         
     }
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tableView.reloadData() // 戻ってきても画面更新する
+    }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

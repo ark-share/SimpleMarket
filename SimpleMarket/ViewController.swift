@@ -28,20 +28,21 @@ class ViewController: UIViewController {
         AppController().displayName = "" // clear
         
         // reload
-        self.viewWillAppear(true)
+        self.viewDidLoad()
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        displayNameLabel.text = AppController().displayName
     }
     
     override func viewWillAppear(animated: Bool) {
-        
-        let displayName = AppController().displayName
-        displayNameLabel.text = displayName
+        super.viewWillAppear(animated)
+        viewDidLoad() // 戻ってきても画面更新する
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

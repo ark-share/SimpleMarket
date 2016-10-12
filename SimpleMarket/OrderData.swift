@@ -94,8 +94,26 @@ class OrderData: NSObject {
         ref.child(self.id!).updateChildValues(values! as [NSObject : AnyObject])
     }
 
+    // orderコメントの投稿
+    func saveOrderComment(order_id: String, body: String) {
+        // 保存先
+        let commentRef = FIRDatabase.database().reference().child(CommonConst.OrderPATH+"/"+order_id+"/"+CommonConst.OrderCommentPATH)
+        
+        //let user = AppController().displayName // displayNameの事
+        let modified = NSDate.timeIntervalSinceReferenceDate()
+        let created = NSDate.timeIntervalSinceReferenceDate()
+        
+        let user_id = FIRAuth.auth()?.currentUser?.uid
+        let user_name = FIRAuth.auth()?.currentUser?.displayName
+        
+        let data = [
+            "body": body,
+            "user_id": user_id!, "user_name": user_name!,
+            "modified": modified, "created": created]
+        commentRef.childByAutoId().setValue(data)
+    }
+    
     // tradeコメントの投稿 >> これCommentDataクラスに起きたいけど、CommentDat().みたいに呼ぼうとするとinit()が走ってしまう　どうするか
-    // システムが投稿するコメントなのでorder_commentの処理は作ってない
     func saveTradeComment(order_id: String, body: String) {
         // 保存先
         let commentRef = FIRDatabase.database().reference().child(CommonConst.OrderPATH+"/"+order_id+"/"+CommonConst.TradeCommentPATH)
